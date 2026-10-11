@@ -1,0 +1,17 @@
+{
+  "test_seed_contract": "identical to multiseed_v4 evaluation",
+  "rows": [
+    {
+      "method": "static_gcn",
+      "n_test_samples": 120,
+      "mrr": 0.7941654641654642,
+      "hit1": 0.6833333333333333
+    },
+    {
+      "method": "windowed_tgat",
+      "n_test_samples": 120,
+      "mrr": 0.9333333333333333,
+      "hit1": 0.8833333333333333
+    }
+  ]
+}

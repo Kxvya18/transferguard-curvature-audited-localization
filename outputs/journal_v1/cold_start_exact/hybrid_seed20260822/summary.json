@@ -1,0 +1,40 @@
+{
+  "method": "hybrid",
+  "run_seed": 20260822,
+  "best_epoch": 19,
+  "best_selection_mrr": 0.7517436293387725,
+  "best_validation_conditions": [
+    {
+      "horizon": 1,
+      "telemetry_retention": 0.25,
+      "mrr": 0.2854423143839407,
+      "hit1": 0.2222222222222222,
+      "mean_prior_strength": 0.20759261896212897
+    },
+    {
+      "horizon": 2,
+      "telemetry_retention": 0.5,
+      "mrr": 0.7840921507394304,
+      "hit1": 0.7222222222222222,
+      "mean_prior_strength": 0.1476786126020468
+    },
+    {
+      "horizon": 3,
+      "telemetry_retention": 0.75,
+      "mrr": 0.9466993114909781,
+      "hit1": 0.9236111111111112,
+      "mean_prior_strength": 0.1146002153141631
+    },
+    {
+      "horizon": 6,
+      "telemetry_retention": 1.0,
+      "mrr": 0.9907407407407407,
+      "hit1": 0.9861111111111112,
+      "mean_prior_strength": 0.08255528388286217
+    }
+  ],
+  "n_train": 360,
+  "n_val": 144,
+  "total_training_seconds": 225.52638275000209,
+  "mean_epoch_seconds": 11.273255514650554
+}

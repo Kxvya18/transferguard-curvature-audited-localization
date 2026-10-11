@@ -1,0 +1,40 @@
+{
+  "method": "temporal_only",
+  "run_seed": 20260820,
+  "best_epoch": 17,
+  "best_selection_mrr": 0.7212508090587342,
+  "best_validation_conditions": [
+    {
+      "horizon": 1,
+      "telemetry_retention": 0.25,
+      "mrr": 0.2823550563911702,
+      "hit1": 0.25,
+      "mean_prior_strength": 0.0
+    },
+    {
+      "horizon": 2,
+      "telemetry_retention": 0.5,
+      "mrr": 0.7111814860008772,
+      "hit1": 0.625,
+      "mean_prior_strength": 0.0
+    },
+    {
+      "horizon": 3,
+      "telemetry_retention": 0.75,
+      "mrr": 0.8977166938428895,
+      "hit1": 0.8541666666666666,
+      "mean_prior_strength": 0.0
+    },
+    {
+      "horizon": 6,
+      "telemetry_retention": 1.0,
+      "mrr": 0.9937499999999999,
+      "hit1": 0.9930555555555556,
+      "mean_prior_strength": 0.0
+    }
+  ],
+  "n_train": 360,
+  "n_val": 144,
+  "total_training_seconds": 95.67354545800117,
+  "mean_epoch_seconds": 4.782084833249973
+}

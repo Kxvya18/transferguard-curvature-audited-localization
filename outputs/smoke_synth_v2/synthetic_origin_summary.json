@@ -1,0 +1,50 @@
+{
+  "config": {
+    "n_nodes": 180,
+    "m": 2,
+    "beta": 1.15,
+    "n_communities": 4,
+    "aging_tau": 120.0,
+    "rewiring_prob": 0.03,
+    "observation_dropout": 0.3,
+    "max_cascade_steps": 8,
+    "transmission_base": 0.23,
+    "min_infected": 6,
+    "max_cascade_retries": 6,
+    "origin_role_weights": {
+      "gateway": 1.4,
+      "broker": 1.3,
+      "edge_server": 1.15,
+      "camera": 1.05,
+      "sensor": 0.95,
+      "actuator": 0.9,
+      "client": 1.15
+    },
+    "role_probs": {
+      "gateway": 0.05,
+      "broker": 0.08,
+      "edge_server": 0.12,
+      "camera": 0.16,
+      "sensor": 0.27,
+      "actuator": 0.12,
+      "client": 0.2
+    },
+    "fitness_logmean": 0.0,
+    "fitness_logstd": 0.35,
+    "seed": 7
+  },
+  "n_trials": 3,
+  "beta_hat_mean": 0.8847445499999997,
+  "prior_mrr_mean": 0.042202207836882756,
+  "hybrid_mrr_mean": 0.05859089398471253,
+  "degree_mrr_mean": 0.04148373297309468,
+  "prior_hit1_mean": 0.0,
+  "hybrid_hit1_mean": 0.0,
+  "degree_hit1_mean": 0.0,
+  "prior_early_precision5_mean": 0.26666666666666666,
+  "hybrid_early_precision5_mean": 0.26666666666666666,
+  "degree_early_precision5_mean": 0.26666666666666666,
+  "prior_pairwise_order_acc_mean": 0.5755837472057764,
+  "hybrid_pairwise_order_acc_mean": 0.5835439718036732,
+  "degree_pairwise_order_acc_mean": 0.5584518832365293
+}

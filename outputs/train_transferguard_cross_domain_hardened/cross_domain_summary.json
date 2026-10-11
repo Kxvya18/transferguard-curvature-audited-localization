@@ -1,0 +1,145 @@
+{
+  "zero_shot": {
+    "origin_rank": 47.5625,
+    "mrr": 0.33852207799611966,
+    "hit@1": 0.3125,
+    "hit@3": 0.3229166666666667,
+    "hit@5": 0.3229166666666667,
+    "hit@10": 0.3541666666666667
+  },
+  "few_shot": {
+    "1pct": {
+      "origin_rank": 20.791666666666664,
+      "mrr": 0.5780950455157623,
+      "hit@1": 0.48958333333333337,
+      "hit@3": 0.6041666666666667,
+      "hit@5": 0.6875,
+      "hit@10": 0.7708333333333333
+    },
+    "5pct": {
+      "origin_rank": 16.072916666666664,
+      "mrr": 0.5737241666952072,
+      "hit@1": 0.5104166666666667,
+      "hit@3": 0.5625,
+      "hit@5": 0.65625,
+      "hit@10": 0.75
+    },
+    "10pct": {
+      "origin_rank": 19.6875,
+      "mrr": 0.5512007754445107,
+      "hit@1": 0.4791666666666667,
+      "hit@3": 0.5625,
+      "hit@5": 0.65625,
+      "hit@10": 0.71875
+    }
+  },
+  "source_config": {
+    "n_nodes": 220,
+    "m": 2,
+    "beta": 1.15,
+    "n_communities": 6,
+    "aging_tau": 90.0,
+    "rewiring_prob": 0.05,
+    "observation_dropout": 0.45,
+    "max_cascade_steps": 10,
+    "transmission_base": 0.2,
+    "min_infected": 8,
+    "max_cascade_retries": 8,
+    "origin_structural_weight": 0.4,
+    "observation_delay_prob": 0.3,
+    "max_observation_delay": 2,
+    "origin_role_weights": {
+      "gateway": 1.4,
+      "broker": 1.3,
+      "edge_server": 1.15,
+      "camera": 1.05,
+      "sensor": 0.95,
+      "actuator": 0.9,
+      "client": 1.15
+    },
+    "attack_entry_role_weights": {
+      "gateway": 0.8,
+      "broker": 0.9,
+      "edge_server": 1.0,
+      "camera": 1.25,
+      "sensor": 1.1,
+      "actuator": 0.95,
+      "client": 1.35
+    },
+    "role_probs": {
+      "gateway": 0.05,
+      "broker": 0.08,
+      "edge_server": 0.12,
+      "camera": 0.16,
+      "sensor": 0.27,
+      "actuator": 0.12,
+      "client": 0.2
+    },
+    "fitness_logmean": 0.0,
+    "fitness_logstd": 0.35,
+    "seed": 7
+  },
+  "target_config": {
+    "n_nodes": 260,
+    "m": 4,
+    "beta": 0.85,
+    "n_communities": 8,
+    "aging_tau": 70.0,
+    "rewiring_prob": 0.12,
+    "observation_dropout": 0.55,
+    "max_cascade_steps": 12,
+    "transmission_base": 0.24,
+    "min_infected": 10,
+    "max_cascade_retries": 10,
+    "origin_structural_weight": 0.28,
+    "observation_delay_prob": 0.4,
+    "max_observation_delay": 3,
+    "origin_role_weights": {
+      "gateway": 1.4,
+      "broker": 1.3,
+      "edge_server": 1.15,
+      "camera": 1.05,
+      "sensor": 0.95,
+      "actuator": 0.9,
+      "client": 1.15
+    },
+    "attack_entry_role_weights": {
+      "gateway": 0.8,
+      "broker": 0.9,
+      "edge_server": 1.0,
+      "camera": 1.25,
+      "sensor": 1.1,
+      "actuator": 0.95,
+      "client": 1.35
+    },
+    "role_probs": {
+      "gateway": 0.05,
+      "broker": 0.08,
+      "edge_server": 0.12,
+      "camera": 0.16,
+      "sensor": 0.27,
+      "actuator": 0.12,
+      "client": 0.2
+    },
+    "fitness_logmean": 0.1,
+    "fitness_logstd": 0.45,
+    "seed": 701
+  },
+  "training": {
+    "source_train_samples": 256,
+    "target_unlabeled_samples": 128,
+    "target_test_samples": 96,
+    "batch_size": 12,
+    "hidden_dim": 96,
+    "num_message_layers": 3,
+    "dropout": 0.15,
+    "fusion_type": "gated",
+    "lr": 0.002,
+    "adapt_lr": 0.0008,
+    "weight_decay": 0.0001,
+    "ssl_weight": 0.25,
+    "coral_weight": 0.15,
+    "epochs": 20,
+    "adapt_epochs": 6
+  }
+}

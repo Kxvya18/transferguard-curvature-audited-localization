@@ -1,0 +1,131 @@
+{
+  "detector": "normalized predictive entropy",
+  "threshold_contract": "95th percentile of an independent synthetic ID test split; no IoT-23 or TON_IoT examples were used to select the threshold",
+  "interpretation_boundary": "A shift flag indicates feature-distribution incompatibility, not a guarantee that the source prediction is wrong. The synthetic threshold is a retrospective diagnostic until calibrated on a clean deployment stream.",
+  "rows": [
+    {
+      "dataset": "IoT-23",
+      "model": "safe_hybrid",
+      "n_scenarios": 5,
+      "synthetic_id_threshold": 0.0243403949584995,
+      "shift_flag_rate": 0.4,
+      "mean_normalized_entropy": 0.14300540685653687,
+      "scenarios": [
+        {
+          "scenario": "conn.log",
+          "normalized_entropy": 0.00043213367462158203,
+          "shift_flag": false,
+          "origin_rank": 1.0
+        },
+        {
+          "scenario": "conn.log",
+          "normalized_entropy": 9.316205978393555e-05,
+          "shift_flag": false,
+          "origin_rank": 1.0
+        },
+        {
+          "scenario": "conn.log",
+          "normalized_entropy": 0.6422494053840637,
+          "shift_flag": true,
+          "origin_rank": 1.0
+        },
+        {
+          "scenario": "conn.log",
+          "normalized_entropy": 4.547834396362305e-05,
+          "shift_flag": false,
+          "origin_rank": 1.0
+        },
+        {
+          "scenario": "conn.log",
+          "normalized_entropy": 0.07220685482025146,
+          "shift_flag": true,
+          "origin_rank": 1.0
+        }
+      ]
+    },
+    {
+      "dataset": "IoT-23",
+      "model": "temporal_only",
+      "n_scenarios": 5,
+      "synthetic_id_threshold": 0.0091729765011061,
+      "shift_flag_rate": 0.4,
+      "mean_normalized_entropy": 0.03785542249679565,
+      "scenarios": [
+        {
+          "scenario": "conn.log",
+          "normalized_entropy": 7.748603820800781e-07,
+          "shift_flag": false,
+          "origin_rank": 1.0
+        },
+        {
+          "scenario": "conn.log",
+          "normalized_entropy": 0.004643738269805908,
+          "shift_flag": false,
+          "origin_rank": 1.0
+        },
+        {
+          "scenario": "conn.log",
+          "normalized_entropy": 0.12863779067993164,
+          "shift_flag": true,
+          "origin_rank": 1.0
+        },
+        {
+          "scenario": "conn.log",
+          "normalized_entropy": 0.04784327745437622,
+          "shift_flag": true,
+          "origin_rank": 1.0
+        },
+        {
+          "scenario": "conn.log",
+          "normalized_entropy": 0.008151531219482422,
+          "shift_flag": false,
+          "origin_rank": 1.0
+        }
+      ]
+    },
+    {
+      "dataset": "TON_IoT",
+      "model": "safe_hybrid",
+      "n_scenarios": 2,
+      "synthetic_id_threshold": 0.0243403949584995,
+      "shift_flag_rate": 1.0,
+      "mean_normalized_entropy": 0.5347867906093597,
+      "scenarios": [
+        {
+          "scenario": "Network_dataset_1",
+          "normalized_entropy": 0.5025247931480408,
+          "shift_flag": true,
+          "origin_rank": 1.0
+        },
+        {
+          "scenario": "Network_dataset_10",
+          "normalized_entropy": 0.5670487880706787,
+          "shift_flag": true,
+          "origin_rank": 1.0
+        }
+      ]
+    },
+    {
+      "dataset": "TON_IoT",
+      "model": "temporal_only",
+      "n_scenarios": 2,
+      "synthetic_id_threshold": 0.0091729765011061,
+      "shift_flag_rate": 1.0,
+      "mean_normalized_entropy": 0.2636280655860901,
+      "scenarios": [
+        {
+          "scenario": "Network_dataset_1",
+          "normalized_entropy": 0.24348068237304688,
+          "shift_flag": true,
+          "origin_rank": 6.0
+        },
+        {
+          "scenario": "Network_dataset_10",
+          "normalized_entropy": 0.2837754487991333,
+          "shift_flag": true,
+          "origin_rank": 1.0
+        }
+      ]
+    }
+  ]
+}

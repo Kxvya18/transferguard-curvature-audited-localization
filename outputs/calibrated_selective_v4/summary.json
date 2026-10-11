@@ -1,0 +1,468 @@
+{
+  "feature_contract": "observable_v4_cross_dataset_aligned",
+  "calibration_samples": 108,
+  "id_samples": 144,
+  "ood_samples": 160,
+  "ood_definition": {
+    "n_nodes": [
+      100,
+      400
+    ],
+    "m": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "beta": [
+      0.25,
+      2.5
+    ],
+    "observation_dropout": 0.72,
+    "origin_observation_dropout": 0.98,
+    "benign_burst_prob": 0.12,
+    "activity_noise_logstd": 0.65,
+    "attack_activity_scale": 0.7
+  },
+  "models": [
+    {
+      "model": "safe_hybrid",
+      "temperature_fit": {
+        "temperature": 0.3741511251008403,
+        "nll_before": 0.05191747497711962,
+        "nll_after": 0.030716130353224017,
+        "iterations": 83
+      },
+      "raw": {
+        "id": {
+          "n_samples": 144,
+          "accuracy": 0.9583333333333334,
+          "mrr": 0.9791666666666666,
+          "nll": 0.09142701913287575,
+          "brier": 0.05710953237882045,
+          "mean_confidence": 0.9712980452657995,
+          "mean_normalized_entropy": 0.018423238565681215,
+          "ece_15": 0.021336723437403678,
+          "adaptive_ece_15": 0.02043395654372509,
+          "risk_coverage": {
+            "aurc": 0.002310273324207026,
+            "selective": [
+              {
+                "coverage": 1.0,
+                "risk": 0.04166666666666663,
+                "accuracy": 0.9583333333333334
+              },
+              {
+                "coverage": 0.9027777777777778,
+                "risk": 0.007692307692307665,
+                "accuracy": 0.9923076923076923
+              },
+              {
+                "coverage": 0.8055555555555556,
+                "risk": 0.0,
+                "accuracy": 1.0
+              },
+              {
+                "coverage": 0.7013888888888888,
+                "risk": 0.0,
+                "accuracy": 1.0
+              },
+              {
+                "coverage": 0.5,
+                "risk": 0.0,
+                "accuracy": 1.0
+              }
+            ],
+            "coverage_at_risk": {
+              "risk<=0.01": 0.9166666666666666,
+              "risk<=0.05": 1.0,
+              "risk<=0.10": 1.0
+            }
+          }
+        },
+        "ood": {
+          "n_samples": 160,
+          "accuracy": 0.3375,
+          "mrr": 0.482366283164467,
+          "nll": 2.888913340752106,
+          "brier": 0.8267764812959669,
+          "mean_confidence": 0.5216940987212452,
+          "mean_normalized_entropy": 0.2718854346537575,
+          "ece_15": 0.18725213861264145,
+          "adaptive_ece_15": 0.18964237579627674,
+          "risk_coverage": {
+            "aurc": 0.40912934600960255,
+            "selective": [
+              {
+                "coverage": 1.0,
+                "risk": 0.6625,
+                "accuracy": 0.3375
+              },
+              {
+                "coverage": 0.9,
+                "risk": 0.625,
+                "accuracy": 0.375
+              },
+              {
+                "coverage": 0.8,
+                "risk": 0.5859375,
+                "accuracy": 0.4140625
+              },
+              {
+                "coverage": 0.7,
+                "risk": 0.5535714285714286,
+                "accuracy": 0.4464285714285714
+              },
+              {
+                "coverage": 0.5,
+                "risk": 0.475,
+                "accuracy": 0.525
+              }
+            ],
+            "coverage_at_risk": {
+              "risk<=0.01": 0.08125,
+              "risk<=0.05": 0.08125,
+              "risk<=0.10": 0.13125
+            }
+          }
+        }
+      },
+      "temperature_scaled": {
+        "id": {
+          "n_samples": 144,
+          "accuracy": 0.9583333333333334,
+          "mrr": 0.9791666666666666,
+          "nll": 0.16153585899109948,
+          "brier": 0.076300813507784,
+          "mean_confidence": 0.9967006050126377,
+          "mean_normalized_entropy": 0.0025449566752459127,
+          "ece_15": 0.03836727167930443,
+          "adaptive_ece_15": 0.03837598185763281,
+          "risk_coverage": {
+            "aurc": 0.0019965655229953225,
+            "selective": [
+              {
+                "coverage": 1.0,
+                "risk": 0.04166666666666663,
+                "accuracy": 0.9583333333333334
+              },
+              {
+                "coverage": 0.9027777777777778,
+                "risk": 0.007692307692307665,
+                "accuracy": 0.9923076923076923
+              },
+              {
+                "coverage": 0.8055555555555556,
+                "risk": 0.0,
+                "accuracy": 1.0
+              },
+              {
+                "coverage": 0.7013888888888888,
+                "risk": 0.0,
+                "accuracy": 1.0
+              },
+              {
+                "coverage": 0.5,
+                "risk": 0.0,
+                "accuracy": 1.0
+              }
+            ],
+            "coverage_at_risk": {
+              "risk<=0.01": 0.9166666666666666,
+              "risk<=0.05": 1.0,
+              "risk<=0.10": 1.0
+            }
+          }
+        },
+        "ood": {
+          "n_samples": 160,
+          "accuracy": 0.3375,
+          "mrr": 0.482366283164467,
+          "nll": 5.995646345843172,
+          "brier": 1.0383813529831678,
+          "mean_confidence": 0.7719533452683598,
+          "mean_normalized_entropy": 0.1071182926218797,
+          "ece_15": 0.4344533452683599,
+          "adaptive_ece_15": 0.4344575036652889,
+          "risk_coverage": {
+            "aurc": 0.4356533759784337,
+            "selective": [
+              {
+                "coverage": 1.0,
+                "risk": 0.6625,
+                "accuracy": 0.3375
+              },
+              {
+                "coverage": 0.9,
+                "risk": 0.625,
+                "accuracy": 0.375
+              },
+              {
+                "coverage": 0.8,
+                "risk": 0.59375,
+                "accuracy": 0.40625
+              },
+              {
+                "coverage": 0.7,
+                "risk": 0.5803571428571428,
+                "accuracy": 0.4196428571428572
+              },
+              {
+                "coverage": 0.5,
+                "risk": 0.48750000000000004,
+                "accuracy": 0.5125
+              }
+            ],
+            "coverage_at_risk": {
+              "risk<=0.01": 0.0625,
+              "risk<=0.05": 0.0625,
+              "risk<=0.10": 0.13125
+            }
+          }
+        }
+      },
+      "conformal_alpha": 0.1,
+      "conformal_quantile": 0.0013114678303419725,
+      "conformal": {
+        "id": {
+          "empirical_coverage": 0.9583333333333334,
+          "mean_set_size": 1.0,
+          "median_set_size": 1.0,
+          "singleton_rate": 1.0
+        },
+        "ood": {
+          "empirical_coverage": 0.3375,
+          "mean_set_size": 1.0,
+          "median_set_size": 1.0,
+          "singleton_rate": 1.0
+        }
+      },
+      "ood_detection_auroc": {
+        "one_minus_max_probability": 0.9623263888888889,
+        "normalized_predictive_entropy": 0.9637152777777778,
+        "mc_mutual_information": 0.946875,
+        "mc_epistemic_variance": 0.9017361111111111
+      }
+    },
+    {
+      "model": "temporal_only",
+      "temperature_fit": {
+        "temperature": 0.40265370992935146,
+        "nll_before": 0.02706204833899422,
+        "nll_after": 0.01710982210938933,
+        "iterations": 160
+      },
+      "raw": {
+        "id": {
+          "n_samples": 144,
+          "accuracy": 0.9722222222222222,
+          "mrr": 0.9861111111111112,
+          "nll": 0.07796009991227909,
+          "brier": 0.046097624784880525,
+          "mean_confidence": 0.9830946931316404,
+          "mean_normalized_entropy": 0.007130945903674348,
+          "ece_15": 0.021113259774337072,
+          "adaptive_ece_15": 0.01101401396948742,
+          "risk_coverage": {
+            "aurc": 0.0013878166814506629,
+            "selective": [
+              {
+                "coverage": 1.0,
+                "risk": 0.02777777777777779,
+                "accuracy": 0.9722222222222222
+              },
+              {
+                "coverage": 0.9027777777777778,
+                "risk": 0.0,
+                "accuracy": 1.0
+              },
+              {
+                "coverage": 0.8055555555555556,
+                "risk": 0.0,
+                "accuracy": 1.0
+              },
+              {
+                "coverage": 0.7013888888888888,
+                "risk": 0.0,
+                "accuracy": 1.0
+              },
+              {
+                "coverage": 0.5,
+                "risk": 0.0,
+                "accuracy": 1.0
+              }
+            ],
+            "coverage_at_risk": {
+              "risk<=0.01": 0.9444444444444444,
+              "risk<=0.05": 1.0,
+              "risk<=0.10": 1.0
+            }
+          }
+        },
+        "ood": {
+          "n_samples": 160,
+          "accuracy": 0.45625,
+          "mrr": 0.5943271595692549,
+          "nll": 3.4857585183487507,
+          "brier": 0.843242725076685,
+          "mean_confidence": 0.7668148396916535,
+          "mean_normalized_entropy": 0.11900654062230079,
+          "ece_15": 0.3105648396916536,
+          "adaptive_ece_15": 0.31057021912174454,
+          "risk_coverage": {
+            "aurc": 0.3503857995321926,
+            "selective": [
+              {
+                "coverage": 1.0,
+                "risk": 0.54375,
+                "accuracy": 0.45625000000000004
+              },
+              {
+                "coverage": 0.9,
+                "risk": 0.5277777777777778,
+                "accuracy": 0.4722222222222222
+              },
+              {
+                "coverage": 0.8,
+                "risk": 0.515625,
+                "accuracy": 0.484375
+              },
+              {
+                "coverage": 0.7,
+                "risk": 0.4821428571428571,
+                "accuracy": 0.5178571428571429
+              },
+              {
+                "coverage": 0.5,
+                "risk": 0.38749999999999996,
+                "accuracy": 0.6125
+              }
+            ],
+            "coverage_at_risk": {
+              "risk<=0.01": 0.09375,
+              "risk<=0.05": 0.09375,
+              "risk<=0.10": 0.125
+            }
+          }
+        }
+      },
+      "temperature_scaled": {
+        "id": {
+          "n_samples": 144,
+          "accuracy": 0.9722222222222222,
+          "mrr": 0.9861111111111112,
+          "nll": 0.15176931156182902,
+          "brier": 0.053591461808628206,
+          "mean_confidence": 0.9923616125893958,
+          "mean_normalized_entropy": 0.0032928304844793577,
+          "ece_15": 0.0313599241035774,
+          "adaptive_ece_15": 0.020139393268745587,
+          "risk_coverage": {
+            "aurc": 0.0013878166814506629,
+            "selective": [
+              {
+                "coverage": 1.0,
+                "risk": 0.02777777777777779,
+                "accuracy": 0.9722222222222222
+              },
+              {
+                "coverage": 0.9027777777777778,
+                "risk": 0.0,
+                "accuracy": 1.0
+              },
+              {
+                "coverage": 0.8055555555555556,
+                "risk": 0.0,
+                "accuracy": 1.0
+              },
+              {
+                "coverage": 0.7013888888888888,
+                "risk": 0.0,
+                "accuracy": 1.0
+              },
+              {
+                "coverage": 0.5,
+                "risk": 0.0,
+                "accuracy": 1.0
+              }
+            ],
+            "coverage_at_risk": {
+              "risk<=0.01": 0.9444444444444444,
+              "risk<=0.05": 1.0,
+              "risk<=0.10": 1.0
+            }
+          }
+        },
+        "ood": {
+          "n_samples": 160,
+          "accuracy": 0.45625,
+          "mrr": 0.5943271595692549,
+          "nll": 7.415002582593831,
+          "brier": 0.9744498685604619,
+          "mean_confidence": 0.9005154537077619,
+          "mean_normalized_entropy": 0.045243078265121604,
+          "ece_15": 0.444265453707762,
+          "adaptive_ece_15": 0.44426545371208526,
+          "risk_coverage": {
+            "aurc": 0.3547889069350791,
+            "selective": [
+              {
+                "coverage": 1.0,
+                "risk": 0.54375,
+                "accuracy": 0.45625000000000004
+              },
+              {
+                "coverage": 0.9,
+                "risk": 0.5208333333333333,
+                "accuracy": 0.47916666666666674
+              },
+              {
+                "coverage": 0.8,
+                "risk": 0.515625,
+                "accuracy": 0.484375
+              },
+              {
+                "coverage": 0.7,
+                "risk": 0.4732142857142857,
+                "accuracy": 0.5267857142857143
+              },
+              {
+                "coverage": 0.5,
+                "risk": 0.4,
+                "accuracy": 0.6
+              }
+            ],
+            "coverage_at_risk": {
+              "risk<=0.01": 0.09375,
+              "risk<=0.05": 0.09375,
+              "risk<=0.10": 0.1
+            }
+          }
+        }
+      },
+      "conformal_alpha": 0.1,
+      "conformal_quantile": 0.00039460947336777963,
+      "conformal": {
+        "id": {
+          "empirical_coverage": 0.9722222222222222,
+          "mean_set_size": 1.0,
+          "median_set_size": 1.0,
+          "singleton_rate": 1.0
+        },
+        "ood": {
+          "empirical_coverage": 0.45625,
+          "mean_set_size": 1.0,
+          "median_set_size": 1.0,
+          "singleton_rate": 1.0
+        }
+      },
+      "ood_detection_auroc": {
+        "one_minus_max_probability": 0.9208984375,
+        "normalized_predictive_entropy": 0.9242621527777778,
+        "mc_mutual_information": 0.9362413194444444,
+        "mc_epistemic_variance": 0.9228298611111111
+      }
+    }
+  ]
+}

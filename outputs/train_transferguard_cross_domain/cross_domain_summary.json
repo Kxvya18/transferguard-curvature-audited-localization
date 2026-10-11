@@ -1,0 +1,121 @@
+{
+  "zero_shot": {
+    "origin_rank": 1.0,
+    "mrr": 1.0,
+    "hit@1": 1.0,
+    "hit@3": 1.0,
+    "hit@5": 1.0,
+    "hit@10": 1.0
+  },
+  "few_shot": {
+    "1pct": {
+      "origin_rank": 1.0,
+      "mrr": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0
+    },
+    "5pct": {
+      "origin_rank": 1.0,
+      "mrr": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0
+    },
+    "10pct": {
+      "origin_rank": 1.0,
+      "mrr": 1.0,
+      "hit@1": 1.0,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0
+    }
+  },
+  "source_config": {
+    "n_nodes": 180,
+    "m": 2,
+    "beta": 1.15,
+    "n_communities": 4,
+    "aging_tau": 120.0,
+    "rewiring_prob": 0.03,
+    "observation_dropout": 0.3,
+    "max_cascade_steps": 8,
+    "transmission_base": 0.23,
+    "min_infected": 6,
+    "max_cascade_retries": 6,
+    "origin_role_weights": {
+      "gateway": 1.4,
+      "broker": 1.3,
+      "edge_server": 1.15,
+      "camera": 1.05,
+      "sensor": 0.95,
+      "actuator": 0.9,
+      "client": 1.15
+    },
+    "role_probs": {
+      "gateway": 0.05,
+      "broker": 0.08,
+      "edge_server": 0.12,
+      "camera": 0.16,
+      "sensor": 0.27,
+      "actuator": 0.12,
+      "client": 0.2
+    },
+    "fitness_logmean": 0.0,
+    "fitness_logstd": 0.35,
+    "seed": 7
+  },
+  "target_config": {
+    "n_nodes": 220,
+    "m": 3,
+    "beta": 0.85,
+    "n_communities": 6,
+    "aging_tau": 80.0,
+    "rewiring_prob": 0.08,
+    "observation_dropout": 0.4,
+    "max_cascade_steps": 10,
+    "transmission_base": 0.27,
+    "min_infected": 8,
+    "max_cascade_retries": 8,
+    "origin_role_weights": {
+      "gateway": 1.4,
+      "broker": 1.3,
+      "edge_server": 1.15,
+      "camera": 1.05,
+      "sensor": 0.95,
+      "actuator": 0.9,
+      "client": 1.15
+    },
+    "role_probs": {
+      "gateway": 0.05,
+      "broker": 0.08,
+      "edge_server": 0.12,
+      "camera": 0.16,
+      "sensor": 0.27,
+      "actuator": 0.12,
+      "client": 0.2
+    },
+    "fitness_logmean": 0.1,
+    "fitness_logstd": 0.45,
+    "seed": 701
+  },
+  "training": {
+    "source_train_samples": 192,
+    "target_unlabeled_samples": 96,
+    "target_test_samples": 64,
+    "batch_size": 8,
+    "hidden_dim": 64,
+    "num_message_layers": 2,
+    "dropout": 0.15,
+    "fusion_type": "gated",
+    "lr": 0.002,
+    "adapt_lr": 0.0008,
+    "weight_decay": 0.0001,
+    "ssl_weight": 0.25,
+    "coral_weight": 0.15,
+    "epochs": 24,
+    "adapt_epochs": 5
+  }
+}

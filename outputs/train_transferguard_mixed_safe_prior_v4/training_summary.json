@@ -1,0 +1,13 @@
+{
+  "best_epoch": 15,
+  "best_val_mrr": 0.9872685185185185,
+  "final_epoch": 19,
+  "final_train_mrr": 0.9777546296296297,
+  "final_val_mrr": 0.9772652116402116,
+  "final_val_hit1": 0.9652777777777778,
+  "final_mean_confidence": 0.9722527534597449,
+  "final_mean_epistemic_var": 3.8940814715734814e-05,
+  "run_seed": 20260810,
+  "feature_contract": "observable_v4_cross_dataset_aligned",
+  "ablate_boltzmann_prior": false
+}

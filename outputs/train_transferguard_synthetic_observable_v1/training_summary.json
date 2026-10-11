@@ -1,0 +1,12 @@
+{
+  "best_epoch": 3,
+  "best_val_mrr": 1.0,
+  "final_epoch": 23,
+  "final_train_mrr": 1.0,
+  "final_val_mrr": 1.0,
+  "final_val_hit1": 1.0,
+  "final_mean_confidence": 0.9998738979920745,
+  "final_mean_epistemic_var": 2.116279283848781e-09,
+  "run_seed": 20260810,
+  "feature_contract": "observable_v1"
+}

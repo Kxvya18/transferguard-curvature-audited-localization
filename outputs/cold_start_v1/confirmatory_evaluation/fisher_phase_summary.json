@@ -1,0 +1,52 @@
+{
+  "validation_thresholds": [
+    0.9576513767242432,
+    0.9762187898159027,
+    0.988786518573761
+  ],
+  "low_evidence_graphs": 120,
+  "low_evidence_bins": [
+    {
+      "bin": "Q1",
+      "n": 34,
+      "mean_delta_mrr": -0.006251549853619123
+    },
+    {
+      "bin": "Q2",
+      "n": 22,
+      "mean_delta_mrr": -0.029214251616664844
+    },
+    {
+      "bin": "Q3",
+      "n": 26,
+      "mean_delta_mrr": 0.02369955059561044
+    },
+    {
+      "bin": "Q4",
+      "n": 38,
+      "mean_delta_mrr": 0.02682323253016069
+    }
+  ],
+  "threshold_operating_points": [
+    {
+      "threshold": "always",
+      "coverage": 1.0,
+      "delta_mrr": 0.00650170767535251
+    },
+    {
+      "threshold": "Q25",
+      "coverage": 0.7166666666666667,
+      "delta_mrr": 0.008272980133877929
+    },
+    {
+      "threshold": "Q50",
+      "coverage": 0.5333333333333333,
+      "delta_mrr": 0.013628926263599817
+    },
+    {
+      "threshold": "Q75",
+      "coverage": 0.31666666666666665,
+      "delta_mrr": 0.008494023634550886
+    }
+  ]
+}
