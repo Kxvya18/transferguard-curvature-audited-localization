@@ -1,6 +1,6 @@
 # TRANSFERGUARD (`ba2`)
 
-`ba2` is the new active research project derived from the earlier Boltzmann-Barabasi work in [`/Users/boolu/Desktop/simulations/ALL_PROJECTS/ba`](/Users/boolu/Desktop/simulations/ALL_PROJECTS/ba).
+`ba2` is the new active research project derived from earlier Boltzmann-Barabasi work.
 
 Working title under evidence-driven revision:
 
@@ -51,12 +51,12 @@ cold-start gain on a second held-out grid. See `docs/current_findings.md` and
 
 See:
 
-- [`docs/legacy_audit.md`](/Users/boolu/Desktop/simulations/ALL_PROJECTS/ba2/docs/legacy_audit.md)
-- [`docs/inherited_components.md`](/Users/boolu/Desktop/simulations/ALL_PROJECTS/ba2/docs/inherited_components.md)
-- [`docs/migration_decisions.md`](/Users/boolu/Desktop/simulations/ALL_PROJECTS/ba2/docs/migration_decisions.md)
-- [`docs/literature_matrix.md`](/Users/boolu/Desktop/simulations/ALL_PROJECTS/ba2/docs/literature_matrix.md)
-- [`docs/gap_synthesis.md`](/Users/boolu/Desktop/simulations/ALL_PROJECTS/ba2/docs/gap_synthesis.md)
-- [`docs/design_decisions.md`](/Users/boolu/Desktop/simulations/ALL_PROJECTS/ba2/docs/design_decisions.md)
+- [`docs/legacy_audit.md`](docs/legacy_audit.md)
+- [`docs/inherited_components.md`](docs/inherited_components.md)
+- [`docs/migration_decisions.md`](docs/migration_decisions.md)
+- [`docs/literature_matrix.md`](docs/literature_matrix.md)
+- [`docs/gap_synthesis.md`](docs/gap_synthesis.md)
+- [`docs/design_decisions.md`](docs/design_decisions.md)
 
 ## Repository Skeleton
 
