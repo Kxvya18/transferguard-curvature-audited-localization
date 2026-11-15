@@ -9,6 +9,8 @@ anything.
 from __future__ import annotations
 
 import gzip
+import io
+import zipfile
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -45,6 +47,25 @@ def _join_times(n_nodes: int, windows: list[np.ndarray]) -> np.ndarray:
     return join
 
 
+def _bin_contacts(data: np.ndarray, name: str, window_seconds: int, drop_empty: bool) -> TemporalGraph:
+    """Turn rows (src, dst, time) into a TemporalGraph with fixed-length windows.
+
+    With `drop_empty`, windows without any contact (nights, weekends) are removed,
+    so time counts only periods in which people actually met.
+    """
+    data = data[data[:, 0] != data[:, 1]]
+    ids, relabeled = np.unique(data[:, :2], return_inverse=True)
+    pairs = relabeled.reshape(-1, 2)
+    window = (data[:, 2] - data[:, 2].min()) // window_seconds
+    if drop_empty:
+        _, window = np.unique(window, return_inverse=True)
+    windows = []
+    for t in range(int(window.max()) + 1):
+        contacts = np.unique(np.sort(pairs[window == t], axis=1), axis=0)
+        windows.append(contacts.astype(np.int64))
+    return TemporalGraph(name, len(ids), windows, _join_times(len(ids), windows))
+
+
 def load_snap_temporal(path: Path, name: str, window_seconds: int) -> TemporalGraph:
     """Read a SNAP 'src dst unix_time' file and bin contacts into windows."""
     rows = []
@@ -53,17 +74,16 @@ def load_snap_temporal(path: Path, name: str, window_seconds: int) -> TemporalGr
             if line.startswith("#") or not line.strip():
                 continue
             src, dst, stamp = line.split()[:3]
-            if src != dst:
-                rows.append((int(src), int(dst), int(stamp)))
-    data = np.asarray(rows, dtype=np.int64)
-    ids, relabeled = np.unique(data[:, :2], return_inverse=True)
-    pairs = relabeled.reshape(-1, 2)
-    window = (data[:, 2] - data[:, 2].min()) // window_seconds
-    windows = []
-    for t in range(int(window.max()) + 1):
-        contacts = np.unique(np.sort(pairs[window == t], axis=1), axis=0)
-        windows.append(contacts.astype(np.int64))
-    return TemporalGraph(name, len(ids), windows, _join_times(len(ids), windows))
+            rows.append((int(src), int(dst), int(stamp)))
+    return _bin_contacts(np.asarray(rows, dtype=np.int64), name, window_seconds, drop_empty=False)
+
+
+def load_netzschleuder_contacts(path: Path, name: str, window_seconds: int) -> TemporalGraph:
+    """Read a Netzschleuder CSV zip ('source, target, time' in edges.csv), e.g. the
+    SocioPatterns face-to-face contact data, dropping windows without contacts."""
+    raw = zipfile.ZipFile(path).read("edges.csv").decode("utf-8")
+    data = np.loadtxt(io.StringIO(raw), delimiter=",", comments="#", dtype=np.int64).reshape(-1, 3)
+    return _bin_contacts(data, name, window_seconds, drop_empty=True)
 
 
 def growing_network(

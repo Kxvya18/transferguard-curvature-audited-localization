@@ -26,8 +26,13 @@ It needs no training and no random simulations.
 
 ## Data
 
-Download `CollegeMsg.txt.gz` and `email-Eu-core-temporal.txt.gz` from SNAP into
-`data/raw/temporal/` (not tracked).
+Not tracked. Download into `data/raw/`:
+
+- `temporal/`: `CollegeMsg.txt.gz` and `email-Eu-core-temporal.txt.gz` from SNAP.
+- `sociopatterns/`: SocioPatterns face-to-face contact data as Netzschleuder CSV zips,
+  `https://networks.skewed.de/net/<name>/files/<name>.csv.zip` for `sp_hospital`,
+  `sp_primary_school` and `sp_office`, and `sp_high_school_new/files/2012.csv.zip`
+  saved as `sp_high_school_2012.csv.zip`.
 
 ## Run
 

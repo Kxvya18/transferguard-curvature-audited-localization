@@ -40,10 +40,12 @@ from localization import estimators as est
 from localization.learned import predict, train_model
 from localization.mean_field import mean_field_scores
 from localization.spread import simulate_outbreak
-from localization.temporal_graph import growing_network, load_snap_temporal
+from localization.temporal_graph import growing_network, load_netzschleuder_contacts, load_snap_temporal
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 RAW = PROJECT_ROOT / "data" / "raw" / "temporal"
+CONTACTS = PROJECT_ROOT / "data" / "raw" / "sociopatterns"
+HOUR = 3_600
 DAY = 86_400
 LEARNED = ("GCNSI", "Temporal GCN", "Arrival GNN")
 
@@ -52,6 +54,12 @@ DATASETS = {
     "Growing PA": (lambda seed: growing_network(500, 60, np.random.default_rng(seed)), 0.5, 10, 20),
     "CollegeMsg": (lambda seed: load_snap_temporal(RAW / "CollegeMsg.txt.gz", "CollegeMsg", DAY), 0.5, 14, 28),
     "Email-Eu": (lambda seed: load_snap_temporal(RAW / "email-Eu-core-temporal.txt.gz", "Email-Eu", DAY), 0.3, 7, 14),
+    # SocioPatterns face-to-face contacts (Netzschleuder copies); windows without contacts are dropped.
+    # Rates and horizons are set so that a typical outbreak reaches roughly 30 to 50% of people.
+    "Hospital": (lambda seed: load_netzschleuder_contacts(CONTACTS / "sp_hospital.csv.zip", "Hospital", HOUR // 2), 0.3, 12, 24),
+    "Primary school": (lambda seed: load_netzschleuder_contacts(CONTACTS / "sp_primary_school.csv.zip", "Primary school", HOUR // 4), 0.3, 8, 16),
+    "Office": (lambda seed: load_netzschleuder_contacts(CONTACTS / "sp_office.csv.zip", "Office", HOUR), 0.5, 24, 48),
+    "High school": (lambda seed: load_netzschleuder_contacts(CONTACTS / "sp_high_school_2012.csv.zip", "High school", HOUR), 0.5, 16, 32),
 }
 
 
