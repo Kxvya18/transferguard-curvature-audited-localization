@@ -33,3 +33,8 @@
 {"dataset": "CollegeMsg", "fraction": 0.1, "test_rate": "true", "n": 1899, "Mean-field": 3.0, "seconds": 57.77582812309265, "Screen": 1.0, "Boltzmann": 9.0}
 {"dataset": "CollegeMsg", "fraction": 0.1, "test_rate": "true", "n": 1899, "Mean-field": 82.0, "seconds": 63.315420150756836, "Screen": 103.0, "Boltzmann": 103.0}
 {"dataset": "CollegeMsg", "fraction": 0.1, "test_rate": "true", "n": 1899, "Mean-field": 35.0, "seconds": 55.90279293060303, "Screen": 192.0, "Boltzmann": 192.0}
+{"dataset": "CollegeMsg", "fraction": 0.1, "test_rate": "true", "n": 1899, "Mean-field": 31.0, "seconds": 54.88909602165222, "Screen": 89.5, "Boltzmann": 94.5}
+{"dataset": "CollegeMsg", "fraction": 0.1, "test_rate": "true", "n": 1899, "Mean-field": 16.0, "seconds": 58.94037890434265, "Screen": 8.0, "Boltzmann": 27.0}
+{"dataset": "CollegeMsg", "fraction": 0.1, "test_rate": "true", "n": 1899, "Mean-field": 1.0, "seconds": 56.73504424095154, "Screen": 26.0, "Boltzmann": 37.0}
+{"dataset": "CollegeMsg", "fraction": 0.1, "test_rate": "true", "n": 1899, "Mean-field": 72.0, "seconds": 53.25508403778076, "Screen": 77.0, "Boltzmann": 77.0}
+{"dataset": "CollegeMsg", "fraction": 0.1, "test_rate": "true", "n": 1899, "Mean-field": 8.0, "seconds": 51.98146080970764, "Screen": 8.5, "Boltzmann": 2.0}

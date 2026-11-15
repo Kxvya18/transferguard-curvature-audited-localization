@@ -16,3 +16,5 @@ cache/
 checkpoints/
 node_modules/
 .venv/
+*.log
+outputs/benchmark_smoke/

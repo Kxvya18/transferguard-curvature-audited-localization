@@ -3,9 +3,9 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "transferguard"
+name = "mean-field-localization"
 version = "0.1.0"
-description = "Physics-informed attack-origin localization for unseen IoT networks."
+description = "Mean-field source localization on evolving networks with sparse, timed observers."
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
@@ -14,11 +14,4 @@ dependencies = [
   "pandas>=2.0",
   "scipy>=1.10",
   "torch>=2.5",
-]
-
-[project.optional-dependencies]
-journal = [
-  "matplotlib>=3.8",
-  "tgm-lib==0.1.0b1",
-  "torch-geometric>=2.6.1",
 ]

@@ -1,4 +1,4 @@
-"""Source estimators that need no training.
+"""Baseline source estimators that need no training.
 
 Every estimator sees only what a defender would have: the contact log up to the
 observation time, the observer set, and each observer's infection time (or the
@@ -110,11 +110,11 @@ def lpsi(ctx: Context, alpha: float = 0.5, iterations: int = 60) -> np.ndarray:
     return score
 
 
-# ---------------------------------------------------------------- the method
+# ---------------------------------------------------------------- time-respecting and simulation baselines
 
 
 def temporal_screen(ctx: Context, n_start_times: int = 8) -> np.ndarray:
-    """Stage 1: time-of-arrival fit on time-respecting arrival delays.
+    """Time-of-arrival fit on time-respecting arrival delays.
 
     Same fit as `pinto_style`, but the delay from a candidate to an observer is
     the earliest arrival along contacts that actually happened in time order.
@@ -225,7 +225,7 @@ def boltzmann_posterior(
     screen: np.ndarray | None = None,
     min_ess: float = 10.0,
 ) -> Posterior:
-    """Stage 2: Boltzmann posterior over the screened candidates.
+    """Simulation posterior with a Boltzmann kernel over the screened candidates.
 
     For each candidate s, simulate outbreaks from s with a start time drawn
     uniformly from its feasible range and a transmission probability drawn

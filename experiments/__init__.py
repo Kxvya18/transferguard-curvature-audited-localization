@@ -1,2 +1,1 @@
-"""Experiment runners for TRANSFERGUARD."""
-
+"""Experiment runners for source localization on evolving networks."""

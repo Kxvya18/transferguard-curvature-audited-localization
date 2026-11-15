@@ -3,6 +3,7 @@ import unittest
 import numpy as np
 
 from localization.estimators import boltzmann_posterior, build_context, jordan_center, temporal_screen
+from localization.mean_field import mean_field_scores
 from localization.spread import Outbreak, earliest_arrival, spread
 from localization.temporal_graph import TemporalGraph, _join_times
 
@@ -45,6 +46,14 @@ class LocalizationTests(unittest.TestCase):
         post = boltzmann_posterior(ctx, np.random.default_rng(0), prob_range=(0.99, 1.0), n_simulations=20)
         self.assertAlmostEqual(post.probability.sum(), 1.0, places=6)
         self.assertEqual(int(np.argmax(post.score)), 0)
+
+    def test_mean_field_ranks_true_source_first_and_rules_out_late_joiners(self):
+        graph = _line_graph()
+        outbreak = Outbreak(source=0, t_start=0, t_observe=4, observers=np.array([0, 1, 2, 3]), observed_times=np.array([0.0, 1.0, 2.0, 3.0]))
+        ctx = build_context(graph, outbreak, max_lookback=4)
+        score = mean_field_scores(ctx)
+        self.assertEqual(int(np.argmax(score)), 0)
+        self.assertLess(score[3], -1e11)  # node 3 joins after the first infection
 
     def test_jordan_center_picks_the_middle_of_the_observers(self):
         graph = _line_graph()

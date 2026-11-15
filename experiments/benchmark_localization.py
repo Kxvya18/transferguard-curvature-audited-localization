@@ -5,8 +5,8 @@ Protocol (follows Sterchi et al., 2025, adapted to sparse observers):
   windows after the start; a random fraction of nodes are observers that report
   their infection time, or that they are still healthy;
 - learned models are trained on outbreaks simulated on the same network
-  with the true transmission probability; the simulation-based methods only get
-  a Uniform(0.1, 0.9) prior on it;
+  with the true transmission probability; the mean-field localizer and the
+  simulation-based methods are not told it (they sum or sample over 0.1 to 0.9);
 - test outbreaks are drawn at the true rate and, to check robustness when the
   spreading model is misspecified, at a lower (0.4x) and a higher (1.6x, capped
   at 0.9) rate; the learned models are not retrained for the shifted tests;
@@ -38,6 +38,7 @@ from scipy.special import softmax
 
 from localization import estimators as est
 from localization.learned import predict, train_model
+from localization.mean_field import mean_field_scores
 from localization.spread import simulate_outbreak
 from localization.temporal_graph import growing_network, load_snap_temporal
 
@@ -84,19 +85,17 @@ def evaluate(ctx: est.Context, score: np.ndarray, probability: np.ndarray | None
 
 
 def classical_methods(ctx: est.Context, rng: np.random.Generator) -> dict[str, tuple[np.ndarray, np.ndarray | None]]:
-    screen = est.temporal_screen(ctx)
-    static_screen = est.pinto_style(ctx)
-    ours = est.boltzmann_posterior(ctx, rng)
+    static_fit = est.pinto_style(ctx)
+    mean_field = mean_field_scores(ctx)
     return {
+        "Mean-field (ours)": (mean_field, softmax(mean_field)),
         "Jordan center": (est.jordan_center(ctx), None),
         "Distance center": (est.distance_center(ctx), None),
-        "Pinto-style TOA": (static_screen, None),
+        "Pinto-style TOA": (static_fit, None),
+        "Time-respecting TOA": (est.temporal_screen(ctx), None),
         "LPSI": (est.lpsi(ctx), None),
-        "SME": _posterior(est.sme_posterior(ctx, rng, static_screen)),
-        "Time-respecting Boltzmann": _posterior(ours),
-        "Ablation: screening only": (screen, None),
-        "Ablation: static screening": _posterior(est.boltzmann_posterior(ctx, rng, screen=static_screen)),
-        "Ablation: status-only posterior": _posterior(est.sme_posterior(ctx, rng, screen)),
+        "SME": _posterior(est.sme_posterior(ctx, rng, static_fit)),
+        "Simulation posterior": _posterior(est.boltzmann_posterior(ctx, rng)),
     }
 
 
@@ -175,13 +174,13 @@ def main() -> None:
     parser.add_argument("--n-test", type=int, default=40)
     parser.add_argument("--epochs", type=int, default=15)
     parser.add_argument("--workers", type=int, default=1, help="settings run in parallel processes")
-    parser.add_argument("--out", type=Path, default=PROJECT_ROOT / "outputs" / "localization_benchmark_v2")
+    parser.add_argument("--out", type=Path, default=PROJECT_ROOT / "outputs" / "benchmark")
     parser.add_argument("--smoke", action="store_true", help="tiny run to check the pipeline")
     args = parser.parse_args()
     if args.smoke:
         args.datasets, args.fractions, args.seeds = ["Growing PA"], [0.1], [1]
         args.n_train, args.n_test, args.epochs = 20, 5, 2
-        args.out = args.out.parent / "localization_benchmark_smoke"
+        args.out = args.out.parent / "benchmark_smoke"
 
     args.out.mkdir(parents=True, exist_ok=True)
     trials_path = args.out / "trials.csv"
@@ -212,7 +211,7 @@ def main() -> None:
                 if write_header:
                     writer.writeheader()
                 writer.writerows(new)
-            mrr = {m: np.mean([r["rr"] for r in new if r["method"] == m]) for m in ("Arrival GNN", "Temporal GCN")}
+            mrr = {m: np.mean([r["rr"] for r in new if r["method"] == m]) for m in ("Mean-field (ours)", "Temporal GCN")}
             print(f"{name} f={fraction} seed={seed} done at {time.time() - start:.0f}s: "
                   + ", ".join(f"{m} MRR={v:.3f}" for m, v in mrr.items()), flush=True)
 
