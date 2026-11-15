@@ -1,0 +1,46 @@
+Growing PA f=0.05 seed=101: 205s, ours MRR=0.175
+Growing PA f=0.05 seed=102: 221s, ours MRR=0.173
+Growing PA f=0.05 seed=103: 202s, ours MRR=0.217
+Growing PA f=0.05 seed=104: 231s, ours MRR=0.098
+Growing PA f=0.05 seed=105: 207s, ours MRR=0.167
+Growing PA f=0.1 seed=101: 218s, ours MRR=0.222
+Growing PA f=0.1 seed=102: 205s, ours MRR=0.261
+Growing PA f=0.1 seed=103: 219s, ours MRR=0.227
+Growing PA f=0.1 seed=104: 220s, ours MRR=0.260
+Growing PA f=0.1 seed=105: 222s, ours MRR=0.252
+Growing PA f=0.2 seed=101: 221s, ours MRR=0.372
+Growing PA f=0.2 seed=102: 207s, ours MRR=0.461
+Growing PA f=0.2 seed=103: 218s, ours MRR=0.353
+Growing PA f=0.2 seed=104: 224s, ours MRR=0.424
+Growing PA f=0.2 seed=105: 195s, ours MRR=0.420
+CollegeMsg f=0.05 seed=101: 757s, ours MRR=0.169
+CollegeMsg f=0.05 seed=102: 628s, ours MRR=0.160
+CollegeMsg f=0.05 seed=103: 689s, ours MRR=0.145
+CollegeMsg f=0.05 seed=104: 804s, ours MRR=0.169
+CollegeMsg f=0.05 seed=105: 2741s, ours MRR=0.055
+CollegeMsg f=0.1 seed=101: 1740s, ours MRR=0.122
+CollegeMsg f=0.1 seed=102: 638s, ours MRR=0.203
+CollegeMsg f=0.1 seed=103: 642s, ours MRR=0.208
+CollegeMsg f=0.1 seed=104: 561s, ours MRR=0.161
+CollegeMsg f=0.1 seed=105: 677s, ours MRR=0.181
+CollegeMsg f=0.2 seed=101: 594s, ours MRR=0.350
+CollegeMsg f=0.2 seed=102: 669s, ours MRR=0.343
+CollegeMsg f=0.2 seed=103: 633s, ours MRR=0.320
+CollegeMsg f=0.2 seed=104: 655s, ours MRR=0.291
+CollegeMsg f=0.2 seed=105: 663s, ours MRR=0.376
+Email-Eu f=0.05 seed=101: 477s, ours MRR=0.207
+Email-Eu f=0.05 seed=102: 417s, ours MRR=0.094
+Email-Eu f=0.05 seed=103: 505s, ours MRR=0.209
+Email-Eu f=0.05 seed=104: 470s, ours MRR=0.095
+Email-Eu f=0.05 seed=105: 446s, ours MRR=0.070
+Email-Eu f=0.1 seed=101: 455s, ours MRR=0.227
+Email-Eu f=0.1 seed=102: 368s, ours MRR=0.187
+Email-Eu f=0.1 seed=103: 302s, ours MRR=0.146
+Email-Eu f=0.1 seed=104: 293s, ours MRR=0.126
+Email-Eu f=0.1 seed=105: 287s, ours MRR=0.155
+Email-Eu f=0.2 seed=101: 295s, ours MRR=0.236
+Email-Eu f=0.2 seed=102: 289s, ours MRR=0.225
+Email-Eu f=0.2 seed=103: 283s, ours MRR=0.253
+Email-Eu f=0.2 seed=104: 293s, ours MRR=0.185
+Email-Eu f=0.2 seed=105: 275s, ours MRR=0.353
+wrote /Users/boolu/Desktop/simulations/ALL_PROJECTS/transferguard-curvature-audited-localization/outputs/localization_benchmark/trials.csv and summary.json (19800 trial rows)
