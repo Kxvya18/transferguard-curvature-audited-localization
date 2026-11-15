@@ -18,6 +18,7 @@ import scipy.sparse as sp
 from scipy.special import logsumexp
 
 from .estimators import INFEASIBLE, Context
+from .spread import earliest_arrival
 
 
 def _contact_matrices(ctx: Context) -> list[sp.csr_matrix | None]:
@@ -32,7 +33,7 @@ def _contact_matrices(ctx: Context) -> list[sp.csr_matrix | None]:
         rows, cols = np.r_[c[:, 0], c[:, 1]], np.r_[c[:, 1], c[:, 0]]
         matrix = sp.coo_matrix((np.ones(len(rows)), (rows, cols)), shape=(n, n)).tocsr()
         matrix.data[:] = 1.0  # repeated contacts in one window count once
-        out.append(matrix)
+        out.append(matrix.astype(np.float32))
     return out
 
 
@@ -50,17 +51,22 @@ def mean_field_loglik(
     first = int(y[infected].min())
     starts = np.unique(np.linspace(ctx.t_lo, max(first, ctx.t_lo), n_start_times).round().astype(int))
     contacts = _contact_matrices(ctx)
-    nodes = np.arange(n)
+    # Only nodes that could have reached every infected observer in time can score above
+    # the floor, so only those rows are propagated. Infection cannot beat the earliest
+    # arrival, whatever the transmission probability, so this drops no possible source.
+    arrival = earliest_arrival(graph, ctx.t_lo, t_obs)
+    possible = np.flatnonzero((graph.join <= first) & np.all(arrival[:, ob.observers[infected]] <= y[infected], axis=1))
+    rows = np.arange(len(possible))
     out = []
     for tau in starts:
-        begin = np.maximum(tau, graph.join)  # a node cannot start before it joins
+        begin = np.maximum(tau, graph.join[possible])  # a node cannot start before it joins
         for p in prob_grid:
-            q = np.zeros((n, n))
-            at = np.zeros((n, len(y)))  # q at each observer's infection time
-            before = np.zeros((n, len(y)))  # q one step earlier
+            q = np.zeros((len(possible), n), dtype=np.float32)
+            at = np.zeros((len(possible), len(y)), dtype=np.float32)  # q at each observer's infection time
+            before = np.zeros_like(at)  # q one step earlier
             for t in range(int(tau), t_obs + 1):
                 live = begin == t
-                q[nodes[live], nodes[live]] = 1.0
+                q[rows[live], possible[live]] = 1.0
                 current = q[:, ob.observers]
                 at = np.where(y[None, :] == t, current, at)
                 before = np.where(y[None, :] - 1 == t, current, before)
@@ -68,10 +74,11 @@ def mean_field_loglik(
                     break
                 matrix = contacts[t - ctx.t_lo]
                 if matrix is not None:
-                    q = 1.0 - (1.0 - q) * np.exp(np.log1p(-p * q) @ matrix)
+                    q = 1.0 - (1.0 - q) * np.exp(np.log1p(-np.float32(p) * q) @ matrix)
             likelihood = np.where(infected[None, :], at - before, 1.0 - current)
-            loglik = np.log(np.maximum(likelihood, floor)).sum(axis=1)
-            loglik[begin > first] = -np.inf
+            loglik = np.full(n, -np.inf)
+            loglik[possible] = np.log(np.maximum(likelihood, floor)).sum(axis=1)
+            loglik[possible[begin > first]] = -np.inf
             out.append(loglik)
     return np.array(out)
 
