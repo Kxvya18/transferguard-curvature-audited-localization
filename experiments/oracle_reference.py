@@ -5,7 +5,7 @@ outbreaks with the true transmission probability and count how often the observe
 reports are reproduced exactly. With enough simulations this approaches the Bayes-optimal
 ranking under the benchmark's own generative model, so it bounds what any method can do.
 
-Run:  python -m experiments.oracle_reference "Hospital" 0.1 40 3000
+Run:  python -m experiments.oracle_reference "Hospital" 0.1 40 3000 [seed]
 """
 
 from __future__ import annotations
@@ -51,14 +51,14 @@ def main(name: str, fraction: float, count: int, n_sim: int, seed: int = 61) -> 
     rng = np.random.default_rng(seed)
     out = PROJECT_ROOT / "outputs" / "oracle_reference"
     out.mkdir(parents=True, exist_ok=True)
-    path = out / f"{name.replace(' ', '_')}_{fraction}.jsonl"
+    path = out / f"{name.replace(' ', '_')}_{fraction}_{n_sim}.jsonl"
     done = 0
     while done < count:
         ob = simulate_outbreak(graph, rng, p, horizon, fraction)
         if ob is None:
             continue
         ctx = est.build_context(graph, ob, lookback)
-        row = {"dataset": name, "test_rate": "true",
+        row = {"dataset": name, "test_rate": "true", "seed": seed,
                "Oracle": rank_of_source(oracle_scores(ctx, p, rng, n_sim), ob.source),
                "Mean-field": rank_of_source(mean_field_scores(ctx), ob.source),
                "Mean-field, contact-start prior": rank_of_source(contact_start_scores(ctx), ob.source)}
@@ -68,4 +68,4 @@ def main(name: str, fraction: float, count: int, n_sim: int, seed: int = 61) -> 
 
 
 if __name__ == "__main__":
-    main(sys.argv[1], float(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4]))
+    main(sys.argv[1], float(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4]), *(int(a) for a in sys.argv[5:6]))

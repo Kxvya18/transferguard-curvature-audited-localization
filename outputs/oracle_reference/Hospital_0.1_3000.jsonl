@@ -1,0 +1,15 @@
+{"dataset": "Hospital", "test_rate": "true", "Oracle": 1.0, "Mean-field": 25.0, "Mean-field, contact-start prior": 3.0}
+{"dataset": "Hospital", "test_rate": "true", "Oracle": 2.0, "Mean-field": 2.0, "Mean-field, contact-start prior": 2.0}
+{"dataset": "Hospital", "test_rate": "true", "Oracle": 21.0, "Mean-field": 28.0, "Mean-field, contact-start prior": 25.0}
+{"dataset": "Hospital", "test_rate": "true", "Oracle": 1.0, "Mean-field": 1.0, "Mean-field, contact-start prior": 1.0}
+{"dataset": "Hospital", "test_rate": "true", "Oracle": 10.0, "Mean-field": 13.0, "Mean-field, contact-start prior": 8.0}
+{"dataset": "Hospital", "test_rate": "true", "Oracle": 22.0, "Mean-field": 18.0, "Mean-field, contact-start prior": 22.0}
+{"dataset": "Hospital", "test_rate": "true", "Oracle": 4.0, "Mean-field": 2.0, "Mean-field, contact-start prior": 3.0}
+{"dataset": "Hospital", "test_rate": "true", "Oracle": 23.0, "Mean-field": 31.0, "Mean-field, contact-start prior": 21.0}
+{"dataset": "Hospital", "test_rate": "true", "Oracle": 11.0, "Mean-field": 18.0, "Mean-field, contact-start prior": 14.0}
+{"dataset": "Hospital", "test_rate": "true", "Oracle": 5.0, "Mean-field": 7.0, "Mean-field, contact-start prior": 11.0}
+{"dataset": "Hospital", "test_rate": "true", "Oracle": 2.0, "Mean-field": 8.0, "Mean-field, contact-start prior": 3.0}
+{"dataset": "Hospital", "test_rate": "true", "Oracle": 2.0, "Mean-field": 3.0, "Mean-field, contact-start prior": 4.0}
+{"dataset": "Hospital", "test_rate": "true", "Oracle": 15.0, "Mean-field": 4.0, "Mean-field, contact-start prior": 10.0}
+{"dataset": "Hospital", "test_rate": "true", "Oracle": 16.0, "Mean-field": 26.0, "Mean-field, contact-start prior": 20.0}
+{"dataset": "Hospital", "test_rate": "true", "Oracle": 4.0, "Mean-field": 10.0, "Mean-field, contact-start prior": 4.0}

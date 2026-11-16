@@ -1,0 +1,5 @@
+{"dataset": "Email-Eu", "test_rate": "true", "Mean-field": 289.0, "Mean-field seconds": 9.612905263900757, "Filtered mean-field": 125.0, "Filtered mean-field seconds": 8.651416063308716}
+{"dataset": "Email-Eu", "test_rate": "true", "Mean-field": 1.0, "Mean-field seconds": 5.579179048538208, "Filtered mean-field": 143.0, "Filtered mean-field seconds": 6.276915073394775}
+{"dataset": "Email-Eu", "test_rate": "true", "Mean-field": 22.0, "Mean-field seconds": 11.721134185791016, "Filtered mean-field": 25.0, "Filtered mean-field seconds": 10.652040958404541}
+{"dataset": "Email-Eu", "test_rate": "true", "Mean-field": 14.0, "Mean-field seconds": 8.475013971328735, "Filtered mean-field": 1.0, "Filtered mean-field seconds": 8.212453126907349}
+{"dataset": "Email-Eu", "test_rate": "true", "Mean-field": 8.0, "Mean-field seconds": 8.00119400024414, "Filtered mean-field": 7.0, "Filtered mean-field seconds": 8.460088968276978}

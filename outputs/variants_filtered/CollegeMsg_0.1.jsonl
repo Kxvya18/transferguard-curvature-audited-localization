@@ -1,0 +1,2 @@
+{"dataset": "CollegeMsg", "test_rate": "true", "Mean-field": 16.0, "Mean-field seconds": 9.007530212402344, "Filtered mean-field": 8.0, "Filtered mean-field seconds": 9.291769027709961}
+{"dataset": "CollegeMsg", "test_rate": "true", "Mean-field": 42.0, "Mean-field seconds": 39.80708026885986, "Filtered mean-field": 270.0, "Filtered mean-field seconds": 31.622042894363403}
