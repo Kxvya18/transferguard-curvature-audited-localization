@@ -1,0 +1,3 @@
+{"dataset": "CollegeMsg", "test_rate": "true", "Mean-field": 3.0, "Mean-field seconds": 22.4024920463562, "Message passing": 2.0, "Message passing seconds": 47.437676191329956, "Belief propagation": 3.0, "Belief propagation seconds": 13.437628746032715}
+{"dataset": "CollegeMsg", "test_rate": "true", "Mean-field": 1.0, "Mean-field seconds": 39.543614864349365, "Message passing": 1.0, "Message passing seconds": 543.8876669406891, "Belief propagation": 1.0, "Belief propagation seconds": 485.04758882522583}
+{"dataset": "CollegeMsg", "test_rate": "true", "Mean-field": 37.0, "Mean-field seconds": 71.9513201713562, "Message passing": 6.0, "Message passing seconds": 229.3474588394165, "Belief propagation": 37.0, "Belief propagation seconds": 108.25903916358948}

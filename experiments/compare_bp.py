@@ -29,11 +29,16 @@ def main(name: str, fraction: float, count: int, seed: int = 101) -> None:
     out = PROJECT_ROOT / "outputs" / "bp_comparison"
     out.mkdir(parents=True, exist_ok=True)
     path = out / f"{name.replace(' ', '_')}_{fraction}.jsonl"
+    # Resume: outbreaks are regenerated in the same order, and those already scored are skipped.
+    existing = [json.loads(line)["test_rate"] for line in path.open()] if path.exists() else []
     for rate_name, rate in (("true", p), ("low", 0.4 * p), ("high", min(0.9, 1.6 * p))):
         done = 0
         while done < count:
             ob = simulate_outbreak(graph, rng, rate, horizon, fraction)
             if ob is None:
+                continue
+            if done < existing.count(rate_name):
+                done += 1
                 continue
             ctx = est.build_context(graph, ob, lookback)
             row = {"dataset": name, "test_rate": rate_name}

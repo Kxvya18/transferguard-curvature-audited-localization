@@ -1,0 +1,2 @@
+{"dataset": "Primary school", "test_rate": "true", "Mean-field": 9.0, "Mean-field seconds": 1.4059028625488281, "Message passing": 13.0, "Message passing seconds": 164.89225912094116, "Belief propagation": 157.0, "Belief propagation seconds": 1149.5851650238037}
+{"dataset": "Primary school", "test_rate": "true", "Mean-field": 1.0, "Mean-field seconds": 4.194298267364502, "Message passing": 1.0, "Message passing seconds": 263.73659110069275, "Belief propagation": 25.0, "Belief propagation seconds": 1344.1019170284271}
