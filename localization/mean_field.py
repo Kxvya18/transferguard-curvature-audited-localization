@@ -224,3 +224,72 @@ def message_passing_scores(ctx: Context, **kwargs) -> np.ndarray:
     """One score per node from `message_passing_loglik`, start time and probability summed out."""
     score = logsumexp(message_passing_loglik(ctx, **kwargs), axis=0)
     return np.where(np.isfinite(score), score, INFEASIBLE)
+
+
+def filtered_loglik(
+    ctx: Context,
+    prob_grid: tuple[float, ...] = (0.1, 0.3, 0.5, 0.7, 0.9),
+    n_start_times: int | None = 8,
+    floor: float = 1e-4,
+) -> np.ndarray:
+    """Mean field conditioned on the observations as they arrive (forward filtering).
+
+    `mean_field_loglik` multiplies each observer's own probability, as if the
+    observers were independent. They are not: one infection chain links them. Here
+    the likelihood is built window by window, P(y) = prod_t P(reports at t + 1 | reports
+    up to t), and after each window every observer is set to what it reported:
+    infected (so it spreads for certain) or healthy (so it blocks paths through it).
+    Same output shape as `mean_field_loglik`.
+    """
+    ob, graph = ctx.outbreak, ctx.graph
+    n, t_obs = graph.n_nodes, ob.t_observe
+    y = ob.observed_times.astype(int)
+    infected = y < t_obs
+    first = int(y[infected].min())
+    starts = _start_times(ctx, n_start_times)
+    contacts = _contact_matrices(ctx)
+    arrival = earliest_arrival(graph, ctx.t_lo, t_obs)
+    possible = np.flatnonzero((graph.join <= first) & np.all(arrival[:, ob.observers[infected]] <= y[infected], axis=1))
+    rows = np.arange(len(possible))
+    # A candidate that is itself an observer is scored by its own report only through
+    # consistency: it must have reported exactly its start time.
+    slot = np.full(n, -1)
+    slot[ob.observers] = np.arange(len(y))
+    own_slot = slot[possible]
+    out = []
+    for tau in starts:
+        begin = np.maximum(tau, graph.join[possible])
+        own_ok = (own_slot < 0) | (y[np.maximum(own_slot, 0)] == begin)
+        own_mask = np.zeros((len(possible), len(y)), dtype=bool)
+        own_mask[rows[own_slot >= 0], own_slot[own_slot >= 0]] = True
+        for p in prob_grid:
+            q = np.zeros((len(possible), n), dtype=np.float32)
+            loglik = np.zeros(len(possible))
+            for t in range(int(tau), t_obs):
+                live = begin == t
+                q[rows[live], possible[live]] = 1.0
+                q[:, ob.observers] = (y <= t).astype(np.float32)[None, :]
+                matrix = contacts[t - ctx.t_lo]
+                if matrix is not None:
+                    survive = np.exp(np.log1p(-np.float32(p) * q) @ matrix)
+                else:
+                    survive = np.ones_like(q)
+                s_obs = survive[:, ob.observers]
+                stays = (t + 1 < y)[None, :]  # must survive this window
+                caught = ((t + 1 == y) & infected)[None, :]  # must be infected by this window
+                term = np.where(stays, np.log(np.maximum(s_obs, floor)), 0.0)
+                term = np.where(caught, np.log(np.maximum(1.0 - s_obs, floor)), term)
+                term[own_mask] = 0.0
+                loglik += term.sum(axis=1)
+                q = 1.0 - (1.0 - q) * survive
+            full = np.full(n, -np.inf)
+            full[possible] = loglik
+            full[possible[(begin > first) | ~own_ok]] = -np.inf
+            out.append(full)
+    return np.array(out)
+
+
+def filtered_scores(ctx: Context, **kwargs) -> np.ndarray:
+    """One score per node from `filtered_loglik`, start time and probability summed out."""
+    score = logsumexp(filtered_loglik(ctx, **kwargs), axis=0)
+    return np.where(np.isfinite(score), score, INFEASIBLE)
