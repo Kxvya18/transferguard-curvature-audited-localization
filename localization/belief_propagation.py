@@ -27,9 +27,11 @@ def bp_scores(
     ctx: Context,
     prob_grid: tuple[float, ...] = (0.1, 0.3, 0.5, 0.7, 0.9),
     n_start_times: int | None = 8,
-    max_iterations: int = 200,
+    max_iterations: int = 1000,
     tolerance: float = 1e-6,
+    damping: float = 0.5,
 ) -> np.ndarray:
+    """Damping 0.5 is needed on dense, loopy contact networks (undamped BP oscillates)."""
     import sib
 
     ob, graph = ctx.outbreak, ctx.graph
@@ -63,7 +65,7 @@ def bp_scores(
                     factor.append_contact(a, b, time, float(p), float(p))
                 else:
                     factor.append_observation(a, sib.Test(1, 0, 0) if b == 0 else sib.Test(0, 1, 0), time)
-            factor.iterate(maxit=max_iterations, tol=tolerance, callback=None)
+            factor.iterate(maxit=max_iterations, tol=tolerance, damping=damping, callback=None)
             seed = np.zeros(n)
             for k in range(min(len(factor.nodes), n)):
                 seed[k] = factor.nodes[k].bt[0]
