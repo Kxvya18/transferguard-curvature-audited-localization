@@ -1,0 +1,7 @@
+{"dataset": "Growing PA", "test_rate": "true", "Mean-field": 1.0, "Mean-field seconds": 0.7885298728942871, "Message passing": 1.0, "Message passing seconds": 16.274641036987305}
+{"dataset": "Growing PA", "test_rate": "true", "Mean-field": 3.0, "Mean-field seconds": 3.076606035232544, "Message passing": 2.0, "Message passing seconds": 25.3404700756073}
+{"dataset": "Growing PA", "test_rate": "true", "Mean-field": 8.0, "Mean-field seconds": 4.251481056213379, "Message passing": 9.0, "Message passing seconds": 45.90104079246521}
+{"dataset": "Growing PA", "test_rate": "true", "Mean-field": 6.0, "Mean-field seconds": 4.052962064743042, "Message passing": 5.0, "Message passing seconds": 37.811177015304565}
+{"dataset": "Growing PA", "test_rate": "true", "Mean-field": 1.0, "Mean-field seconds": 0.2671492099761963, "Message passing": 1.0, "Message passing seconds": 0.3029754161834717}
+{"dataset": "Growing PA", "test_rate": "true", "Mean-field": 39.0, "Mean-field seconds": 2.6419029235839844, "Message passing": 29.0, "Message passing seconds": 7.570960760116577}
+{"dataset": "Growing PA", "test_rate": "true", "Mean-field": 3.0, "Mean-field seconds": 0.3157939910888672, "Message passing": 3.0, "Message passing seconds": 0.8258631229400635}

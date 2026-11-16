@@ -1,0 +1,3 @@
+{"dataset": "Email-Eu", "test_rate": "true", "Mean-field": 1.0, "Mean-field seconds": 2.616422176361084, "Message passing": 1.0, "Message passing seconds": 27.77476191520691}
+{"dataset": "Email-Eu", "test_rate": "true", "Mean-field": 1.0, "Mean-field seconds": 1.4130752086639404, "Message passing": 1.0, "Message passing seconds": 8.343540906906128}
+{"dataset": "Email-Eu", "test_rate": "true", "Mean-field": 1.0, "Mean-field seconds": 5.643745183944702, "Message passing": 1.0, "Message passing seconds": 58.146926164627075}

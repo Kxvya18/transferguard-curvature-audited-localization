@@ -38,19 +38,28 @@ def _contact_matrices(ctx: Context) -> list[sp.csr_matrix | None]:
     return out
 
 
+def _start_times(ctx: Context, n_start_times: int | None) -> np.ndarray:
+    """Candidate start windows between t_lo and the first observed infection (all of them if None)."""
+    first = int(ctx.infected_times.min())
+    if n_start_times is None:
+        return np.arange(ctx.t_lo, max(first, ctx.t_lo) + 1)
+    return np.unique(np.linspace(ctx.t_lo, max(first, ctx.t_lo), n_start_times).round().astype(int))
+
+
 def mean_field_loglik(
     ctx: Context,
     prob_grid: tuple[float, ...] = (0.1, 0.3, 0.5, 0.7, 0.9),
-    n_start_times: int = 8,
+    n_start_times: int | None = 8,
     floor: float = 1e-4,
 ) -> np.ndarray:
-    """Log-likelihood of the observations for every node, shape (start times x probs, n_nodes)."""
+    """Log-likelihood of the observations for every node, shape (start times x probs, n_nodes),
+    start-time major (row = start index * len(prob_grid) + prob index)."""
     ob, graph = ctx.outbreak, ctx.graph
     n, t_obs = graph.n_nodes, ob.t_observe
     y = ob.observed_times.astype(int)
     infected = y < t_obs
     first = int(y[infected].min())
-    starts = np.unique(np.linspace(ctx.t_lo, max(first, ctx.t_lo), n_start_times).round().astype(int))
+    starts = _start_times(ctx, n_start_times)
     contacts = _contact_matrices(ctx)
     # Only nodes that could have reached every infected observer in time can score above
     # the floor, so only those rows are propagated. Infection cannot beat the earliest
@@ -89,6 +98,21 @@ def mean_field_loglik(
 def mean_field_scores(ctx: Context, **kwargs) -> np.ndarray:
     """One score per node: log-likelihood with start time and probability summed out."""
     score = logsumexp(mean_field_loglik(ctx, **kwargs), axis=0)
+    return np.where(np.isfinite(score), score, INFEASIBLE)
+
+
+def contact_start_scores(ctx: Context, prob_grid: tuple[float, ...] = (0.1, 0.3, 0.5, 0.7, 0.9), **kwargs) -> np.ndarray:
+    """Mean-field scores under the prior that the outbreak starts at a contact event:
+    the source s and start window tau are drawn uniformly from the (person, window)
+    pairs in which that person had a contact. Every start window is evaluated."""
+    loglik = mean_field_loglik(ctx, prob_grid=prob_grid, n_start_times=None, **kwargs)
+    starts = _start_times(ctx, None)
+    prior = np.full((len(starts), ctx.graph.n_nodes), -np.inf)
+    for i, tau in enumerate(starts):
+        active = np.unique(ctx.graph.windows[tau].ravel())
+        if len(active):
+            prior[i, active] = -np.log(len(active))
+    score = logsumexp(loglik + np.repeat(prior, len(prob_grid), axis=0), axis=0)
     return np.where(np.isfinite(score), score, INFEASIBLE)
 
 

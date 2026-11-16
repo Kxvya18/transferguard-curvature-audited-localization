@@ -1,0 +1,7 @@
+{"dataset": "High school", "test_rate": "true", "Mean-field": 58.0, "Mean-field seconds": 0.546623945236206, "Message passing": 68.0, "Message passing seconds": 24.96489191055298}
+{"dataset": "High school", "test_rate": "true", "Mean-field": 6.0, "Mean-field seconds": 1.0396339893341064, "Message passing": 6.0, "Message passing seconds": 25.00001096725464}
+{"dataset": "High school", "test_rate": "true", "Mean-field": 26.0, "Mean-field seconds": 1.0879101753234863, "Message passing": 25.0, "Message passing seconds": 20.950999975204468}
+{"dataset": "High school", "test_rate": "true", "Mean-field": 23.0, "Mean-field seconds": 0.8709039688110352, "Message passing": 27.0, "Message passing seconds": 18.435025930404663}
+{"dataset": "High school", "test_rate": "true", "Mean-field": 12.0, "Mean-field seconds": 1.3700742721557617, "Message passing": 17.0, "Message passing seconds": 23.842753171920776}
+{"dataset": "High school", "test_rate": "true", "Mean-field": 10.0, "Mean-field seconds": 0.9969511032104492, "Message passing": 2.0, "Message passing seconds": 28.906818866729736}
+{"dataset": "High school", "test_rate": "true", "Mean-field": 16.0, "Mean-field seconds": 1.5350992679595947, "Message passing": 13.0, "Message passing seconds": 20.187547206878662}
