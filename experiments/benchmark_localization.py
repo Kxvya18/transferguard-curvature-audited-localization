@@ -32,12 +32,10 @@ from pathlib import Path
 
 import networkx as nx
 import numpy as np
-import torch
 from scipy import stats
 from scipy.special import softmax
 
 from localization import estimators as est
-from localization.learned import predict, train_model
 from localization.mean_field import mean_field_scores
 from localization.spread import simulate_outbreak
 from localization.temporal_graph import growing_network, load_netzschleuder_contacts, load_snap_temporal
@@ -124,6 +122,8 @@ def run_setting(name: str, fraction: float, seed: int, args) -> list[dict]:
                 out.append(est.build_context(graph, ob, lookback))
         return out
 
+    from localization.learned import predict, train_model  # torch only needed here
+
     train = contexts(args.n_train, p)
     learned = {m: train_model(m, train, seed=seed, epochs=args.epochs) for m in LEARNED}
 
@@ -142,6 +142,8 @@ def run_setting(name: str, fraction: float, seed: int, args) -> list[dict]:
 
 
 def _run_in_worker(name: str, fraction: float, seed: int, args) -> list[dict]:
+    import torch
+
     torch.set_num_threads(1)
     return run_setting(name, fraction, seed, args)
 
