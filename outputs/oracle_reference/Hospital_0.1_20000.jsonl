@@ -23,3 +23,13 @@
 {"dataset": "Hospital", "test_rate": "true", "seed": 81, "Oracle": 6.0, "Mean-field": 11.0, "Mean-field, contact-start prior": 6.0}
 {"dataset": "Hospital", "test_rate": "true", "seed": 82, "Oracle": 7.0, "Mean-field": 16.0, "Mean-field, contact-start prior": 11.0}
 {"dataset": "Hospital", "test_rate": "true", "seed": 84, "Oracle": 19.0, "Mean-field": 35.0, "Mean-field, contact-start prior": 22.0}
+{"dataset": "Hospital", "test_rate": "true", "seed": 83, "Oracle": 25.0, "Mean-field": 5.0, "Mean-field, contact-start prior": 3.0}
+{"dataset": "Hospital", "test_rate": "true", "seed": 81, "Oracle": 6.0, "Mean-field": 19.0, "Mean-field, contact-start prior": 2.0}
+{"dataset": "Hospital", "test_rate": "true", "seed": 82, "Oracle": 10.0, "Mean-field": 19.0, "Mean-field, contact-start prior": 11.0}
+{"dataset": "Hospital", "test_rate": "true", "seed": 83, "Oracle": 24.0, "Mean-field": 19.0, "Mean-field, contact-start prior": 23.0}
+{"dataset": "Hospital", "test_rate": "true", "seed": 84, "Oracle": 1.0, "Mean-field": 1.0, "Mean-field, contact-start prior": 1.0}
+{"dataset": "Hospital", "test_rate": "true", "seed": 81, "Oracle": 1.0, "Mean-field": 1.0, "Mean-field, contact-start prior": 3.0}
+{"dataset": "Hospital", "test_rate": "true", "seed": 83, "Oracle": 1.0, "Mean-field": 2.0, "Mean-field, contact-start prior": 1.0}
+{"dataset": "Hospital", "test_rate": "true", "seed": 82, "Oracle": 1.0, "Mean-field": 17.0, "Mean-field, contact-start prior": 13.0}
+{"dataset": "Hospital", "test_rate": "true", "seed": 84, "Oracle": 5.0, "Mean-field": 7.0, "Mean-field, contact-start prior": 12.0}
+{"dataset": "Hospital", "test_rate": "true", "seed": 83, "Oracle": 2.0, "Mean-field": 6.0, "Mean-field, contact-start prior": 8.0}
