@@ -1,0 +1,200 @@
+{"dataset": "Hospital", "strategy": "Random", "ranks": [17.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00018405914306640625}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [17.0, 14.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.006315445899963379}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [17.0, 14.0, 3.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0002930164337158203}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [17.0, 14.0, 11.0, 9.0, 7.0, 5.0, 3.0, 3.0, 2.0, 1.0, 1.0], "seconds per pick": 0.6252751827239991}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [17.0, 14.0, 10.0, 6.0, 4.0, 4.0, 1.0, 3.0, 4.0, 2.0, 1.0], "seconds per pick": 1.415345311164856}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [38.0, 37.0, 24.0, 24.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00017502307891845704}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [38.0, 6.0, 7.0, 6.0, 5.0, 5.0, 5.0, 5.0, 5.0, 2.0, 3.0], "seconds per pick": 0.008579015731811523}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [38.0, 16.0, 13.0, 11.0, 5.0, 3.0, 4.0, 3.0, 4.0, 3.0, 3.0], "seconds per pick": 0.0002881765365600586}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [38.0, 36.0, 25.0, 25.0, 21.0, 21.0, 18.0, 11.0, 6.0, 3.0, 1.0], "seconds per pick": 0.5687898159027099}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [38.0, 11.0, 12.0, 11.0, 7.0, 14.0, 9.0, 6.0, 3.0, 3.0, 1.0], "seconds per pick": 0.9918569087982178}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [20.0, 21.0, 21.0, 21.0, 3.0, 3.0, 4.0, 4.0, 4.0, 2.0, 19.0], "seconds per pick": 0.00021369457244873046}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [20.0, 16.0, 16.0, 16.0, 15.0, 15.0, 16.0, 16.0, 16.0, 15.0, 8.0], "seconds per pick": 0.0034168243408203127}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [20.0, 16.0, 16.0, 17.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0], "seconds per pick": 0.0003197193145751953}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [20.0, 21.0, 14.0, 12.0, 7.0, 12.0, 12.0, 11.0, 9.0, 11.0, 10.0], "seconds per pick": 0.3892040252685547}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [20.0, 16.0, 10.0, 9.0, 14.0, 11.0, 12.0, 8.0, 7.0, 5.0, 4.0], "seconds per pick": 0.8018476486206054}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0], "seconds per pick": 0.00019807815551757811}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.008736324310302735}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0007183313369750977}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.18243625164031982}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.3056283712387085}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [19.0, 19.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 6.0, 6.0], "seconds per pick": 0.0001864910125732422}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [19.0, 19.0, 17.0, 6.0, 4.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0002375364303588867}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [19.0, 19.0, 17.0, 6.0, 4.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.00029072761535644533}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [19.0, 17.0, 17.0, 15.0, 10.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.3895562648773193}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [19.0, 17.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.667839765548706}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00018036365509033203}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0025923490524291993}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00030705928802490237}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.4526283025741577}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.9485795021057128}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [9.0, 8.0, 8.0, 8.0, 8.0, 12.0, 12.0, 7.0, 7.0, 7.0, 4.0], "seconds per pick": 0.00019452571868896484}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [9.0, 13.0, 6.0, 5.0, 5.0, 5.0, 5.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00023245811462402344}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [9.0, 7.0, 10.0, 9.0, 9.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0003502368927001953}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [9.0, 5.0, 4.0, 4.0, 4.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.5141337156295777}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [9.0, 5.0, 6.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.3268805265426635}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.002269601821899414}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0010923385620117188}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.001283121109008789}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.46909375190734864}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.8155788660049439}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [12.0, 11.0, 11.0, 11.0, 10.0, 10.0, 10.0, 8.0, 8.0, 8.0, 8.0], "seconds per pick": 0.00021564960479736328}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [12.0, 7.0, 4.0, 4.0, 8.0, 5.0, 4.0, 8.0, 9.0, 9.0, 11.0], "seconds per pick": 0.00024251937866210939}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [12.0, 7.0, 6.0, 8.0, 5.0, 3.0, 5.0, 6.0, 7.0, 7.0, 8.0], "seconds per pick": 0.00032138824462890625}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [12.0, 10.0, 7.0, 8.0, 4.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.45630931854248047}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [12.0, 10.0, 7.0, 7.0, 3.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0], "seconds per pick": 0.9131080627441406}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [4.0, 4.0, 4.0, 4.0, 3.0, 2.0, 2.0, 2.0, 1.0, 2.0, 2.0], "seconds per pick": 0.0010436773300170898}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [4.0, 3.0, 6.0, 5.0, 6.0, 5.0, 5.0, 6.0, 4.0, 4.0, 4.0], "seconds per pick": 0.002758359909057617}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [4.0, 3.0, 6.0, 5.0, 3.0, 3.0, 2.0, 3.0, 2.0, 4.0, 4.0], "seconds per pick": 0.0003129243850708008}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [4.0, 7.0, 9.0, 3.0, 19.0, 17.0, 14.0, 13.0, 9.0, 7.0, 6.0], "seconds per pick": 0.6753649950027466}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [4.0, 7.0, 9.0, 5.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.5550915479660035}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 15.0], "seconds per pick": 0.00016553401947021483}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [6.0, 5.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0002835988998413086}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [6.0, 5.0, 5.0, 3.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00032184123992919924}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [6.0, 18.0, 15.0, 17.0, 3.0, 2.0, 3.0, 6.0, 6.0, 1.0, 1.0], "seconds per pick": 0.4490086317062378}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [6.0, 18.0, 22.0, 24.0, 23.0, 21.0, 20.0, 18.0, 17.0, 10.0, 8.0], "seconds per pick": 0.968298077583313}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [15.0, 9.0, 30.0, 29.0, 27.0, 27.0, 27.0, 27.0, 27.0, 27.0, 26.0], "seconds per pick": 0.00016329288482666015}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [15.0, 11.0, 30.0, 29.0, 31.0, 14.0, 15.0, 18.0, 12.0, 11.0, 11.0], "seconds per pick": 0.000969099998474121}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [15.0, 11.0, 30.0, 11.0, 13.0, 11.0, 14.0, 17.0, 18.0, 12.0, 11.0], "seconds per pick": 0.010418105125427245}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [15.0, 22.0, 23.0, 22.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.43068387508392336}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [15.0, 10.0, 20.0, 18.0, 16.0, 14.0, 10.0, 8.0, 5.0, 7.0, 6.0], "seconds per pick": 1.0195205926895141}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.006395483016967773}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [1.0, 7.0, 7.0, 7.0, 6.0, 5.0, 5.0, 5.0, 4.0, 3.0, 3.0], "seconds per pick": 0.003104710578918457}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [1.0, 7.0, 6.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 2.0], "seconds per pick": 0.00594635009765625}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.7027503252029419}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.7947776317596436}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [13.0, 22.0, 21.0, 19.0, 14.0, 9.0, 9.0, 9.0, 7.0, 7.0, 6.0], "seconds per pick": 0.0002019643783569336}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [13.0, 8.0, 4.0, 4.0, 15.0, 15.0, 20.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0052512168884277345}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [13.0, 6.0, 7.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0004186391830444336}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [13.0, 11.0, 17.0, 12.0, 12.0, 16.0, 15.0, 14.0, 12.0, 11.0, 11.0], "seconds per pick": 0.5423780918121338}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [13.0, 18.0, 12.0, 15.0, 11.0, 11.0, 15.0, 9.0, 15.0, 14.0, 13.0], "seconds per pick": 1.1270400047302247}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.00032079219818115234}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0003099203109741211}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0010849475860595704}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.42941381931304934}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6787466526031494}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [27.0, 30.0, 30.0, 25.0, 25.0, 26.0, 6.0, 5.0, 5.0, 5.0, 5.0], "seconds per pick": 0.0001995086669921875}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [27.0, 5.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00024816989898681643}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [27.0, 30.0, 30.0, 9.0, 4.0, 3.0, 3.0, 3.0, 4.0, 1.0, 1.0], "seconds per pick": 0.0016976594924926758}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [27.0, 20.0, 19.0, 21.0, 23.0, 15.0, 7.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.34790198802947997}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [27.0, 1.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.797387671470642}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [30.0, 30.0, 29.0, 17.0, 17.0, 17.0, 17.0, 16.0, 16.0, 16.0, 16.0], "seconds per pick": 0.0005306005477905273}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [30.0, 29.0, 20.0, 14.0, 12.0, 5.0, 2.0, 2.0, 1.0, 2.0, 2.0], "seconds per pick": 0.00027294158935546874}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [30.0, 6.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 2.0], "seconds per pick": 0.0042543172836303714}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [30.0, 3.0, 2.0, 8.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.29852797985076907}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [30.0, 28.0, 21.0, 18.0, 4.0, 3.0, 2.0, 2.0, 1.0, 3.0, 2.0], "seconds per pick": 0.6501817464828491}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [21.0, 19.0, 19.0, 17.0, 17.0, 17.0, 15.0, 15.0, 15.0, 13.0, 13.0], "seconds per pick": 0.0001959562301635742}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [21.0, 19.0, 9.0, 10.0, 11.0, 12.0, 12.0, 14.0, 10.0, 7.0, 6.0], "seconds per pick": 0.00028734207153320314}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [21.0, 17.0, 7.0, 5.0, 7.0, 6.0, 5.0, 7.0, 6.0, 1.0, 1.0], "seconds per pick": 0.0003560781478881836}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [21.0, 18.0, 13.0, 7.0, 9.0, 8.0, 2.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 0.5090194940567017}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [21.0, 18.0, 21.0, 20.0, 11.0, 9.0, 7.0, 7.0, 2.0, 1.0, 1.0], "seconds per pick": 0.8460490942001343}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [14.0, 14.0, 15.0, 15.0, 13.0, 17.0, 17.0, 14.0, 14.0, 12.0, 13.0], "seconds per pick": 0.003159022331237793}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [14.0, 14.0, 14.0, 2.0, 4.0, 4.0, 4.0, 3.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0009239912033081055}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [14.0, 14.0, 14.0, 15.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.001083683967590332}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [14.0, 11.0, 12.0, 12.0, 10.0, 11.0, 6.0, 5.0, 4.0, 3.0, 2.0], "seconds per pick": 0.32981481552124026}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [14.0, 4.0, 3.0, 2.0, 1.0, 4.0, 3.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6078941583633423}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [14.0, 14.0, 14.0, 14.0, 14.0, 19.0, 13.0, 13.0, 6.0, 5.0, 5.0], "seconds per pick": 0.0002382040023803711}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [14.0, 7.0, 12.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0002670764923095703}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [14.0, 7.0, 12.0, 12.0, 18.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0002966403961181641}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [14.0, 20.0, 20.0, 10.0, 15.0, 14.0, 13.0, 13.0, 11.0, 4.0, 3.0], "seconds per pick": 0.25446746349334715}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [14.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.1344998836517335}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [9.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.002317214012145996}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [9.0, 7.0, 8.0, 8.0, 8.0, 8.0, 9.0, 11.0, 11.0, 5.0, 5.0], "seconds per pick": 0.00811145305633545}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [9.0, 7.0, 7.0, 6.0, 7.0, 11.0, 11.0, 5.0, 9.0, 4.0, 4.0], "seconds per pick": 0.001287078857421875}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [9.0, 15.0, 13.0, 9.0, 4.0, 3.0, 4.0, 3.0, 2.0, 1.0, 1.0], "seconds per pick": 0.4780618190765381}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [9.0, 15.0, 6.0, 3.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.98350989818573}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.00025625228881835936}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00024673938751220705}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [2.0, 2.0, 2.0, 2.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.000435328483581543}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.5789557218551635}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.1944419860839843}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0], "seconds per pick": 0.00015885829925537108}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0002496957778930664}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0], "seconds per pick": 0.009018611907958985}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.5194860219955444}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.080678153038025}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.004105925559997559}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0004668235778808594}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0014688491821289063}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.5430216789245605}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.1380467414855957}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 10.0, 6.0, 6.0, 6.0], "seconds per pick": 0.003914928436279297}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [3.0, 3.0, 5.0, 6.0, 7.0, 7.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0002604007720947266}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [3.0, 3.0, 3.0, 6.0, 7.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.002260756492614746}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [3.0, 12.0, 10.0, 11.0, 9.0, 19.0, 13.0, 11.0, 10.0, 9.0, 8.0], "seconds per pick": 0.508769416809082}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [3.0, 4.0, 4.0, 9.0, 8.0, 9.0, 8.0, 10.0, 8.0, 5.0, 3.0], "seconds per pick": 1.044521117210388}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [11.0, 8.0, 8.0, 8.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 6.0], "seconds per pick": 0.000174713134765625}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [11.0, 12.0, 11.0, 14.0, 13.0, 11.0, 10.0, 11.0, 11.0, 11.0, 3.0], "seconds per pick": 0.000582122802734375}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [11.0, 10.0, 13.0, 10.0, 10.0, 11.0, 9.0, 11.0, 11.0, 11.0, 11.0], "seconds per pick": 0.0003198862075805664}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [11.0, 6.0, 4.0, 5.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.45387465953826905}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [11.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.8083101749420166}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [3.0, 3.0, 21.0, 22.0, 22.0, 22.0, 22.0, 19.0, 16.0, 16.0, 16.0], "seconds per pick": 0.0001542806625366211}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [3.0, 20.0, 13.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0028452157974243166}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [3.0, 20.0, 13.0, 14.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0005962848663330078}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [3.0, 13.0, 12.0, 7.0, 7.0, 5.0, 7.0, 3.0, 2.0, 5.0, 3.0], "seconds per pick": 0.5721130132675171}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [3.0, 3.0, 8.0, 6.0, 14.0, 7.0, 5.0, 6.0, 5.0, 3.0, 2.0], "seconds per pick": 1.1711180686950684}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [14.0, 14.0, 14.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00017130374908447266}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [14.0, 14.0, 2.0, 3.0, 4.0, 4.0, 4.0, 4.0, 2.0, 2.0, 2.0], "seconds per pick": 0.00024595260620117185}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [14.0, 14.0, 2.0, 3.0, 5.0, 4.0, 4.0, 4.0, 4.0, 2.0, 2.0], "seconds per pick": 0.000294041633605957}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [14.0, 15.0, 12.0, 6.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.4825202465057373}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [14.0, 15.0, 12.0, 6.0, 3.0, 4.0, 2.0, 2.0, 4.0, 2.0, 1.0], "seconds per pick": 0.9927477836608887}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [3.0, 3.0, 5.0, 5.0, 6.0, 6.0, 6.0, 6.0, 9.0, 9.0, 11.0], "seconds per pick": 0.00030641555786132814}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [3.0, 4.0, 5.0, 12.0, 17.0, 15.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00044553279876708985}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [3.0, 4.0, 5.0, 3.0, 6.0, 6.0, 8.0, 10.0, 1.0, 1.0, 1.0], "seconds per pick": 0.005784034729003906}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [3.0, 3.0, 4.0, 5.0, 10.0, 8.0, 6.0, 3.0, 1.0, 1.0, 1.0], "seconds per pick": 0.4637371778488159}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [3.0, 3.0, 14.0, 13.0, 13.0, 14.0, 12.0, 10.0, 8.0, 8.0, 6.0], "seconds per pick": 0.7574767351150513}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [8.0, 8.0, 8.0, 8.0, 8.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.00016267299652099608}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [8.0, 21.0, 19.0, 20.0, 19.0, 19.0, 18.0, 15.0, 15.0, 13.0, 12.0], "seconds per pick": 0.0010816574096679688}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [8.0, 21.0, 19.0, 19.0, 19.0, 16.0, 11.0, 10.0, 10.0, 1.0, 1.0], "seconds per pick": 0.0005996942520141602}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [8.0, 9.0, 2.0, 12.0, 9.0, 6.0, 9.0, 8.0, 7.0, 7.0, 5.0], "seconds per pick": 0.5207285404205322}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [8.0, 19.0, 17.0, 16.0, 14.0, 11.0, 9.0, 12.0, 11.0, 4.0, 3.0], "seconds per pick": 0.9892061710357666}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [29.0, 29.0, 29.0, 28.0, 24.0, 25.0, 24.0, 24.0, 23.0, 22.0, 22.0], "seconds per pick": 0.0001712799072265625}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [29.0, 26.0, 15.0, 7.0, 6.0, 5.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.00025494098663330077}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [29.0, 26.0, 15.0, 7.0, 6.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.00031065940856933594}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [29.0, 28.0, 26.0, 23.0, 23.0, 22.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.3891261339187622}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [29.0, 27.0, 24.0, 21.0, 22.0, 23.0, 23.0, 20.0, 2.0, 1.0, 1.0], "seconds per pick": 0.8113603830337525}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [20.0, 21.0, 22.0, 23.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00018045902252197265}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [20.0, 23.0, 3.0, 3.0, 3.0, 3.0, 4.0, 2.0, 3.0, 3.0, 4.0], "seconds per pick": 0.008332300186157226}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [20.0, 18.0, 19.0, 18.0, 16.0, 10.0, 6.0, 5.0, 3.0, 4.0, 6.0], "seconds per pick": 0.0002950906753540039}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [20.0, 15.0, 14.0, 11.0, 19.0, 17.0, 14.0, 12.0, 14.0, 13.0, 8.0], "seconds per pick": 0.3978485107421875}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [20.0, 24.0, 23.0, 20.0, 19.0, 17.0, 20.0, 15.0, 13.0, 12.0, 13.0], "seconds per pick": 0.8411142826080322}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0001616954803466797}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [2.0, 4.0, 4.0, 5.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0], "seconds per pick": 0.00025436878204345705}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [2.0, 4.0, 4.0, 5.0, 4.0, 4.0, 4.0, 4.0, 2.0, 1.0, 2.0], "seconds per pick": 0.00032787322998046876}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.38031396865844724}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.7669080972671509}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [4.0, 4.0, 4.0, 4.0, 3.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0], "seconds per pick": 0.0001569032669067383}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [4.0, 4.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0010233879089355468}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.000299072265625}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [4.0, 3.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.31937148571014407}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [4.0, 4.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.7321998357772828}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0], "seconds per pick": 0.00023348331451416015}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [18.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0002453327178955078}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [18.0, 13.0, 4.0, 4.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0002944469451904297}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [18.0, 16.0, 6.0, 5.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.40949060916900637}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [18.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.7347865343093872}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [15.0, 15.0, 15.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0], "seconds per pick": 0.0012147903442382812}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [15.0, 13.0, 13.0, 7.0, 9.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0], "seconds per pick": 0.00029144287109375}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [15.0, 13.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0], "seconds per pick": 0.0002813577651977539}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [15.0, 14.0, 16.0, 10.0, 9.0, 8.0, 7.0, 6.0, 5.0, 3.0, 2.0], "seconds per pick": 0.3048340082168579}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [15.0, 13.0, 11.0, 11.0, 10.0, 10.0, 9.0, 6.0, 5.0, 2.0, 1.0], "seconds per pick": 0.6587297677993774}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [4.0, 29.0, 29.0, 29.0, 29.0, 29.0, 28.0, 28.0, 28.0, 28.0, 28.0], "seconds per pick": 0.00019752979278564453}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [4.0, 6.0, 7.0, 9.0, 4.0, 2.0, 3.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0002467632293701172}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [4.0, 6.0, 7.0, 9.0, 4.0, 2.0, 3.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0003081083297729492}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [4.0, 10.0, 9.0, 9.0, 7.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.4108377695083618}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [4.0, 10.0, 11.0, 9.0, 9.0, 3.0, 1.0, 1.0, 1.0, 2.0, 2.0], "seconds per pick": 0.7749002695083618}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 9.0, 9.0, 9.0, 9.0, 6.0], "seconds per pick": 0.0005872249603271484}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [11.0, 9.0, 9.0, 7.0, 2.0, 2.0, 4.0, 5.0, 6.0, 2.0, 5.0], "seconds per pick": 0.0002671718597412109}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [11.0, 9.0, 9.0, 7.0, 2.0, 2.0, 3.0, 4.0, 3.0, 2.0, 5.0], "seconds per pick": 0.002142930030822754}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [11.0, 9.0, 7.0, 5.0, 5.0, 4.0, 4.0, 4.0, 3.0, 2.0, 1.0], "seconds per pick": 0.44267446994781495}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [11.0, 9.0, 8.0, 6.0, 5.0, 4.0, 5.0, 3.0, 1.0, 1.0, 1.0], "seconds per pick": 0.9830389738082885}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00019142627716064453}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00024554729461669924}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [3.0, 3.0, 3.0, 3.0, 3.0, 4.0, 6.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.00027356147766113283}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.3522946357727051}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [3.0, 5.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.7446233034133911}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [16.0, 16.0, 19.0, 20.0, 19.0, 18.0, 18.0, 17.0, 15.0, 17.0, 16.0], "seconds per pick": 0.0003342390060424805}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [16.0, 20.0, 21.0, 16.0, 18.0, 17.0, 19.0, 19.0, 18.0, 18.0, 18.0], "seconds per pick": 0.0002282857894897461}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [16.0, 20.0, 15.0, 16.0, 15.0, 15.0, 17.0, 17.0, 18.0, 17.0, 7.0], "seconds per pick": 0.00028734207153320314}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [16.0, 14.0, 14.0, 14.0, 13.0, 11.0, 3.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 0.3663837671279907}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [16.0, 14.0, 14.0, 14.0, 12.0, 9.0, 10.0, 3.0, 1.0, 1.0, 1.0], "seconds per pick": 0.7203009128570557}

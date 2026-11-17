@@ -21,6 +21,7 @@ from __future__ import annotations
 import json
 import sys
 import time
+from dataclasses import replace
 
 import numpy as np
 from scipy.special import logsumexp
@@ -53,7 +54,7 @@ def main(name: str, count: int, seed: int = 401) -> None:
     loader, p, horizon, lookback = DATASETS[name]
     graph = loader(seed)
     rng = np.random.default_rng(seed)
-    out = PROJECT_ROOT / "outputs" / "evidence_ceiling"
+    out = PROJECT_ROOT / "outputs" / ("evidence_ceiling" if seed == 401 else f"evidence_ceiling_{seed}")
     out.mkdir(parents=True, exist_ok=True)
     path = out / f"{name.replace(' ', '_')}.jsonl"
     existing = [json.loads(line)["fraction"] for line in path.open()] if path.exists() else []
@@ -68,7 +69,11 @@ def main(name: str, count: int, seed: int = 401) -> None:
                 continue
             ctx = est.build_context(graph, ob, lookback)
             row = {"dataset": name, "fraction": fraction, "observers": len(ob.observers)}
+            # Mean field given the same extra information as the oracle (true start time and
+            # rate): separates the gap due to that information from the gap due to the algorithm.
+            told = replace(ctx, t_lo=ob.t_start)
             for label, fn in (("Mean-field", mean_field_scores), ("Message passing", message_passing_scores),
+                              ("Mean-field, told start and rate", lambda c: mean_field_scores(told, prob_grid=(p,), n_start_times=1)),
                               ("Oracle, 1000 sims", lambda c: informed_oracle(c, p, ob.t_start, 1000, rng)),
                               ("Oracle, 5000 sims", lambda c: informed_oracle(c, p, ob.t_start, 5000, rng))):
                 start = time.time()

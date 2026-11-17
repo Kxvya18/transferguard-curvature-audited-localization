@@ -1,0 +1,200 @@
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [7.0, 8.0, 8.0, 8.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0], "seconds per pick": 0.00021166801452636718}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [7.0, 8.0, 9.0, 9.0, 9.0, 7.0, 8.0, 8.0, 7.0, 1.0, 2.0], "seconds per pick": 0.006464600563049316}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [7.0, 9.0, 7.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.006796908378601074}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [7.0, 4.0, 5.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.49125452041626}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [7.0, 7.0, 6.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 7.042077970504761}
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [2.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 2.0, 2.0, 1.0], "seconds per pick": 0.00018455982208251954}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [2.0, 2.0, 3.0, 2.0, 2.0, 3.0, 3.0, 3.0, 3.0, 2.0, 2.0], "seconds per pick": 0.024564909934997558}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [2.0, 2.0, 1.0, 2.0, 2.0, 3.0, 2.0, 4.0, 3.0, 2.0, 2.0], "seconds per pick": 0.000916147232055664}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.046739959716797}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 9.361415076255799}
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0002663135528564453}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.00095977783203125}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.000704503059387207}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.2622377872467041}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.7195369005203247}
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 5.0, 3.0, 3.0, 4.0, 5.0, 5.0, 5.0], "seconds per pick": 0.0008802652359008789}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [1.0, 6.0, 6.0, 6.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.001239609718322754}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [1.0, 8.0, 7.0, 6.0, 6.0, 3.0, 4.0, 3.0, 3.0, 4.0, 3.0], "seconds per pick": 0.0009003877639770508}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.2212630987167357}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [1.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 8.48162214756012}
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [42.0, 42.0, 42.0, 38.0, 38.0, 38.0, 38.0, 37.0, 32.0, 33.0, 33.0], "seconds per pick": 0.0002370119094848633}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [42.0, 31.0, 25.0, 20.0, 18.0, 22.0, 25.0, 25.0, 22.0, 25.0, 20.0], "seconds per pick": 0.011102294921875}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [42.0, 36.0, 28.0, 38.0, 30.0, 28.0, 26.0, 27.0, 24.0, 20.0, 20.0], "seconds per pick": 0.013165163993835449}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [42.0, 6.0, 5.0, 4.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 7.69948091506958}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [42.0, 30.0, 42.0, 5.0, 4.0, 3.0, 2.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 12.061747312545776}
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0], "seconds per pick": 0.000616145133972168}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [5.0, 5.0, 5.0, 4.0, 5.0, 4.0, 4.0, 4.0, 4.0, 4.0, 1.0], "seconds per pick": 0.013832974433898925}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [5.0, 4.0, 4.0, 3.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0], "seconds per pick": 0.0025490283966064452}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [5.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 7.04380099773407}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 13.239105987548829}
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [1.0, 1.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0], "seconds per pick": 0.00019316673278808595}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [1.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0008645296096801758}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [1.0, 3.0, 1.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0009000539779663086}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.791028046607971}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 7.964310908317566}
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [16.0, 29.0, 29.0, 28.0, 41.0, 34.0, 28.0, 28.0, 28.0, 28.0, 28.0], "seconds per pick": 0.0002087831497192383}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [16.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.002019309997558594}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [16.0, 3.0, 2.0, 2.0, 1.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0014507293701171875}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [16.0, 8.0, 5.0, 19.0, 14.0, 18.0, 13.0, 15.0, 14.0, 11.0, 12.0], "seconds per pick": 7.617632102966309}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [16.0, 10.0, 5.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 13.237083673477173}
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0002118825912475586}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0009397506713867187}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.005103421211242676}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 8.292266416549683}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 13.719437837600708}
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [9.0, 9.0, 9.0, 9.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0], "seconds per pick": 0.003958773612976074}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [9.0, 9.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.001860833168029785}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [9.0, 7.0, 8.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.017487096786499023}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [9.0, 8.0, 7.0, 6.0, 5.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.6289318799972534}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [9.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.032563042640686}
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [93.0, 93.0, 93.0, 91.0, 79.0, 74.0, 72.0, 64.0, 64.0, 64.0, 63.0], "seconds per pick": 0.005534720420837402}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [93.0, 40.0, 42.0, 35.0, 34.0, 34.0, 18.0, 16.0, 15.0, 18.0, 18.0], "seconds per pick": 0.0077440738677978516}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [93.0, 102.0, 68.0, 70.0, 40.0, 42.0, 40.0, 16.0, 5.0, 5.0, 5.0], "seconds per pick": 0.00372011661529541}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [93.0, 54.0, 50.0, 49.0, 47.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 7.312076687812805}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [93.0, 50.0, 26.0, 5.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 11.198875045776367}
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [18.0, 18.0, 22.0, 37.0, 34.0, 34.0, 34.0, 34.0, 30.0, 30.0, 28.0], "seconds per pick": 0.0012798309326171875}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [18.0, 19.0, 17.0, 11.0, 13.0, 6.0, 6.0, 4.0, 4.0, 2.0, 2.0], "seconds per pick": 0.0009864568710327148}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [18.0, 12.0, 17.0, 19.0, 27.0, 31.0, 27.0, 18.0, 13.0, 8.0, 7.0], "seconds per pick": 0.0038247108459472656}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [18.0, 8.0, 8.0, 5.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 9.05784330368042}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [18.0, 7.0, 6.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 14.80918607711792}
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [7.0, 7.0, 7.0, 8.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.005234718322753906}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [7.0, 2.0, 2.0, 2.0, 4.0, 2.0, 1.0, 1.0, 2.0, 2.0, 1.0], "seconds per pick": 0.003759622573852539}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [7.0, 10.0, 5.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0020283222198486327}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [7.0, 5.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 8.580068898200988}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [7.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 9.429291653633118}
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [17.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 6.0], "seconds per pick": 0.00025789737701416017}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [17.0, 11.0, 6.0, 9.0, 8.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0007580757141113281}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [17.0, 11.0, 8.0, 6.0, 6.0, 5.0, 2.0, 2.0, 2.0, 3.0, 3.0], "seconds per pick": 0.0013479471206665039}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [17.0, 13.0, 14.0, 11.0, 2.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.0494529962539674}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [17.0, 12.0, 10.0, 5.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.3901160717010494}
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [11.0, 36.0, 36.0, 36.0, 34.0, 34.0, 32.0, 32.0, 33.0, 33.0, 33.0], "seconds per pick": 0.002635478973388672}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [11.0, 6.0, 9.0, 7.0, 9.0, 12.0, 13.0, 20.0, 22.0, 21.0, 19.0], "seconds per pick": 0.0009456396102905274}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [11.0, 10.0, 11.0, 13.0, 11.0, 11.0, 11.0, 11.0, 12.0, 9.0, 8.0], "seconds per pick": 0.0017046451568603516}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [11.0, 21.0, 16.0, 14.0, 12.0, 12.0, 10.0, 6.0, 3.0, 2.0, 1.0], "seconds per pick": 4.1189573287963865}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [11.0, 10.0, 9.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.141329312324524}
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00017986297607421874}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0012070417404174804}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0009938716888427735}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.025557780265808}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 8.171104240417481}
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [43.0, 43.0, 44.0, 44.0, 44.0, 44.0, 43.0, 43.0, 48.0, 41.0, 39.0], "seconds per pick": 0.00019259452819824218}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [43.0, 39.0, 66.0, 63.0, 35.0, 34.0, 32.0, 30.0, 6.0, 6.0, 7.0], "seconds per pick": 0.0007624626159667969}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [43.0, 64.0, 67.0, 63.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0], "seconds per pick": 0.0011965036392211914}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [43.0, 41.0, 38.0, 31.0, 29.0, 16.0, 4.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 4.3054440975189205}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [43.0, 5.0, 2.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 8.449193120002747}
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [4.0, 3.0, 3.0, 3.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.007537055015563965}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [4.0, 3.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 3.0, 3.0], "seconds per pick": 0.01144254207611084}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [4.0, 4.0, 4.0, 4.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.00403447151184082}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [4.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.9156238555908205}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [4.0, 3.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 7.5757293701171875}
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.00018830299377441405}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0044808626174926754}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0], "seconds per pick": 0.002789926528930664}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.357363486289978}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 5.369822001457214}
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [10.0, 10.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0], "seconds per pick": 0.0004284381866455078}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [10.0, 10.0, 11.0, 13.0, 11.0, 8.0, 8.0, 9.0, 10.0, 13.0, 13.0], "seconds per pick": 0.0008069038391113281}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [10.0, 10.0, 3.0, 3.0, 3.0, 3.0, 2.0, 1.0, 1.0, 2.0, 3.0], "seconds per pick": 0.0013991594314575195}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [10.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 5.843391990661621}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [10.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 9.608913731575011}
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.00024387836456298828}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.0020298480987548826}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.0013326406478881836}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [3.0, 3.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 6.203408408164978}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [3.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 10.399215936660767}
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0005166769027709961}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0013408184051513672}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.001020503044128418}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 5.824515724182129}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 10.234257197380066}
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [6.0, 6.0, 7.0, 7.0, 7.0, 7.0, 8.0, 8.0, 8.0, 8.0, 8.0], "seconds per pick": 0.00021517276763916016}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [6.0, 6.0, 6.0, 6.0, 5.0, 5.0, 8.0, 6.0, 6.0, 6.0, 6.0], "seconds per pick": 0.0008617639541625977}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [6.0, 5.0, 9.0, 6.0, 9.0, 8.0, 8.0, 10.0, 9.0, 6.0, 6.0], "seconds per pick": 0.002581954002380371}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [6.0, 4.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.7295655488967894}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [6.0, 5.0, 4.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 6.8449829578399655}
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0], "seconds per pick": 0.0002545595169067383}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.006151056289672852}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [2.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.008897089958190918}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 7.121740388870239}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 12.903737115859986}
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.00019197463989257814}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [4.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.008165073394775391}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [4.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0016902685165405273}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6983522653579712}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.741980743408203}
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 2.0, 2.0, 2.0], "seconds per pick": 0.00019164085388183593}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0], "seconds per pick": 0.002304744720458984}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 2.0, 4.0, 4.0], "seconds per pick": 0.0025367975234985352}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.8137516498565676}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 7.430255770683289}
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [9.0, 9.0, 9.0, 9.0, 8.0, 8.0, 8.0, 11.0, 11.0, 11.0, 8.0], "seconds per pick": 0.0028650760650634766}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [9.0, 8.0, 5.0, 3.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.000746774673461914}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [9.0, 8.0, 8.0, 5.0, 5.0, 5.0, 4.0, 4.0, 4.0, 4.0, 5.0], "seconds per pick": 0.0013347148895263671}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [9.0, 4.0, 6.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.5350977897644043}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [9.0, 1.0, 3.0, 1.0, 1.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 5.368530106544495}
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [16.0, 15.0, 15.0, 15.0, 4.0, 2.0, 2.0, 2.0, 3.0, 3.0, 1.0], "seconds per pick": 0.00021734237670898438}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [16.0, 14.0, 11.0, 11.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.004909062385559082}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [16.0, 7.0, 4.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0010331630706787109}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [16.0, 13.0, 8.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 5.773372030258178}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [16.0, 6.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 10.014449572563171}
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [10.0, 10.0, 10.0, 11.0, 11.0, 11.0, 12.0, 8.0, 7.0, 7.0, 7.0], "seconds per pick": 0.0008956670761108398}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [10.0, 10.0, 11.0, 14.0, 6.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0007216691970825196}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [10.0, 5.0, 3.0, 3.0, 3.0, 5.0, 4.0, 5.0, 7.0, 4.0, 5.0], "seconds per pick": 0.0007465600967407227}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [10.0, 4.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.741330623626709}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [10.0, 4.0, 4.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 6.505555009841919}
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [14.0, 10.0, 10.0, 16.0, 12.0, 11.0, 11.0, 11.0, 10.0, 10.0, 10.0], "seconds per pick": 0.0003147125244140625}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [14.0, 11.0, 12.0, 2.0, 2.0, 1.0, 1.0, 2.0, 1.0, 2.0, 1.0], "seconds per pick": 0.0010782957077026367}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [14.0, 11.0, 12.0, 8.0, 8.0, 7.0, 7.0, 7.0, 5.0, 5.0, 4.0], "seconds per pick": 0.0019739627838134765}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [14.0, 13.0, 10.0, 9.0, 7.0, 9.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 7.051148390769958}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [14.0, 14.0, 19.0, 13.0, 12.0, 15.0, 12.0, 10.0, 2.0, 1.0, 1.0], "seconds per pick": 10.733222246170044}
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [76.0, 115.0, 110.0, 101.0, 110.0, 88.0, 77.0, 71.0, 51.0, 65.0, 65.0], "seconds per pick": 0.0008173465728759765}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [76.0, 57.0, 141.0, 113.0, 90.0, 62.0, 36.0, 53.0, 21.0, 12.0, 7.0], "seconds per pick": 0.004645776748657226}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [76.0, 88.0, 91.0, 125.0, 108.0, 77.0, 73.0, 4.0, 4.0, 1.0, 2.0], "seconds per pick": 0.0037631750106811523}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [76.0, 98.0, 66.0, 86.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 5.430934262275696}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [76.0, 98.0, 71.0, 41.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 8.862020325660705}
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [17.0, 16.0, 16.0, 15.0, 17.0, 17.0, 17.0, 16.0, 16.0, 16.0, 18.0], "seconds per pick": 0.0002533912658691406}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [17.0, 17.0, 19.0, 19.0, 16.0, 20.0, 25.0, 20.0, 20.0, 20.0, 20.0], "seconds per pick": 0.000838327407836914}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [17.0, 20.0, 15.0, 13.0, 14.0, 13.0, 13.0, 22.0, 23.0, 21.0, 23.0], "seconds per pick": 0.0010250568389892577}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [17.0, 16.0, 17.0, 14.0, 13.0, 11.0, 10.0, 9.0, 6.0, 7.0, 6.0], "seconds per pick": 10.215144109725951}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [17.0, 16.0, 14.0, 14.0, 13.0, 11.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 11.445657753944397}
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00021889209747314454}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 2.0, 3.0], "seconds per pick": 0.0016991615295410157}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 4.0, 4.0, 4.0, 3.0, 4.0, 2.0, 3.0, 3.0, 3.0], "seconds per pick": 0.007223153114318847}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.823610115051269}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 10.357731032371522}
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [3.0, 3.0, 3.0, 3.0, 4.0, 3.0, 3.0, 4.0, 4.0, 4.0, 4.0], "seconds per pick": 0.00023546218872070313}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [3.0, 4.0, 4.0, 12.0, 12.0, 8.0, 6.0, 5.0, 6.0, 5.0, 6.0], "seconds per pick": 0.0007823705673217773}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [3.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0045518636703491214}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [3.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 6.114632391929627}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 10.461625838279724}
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [6.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 2.0], "seconds per pick": 0.0002163410186767578}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [6.0, 10.0, 9.0, 7.0, 7.0, 7.0, 10.0, 12.0, 11.0, 10.0, 10.0], "seconds per pick": 0.003591179847717285}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [6.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 4.0, 4.0, 4.0, 5.0], "seconds per pick": 0.0007966995239257812}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [6.0, 6.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 5.424387335777283}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [6.0, 6.0, 4.0, 3.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 9.417001557350158}
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [11.0, 11.0, 11.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0, 3.0], "seconds per pick": 0.00019078254699707032}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [11.0, 13.0, 14.0, 3.0, 3.0, 3.0, 4.0, 2.0, 2.0, 1.0, 1.0], "seconds per pick": 0.010998892784118652}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [11.0, 13.0, 14.0, 3.0, 3.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0], "seconds per pick": 0.0033242464065551757}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [11.0, 5.0, 10.0, 4.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.5214470624923706}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [11.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.5065515279769897}
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0001905679702758789}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [2.0, 9.0, 12.0, 9.0, 8.0, 10.0, 9.0, 6.0, 9.0, 9.0, 8.0], "seconds per pick": 0.0007853507995605469}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [2.0, 9.0, 12.0, 8.0, 9.0, 14.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00261073112487793}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [2.0, 11.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 7.875875306129456}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [2.0, 9.0, 6.0, 8.0, 6.0, 7.0, 8.0, 5.0, 5.0, 1.0, 1.0], "seconds per pick": 5.080873823165893}
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [50.0, 17.0, 17.0, 7.0, 7.0, 8.0, 8.0, 8.0, 8.0, 7.0, 7.0], "seconds per pick": 0.00010280609130859375}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [50.0, 47.0, 22.0, 34.0, 36.0, 35.0, 31.0, 28.0, 51.0, 44.0, 47.0], "seconds per pick": 0.0004206418991088867}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [50.0, 31.0, 22.0, 25.0, 36.0, 30.0, 29.0, 32.0, 30.0, 29.0, 29.0], "seconds per pick": 0.006328725814819336}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [50.0, 21.0, 23.0, 21.0, 6.0, 13.0, 11.0, 9.0, 4.0, 2.0, 2.0], "seconds per pick": 3.785245728492737}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [50.0, 21.0, 6.0, 6.0, 3.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.764288091659546}
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [39.0, 36.0, 36.0, 34.0, 34.0, 44.0, 46.0, 43.0, 37.0, 36.0, 58.0], "seconds per pick": 0.00016126632690429687}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [39.0, 23.0, 24.0, 19.0, 21.0, 24.0, 21.0, 23.0, 22.0, 24.0, 14.0], "seconds per pick": 0.0005186080932617187}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [39.0, 26.0, 30.0, 42.0, 40.0, 39.0, 41.0, 39.0, 34.0, 31.0, 27.0], "seconds per pick": 0.002789735794067383}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [39.0, 41.0, 36.0, 27.0, 25.0, 25.0, 31.0, 35.0, 26.0, 28.0, 19.0], "seconds per pick": 2.8012107372283936}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [39.0, 35.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.596039891242981}
+{"dataset": "Growing PA", "strategy": "Random", "ranks": [46.0, 46.0, 37.0, 37.0, 37.0, 37.0, 28.0, 30.0, 23.0, 25.0, 25.0], "seconds per pick": 0.00014786720275878907}
+{"dataset": "Growing PA", "strategy": "Highest degree", "ranks": [46.0, 45.0, 33.0, 24.0, 22.0, 20.0, 19.0, 5.0, 7.0, 6.0, 6.0], "seconds per pick": 0.0005798578262329101}
+{"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [46.0, 45.0, 33.0, 32.0, 30.0, 19.0, 19.0, 21.0, 18.0, 19.0, 12.0], "seconds per pick": 0.0005778789520263672}
+{"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [46.0, 17.0, 18.0, 20.0, 14.0, 15.0, 5.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 1.470515513420105}
+{"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [46.0, 30.0, 29.0, 23.0, 13.0, 13.0, 6.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.10054726600647}

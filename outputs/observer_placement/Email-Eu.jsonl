@@ -1,0 +1,200 @@
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.00022554397583007812}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [3.0, 2.0, 3.0, 3.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0], "seconds per pick": 0.005498456954956055}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.006140518188476563}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 21.998033714294433}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 24.894399070739745}
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 29.0, 29.0, 29.0, 29.0, 29.0], "seconds per pick": 0.00037522315979003905}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [6.0, 29.0, 29.0, 25.0, 25.0, 21.0, 17.0, 17.0, 16.0, 15.0, 13.0], "seconds per pick": 0.005638289451599121}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [6.0, 5.0, 5.0, 5.0, 6.0, 5.0, 6.0, 9.0, 10.0, 9.0, 9.0], "seconds per pick": 0.013665103912353515}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [6.0, 5.0, 4.0, 7.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 16.513148021697997}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [6.0, 4.0, 8.0, 6.0, 5.0, 5.0, 6.0, 5.0, 5.0, 4.0, 4.0], "seconds per pick": 20.54777362346649}
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00024964809417724607}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0037400484085083007}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.01065831184387207}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 6.464720249176025}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 11.20499529838562}
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 6.0, 6.0], "seconds per pick": 0.0002851963043212891}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [20.0, 18.0, 20.0, 19.0, 21.0, 24.0, 26.0, 26.0, 26.0, 15.0, 15.0], "seconds per pick": 0.0015085697174072265}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [20.0, 16.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.01614997386932373}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [20.0, 19.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 14.940894865989685}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [20.0, 19.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 16.65075240135193}
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 10.0, 10.0], "seconds per pick": 0.00027468204498291013}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [12.0, 11.0, 7.0, 5.0, 5.0, 4.0, 4.0, 4.0, 4.0, 4.0, 2.0], "seconds per pick": 0.005986618995666504}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [12.0, 7.0, 5.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.006011343002319336}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [12.0, 13.0, 8.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 22.588866543769836}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [12.0, 13.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 28.34183614253998}
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [14.0, 14.0, 14.0, 14.0, 14.0, 14.0, 14.0, 14.0, 14.0, 14.0, 14.0], "seconds per pick": 0.00022480487823486328}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [14.0, 14.0, 14.0, 16.0, 15.0, 14.0, 14.0, 14.0, 14.0, 13.0, 11.0], "seconds per pick": 0.010268497467041015}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [14.0, 6.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0029178619384765624}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [14.0, 14.0, 12.0, 4.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 10.053882360458374}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [14.0, 6.0, 5.0, 3.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 16.262426924705505}
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0], "seconds per pick": 0.00028104782104492186}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.009055089950561524}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0036013126373291016}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 6.445017409324646}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 12.196292519569397}
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00030846595764160155}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.001397418975830078}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.005539822578430176}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 8.278564262390137}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 15.452945780754089}
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [14.0, 14.0, 14.0, 16.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0], "seconds per pick": 0.00030376911163330076}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [14.0, 13.0, 10.0, 9.0, 8.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0], "seconds per pick": 0.011091923713684082}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [14.0, 12.0, 14.0, 15.0, 10.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.01882767677307129}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [14.0, 12.0, 11.0, 9.0, 7.0, 6.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 17.973064041137697}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [14.0, 11.0, 10.0, 8.0, 7.0, 6.0, 5.0, 5.0, 4.0, 3.0, 2.0], "seconds per pick": 27.693236351013184}
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [32.0, 32.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 29.0], "seconds per pick": 0.00041308403015136717}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [32.0, 6.0, 6.0, 7.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.003286862373352051}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [32.0, 30.0, 6.0, 2.0, 3.0, 2.0, 2.0, 2.0, 1.0, 2.0, 1.0], "seconds per pick": 0.011948442459106446}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [32.0, 33.0, 31.0, 37.0, 40.0, 37.0, 40.0, 43.0, 41.0, 46.0, 44.0], "seconds per pick": 14.586022758483887}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [32.0, 33.0, 31.0, 27.0, 26.0, 23.0, 26.0, 27.0, 22.0, 29.0, 28.0], "seconds per pick": 22.2585289478302}
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [13.0, 13.0, 13.0, 13.0, 13.0, 13.0, 13.0, 13.0, 13.0, 15.0, 15.0], "seconds per pick": 0.000275111198425293}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [13.0, 15.0, 15.0, 15.0, 15.0, 15.0, 18.0, 18.0, 18.0, 18.0, 17.0], "seconds per pick": 0.004406785964965821}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [13.0, 11.0, 10.0, 8.0, 9.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0], "seconds per pick": 0.0026003837585449217}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [13.0, 16.0, 15.0, 11.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 7.912928795814514}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [13.0, 13.0, 10.0, 8.0, 7.0, 7.0, 6.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 15.66530077457428}
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 3.0], "seconds per pick": 0.0003596067428588867}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [3.0, 4.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 2.0, 2.0, 2.0], "seconds per pick": 0.01708347797393799}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [3.0, 5.0, 3.0, 2.0, 2.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0029857635498046877}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 5.1523497819900514}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [3.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 12.644589614868163}
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00022139549255371094}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0031211137771606444}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.007860875129699707}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 5.279203224182129}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 11.671791744232177}
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.001339888572692871}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0027046918869018553}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.009165382385253907}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.2699601888656615}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.4232285022735596}
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [34.0, 34.0, 34.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0003161907196044922}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [34.0, 30.0, 17.0, 11.0, 14.0, 11.0, 4.0, 4.0, 4.0, 1.0, 1.0], "seconds per pick": 0.0018972158432006836}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [34.0, 32.0, 3.0, 5.0, 4.0, 4.0, 4.0, 4.0, 4.0, 3.0, 5.0], "seconds per pick": 0.007241654396057129}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [34.0, 33.0, 32.0, 41.0, 44.0, 36.0, 47.0, 4.0, 4.0, 3.0, 2.0], "seconds per pick": 11.633584213256835}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [34.0, 19.0, 5.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 6.653811573982239}
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0], "seconds per pick": 0.00017921924591064454}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [4.0, 4.0, 4.0, 4.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 2.0], "seconds per pick": 0.001005411148071289}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0013230800628662109}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [4.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.8537972211837768}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [4.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.938334488868714}
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.00017220973968505858}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.0010065317153930664}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.004556107521057129}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.291206169128418}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.822071409225464}
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [16.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 14.0, 14.0], "seconds per pick": 0.0001811981201171875}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [16.0, 16.0, 17.0, 17.0, 16.0, 13.0, 13.0, 13.0, 13.0, 12.0, 12.0], "seconds per pick": 0.0010208845138549804}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [16.0, 13.0, 12.0, 12.0, 10.0, 10.0, 11.0, 10.0, 11.0, 10.0, 10.0], "seconds per pick": 0.0024187564849853516}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [16.0, 15.0, 10.0, 10.0, 12.0, 11.0, 10.0, 9.0, 9.0, 8.0, 6.0], "seconds per pick": 5.323951578140258}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [16.0, 15.0, 16.0, 14.0, 13.0, 14.0, 14.0, 13.0, 13.0, 9.0, 8.0], "seconds per pick": 6.9720176458358765}
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [30.0, 30.0, 30.0, 30.0, 27.0, 27.0, 27.0, 27.0, 27.0, 27.0, 21.0], "seconds per pick": 0.0007876157760620117}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [30.0, 15.0, 14.0, 12.0, 13.0, 9.0, 5.0, 4.0, 4.0, 6.0, 5.0], "seconds per pick": 0.001806497573852539}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [30.0, 15.0, 10.0, 16.0, 15.0, 14.0, 16.0, 15.0, 15.0, 12.0, 13.0], "seconds per pick": 0.0015772581100463867}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [30.0, 27.0, 17.0, 27.0, 25.0, 22.0, 17.0, 16.0, 20.0, 25.0, 18.0], "seconds per pick": 2.883145642280579}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [30.0, 22.0, 18.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.234019947052002}
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 4.0], "seconds per pick": 0.00023448467254638672}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [5.0, 5.0, 4.0, 6.0, 6.0, 6.0, 7.0, 6.0, 7.0, 6.0, 5.0], "seconds per pick": 0.002640533447265625}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0015949964523315429}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.7052311182022095}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.6582727432250977}
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.00019512176513671874}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 2.0, 2.0, 3.0, 3.0], "seconds per pick": 0.004743099212646484}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.001359248161315918}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.1285043001174926}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.534237098693848}
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.00020434856414794922}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [3.0, 4.0, 4.0, 4.0, 3.0, 3.0, 3.0, 3.0, 3.0, 2.0, 2.0], "seconds per pick": 0.0010515689849853516}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [3.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0023580074310302736}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.8588804483413695}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [3.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.566705799102783}
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [40.0, 40.0, 40.0, 39.0, 34.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0], "seconds per pick": 0.00020029544830322266}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [40.0, 40.0, 44.0, 41.0, 41.0, 48.0, 40.0, 40.0, 40.0, 40.0, 42.0], "seconds per pick": 0.0013839483261108398}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [40.0, 40.0, 44.0, 41.0, 43.0, 13.0, 10.0, 9.0, 10.0, 8.0, 8.0], "seconds per pick": 0.0017925024032592774}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [40.0, 43.0, 8.0, 6.0, 15.0, 5.0, 3.0, 2.0, 2.0, 1.0, 1.0], "seconds per pick": 2.899022173881531}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [40.0, 9.0, 8.0, 17.0, 6.0, 4.0, 3.0, 6.0, 5.0, 3.0, 2.0], "seconds per pick": 4.49651448726654}
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [156.0, 156.0, 155.0, 155.0, 138.0, 135.0, 127.0, 127.0, 127.0, 121.0, 120.0], "seconds per pick": 0.00018677711486816406}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [156.0, 132.0, 126.0, 127.0, 128.0, 122.0, 100.0, 97.0, 108.0, 99.0, 44.0], "seconds per pick": 0.0022797584533691406}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [156.0, 147.0, 161.0, 154.0, 122.0, 147.0, 162.0, 131.0, 126.0, 112.0, 136.0], "seconds per pick": 0.002021026611328125}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [156.0, 7.0, 6.0, 4.0, 3.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 5.445447182655334}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [156.0, 7.0, 13.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 9.111401867866515}
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [14.0, 13.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0], "seconds per pick": 0.0004499912261962891}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [14.0, 11.0, 11.0, 10.0, 10.0, 5.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0014010429382324218}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [14.0, 6.0, 5.0, 1.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0073804140090942385}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [14.0, 10.0, 12.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 10.492389726638795}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [14.0, 15.0, 14.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 12.571805810928344}
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0002368927001953125}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0037867069244384766}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0], "seconds per pick": 0.0023977041244506838}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.6022908926010135}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 7.378285956382752}
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.000252223014831543}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.001302194595336914}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0025487422943115236}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.600215721130371}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 7.113461208343506}
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [13.0, 13.0, 12.0, 12.0, 12.0, 12.0, 12.0, 11.0, 11.0, 11.0, 11.0], "seconds per pick": 0.0002660512924194336}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [13.0, 15.0, 14.0, 14.0, 12.0, 12.0, 11.0, 11.0, 11.0, 15.0, 15.0], "seconds per pick": 0.001779794692993164}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [13.0, 17.0, 11.0, 11.0, 11.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0033890724182128905}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [13.0, 16.0, 17.0, 15.0, 13.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 6.38242723941803}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [13.0, 16.0, 6.0, 2.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 11.85305666923523}
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [43.0, 43.0, 43.0, 43.0, 44.0, 47.0, 47.0, 47.0, 47.0, 47.0, 47.0], "seconds per pick": 0.00021581649780273439}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [43.0, 46.0, 41.0, 41.0, 44.0, 46.0, 11.0, 8.0, 11.0, 9.0, 9.0], "seconds per pick": 0.0062378644943237305}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [43.0, 45.0, 45.0, 43.0, 11.0, 10.0, 12.0, 3.0, 3.0, 2.0, 2.0], "seconds per pick": 0.004369306564331055}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [43.0, 44.0, 29.0, 26.0, 26.0, 48.0, 45.0, 16.0, 11.0, 2.0, 1.0], "seconds per pick": 8.127026867866515}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [43.0, 26.0, 43.0, 39.0, 36.0, 30.0, 9.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 10.128372740745544}
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [24.0, 24.0, 20.0, 20.0, 20.0, 18.0, 18.0, 18.0, 19.0, 19.0, 19.0], "seconds per pick": 0.00022602081298828125}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [24.0, 8.0, 9.0, 8.0, 8.0, 6.0, 16.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0035875320434570314}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [24.0, 13.0, 17.0, 11.0, 16.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.002902579307556152}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [24.0, 21.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 6.355751585960388}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [24.0, 16.0, 14.0, 9.0, 8.0, 2.0, 1.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 11.346152710914613}
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0002599477767944336}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0016583919525146485}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0020664453506469725}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.5978831768035888}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.392692494392395}
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0010645389556884766}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0039921760559082035}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.005097818374633789}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.507463574409485}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 5.233432960510254}
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [60.0, 60.0, 54.0, 19.0, 17.0, 24.0, 24.0, 24.0, 24.0, 24.0, 24.0], "seconds per pick": 0.0004606962203979492}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [60.0, 52.0, 32.0, 38.0, 49.0, 36.0, 28.0, 20.0, 15.0, 15.0, 17.0], "seconds per pick": 0.0013534069061279298}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [60.0, 52.0, 32.0, 26.0, 26.0, 22.0, 2.0, 1.0, 2.0, 2.0, 2.0], "seconds per pick": 0.004925298690795899}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [60.0, 59.0, 78.0, 64.0, 62.0, 59.0, 22.0, 36.0, 31.0, 30.0, 24.0], "seconds per pick": 6.839264965057373}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [60.0, 5.0, 6.0, 6.0, 5.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 5.54459159374237}
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [9.0, 11.0, 11.0, 11.0, 11.0, 11.0, 7.0, 7.0, 6.0, 6.0, 6.0], "seconds per pick": 0.0001966714859008789}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [9.0, 4.0, 3.0, 3.0, 6.0, 6.0, 9.0, 8.0, 14.0, 8.0, 2.0], "seconds per pick": 0.006791448593139649}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [9.0, 2.0, 1.0, 1.0, 2.0, 2.0, 3.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0040190696716308595}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [9.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.9246716499328613}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [9.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.158474850654602}
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [34.0, 34.0, 32.0, 32.0, 32.0, 31.0, 31.0, 31.0, 31.0, 59.0, 59.0], "seconds per pick": 0.00024030208587646484}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [34.0, 37.0, 53.0, 52.0, 50.0, 53.0, 63.0, 68.0, 80.0, 86.0, 55.0], "seconds per pick": 0.005037188529968262}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [34.0, 43.0, 60.0, 1.0, 1.0, 1.0, 1.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.010045719146728516}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [34.0, 49.0, 39.0, 40.0, 43.0, 50.0, 38.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 5.712225985527039}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [34.0, 33.0, 27.0, 27.0, 18.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 6.7678813457489015}
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00022649765014648438}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [1.0, 3.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 4.0, 2.0, 2.0], "seconds per pick": 0.0013074874877929688}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.002045273780822754}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 5.499682784080505}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 5.417309951782227}
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [89.0, 89.0, 85.0, 83.0, 92.0, 75.0, 75.0, 87.0, 87.0, 87.0, 87.0], "seconds per pick": 0.00020294189453125}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [89.0, 82.0, 136.0, 50.0, 41.0, 44.0, 39.0, 36.0, 35.0, 35.0, 32.0], "seconds per pick": 0.0012969255447387695}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [89.0, 37.0, 40.0, 34.0, 26.0, 22.0, 46.0, 36.0, 32.0, 10.0, 9.0], "seconds per pick": 0.003323960304260254}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [89.0, 87.0, 85.0, 21.0, 11.0, 9.0, 8.0, 30.0, 21.0, 19.0, 13.0], "seconds per pick": 8.906555867195129}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [89.0, 80.0, 20.0, 12.0, 17.0, 12.0, 9.0, 3.0, 12.0, 16.0, 10.0], "seconds per pick": 11.103490042686463}
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0], "seconds per pick": 0.0002102375030517578}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [9.0, 11.0, 10.0, 9.0, 9.0, 8.0, 7.0, 7.0, 7.0, 7.0, 7.0], "seconds per pick": 0.0018683910369873048}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [9.0, 7.0, 10.0, 9.0, 8.0, 7.0, 8.0, 8.0, 8.0, 8.0, 8.0], "seconds per pick": 0.0029937028884887695}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [9.0, 7.0, 6.0, 5.0, 4.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 5.550530433654785}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [9.0, 7.0, 6.0, 6.0, 6.0, 5.0, 4.0, 3.0, 2.0, 2.0, 1.0], "seconds per pick": 8.823956084251403}
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [47.0, 45.0, 45.0, 45.0, 45.0, 41.0, 31.0, 31.0, 31.0, 41.0, 41.0], "seconds per pick": 0.00021390914916992189}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [47.0, 21.0, 32.0, 29.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 4.0], "seconds per pick": 0.0015842914581298828}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [47.0, 21.0, 32.0, 26.0, 18.0, 4.0, 4.0, 6.0, 11.0, 8.0, 10.0], "seconds per pick": 0.002095150947570801}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [47.0, 46.0, 34.0, 35.0, 29.0, 9.0, 10.0, 10.0, 7.0, 3.0, 2.0], "seconds per pick": 6.386141586303711}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [47.0, 20.0, 26.0, 25.0, 28.0, 22.0, 19.0, 16.0, 18.0, 17.0, 16.0], "seconds per pick": 7.2198152303695675}
+{"dataset": "Email-Eu", "strategy": "Random", "ranks": [15.0, 15.0, 15.0, 14.0, 14.0, 13.0, 13.0, 13.0, 13.0, 13.0, 13.0], "seconds per pick": 0.00021147727966308594}
+{"dataset": "Email-Eu", "strategy": "Highest degree", "ranks": [15.0, 9.0, 13.0, 14.0, 16.0, 15.0, 13.0, 12.0, 12.0, 11.0, 11.0], "seconds per pick": 0.0022165536880493163}
+{"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [15.0, 17.0, 15.0, 15.0, 14.0, 10.0, 8.0, 9.0, 9.0, 9.0, 9.0], "seconds per pick": 0.002040672302246094}
+{"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [15.0, 14.0, 9.0, 7.0, 6.0, 7.0, 4.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 4.746926021575928}
+{"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [15.0, 9.0, 8.0, 7.0, 6.0, 5.0, 4.0, 4.0, 1.0, 1.0, 1.0], "seconds per pick": 6.195757722854614}

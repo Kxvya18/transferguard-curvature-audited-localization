@@ -1,0 +1,53 @@
+{"dataset": "CollegeMsg", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0005463600158691406}
+{"dataset": "CollegeMsg", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.02223680019378662}
+{"dataset": "CollegeMsg", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.021443724632263184}
+{"dataset": "CollegeMsg", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 140.1769077539444}
+{"dataset": "CollegeMsg", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 171.93152344226837}
+{"dataset": "CollegeMsg", "strategy": "Random", "ranks": [35.0, 34.0, 34.0, 34.0, 35.0, 35.0, 35.0, 45.0, 45.0, 45.0, 43.0], "seconds per pick": 0.0005827903747558594}
+{"dataset": "CollegeMsg", "strategy": "Highest degree", "ranks": [35.0, 33.0, 7.0, 13.0, 15.0, 13.0, 13.0, 5.0, 5.0, 4.0, 2.0], "seconds per pick": 0.005517268180847168}
+{"dataset": "CollegeMsg", "strategy": "Contact tracing", "ranks": [35.0, 33.0, 35.0, 39.0, 15.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.01746516227722168}
+{"dataset": "CollegeMsg", "strategy": "Test top suspect", "ranks": [35.0, 30.0, 26.0, 21.0, 19.0, 17.0, 18.0, 14.0, 12.0, 11.0, 10.0], "seconds per pick": 37.44086654186249}
+{"dataset": "CollegeMsg", "strategy": "Information gain (ours)", "ranks": [35.0, 29.0, 7.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 12.40669310092926}
+{"dataset": "CollegeMsg", "strategy": "Random", "ranks": [120.0, 120.0, 120.0, 122.0, 122.0, 125.0, 125.0, 125.0, 116.0, 159.0, 83.0], "seconds per pick": 0.00023870468139648439}
+{"dataset": "CollegeMsg", "strategy": "Highest degree", "ranks": [120.0, 100.0, 110.0, 116.0, 19.0, 16.0, 16.0, 15.0, 16.0, 16.0, 16.0], "seconds per pick": 0.0020590782165527343}
+{"dataset": "CollegeMsg", "strategy": "Contact tracing", "ranks": [120.0, 100.0, 110.0, 102.0, 102.0, 113.0, 103.0, 103.0, 94.0, 95.0, 94.0], "seconds per pick": 0.003070974349975586}
+{"dataset": "CollegeMsg", "strategy": "Test top suspect", "ranks": [120.0, 115.0, 150.0, 192.0, 208.0, 207.0, 41.0, 40.0, 39.0, 38.0, 37.0], "seconds per pick": 8.412219905853272}
+{"dataset": "CollegeMsg", "strategy": "Information gain (ours)", "ranks": [120.0, 159.0, 109.0, 94.0, 62.0, 16.0, 14.0, 13.0, 11.0, 11.0, 9.0], "seconds per pick": 13.374722242355347}
+{"dataset": "CollegeMsg", "strategy": "Random", "ranks": [4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0], "seconds per pick": 0.00019788742065429688}
+{"dataset": "CollegeMsg", "strategy": "Highest degree", "ranks": [4.0, 4.0, 3.0, 3.0, 4.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.004193830490112305}
+{"dataset": "CollegeMsg", "strategy": "Contact tracing", "ranks": [4.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.0027395963668823244}
+{"dataset": "CollegeMsg", "strategy": "Test top suspect", "ranks": [4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.187310266494751}
+{"dataset": "CollegeMsg", "strategy": "Information gain (ours)", "ranks": [4.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 10.56951162815094}
+{"dataset": "CollegeMsg", "strategy": "Random", "ranks": [9.0, 9.0, 6.0, 6.0, 6.0, 6.0, 5.0, 4.0, 4.0, 4.0, 4.0], "seconds per pick": 0.00023698806762695312}
+{"dataset": "CollegeMsg", "strategy": "Highest degree", "ranks": [9.0, 7.0, 4.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.0062657356262207035}
+{"dataset": "CollegeMsg", "strategy": "Contact tracing", "ranks": [9.0, 7.0, 4.0, 4.0, 5.0, 4.0, 4.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.011996769905090332}
+{"dataset": "CollegeMsg", "strategy": "Test top suspect", "ranks": [9.0, 8.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 73.37106742858887}
+{"dataset": "CollegeMsg", "strategy": "Information gain (ours)", "ranks": [9.0, 4.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 75.52784562110901}
+{"dataset": "CollegeMsg", "strategy": "Random", "ranks": [12.0, 12.0, 12.0, 17.0, 17.0, 13.0, 12.0, 15.0, 15.0, 15.0, 19.0], "seconds per pick": 0.0002255678176879883}
+{"dataset": "CollegeMsg", "strategy": "Highest degree", "ranks": [12.0, 8.0, 4.0, 3.0, 1.0, 1.0, 1.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 0.004778528213500976}
+{"dataset": "CollegeMsg", "strategy": "Contact tracing", "ranks": [12.0, 8.0, 5.0, 5.0, 8.0, 12.0, 12.0, 12.0, 13.0, 13.0, 10.0], "seconds per pick": 0.0030446529388427736}
+{"dataset": "CollegeMsg", "strategy": "Test top suspect", "ranks": [12.0, 19.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.2520299196243285}
+{"dataset": "CollegeMsg", "strategy": "Information gain (ours)", "ranks": [12.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 6.130529570579529}
+{"dataset": "CollegeMsg", "strategy": "Random", "ranks": [330.0, 305.0, 283.0, 283.0, 283.0, 283.0, 283.0, 283.0, 283.0, 283.0, 336.0], "seconds per pick": 0.0002493858337402344}
+{"dataset": "CollegeMsg", "strategy": "Highest degree", "ranks": [330.0, 246.0, 170.0, 146.0, 117.0, 115.0, 120.0, 119.0, 134.0, 135.0, 121.0], "seconds per pick": 0.003367900848388672}
+{"dataset": "CollegeMsg", "strategy": "Contact tracing", "ranks": [330.0, 323.0, 327.0, 223.0, 253.0, 195.0, 215.0, 182.0, 172.0, 162.0, 165.0], "seconds per pick": 0.004344344139099121}
+{"dataset": "CollegeMsg", "strategy": "Test top suspect", "ranks": [330.0, 329.0, 335.0, 334.0, 312.0, 302.0, 301.0, 300.0, 299.0, 298.0, 297.0], "seconds per pick": 42.86034901142121}
+{"dataset": "CollegeMsg", "strategy": "Information gain (ours)", "ranks": [330.0, 246.0, 245.0, 234.0, 233.0, 232.0, 231.0, 223.0, 222.0, 215.0, 214.0], "seconds per pick": 49.441536617279056}
+{"dataset": "CollegeMsg", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0002463817596435547}
+{"dataset": "CollegeMsg", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0], "seconds per pick": 0.002726244926452637}
+{"dataset": "CollegeMsg", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 2.0, 3.0, 4.0, 4.0, 5.0, 5.0, 3.0, 3.0, 4.0], "seconds per pick": 0.005432939529418946}
+{"dataset": "CollegeMsg", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.814377999305725}
+{"dataset": "CollegeMsg", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.989801406860352}
+{"dataset": "CollegeMsg", "strategy": "Random", "ranks": [50.0, 50.0, 50.0, 46.0, 46.0, 46.0, 46.0, 47.0, 44.0, 27.0, 26.0], "seconds per pick": 0.0002389192581176758}
+{"dataset": "CollegeMsg", "strategy": "Highest degree", "ranks": [50.0, 48.0, 30.0, 25.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0023963451385498047}
+{"dataset": "CollegeMsg", "strategy": "Contact tracing", "ranks": [50.0, 37.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.003292417526245117}
+{"dataset": "CollegeMsg", "strategy": "Test top suspect", "ranks": [50.0, 49.0, 48.0, 46.0, 26.0, 24.0, 15.0, 10.0, 9.0, 7.0, 6.0], "seconds per pick": 41.80864703655243}
+{"dataset": "CollegeMsg", "strategy": "Information gain (ours)", "ranks": [50.0, 47.0, 18.0, 14.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 48.85450222492218}
+{"dataset": "CollegeMsg", "strategy": "Random", "ranks": [18.0, 18.0, 18.0, 18.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0], "seconds per pick": 0.00023355484008789063}
+{"dataset": "CollegeMsg", "strategy": "Highest degree", "ranks": [18.0, 15.0, 15.0, 13.0, 3.0, 16.0, 15.0, 1.0, 2.0, 2.0, 4.0], "seconds per pick": 0.0021656036376953127}
+{"dataset": "CollegeMsg", "strategy": "Contact tracing", "ranks": [18.0, 15.0, 15.0, 13.0, 11.0, 11.0, 2.0, 2.0, 1.0, 1.0, 4.0], "seconds per pick": 0.0022459506988525392}
+{"dataset": "CollegeMsg", "strategy": "Test top suspect", "ranks": [18.0, 19.0, 20.0, 19.0, 18.0, 16.0, 15.0, 14.0, 14.0, 13.0, 9.0], "seconds per pick": 8.654631686210632}
+{"dataset": "CollegeMsg", "strategy": "Information gain (ours)", "ranks": [18.0, 29.0, 23.0, 7.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 6.468162584304809}
+{"dataset": "CollegeMsg", "strategy": "Random", "ranks": [3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.00022153854370117189}
+{"dataset": "CollegeMsg", "strategy": "Highest degree", "ranks": [3.0, 3.0, 3.0, 5.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.002198648452758789}
+{"dataset": "CollegeMsg", "strategy": "Contact tracing", "ranks": [3.0, 2.0, 2.0, 4.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0034784555435180666}

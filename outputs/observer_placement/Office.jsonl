@@ -1,0 +1,200 @@
+{"dataset": "Office", "strategy": "Random", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00017559528350830078}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0002888679504394531}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0003346681594848633}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.5104830026626588}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.935167098045349}
+{"dataset": "Office", "strategy": "Random", "ranks": [5.0, 4.0, 5.0, 4.0, 3.0, 4.0, 4.0, 2.0, 3.0, 3.0, 3.0], "seconds per pick": 0.0003260374069213867}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [5.0, 2.0, 2.0, 3.0, 6.0, 5.0, 6.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00028133392333984375}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [5.0, 3.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0010227918624877929}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [5.0, 7.0, 7.0, 6.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.4765304803848267}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [5.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.4727303266525267}
+{"dataset": "Office", "strategy": "Random", "ranks": [7.0, 7.0, 7.0, 7.0, 7.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0], "seconds per pick": 0.0006580829620361328}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [7.0, 6.0, 7.0, 6.0, 6.0, 6.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.00030598640441894533}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [7.0, 6.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0011111021041870118}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [7.0, 6.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.4611522912979127}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [7.0, 7.0, 6.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.094402146339417}
+{"dataset": "Office", "strategy": "Random", "ranks": [4.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0001743793487548828}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0010940313339233398}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [4.0, 7.0, 8.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0006520271301269532}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [4.0, 7.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.559867787361145}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [4.0, 7.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.006595706939697}
+{"dataset": "Office", "strategy": "Random", "ranks": [3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00018804073333740235}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [3.0, 5.0, 5.0, 3.0, 3.0, 3.0, 2.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00034673213958740233}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [3.0, 5.0, 4.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00035600662231445314}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [3.0, 17.0, 9.0, 8.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.4254369497299195}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [3.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.954336905479431}
+{"dataset": "Office", "strategy": "Random", "ranks": [37.0, 36.0, 36.0, 36.0, 36.0, 33.0, 33.0, 33.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0002529621124267578}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [37.0, 28.0, 15.0, 6.0, 6.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.002623105049133301}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [37.0, 28.0, 5.0, 6.0, 5.0, 5.0, 5.0, 5.0, 4.0, 3.0, 2.0], "seconds per pick": 0.0009083747863769531}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [37.0, 27.0, 24.0, 27.0, 29.0, 21.0, 21.0, 28.0, 25.0, 17.0, 11.0], "seconds per pick": 1.0109535932540894}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [37.0, 28.0, 15.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.413873791694641}
+{"dataset": "Office", "strategy": "Random", "ranks": [4.0, 4.0, 3.0, 3.0, 4.0, 4.0, 4.0, 3.0, 3.0, 3.0, 2.0], "seconds per pick": 0.0006611108779907227}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0013547182083129884}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [4.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00035407543182373045}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [4.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.7384392499923706}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.8777167320251464}
+{"dataset": "Office", "strategy": "Random", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0008244752883911133}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0038530588150024413}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00254366397857666}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.6370018005371094}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.942103624343872}
+{"dataset": "Office", "strategy": "Random", "ranks": [1.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00019664764404296874}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [1.0, 1.0, 4.0, 2.0, 2.0, 1.0, 3.0, 3.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0015159130096435546}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [1.0, 3.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 3.0, 3.0, 3.0], "seconds per pick": 0.0018366098403930664}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.5435701608657837}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.3550123691558837}
+{"dataset": "Office", "strategy": "Random", "ranks": [5.0, 8.0, 9.0, 6.0, 6.0, 6.0, 5.0, 8.0, 11.0, 10.0, 11.0], "seconds per pick": 0.005361866950988769}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [5.0, 4.0, 5.0, 9.0, 9.0, 9.0, 10.0, 2.0, 2.0, 1.0, 1.0], "seconds per pick": 0.00027222633361816405}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [5.0, 6.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.017085170745849608}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [5.0, 6.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.2714527368545532}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [5.0, 6.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.3514501810073853}
+{"dataset": "Office", "strategy": "Random", "ranks": [18.0, 7.0, 8.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0006438970565795898}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [18.0, 7.0, 2.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0018111228942871093}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [18.0, 18.0, 20.0, 19.0, 19.0, 15.0, 16.0, 8.0, 9.0, 9.0, 8.0], "seconds per pick": 0.007714390754699707}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [18.0, 13.0, 19.0, 17.0, 20.0, 18.0, 3.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 1.2915082454681397}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [18.0, 7.0, 2.0, 4.0, 6.0, 3.0, 3.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 3.0262588262557983}
+{"dataset": "Office", "strategy": "Random", "ranks": [3.0, 6.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0008042573928833008}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [3.0, 5.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0047302722930908205}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [3.0, 5.0, 3.0, 2.0, 2.0, 4.0, 4.0, 3.0, 5.0, 4.0, 4.0], "seconds per pick": 0.0003461599349975586}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [3.0, 3.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.3656714677810669}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.169464683532715}
+{"dataset": "Office", "strategy": "Random", "ranks": [16.0, 15.0, 7.0, 7.0, 7.0, 6.0, 6.0, 6.0, 6.0, 7.0, 1.0], "seconds per pick": 0.0001915454864501953}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [16.0, 10.0, 7.0, 8.0, 7.0, 6.0, 7.0, 8.0, 7.0, 7.0, 6.0], "seconds per pick": 0.000855708122253418}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [16.0, 16.0, 11.0, 8.0, 8.0, 9.0, 8.0, 8.0, 8.0, 8.0, 8.0], "seconds per pick": 0.00034222602844238283}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [16.0, 13.0, 18.0, 9.0, 8.0, 6.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.5377184629440308}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [16.0, 7.0, 6.0, 5.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.996067833900452}
+{"dataset": "Office", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0013833284378051759}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0017665863037109376}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0066642284393310545}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.19333338737487793}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.49514849185943605}
+{"dataset": "Office", "strategy": "Random", "ranks": [19.0, 20.0, 2.0, 2.0, 3.0, 3.0, 3.0, 4.0, 2.0, 1.0, 1.0], "seconds per pick": 0.00019509792327880858}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [19.0, 5.0, 4.0, 4.0, 4.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00029232501983642576}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [19.0, 19.0, 4.0, 5.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 1.0], "seconds per pick": 0.0022230148315429688}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [19.0, 11.0, 10.0, 6.0, 3.0, 3.0, 3.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 1.1325774192810059}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [19.0, 5.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.988803839683533}
+{"dataset": "Office", "strategy": "Random", "ranks": [3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00016226768493652344}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.006176400184631348}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.006605720520019532}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.10869176387786865}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.19236135482788086}
+{"dataset": "Office", "strategy": "Random", "ranks": [6.0, 6.0, 6.0, 8.0, 8.0, 8.0, 7.0, 6.0, 6.0, 7.0, 7.0], "seconds per pick": 0.00017211437225341796}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [6.0, 6.0, 5.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.003455328941345215}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 3.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0003591775894165039}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [6.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.9403600931167603}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [6.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.149354338645935}
+{"dataset": "Office", "strategy": "Random", "ranks": [13.0, 15.0, 14.0, 14.0, 14.0, 16.0, 16.0, 15.0, 12.0, 12.0, 10.0], "seconds per pick": 0.0020364761352539063}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [13.0, 11.0, 7.0, 10.0, 9.0, 7.0, 7.0, 5.0, 6.0, 6.0, 3.0], "seconds per pick": 0.00032389163970947266}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [13.0, 9.0, 8.0, 10.0, 9.0, 9.0, 8.0, 7.0, 9.0, 8.0, 7.0], "seconds per pick": 0.0006380796432495118}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [13.0, 9.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.2728165626525878}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [13.0, 5.0, 7.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.7817964792251586}
+{"dataset": "Office", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00016906261444091797}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.004194283485412597}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0012388229370117188}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.1409785509109497}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.23310537338256837}
+{"dataset": "Office", "strategy": "Random", "ranks": [22.0, 17.0, 16.0, 8.0, 6.0, 6.0, 10.0, 10.0, 17.0, 14.0, 17.0], "seconds per pick": 0.0006090879440307617}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [22.0, 19.0, 30.0, 6.0, 6.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00028102397918701173}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [22.0, 19.0, 19.0, 16.0, 20.0, 24.0, 31.0, 32.0, 31.0, 28.0, 30.0], "seconds per pick": 0.0037823915481567383}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [22.0, 21.0, 12.0, 10.0, 15.0, 11.0, 8.0, 7.0, 7.0, 5.0, 13.0], "seconds per pick": 1.2162251949310303}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [22.0, 6.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.8023855686187744}
+{"dataset": "Office", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00018923282623291017}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0005087614059448242}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00036599636077880857}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6126873731613159}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.118868064880371}
+{"dataset": "Office", "strategy": "Random", "ranks": [9.0, 7.0, 7.0, 3.0, 3.0, 3.0, 3.0, 2.0, 2.0, 3.0, 3.0], "seconds per pick": 0.00018720626831054689}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [9.0, 3.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0038510560989379883}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [9.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.002460479736328125}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [9.0, 7.0, 8.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.4597733736038208}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [9.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.9759454488754272}
+{"dataset": "Office", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0023886919021606444}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0002670764923095703}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00036995410919189454}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.0968119859695435}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.6173918724060057}
+{"dataset": "Office", "strategy": "Random", "ranks": [11.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00018537044525146484}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [11.0, 9.0, 10.0, 8.0, 5.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0026442766189575194}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [11.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00033605098724365234}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [11.0, 10.0, 4.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.3746927261352539}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [11.0, 12.0, 11.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.7453085422515869}
+{"dataset": "Office", "strategy": "Random", "ranks": [5.0, 3.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00020403861999511718}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0018678426742553711}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [5.0, 4.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.005926847457885742}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [5.0, 5.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.0739545106887818}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [5.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.6459527730941774}
+{"dataset": "Office", "strategy": "Random", "ranks": [15.0, 14.0, 16.0, 14.0, 12.0, 16.0, 16.0, 16.0, 13.0, 12.0, 12.0], "seconds per pick": 0.0011434078216552735}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [15.0, 13.0, 16.0, 11.0, 12.0, 3.0, 11.0, 5.0, 4.0, 8.0, 2.0], "seconds per pick": 0.00028738975524902346}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [15.0, 20.0, 16.0, 16.0, 21.0, 17.0, 16.0, 16.0, 15.0, 14.0, 14.0], "seconds per pick": 0.004360342025756836}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [15.0, 12.0, 9.0, 9.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.4465816259384154}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [15.0, 11.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.614376950263977}
+{"dataset": "Office", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00017185211181640624}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0002561807632446289}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00033240318298339845}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.451978611946106}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.265914249420166}
+{"dataset": "Office", "strategy": "Random", "ranks": [13.0, 13.0, 16.0, 15.0, 14.0, 12.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.000806736946105957}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [13.0, 12.0, 1.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0006962060928344726}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [13.0, 12.0, 11.0, 4.0, 1.0, 1.0, 2.0, 2.0, 1.0, 2.0, 2.0], "seconds per pick": 0.00031290054321289065}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [13.0, 12.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.36220011711120603}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [13.0, 12.0, 1.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.7886231422424317}
+{"dataset": "Office", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00016391277313232422}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00027091503143310546}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.016727852821350097}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.3589197874069214}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.7916954278945925}
+{"dataset": "Office", "strategy": "Random", "ranks": [2.0, 2.0, 7.0, 7.0, 6.0, 4.0, 6.0, 6.0, 6.0, 6.0, 6.0], "seconds per pick": 0.00017299652099609376}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0], "seconds per pick": 0.0003004789352416992}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 2.0], "seconds per pick": 0.000942230224609375}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.0205237865447998}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.9693697929382323}
+{"dataset": "Office", "strategy": "Random", "ranks": [5.0, 5.0, 5.0, 5.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 4.0], "seconds per pick": 0.005328559875488281}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [5.0, 6.0, 7.0, 3.0, 6.0, 5.0, 8.0, 6.0, 6.0, 8.0, 7.0], "seconds per pick": 0.0002994060516357422}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [5.0, 8.0, 8.0, 7.0, 5.0, 6.0, 6.0, 5.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0004260778427124023}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [5.0, 3.0, 4.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.7127880334854126}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [5.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.2778295516967773}
+{"dataset": "Office", "strategy": "Random", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0017147064208984375}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [2.0, 1.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0003364324569702148}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [2.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00035517215728759767}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.1154030561447144}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [2.0, 3.0, 5.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.125241208076477}
+{"dataset": "Office", "strategy": "Random", "ranks": [33.0, 35.0, 33.0, 28.0, 24.0, 26.0, 5.0, 14.0, 15.0, 13.0, 13.0], "seconds per pick": 0.0001762866973876953}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [33.0, 3.0, 4.0, 4.0, 3.0, 3.0, 3.0, 2.0, 2.0, 2.0, 3.0], "seconds per pick": 0.0019388198852539062}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [33.0, 31.0, 4.0, 3.0, 3.0, 6.0, 6.0, 5.0, 5.0, 5.0, 5.0], "seconds per pick": 0.0003607988357543945}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [33.0, 30.0, 22.0, 19.0, 15.0, 13.0, 11.0, 5.0, 3.0, 2.0, 6.0], "seconds per pick": 1.0562093257904053}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [33.0, 15.0, 9.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.731286644935608}
+{"dataset": "Office", "strategy": "Random", "ranks": [22.0, 9.0, 9.0, 9.0, 10.0, 9.0, 9.0, 10.0, 10.0, 12.0, 12.0], "seconds per pick": 0.0025767087936401367}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [22.0, 21.0, 12.0, 11.0, 10.0, 10.0, 10.0, 6.0, 7.0, 3.0, 6.0], "seconds per pick": 0.0002582073211669922}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [22.0, 11.0, 8.0, 6.0, 6.0, 8.0, 8.0, 9.0, 8.0, 8.0, 7.0], "seconds per pick": 0.0010712146759033203}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [22.0, 9.0, 15.0, 19.0, 7.0, 5.0, 4.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 1.1213780879974364}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [22.0, 5.0, 4.0, 5.0, 8.0, 8.0, 5.0, 2.0, 2.0, 1.0, 1.0], "seconds per pick": 2.645379328727722}
+{"dataset": "Office", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00018897056579589844}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00026810169219970703}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00036363601684570314}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.17203631401062}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.355231285095215}
+{"dataset": "Office", "strategy": "Random", "ranks": [29.0, 29.0, 29.0, 28.0, 24.0, 7.0, 7.0, 9.0, 9.0, 12.0, 9.0], "seconds per pick": 0.00017633438110351563}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [29.0, 18.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 4.0, 5.0], "seconds per pick": 0.000278782844543457}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [29.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.006559038162231445}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [29.0, 22.0, 19.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.0396347761154174}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [29.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.7407044649124146}
+{"dataset": "Office", "strategy": "Random", "ranks": [11.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0001646280288696289}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [11.0, 11.0, 10.0, 10.0, 7.0, 10.0, 9.0, 6.0, 6.0, 1.0, 1.0], "seconds per pick": 0.00028412342071533204}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [11.0, 20.0, 15.0, 35.0, 44.0, 42.0, 41.0, 33.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0024031639099121095}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [11.0, 5.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.1897249698638916}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [11.0, 5.0, 2.0, 6.0, 5.0, 5.0, 3.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.870326781272888}
+{"dataset": "Office", "strategy": "Random", "ranks": [4.0, 4.0, 3.0, 3.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00017735958099365234}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [4.0, 4.0, 9.0, 8.0, 8.0, 9.0, 8.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0003241300582885742}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [4.0, 4.0, 9.0, 12.0, 12.0, 15.0, 15.0, 13.0, 6.0, 9.0, 7.0], "seconds per pick": 0.00037152767181396483}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.1375833988189696}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.424841856956482}
+{"dataset": "Office", "strategy": "Random", "ranks": [14.0, 15.0, 13.0, 16.0, 16.0, 14.0, 13.0, 12.0, 12.0, 7.0, 7.0], "seconds per pick": 0.007421302795410156}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [14.0, 8.0, 6.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0002750873565673828}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [14.0, 12.0, 4.0, 3.0, 3.0, 3.0, 3.0, 3.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0003309726715087891}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [14.0, 8.0, 5.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.7293603897094727}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [14.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 5.171915030479431}
+{"dataset": "Office", "strategy": "Random", "ranks": [10.0, 11.0, 11.0, 8.0, 7.0, 8.0, 7.0, 7.0, 7.0, 6.0, 6.0], "seconds per pick": 0.0015048980712890625}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [10.0, 8.0, 4.0, 4.0, 4.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.00036466121673583984}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [10.0, 12.0, 5.0, 6.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0017420291900634766}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [10.0, 5.0, 6.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.6855040550231934}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [10.0, 8.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.334368658065796}
