@@ -1,0 +1,4 @@
+{"dataset": "CollegeMsg", "8 start times": 3.0, "Every start time": 9.0, "Contact-start prior": 1.0, "Tempered sum": 9.0, "Tempered sum + contact-start": 1.0, "Told rate": 10.0, "Told start": 2.0, "Told both": 1.0}
+{"dataset": "CollegeMsg", "8 start times": 7.0, "Every start time": 5.0, "Contact-start prior": 4.0, "Tempered sum": 6.0, "Tempered sum + contact-start": 4.0, "Told rate": 5.0, "Told start": 3.0, "Told both": 3.0}
+{"dataset": "CollegeMsg", "8 start times": 6.0, "Every start time": 6.0, "Contact-start prior": 4.0, "Tempered sum": 6.0, "Tempered sum + contact-start": 3.0, "Told rate": 6.0, "Told start": 12.0, "Told both": 17.0}
+{"dataset": "CollegeMsg", "8 start times": 69.0, "Every start time": 67.0, "Contact-start prior": 27.0, "Tempered sum": 55.0, "Tempered sum + contact-start": 39.0, "Told rate": 54.0, "Told start": 4.0, "Told both": 4.0}
