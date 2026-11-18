@@ -87,6 +87,34 @@ def information_gain(ctx: Context, **kwargs) -> np.ndarray:
     return np.maximum(gain, 0.0)
 
 
+def edge_cutting(ctx: Context, **kwargs) -> np.ndarray:
+    """EC^2 gain (Golovin, Krause & Ray, NeurIPS 2010) of testing each person.
+
+    Hypotheses are (source, outcome of every test), weighted by the current posterior
+    w_s times the mean-field probability of the outcomes; regions are sources. Every
+    pair of hypotheses with different sources is joined by an edge of weight equal to
+    the product of their weights. Report c at person v removes every hypothesis that
+    disagrees with it, so source s keeps weight w_s P(c | s) and the edge weight left is
+        E_c = (m_c^2 - sum_s w_s^2 P(c | s)^2) / 2,   m_c = sum_s w_s P(c | s).
+    The gain is E_before - sum_c m_c E_c. This objective is adaptive submodular, so
+    testing greedily needs at most (2 ln(1 / p_min) + 1) times the expected number of
+    tests of the best adaptive policy to pin down the source (under the mean-field
+    outcome model, p_min = smallest hypothesis weight). Information gain has no such
+    guarantee. 0 for people already tested."""
+    found = _reports(ctx, **kwargs)
+    if found is None:
+        return np.zeros(ctx.graph.n_nodes)
+    mass, report = found
+    w = mass / mass.sum()
+    conditional = report / np.maximum(mass, 1e-300)[:, None, None]  # P(c | s) per person
+    m = np.einsum("s,svc->vc", w, conditional)
+    squares = np.einsum("s,svc->vc", w ** 2, conditional ** 2)
+    before = 0.5 * (1.0 - np.sum(w ** 2))
+    gain = before - 0.5 * np.sum(m * (m ** 2 - squares), axis=1)
+    gain[ctx.outbreak.observers] = 0.0
+    return np.maximum(gain, 0.0)
+
+
 def infection_probability(ctx: Context, **kwargs) -> np.ndarray:
     """Posterior probability that each person was infected before t_observe (0 for people
     already tested). Testing the most likely infected follows Baker et al. (PNAS 2021),

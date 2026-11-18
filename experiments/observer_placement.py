@@ -21,7 +21,7 @@ import numpy as np
 from experiments.benchmark_localization import DATASETS, PROJECT_ROOT, rank_of_source
 from localization import estimators as est
 from localization.mean_field import mean_field_scores
-from localization.placement import candidate_split, infection_probability, information_gain
+from localization.placement import candidate_split, edge_cutting, infection_probability, information_gain
 from localization.spread import Outbreak, spread
 
 FRACTION = 0.05
@@ -73,13 +73,15 @@ def pick(strategy: str, ctx: est.Context, rng: np.random.Generator) -> int:
         prob = infection_probability(ctx)
         prob[ob.observers] = -1.0
         return int(np.argmax(prob))
+    if strategy == "Edge cutting (EC2)":
+        return int(np.argmax(np.where(np.isin(np.arange(ctx.graph.n_nodes), untested), edge_cutting(ctx), -1)))
     if strategy == "Information gain (ours)":
         return int(np.argmax(np.where(np.isin(np.arange(ctx.graph.n_nodes), untested), information_gain(ctx), -1)))
     raise ValueError(strategy)
 
 
 STRATEGIES = ["Random", "Highest degree", "Contact tracing", "Test top suspect", "Information gain (ours)",
-              "Split candidates (Spinelli-style)", "Most likely infected (Baker-style)"]
+              "Split candidates (Spinelli-style)", "Most likely infected (Baker-style)", "Edge cutting (EC2)"]
 
 
 def main(name: str, count: int, budget: int = 10, seed: int = 301) -> None:
