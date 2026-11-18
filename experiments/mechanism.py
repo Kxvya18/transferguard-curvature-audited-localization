@@ -19,6 +19,7 @@ Needs `sib`:
     conda run -n sib-bp python -m experiments.mechanism synthetic tree 3 30
     conda run -n sib-bp python -m experiments.mechanism real
     conda run -n sib-bp python -m experiments.mechanism reference "Hospital" "No repeats" 30
+    conda run -n sib-bp python -m experiments.mechanism diagnose "Hospital" 30
 """
 
 from __future__ import annotations
@@ -26,6 +27,7 @@ from __future__ import annotations
 import json
 import sys
 import time
+from dataclasses import replace
 
 import networkx as nx
 import numpy as np
@@ -33,7 +35,8 @@ import numpy as np
 from experiments.benchmark_localization import DATASETS, PROJECT_ROOT, rank_of_source
 from localization import estimators as est
 from localization.belief_propagation import bp_scores
-from localization.mean_field import mean_field_scores, message_passing_scores
+from localization.mean_field import mean_field_loglik, mean_field_scores, message_passing_scores
+from scipy.special import logsumexp
 from localization.spread import simulate_outbreak
 from localization.temporal_graph import TemporalGraph, _join_times
 
@@ -41,7 +44,7 @@ from localization.temporal_graph import TemporalGraph, _join_times
 # passing the infection over the lookback period and outbreaks stay comparable in size.
 N, WINDOWS, HORIZON, LOOKBACK, FRACTION = 100, 150, 20, 40, 0.2
 RATE = {1: 0.9, 3: 0.5, 9: 0.25}
-BACKBONES = {"tree": None, "degree 4": 4, "degree 8": 8}
+BACKBONES = {"tree": None, "degree 4": 4, "degree 8": 8, "degree 16": 16, "degree 32": 32}
 METHODS = {"Mean-field": mean_field_scores, "Message passing": message_passing_scores, "Belief propagation": bp_scores}
 
 
@@ -167,6 +170,53 @@ def reference(name: str, kind: str, count: int, seed: int = 801) -> None:
             handle.write(json.dumps(row) + "\n")
 
 
+def diagnose(name: str, count: int, seed: int = 901) -> None:
+    """Where does belief propagation lose? Per outbreak, compare:
+    - both methods told the true start and rate (is BP's per-model inference worse?);
+    - BP's seed marginals averaged over the grid without its likelihood weights
+      (is the Bethe likelihood used to weigh start times and rates the problem?);
+    - BP's convergence error (does BP fail to converge on dense loops?).
+    `name` is a real network, or a synthetic cell such as "degree 32, 3x"."""
+    if name in DATASETS:
+        loader, p, horizon, lookback = DATASETS[name]
+        graph, fraction = loader(seed), 0.1
+    else:
+        kind, repeats = name.rsplit(", ", 1)
+        repeats = int(repeats.rstrip("x"))
+        graph = contact_sequence(kind, repeats, np.random.default_rng([seed, repeats]))
+        p, horizon, lookback, fraction = RATE[repeats], HORIZON, LOOKBACK, FRACTION
+    LOOKBACK_OF[graph.name] = lookback
+    rng = np.random.default_rng(seed)
+    shape = structure(graph, rng)
+    out = PROJECT_ROOT / "outputs" / "mechanism"
+    out.mkdir(parents=True, exist_ok=True)
+    path = out / "diagnostics.jsonl"
+    done = sum(1 for line in path.open() if json.loads(line)["network"] == name) if path.exists() else 0
+    k = 0
+    while k < count:
+        ob = simulate_outbreak(graph, rng, p, horizon, fraction, max_tries=2000)
+        if ob is None:
+            continue
+        k += 1
+        if k <= done:
+            continue
+        ctx = est.build_context(graph, ob, lookback)
+        told = replace(ctx, t_lo=ob.t_start)
+        loglik, log_seed, errors = bp_scores(ctx, parts=True)
+        bp_told_loglik, bp_told_seed, told_errors = bp_scores(told, prob_grid=(p,), n_start_times=1, parts=True)
+        finish = lambda s: np.where(np.isfinite(s), s, est.INFEASIBLE)
+        row = {"network": name, **shape,
+               "Mean-field": rank_of_source(mean_field_scores(ctx), ob.source),
+               "Belief propagation": rank_of_source(finish(logsumexp(loglik[:, None] + log_seed, axis=0)), ob.source),
+               "Mean-field, told": rank_of_source(finish(mean_field_loglik(told, prob_grid=(p,), n_start_times=1)[0]), ob.source),
+               "Belief propagation, told": rank_of_source(finish(bp_told_seed[0]), ob.source),
+               "BP marginals, unweighted": rank_of_source(finish(logsumexp(log_seed, axis=0)), ob.source),
+               "BP error (max over grid)": float(np.nanmax(errors)),
+               "BP error, told": float(told_errors[0])}
+        with path.open("a") as handle:
+            handle.write(json.dumps(row) + "\n")
+
+
 def real() -> None:
     out = PROJECT_ROOT / "outputs" / "mechanism"
     out.mkdir(parents=True, exist_ok=True)
@@ -182,6 +232,8 @@ def real() -> None:
 if __name__ == "__main__":
     if sys.argv[1] == "real":
         real()
+    elif sys.argv[1] == "diagnose":
+        diagnose(sys.argv[2], int(sys.argv[3]))
     elif sys.argv[1] == "reference":
         reference(sys.argv[2], sys.argv[3], int(sys.argv[4]))
     else:

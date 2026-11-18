@@ -31,14 +31,18 @@ def bp_scores(
     tolerance: float = 1e-6,
     damping: float = 0.5,
     status_only: bool = False,
-) -> np.ndarray:
-    """Damping 0.5 is needed on dense, loopy contact networks (undamped BP oscillates)."""
+    parts: bool = False,
+):
+    """With `parts`, returns per (start, rate) term: the Bethe log-likelihood, the log seed
+    marginals and BP's final convergence error, instead of the combined score.
+
+    Damping 0.5 is needed on dense, loopy contact networks (undamped BP oscillates)."""
     import sib
 
     ob, graph = ctx.outbreak, ctx.graph
     n, t_obs = graph.n_nodes, ob.t_observe
     y = ob.observed_times.astype(int)
-    terms = []
+    terms, logliks, seeds, errors = [], [], [], []
     for tau in _start_times(ctx, n_start_times):
         for p in prob_grid:
             # SIB needs each node's events in time order, so contacts and tests are
@@ -66,12 +70,20 @@ def bp_scores(
                     factor.append_contact(a, b, time, float(p), float(p))
                 else:
                     factor.append_observation(a, sib.Test(1, 0, 0) if b == 0 else sib.Test(0, 1, 0), time)
-            factor.iterate(maxit=max_iterations, tol=tolerance, damping=damping, callback=None)
+            last = [np.nan]  # final change in messages; above `tolerance` means BP did not converge
+            factor.iterate(maxit=max_iterations, tol=tolerance, damping=damping,
+                           callback=lambda t, err, f: last.__setitem__(0, err))
+            error = last[0]
             seed = np.zeros(n)
             for k in range(min(len(factor.nodes), n)):
                 seed[k] = factor.nodes[k].bt[0]
             with np.errstate(divide="ignore"):
                 terms.append(factor.loglikelihood() + np.log(seed))
+                logliks.append(factor.loglikelihood())
+                seeds.append(np.log(seed))
+            errors.append(float(error) if error is not None else np.nan)
+    if parts:
+        return np.array(logliks), np.array(seeds), np.array(errors)
     score = logsumexp(np.array(terms), axis=0) if terms else np.full(n, -np.inf)
     score = np.where(graph.join <= int(ctx.infected_times.min()), score, -np.inf)
     return np.where(np.isfinite(score), score, INFEASIBLE)
