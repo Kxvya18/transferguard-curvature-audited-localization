@@ -12,7 +12,8 @@ and rate are summed out:
   calibrated sets); this keeps one lucky start time from dominating.
 - Told rate / told start / told both: reference rows with the truth given.
 
-Run:  python -m experiments.start_time "Hospital" 40 [seed]
+Run:  python -m experiments.start_time "Hospital" 40 [any]
+("any": the source may start without a contact, to test the contact-start prior.)
 """
 
 from __future__ import annotations
@@ -62,18 +63,18 @@ def variants(ctx: est.Context, p: float) -> dict[str, np.ndarray]:
     }
 
 
-def main(name: str, count: int, seed: int = 501) -> None:
+def main(name: str, count: int, seed: int = 501, any_start: bool = False) -> None:
     loader, p, horizon, lookback = DATASETS[name]
     graph = loader(seed)
     rng = np.random.default_rng(seed)
-    out = PROJECT_ROOT / "outputs" / "start_time"
+    out = PROJECT_ROOT / "outputs" / ("start_time_any" if any_start else "start_time")
     out.mkdir(parents=True, exist_ok=True)
     path = out / f"{name.replace(' ', '_')}.jsonl"
     done = sum(1 for _ in path.open()) if path.exists() else 0
     for k in range(count):
         ob = None
         while ob is None:
-            ob = simulate_outbreak(graph, rng, p, horizon, FRACTION)
+            ob = simulate_outbreak(graph, rng, p, horizon, FRACTION, any_start=any_start)
         if k < done:
             continue
         ctx = est.build_context(graph, ob, lookback)
@@ -83,4 +84,4 @@ def main(name: str, count: int, seed: int = 501) -> None:
 
 
 if __name__ == "__main__":
-    main(sys.argv[1], int(sys.argv[2]), *(int(a) for a in sys.argv[3:4]))
+    main(sys.argv[1], int(sys.argv[2]), any_start="any" in sys.argv[3:])

@@ -77,13 +77,21 @@ def simulate_outbreak(
     observer_fraction: float,
     min_infected_observers: int = 3,
     max_tries: int = 200,
+    any_start: bool = False,
 ) -> Outbreak | None:
-    """Draw a source active at a random window, spread for `horizon` windows, observe sparsely."""
+    """Draw a source active at a random window, spread for `horizon` windows, observe sparsely.
+
+    With `any_start`, the source is anyone present at that window, whether or not
+    they have a contact in it (a robustness check for the contact-start prior).
+    """
     n = graph.n_nodes
     n_obs = max(int(round(observer_fraction * n)), min_infected_observers)
     for _ in range(max_tries):
         t_start = int(rng.integers(0, graph.n_windows - horizon))
-        active = np.unique(graph.windows[t_start].ravel())
+        if any_start:
+            active = np.flatnonzero(graph.join <= t_start)
+        else:
+            active = np.unique(graph.windows[t_start].ravel())
         if not len(active):
             continue
         source = int(rng.choice(active))
