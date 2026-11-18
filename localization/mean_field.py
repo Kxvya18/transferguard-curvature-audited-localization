@@ -46,6 +46,29 @@ def _start_times(ctx: Context, n_start_times: int | None) -> np.ndarray:
     return np.unique(np.linspace(ctx.t_lo, max(first, ctx.t_lo), n_start_times).round().astype(int))
 
 
+def mean_field_marginals(graph, source: int, t_begin: int, t_end: int, p: float) -> np.ndarray:
+    """Mean-field infection probabilities q[t, v] for t = t_begin .. t_end, one known source.
+
+    These upper-bound the exact SI probabilities (Lemma 1 in the paper): whether a node is
+    infected is an increasing function of the independent per-contact transmission coins,
+    so by Harris's inequality P(v healthy at t + 1) >= P(v healthy at t) * prod (1 - p P(u infected at t)),
+    and induction over windows gives exact <= q.
+    """
+    q = np.zeros(graph.n_nodes)
+    q[source] = 1.0
+    out = [q.copy()]
+    for t in range(t_begin, t_end):
+        c = graph.windows[t]
+        if len(c):
+            pairs = np.unique(np.sort(c, axis=1), axis=0)
+            log_survive = np.zeros(graph.n_nodes)
+            np.add.at(log_survive, pairs[:, 1], np.log1p(-p * q[pairs[:, 0]]))
+            np.add.at(log_survive, pairs[:, 0], np.log1p(-p * q[pairs[:, 1]]))
+            q = 1.0 - (1.0 - q) * np.exp(log_survive)
+        out.append(q.copy())
+    return np.array(out)
+
+
 def mean_field_loglik(
     ctx: Context,
     prob_grid: tuple[float, ...] = (0.1, 0.3, 0.5, 0.7, 0.9),

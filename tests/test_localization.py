@@ -3,7 +3,7 @@ import unittest
 import numpy as np
 
 from localization.estimators import boltzmann_posterior, build_context, jordan_center, temporal_screen
-from localization.mean_field import mean_field_scores
+from localization.mean_field import mean_field_marginals, mean_field_scores
 from localization.spread import Outbreak, earliest_arrival, spread
 from localization.temporal_graph import TemporalGraph, _join_times
 
@@ -60,6 +60,41 @@ class LocalizationTests(unittest.TestCase):
         outbreak = Outbreak(source=0, t_start=0, t_observe=4, observers=np.array([0, 3]), observed_times=np.array([0.0, 3.0]))
         ctx = build_context(graph, outbreak, max_lookback=4)
         self.assertIn(int(np.argmax(jordan_center(ctx))), (1, 2))
+
+    def test_mean_field_upper_bounds_exact_infection_probability(self):
+        # Lemma 1: on a looped network with repeated contacts, mean field never falls
+        # below the true SI probability (checked against 40,000 simulated outbreaks).
+        rng = np.random.default_rng(3)
+        n, horizon, p = 8, 12, 0.4
+        edges = np.array([[0, 1], [1, 2], [2, 0], [2, 3], [3, 4], [4, 5], [5, 3], [5, 6], [6, 7], [7, 1]])
+        windows = [edges[rng.random(len(edges)) < 0.5] for _ in range(horizon)]
+        graph = TemporalGraph("loops", n, windows, np.zeros(n, dtype=int))
+        q = mean_field_marginals(graph, 0, 0, horizon, p)
+        runs = 40_000
+        start = np.full((runs, n), np.inf)
+        start[:, 0] = 0
+        times = spread(graph, start, 0, horizon, p, rng)
+        for t in range(horizon + 1):
+            exact = np.mean(times <= t, axis=0)
+            margin = 4 * np.sqrt(exact * (1 - exact) / runs) + 1e-9
+            self.assertTrue(np.all(q[t] >= exact - margin), (t, q[t], exact))
+        self.assertGreater(np.max(q[-1] - np.mean(times <= horizon, axis=0)), 0.01)  # the bound is not tight here
+
+    def test_pruning_never_drops_the_true_source(self):
+        # Lemma 2: infection cannot beat the earliest arrival, so the true source always
+        # survives the earliest-arrival screen and gets a finite mean-field score.
+        from localization.spread import simulate_outbreak
+        from localization.temporal_graph import growing_network
+        graph = growing_network(150, 80, np.random.default_rng(5))
+        rng = np.random.default_rng(11)
+        checked = 0
+        while checked < 25:
+            ob = simulate_outbreak(graph, rng, p=0.5, horizon=15, observer_fraction=0.1)
+            if ob is None:
+                continue
+            ctx = build_context(graph, ob, max_lookback=30)
+            self.assertGreater(mean_field_scores(ctx)[ob.source], -1e11)
+            checked += 1
 
 
 if __name__ == "__main__":
