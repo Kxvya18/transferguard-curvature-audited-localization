@@ -198,3 +198,60 @@
 {"dataset": "High school", "strategy": "Contact tracing", "ranks": [5.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0], "seconds per pick": 0.000586247444152832}
 {"dataset": "High school", "strategy": "Test top suspect", "ranks": [5.0, 4.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.5638757705688476}
 {"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [5.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.0765984058380127}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 2.0, 2.0, 2.0, 2.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.05206489562988281}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.807635498046875}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [17.0, 16.0, 14.0, 12.0, 13.0, 13.0, 4.0, 4.0, 4.0, 4.0, 4.0], "seconds per pick": 0.06893446445465087}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [17.0, 16.0, 1.0, 1.0, 1.0, 1.0, 4.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.1371286869049073}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [45.0, 16.0, 6.0, 6.0, 6.0, 6.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.07388861179351806}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [45.0, 35.0, 35.0, 23.0, 17.0, 20.0, 22.0, 6.0, 6.0, 3.0, 3.0], "seconds per pick": 1.422299313545227}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.09481866359710693}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.932077956199646}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [48.0, 23.0, 6.0, 6.0, 7.0, 3.0, 3.0, 3.0, 3.0, 3.0, 1.0], "seconds per pick": 0.0729032039642334}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [48.0, 56.0, 3.0, 3.0, 3.0, 7.0, 9.0, 3.0, 1.0, 1.0, 1.0], "seconds per pick": 1.1934475421905517}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0734419584274292}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.001613235473633}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [5.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.07506735324859619}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [5.0, 3.0, 7.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.2568867444992065}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [12.0, 12.0, 12.0, 15.0, 23.0, 39.0, 44.0, 64.0, 66.0, 39.0, 42.0], "seconds per pick": 0.06748526096343994}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [12.0, 54.0, 13.0, 8.0, 3.0, 3.0, 2.0, 2.0, 2.0, 3.0, 2.0], "seconds per pick": 2.854147934913635}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [21.0, 14.0, 17.0, 13.0, 13.0, 12.0, 12.0, 13.0, 13.0, 12.0, 2.0], "seconds per pick": 0.09402897357940673}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [21.0, 20.0, 9.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 1.296539306640625}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.06442158222198487}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 3.2606909036636353}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [46.0, 34.0, 34.0, 29.0, 29.0, 22.0, 23.0, 35.0, 32.0, 9.0, 9.0], "seconds per pick": 0.15466845035552979}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [46.0, 37.0, 52.0, 38.0, 30.0, 28.0, 13.0, 10.0, 13.0, 15.0, 16.0], "seconds per pick": 3.78150737285614}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [3.0, 3.0, 4.0, 4.0, 8.0, 6.0, 6.0, 6.0, 6.0, 7.0, 5.0], "seconds per pick": 0.10462219715118408}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 3.3751394748687744}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.07439000606536865}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 2.0, 2.0, 2.0, 2.0, 1.0, 2.0, 2.0, 2.0, 1.0, 1.0], "seconds per pick": 3.31885712146759}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [8.0, 7.0, 6.0, 4.0, 7.0, 8.0, 8.0, 7.0, 1.0, 1.0, 1.0], "seconds per pick": 0.07001349925994874}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [8.0, 5.0, 5.0, 1.0, 1.0, 1.0, 3.0, 7.0, 6.0, 1.0, 1.0], "seconds per pick": 1.383695936203003}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 2.0, 2.0, 1.0, 1.0, 10.0, 10.0, 11.0, 11.0, 14.0, 14.0], "seconds per pick": 0.052745270729064944}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.790084195137024}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [17.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.06565759181976319}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [17.0, 15.0, 14.0, 14.0, 35.0, 35.0, 36.0, 36.0, 36.0, 22.0, 11.0], "seconds per pick": 3.1334553718566895}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.05815775394439697}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.4327897787094116}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [28.0, 23.0, 10.0, 10.0, 4.0, 9.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.06777050495147705}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [28.0, 23.0, 55.0, 4.0, 4.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.219027304649353}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [7.0, 8.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.12411971092224121}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [7.0, 14.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.7095009565353394}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [11.0, 10.0, 10.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 8.0, 9.0], "seconds per pick": 0.08414485454559326}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [11.0, 11.0, 11.0, 6.0, 5.0, 5.0, 2.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 0.9214985370635986}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.07162370681762695}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.878090834617615}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [30.0, 27.0, 31.0, 30.0, 35.0, 33.0, 36.0, 37.0, 35.0, 24.0, 19.0], "seconds per pick": 0.059909915924072264}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [30.0, 6.0, 6.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.7471163988113403}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [9.0, 9.0, 15.0, 22.0, 23.0, 23.0, 23.0, 23.0, 23.0, 5.0, 5.0], "seconds per pick": 0.05820622444152832}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [9.0, 12.0, 3.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.862140583992004}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [13.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.07493882179260254}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [13.0, 3.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0], "seconds per pick": 2.789865517616272}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [5.0, 1.0, 1.0, 2.0, 3.0, 3.0, 3.0, 3.0, 2.0, 2.0, 2.0], "seconds per pick": 0.05850913524627686}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [5.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.8696524143218993}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.02999236583709717}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [3.0, 2.0, 3.0, 3.0, 2.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.22175185680389403}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [4.0, 6.0, 5.0, 6.0, 6.0, 6.0, 6.0, 4.0, 3.0, 3.0, 3.0], "seconds per pick": 0.06509180068969726}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 3.0, 2.0, 1.0, 1.0], "seconds per pick": 3.079611372947693}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [17.0, 17.0, 17.0, 3.0, 3.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.09381113052368165}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [17.0, 11.0, 10.0, 8.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.1553544998168945}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.10544559955596924}

@@ -30,6 +30,7 @@ def bp_scores(
     max_iterations: int = 1000,
     tolerance: float = 1e-6,
     damping: float = 0.5,
+    status_only: bool = False,
 ) -> np.ndarray:
     """Damping 0.5 is needed on dense, loopy contact networks (undamped BP oscillates)."""
     import sib
@@ -54,7 +55,7 @@ def bp_scores(
             for node, time in zip(ob.observers, y):
                 if time < t_obs:
                     events.append((int(time) + 1, 0, int(node), 1))
-                    if time > tau:
+                    if time > tau and not status_only:  # status-only: infected by t_obs, time unknown
                         events.append((int(time), 0, int(node), 0))
                 else:
                     events.append((t_obs, 0, int(node), 0))

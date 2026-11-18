@@ -21,7 +21,7 @@ import numpy as np
 from experiments.benchmark_localization import DATASETS, PROJECT_ROOT, rank_of_source
 from localization import estimators as est
 from localization.mean_field import mean_field_scores
-from localization.placement import information_gain
+from localization.placement import candidate_split, infection_probability, information_gain
 from localization.spread import Outbreak, spread
 
 FRACTION = 0.05
@@ -67,12 +67,19 @@ def pick(strategy: str, ctx: est.Context, rng: np.random.Generator) -> int:
         score = mean_field_scores(ctx)
         score[ob.observers] = -np.inf
         return int(np.argmax(score))
+    if strategy == "Split candidates (Spinelli-style)":
+        return int(np.argmax(candidate_split(ctx)))
+    if strategy == "Most likely infected (Baker-style)":
+        prob = infection_probability(ctx)
+        prob[ob.observers] = -1.0
+        return int(np.argmax(prob))
     if strategy == "Information gain (ours)":
         return int(np.argmax(np.where(np.isin(np.arange(ctx.graph.n_nodes), untested), information_gain(ctx), -1)))
     raise ValueError(strategy)
 
 
-STRATEGIES = ["Random", "Highest degree", "Contact tracing", "Test top suspect", "Information gain (ours)"]
+STRATEGIES = ["Random", "Highest degree", "Contact tracing", "Test top suspect", "Information gain (ours)",
+              "Split candidates (Spinelli-style)", "Most likely infected (Baker-style)"]
 
 
 def main(name: str, count: int, budget: int = 10, seed: int = 301) -> None:
@@ -82,12 +89,15 @@ def main(name: str, count: int, budget: int = 10, seed: int = 301) -> None:
     out = PROJECT_ROOT / "outputs" / "observer_placement"
     out.mkdir(parents=True, exist_ok=True)
     path = out / f"{name.replace(' ', '_')}.jsonl"
-    done = sum(1 for _ in path.open()) // len(STRATEGIES) if path.exists() else 0
+    # Resume per strategy: outbreaks are regenerated in the same order, so a strategy added
+    # later is scored on the same outbreaks as the others.
+    rows = [json.loads(line)["strategy"] for line in path.open()] if path.exists() else []
+    done = {s: rows.count(s) for s in STRATEGIES}
     for k in range(count):
         first, truth = outbreak_with_truth(graph, rng, p, horizon)
-        if k < done:  # resume: same outbreaks, already scored
-            continue
         for strategy in STRATEGIES:
+            if k < done[strategy]:
+                continue
             pick_rng = np.random.default_rng([seed, k])
             ob = first
             ranks, seconds = [], 0.0

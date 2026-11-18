@@ -198,3 +198,83 @@
 {"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [16.0, 20.0, 15.0, 16.0, 15.0, 15.0, 17.0, 17.0, 18.0, 17.0, 7.0], "seconds per pick": 0.00028734207153320314}
 {"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [16.0, 14.0, 14.0, 14.0, 13.0, 11.0, 3.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 0.3663837671279907}
 {"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [16.0, 14.0, 14.0, 14.0, 12.0, 9.0, 10.0, 3.0, 1.0, 1.0, 1.0], "seconds per pick": 0.7203009128570557}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [17.0, 13.0, 14.0, 17.0, 13.0, 13.0, 10.0, 7.0, 6.0, 3.0, 2.0], "seconds per pick": 0.01092841625213623}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [17.0, 3.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.4554606914520264}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [38.0, 18.0, 23.0, 19.0, 17.0, 4.0, 3.0, 3.0, 2.0, 1.0, 3.0], "seconds per pick": 0.01710333824157715}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [38.0, 18.0, 14.0, 8.0, 4.0, 3.0, 3.0, 4.0, 5.0, 6.0, 2.0], "seconds per pick": 0.401371693611145}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [20.0, 20.0, 16.0, 15.0, 16.0, 15.0, 17.0, 19.0, 18.0, 20.0, 20.0], "seconds per pick": 0.010542678833007812}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [20.0, 3.0, 10.0, 14.0, 15.0, 15.0, 16.0, 6.0, 7.0, 7.0, 7.0], "seconds per pick": 0.3434980154037476}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0076320886611938475}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.13787333965301513}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [19.0, 17.0, 14.0, 15.0, 14.0, 14.0, 14.0, 16.0, 13.0, 10.0, 10.0], "seconds per pick": 0.01852555274963379}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [19.0, 19.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.3995249032974243}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.024974560737609862}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.5307941436767578}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [9.0, 5.0, 5.0, 4.0, 4.0, 3.0, 3.0, 3.0, 2.0, 1.0, 1.0], "seconds per pick": 0.0243816614151001}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [9.0, 5.0, 6.0, 6.0, 3.0, 4.0, 8.0, 7.0, 7.0, 6.0, 1.0], "seconds per pick": 0.5842225551605225}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.014352703094482422}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.450913143157959}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [12.0, 10.0, 6.0, 5.0, 5.0, 4.0, 15.0, 14.0, 15.0, 12.0, 11.0], "seconds per pick": 0.03421630859375}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [12.0, 15.0, 14.0, 15.0, 5.0, 8.0, 4.0, 10.0, 9.0, 8.0, 11.0], "seconds per pick": 0.5222223997116089}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [4.0, 7.0, 7.0, 7.0, 7.0, 6.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.011530709266662598}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [4.0, 3.0, 6.0, 8.0, 6.0, 4.0, 5.0, 4.0, 4.0, 4.0, 4.0], "seconds per pick": 0.477560019493103}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [6.0, 3.0, 7.0, 8.0, 9.0, 8.0, 4.0, 3.0, 4.0, 4.0, 5.0], "seconds per pick": 0.01779313087463379}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [6.0, 2.0, 8.0, 14.0, 4.0, 5.0, 5.0, 5.0, 5.0, 11.0, 11.0], "seconds per pick": 0.5067176103591919}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [15.0, 4.0, 4.0, 4.0, 4.0, 4.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.014116048812866211}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [15.0, 10.0, 12.0, 10.0, 9.0, 8.0, 7.0, 5.0, 6.0, 6.0, 5.0], "seconds per pick": 0.5681358814239502}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.021449518203735352}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 2.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.8352977752685546}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [13.0, 24.0, 27.0, 20.0, 13.0, 15.0, 16.0, 17.0, 16.0, 15.0, 14.0], "seconds per pick": 0.031890130043029784}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [13.0, 6.0, 8.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.8640278100967407}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0050755500793457035}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 2.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.5659098148345947}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [27.0, 30.0, 22.0, 22.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.018890905380249023}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [27.0, 29.0, 2.0, 1.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6179207324981689}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [30.0, 9.0, 9.0, 9.0, 9.0, 3.0, 6.0, 3.0, 3.0, 2.0, 1.0], "seconds per pick": 0.010731101036071777}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [30.0, 22.0, 16.0, 2.0, 2.0, 4.0, 5.0, 2.0, 2.0, 3.0, 2.0], "seconds per pick": 0.6684360980987549}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [21.0, 9.0, 10.0, 6.0, 10.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.032753729820251466}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [21.0, 19.0, 17.0, 8.0, 8.0, 5.0, 3.0, 7.0, 7.0, 7.0, 5.0], "seconds per pick": 0.6619372606277466}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [14.0, 8.0, 9.0, 1.0, 5.0, 4.0, 4.0, 1.0, 2.0, 2.0, 2.0], "seconds per pick": 0.019353365898132323}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [14.0, 15.0, 4.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0], "seconds per pick": 0.5062153577804566}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [14.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.013725352287292481}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [14.0, 20.0, 15.0, 16.0, 16.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.46352415084838866}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [9.0, 9.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.013010978698730469}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [9.0, 7.0, 6.0, 7.0, 6.0, 6.0, 6.0, 4.0, 4.0, 3.0, 3.0], "seconds per pick": 0.6156648874282837}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.020078659057617188}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 2.0, 3.0, 3.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6195459365844727}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.01909825801849365}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 4.0, 4.0, 4.0, 4.0, 4.0], "seconds per pick": 0.6333410501480102}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.01726112365722656}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6328480243682861}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [3.0, 5.0, 8.0, 8.0, 8.0, 7.0, 6.0, 9.0, 9.0, 9.0, 8.0], "seconds per pick": 0.012356829643249512}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [3.0, 7.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.5650159597396851}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [11.0, 8.0, 8.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.016591095924377443}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [11.0, 12.0, 11.0, 12.0, 12.0, 11.0, 11.0, 11.0, 11.0, 10.0, 10.0], "seconds per pick": 0.5054499864578247}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [3.0, 6.0, 8.0, 9.0, 16.0, 16.0, 16.0, 15.0, 14.0, 14.0, 12.0], "seconds per pick": 0.015728855133056642}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [3.0, 13.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.626418662071228}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [14.0, 16.0, 19.0, 16.0, 20.0, 19.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.023740077018737794}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [14.0, 2.0, 2.0, 2.0, 3.0, 4.0, 4.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.5642246007919312}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [3.0, 2.0, 4.0, 3.0, 5.0, 7.0, 8.0, 6.0, 5.0, 5.0, 5.0], "seconds per pick": 0.014283323287963867}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [3.0, 8.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.7148592948913575}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 5.0, 5.0, 16.0], "seconds per pick": 0.02012903690338135}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [8.0, 21.0, 19.0, 19.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.64053795337677}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [29.0, 29.0, 27.0, 26.0, 26.0, 26.0, 23.0, 23.0, 23.0, 24.0, 2.0], "seconds per pick": 0.03887758255004883}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [29.0, 27.0, 15.0, 13.0, 6.0, 5.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.5821067571640015}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [20.0, 15.0, 15.0, 16.0, 18.0, 19.0, 17.0, 17.0, 17.0, 1.0, 1.0], "seconds per pick": 0.02551569938659668}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [20.0, 8.0, 8.0, 16.0, 11.0, 2.0, 2.0, 3.0, 3.0, 4.0, 4.0], "seconds per pick": 0.6084053754806519}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.017484521865844725}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 5.0, 3.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.5513381481170654}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [4.0, 4.0, 4.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 2.0, 2.0], "seconds per pick": 0.009710383415222169}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [4.0, 4.0, 4.0, 4.0, 3.0, 3.0, 3.0, 3.0, 1.0, 1.0, 1.0], "seconds per pick": 0.5431101560592652}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [18.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.004472684860229492}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [18.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.5491815567016601}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [15.0, 14.0, 13.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.03434009552001953}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [15.0, 10.0, 7.0, 7.0, 7.0, 6.0, 7.0, 6.0, 7.0, 7.0, 7.0], "seconds per pick": 0.5397133588790893}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [4.0, 6.0, 10.0, 9.0, 12.0, 12.0, 12.0, 14.0, 14.0, 2.0, 2.0], "seconds per pick": 0.024903512001037596}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [4.0, 6.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6599464416503906}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [11.0, 11.0, 9.0, 3.0, 3.0, 2.0, 3.0, 2.0, 2.0, 2.0, 1.0], "seconds per pick": 0.014886617660522461}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [11.0, 9.0, 5.0, 8.0, 8.0, 8.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.6648571729660034}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [3.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 1.0], "seconds per pick": 0.03244647979736328}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 3.0], "seconds per pick": 0.4869993209838867}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [16.0, 16.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.03495080471038818}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [16.0, 20.0, 23.0, 23.0, 25.0, 24.0, 23.0, 23.0, 18.0, 18.0, 18.0], "seconds per pick": 0.5944432973861694}

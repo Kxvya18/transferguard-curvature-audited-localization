@@ -198,3 +198,11 @@
 {"dataset": "Email-Eu", "strategy": "Contact tracing", "ranks": [15.0, 17.0, 15.0, 15.0, 14.0, 10.0, 8.0, 9.0, 9.0, 9.0, 9.0], "seconds per pick": 0.002040672302246094}
 {"dataset": "Email-Eu", "strategy": "Test top suspect", "ranks": [15.0, 14.0, 9.0, 7.0, 6.0, 7.0, 4.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 4.746926021575928}
 {"dataset": "Email-Eu", "strategy": "Information gain (ours)", "ranks": [15.0, 9.0, 8.0, 7.0, 6.0, 5.0, 4.0, 4.0, 1.0, 1.0, 1.0], "seconds per pick": 6.195757722854614}
+{"dataset": "Email-Eu", "strategy": "Split candidates (Spinelli-style)", "ranks": [3.0, 3.0, 3.0, 3.0, 1.0, 1.0, 1.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 1.0564227819442749}
+{"dataset": "Email-Eu", "strategy": "Most likely infected (Baker-style)", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 15.40666630268097}
+{"dataset": "Email-Eu", "strategy": "Split candidates (Spinelli-style)", "ranks": [6.0, 178.0, 221.0, 8.0, 6.0, 8.0, 8.0, 9.0, 13.0, 33.0, 24.0], "seconds per pick": 1.1042494773864746}
+{"dataset": "Email-Eu", "strategy": "Most likely infected (Baker-style)", "ranks": [6.0, 2.0, 2.0, 2.0, 7.0, 7.0, 10.0, 12.0, 11.0, 11.0, 13.0], "seconds per pick": 13.469210314750672}
+{"dataset": "Email-Eu", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.800167727470398}
+{"dataset": "Email-Eu", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 7.366402673721313}
+{"dataset": "Email-Eu", "strategy": "Split candidates (Spinelli-style)", "ranks": [20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0, 22.0, 22.0, 22.0, 19.0], "seconds per pick": 0.7575108051300049}
+{"dataset": "Email-Eu", "strategy": "Most likely infected (Baker-style)", "ranks": [20.0, 16.0, 16.0, 20.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 12.001816129684448}

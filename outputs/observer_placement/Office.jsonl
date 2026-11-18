@@ -198,3 +198,83 @@
 {"dataset": "Office", "strategy": "Contact tracing", "ranks": [10.0, 12.0, 5.0, 6.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0017420291900634766}
 {"dataset": "Office", "strategy": "Test top suspect", "ranks": [10.0, 5.0, 6.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.6855040550231934}
 {"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [10.0, 8.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.334368658065796}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.015640568733215333}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.728842854499817}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [5.0, 7.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0], "seconds per pick": 0.039325380325317384}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [5.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.6556852817535401}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [7.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.012363362312316894}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [7.0, 7.0, 7.0, 7.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.3256740808486938}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [4.0, 4.0, 5.0, 5.0, 3.0, 4.0, 3.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.04024362564086914}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [4.0, 4.0, 4.0, 1.0, 1.0, 1.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 2.3697416305541994}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.02158637046813965}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [3.0, 3.0, 4.0, 3.0, 2.0, 2.0, 2.0, 3.0, 3.0, 1.0, 1.0], "seconds per pick": 2.217171287536621}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [37.0, 37.0, 16.0, 16.0, 15.0, 11.0, 10.0, 11.0, 9.0, 11.0, 12.0], "seconds per pick": 0.03220155239105225}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [37.0, 17.0, 15.0, 15.0, 11.0, 9.0, 2.0, 1.0, 1.0, 2.0, 1.0], "seconds per pick": 1.7920531988143922}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [4.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.014305925369262696}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.906824254989624}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0], "seconds per pick": 0.029116201400756835}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.1985885858535767}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.02685563564300537}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.2072293519973756}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [5.0, 10.0, 8.0, 6.0, 4.0, 3.0, 2.0, 2.0, 3.0, 1.0, 1.0], "seconds per pick": 0.0362823486328125}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [5.0, 6.0, 11.0, 11.0, 8.0, 4.0, 5.0, 3.0, 3.0, 1.0, 1.0], "seconds per pick": 2.087975335121155}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [18.0, 12.0, 12.0, 11.0, 5.0, 5.0, 6.0, 2.0, 3.0, 3.0, 3.0], "seconds per pick": 0.03870248794555664}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [18.0, 8.0, 2.0, 3.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.268094205856323}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [3.0, 3.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.04187004566192627}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [3.0, 4.0, 4.0, 3.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.130615210533142}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [16.0, 10.0, 7.0, 6.0, 7.0, 7.0, 7.0, 7.0, 7.0, 8.0, 7.0], "seconds per pick": 0.03289473056793213}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [16.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.115804147720337}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.01410055160522461}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.3539379835128784}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [19.0, 18.0, 14.0, 4.0, 4.0, 4.0, 6.0, 5.0, 5.0, 3.0, 2.0], "seconds per pick": 0.05795645713806152}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [19.0, 3.0, 4.0, 4.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.4989136695861816}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.030616188049316408}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 1.0, 1.0], "seconds per pick": 0.26640892028808594}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [6.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0], "seconds per pick": 0.03696222305297851}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [6.0, 6.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.5587188482284546}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [13.0, 10.0, 9.0, 5.0, 6.0, 9.0, 8.0, 7.0, 3.0, 3.0, 3.0], "seconds per pick": 0.042171573638916014}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [13.0, 9.0, 7.0, 1.0, 1.0, 1.0, 1.0, 1.0, 4.0, 6.0, 5.0], "seconds per pick": 2.3285529375076295}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.015076589584350587}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.16986470222473143}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [22.0, 13.0, 9.0, 8.0, 5.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0], "seconds per pick": 0.01896669864654541}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [22.0, 19.0, 21.0, 21.0, 20.0, 28.0, 8.0, 7.0, 7.0, 6.0, 6.0], "seconds per pick": 2.067724823951721}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.02662055492401123}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6885889291763305}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [9.0, 3.0, 2.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0131239652633667}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [9.0, 6.0, 4.0, 2.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.0269917249679565}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0], "seconds per pick": 0.02367739677429199}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.8377188682556151}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [11.0, 10.0, 9.0, 10.0, 10.0, 11.0, 10.0, 10.0, 10.0, 9.0, 1.0], "seconds per pick": 0.016768693923950195}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [11.0, 7.0, 12.0, 13.0, 12.0, 10.0, 15.0, 12.0, 13.0, 12.0, 11.0], "seconds per pick": 0.9177255868911743}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.017652297019958497}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [5.0, 4.0, 4.0, 4.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.8273170471191407}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [15.0, 14.0, 14.0, 11.0, 11.0, 10.0, 10.0, 8.0, 7.0, 6.0, 6.0], "seconds per pick": 0.02953939437866211}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [15.0, 20.0, 24.0, 22.0, 22.0, 25.0, 28.0, 25.0, 12.0, 15.0, 17.0], "seconds per pick": 2.317548704147339}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.03895690441131592}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.2291568756103515}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [13.0, 12.0, 9.0, 4.0, 3.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0], "seconds per pick": 0.01364140510559082}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [13.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.3900019645690918}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.03266479969024658}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.9395415544509889}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 4.0, 4.0, 3.0, 6.0, 8.0], "seconds per pick": 0.014823174476623536}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 4.0, 4.0], "seconds per pick": 1.9362181425094604}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [5.0, 12.0, 9.0, 9.0, 9.0, 8.0, 8.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.03070385456085205}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [5.0, 6.0, 8.0, 13.0, 23.0, 25.0, 27.0, 19.0, 20.0, 16.0, 18.0], "seconds per pick": 1.9712332248687745}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.016318297386169432}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.0779911041259767}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [33.0, 35.0, 39.0, 16.0, 9.0, 9.0, 9.0, 5.0, 2.0, 2.0, 1.0], "seconds per pick": 0.02807319164276123}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [33.0, 27.0, 3.0, 3.0, 3.0, 2.0, 2.0, 6.0, 1.0, 1.0, 1.0], "seconds per pick": 2.060145902633667}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [22.0, 19.0, 14.0, 11.0, 11.0, 10.0, 10.0, 9.0, 9.0, 8.0, 3.0], "seconds per pick": 0.027420592308044434}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [22.0, 18.0, 8.0, 3.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 1.794055461883545}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.018781113624572753}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.018588495254517}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [29.0, 31.0, 29.0, 29.0, 25.0, 21.0, 4.0, 3.0, 4.0, 4.0, 4.0], "seconds per pick": 0.031432819366455075}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [29.0, 7.0, 18.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.3874951124191284}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [11.0, 8.0, 9.0, 8.0, 5.0, 9.0, 6.0, 6.0, 6.0, 6.0, 8.0], "seconds per pick": 0.018997764587402342}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [11.0, 2.0, 3.0, 4.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 1.9601813077926635}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [4.0, 4.0, 9.0, 11.0, 13.0, 14.0, 14.0, 11.0, 11.0, 11.0, 9.0], "seconds per pick": 0.033308672904968264}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [4.0, 7.0, 10.0, 9.0, 6.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 2.06265184879303}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [14.0, 14.0, 13.0, 9.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.043655776977539064}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [14.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.051763319969177}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [10.0, 8.0, 5.0, 5.0, 6.0, 10.0, 6.0, 4.0, 3.0, 3.0, 4.0], "seconds per pick": 0.014464187622070312}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [10.0, 7.0, 4.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 2.8124140024185182}

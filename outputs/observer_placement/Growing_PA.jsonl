@@ -198,3 +198,25 @@
 {"dataset": "Growing PA", "strategy": "Contact tracing", "ranks": [46.0, 45.0, 33.0, 32.0, 30.0, 19.0, 19.0, 21.0, 18.0, 19.0, 12.0], "seconds per pick": 0.0005778789520263672}
 {"dataset": "Growing PA", "strategy": "Test top suspect", "ranks": [46.0, 17.0, 18.0, 20.0, 14.0, 15.0, 5.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 1.470515513420105}
 {"dataset": "Growing PA", "strategy": "Information gain (ours)", "ranks": [46.0, 30.0, 29.0, 23.0, 13.0, 13.0, 6.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.10054726600647}
+{"dataset": "Growing PA", "strategy": "Split candidates (Spinelli-style)", "ranks": [7.0, 2.0, 1.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.07807459831237792}
+{"dataset": "Growing PA", "strategy": "Most likely infected (Baker-style)", "ranks": [7.0, 7.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.625405430793762}
+{"dataset": "Growing PA", "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.15833549499511718}
+{"dataset": "Growing PA", "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 2.0, 3.0, 3.0, 2.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.865474081039428}
+{"dataset": "Growing PA", "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 2.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 0.09212360382080079}
+{"dataset": "Growing PA", "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.41245460510253906}
+{"dataset": "Growing PA", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 8.0, 8.0, 8.0, 7.0, 7.0, 8.0, 9.0, 7.0, 1.0, 1.0], "seconds per pick": 0.19639058113098146}
+{"dataset": "Growing PA", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 10.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.943568158149719}
+{"dataset": "Growing PA", "strategy": "Split candidates (Spinelli-style)", "ranks": [42.0, 48.0, 45.0, 45.0, 48.0, 38.0, 37.0, 48.0, 42.0, 6.0, 6.0], "seconds per pick": 0.3276726245880127}
+{"dataset": "Growing PA", "strategy": "Most likely infected (Baker-style)", "ranks": [42.0, 31.0, 25.0, 20.0, 26.0, 27.0, 22.0, 16.0, 17.0, 16.0, 15.0], "seconds per pick": 8.356756210327148}
+{"dataset": "Growing PA", "strategy": "Split candidates (Spinelli-style)", "ranks": [5.0, 5.0, 5.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0], "seconds per pick": 0.29611992835998535}
+{"dataset": "Growing PA", "strategy": "Most likely infected (Baker-style)", "ranks": [5.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 9.414330959320068}
+{"dataset": "Growing PA", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.19622428417205812}
+{"dataset": "Growing PA", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.91088559627533}
+{"dataset": "Growing PA", "strategy": "Split candidates (Spinelli-style)", "ranks": [16.0, 20.0, 15.0, 16.0, 2.0, 2.0, 3.0, 2.0, 6.0, 4.0, 6.0], "seconds per pick": 0.30736377239227297}
+{"dataset": "Growing PA", "strategy": "Most likely infected (Baker-style)", "ranks": [16.0, 3.0, 3.0, 1.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 2.0], "seconds per pick": 9.636886715888977}
+{"dataset": "Growing PA", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0], "seconds per pick": 0.3104922533035278}
+{"dataset": "Growing PA", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 7.718693995475769}
+{"dataset": "Growing PA", "strategy": "Split candidates (Spinelli-style)", "ranks": [9.0, 9.0, 9.0, 9.0, 8.0, 4.0, 3.0, 4.0, 4.0, 3.0, 3.0], "seconds per pick": 0.0814176321029663}
+{"dataset": "Growing PA", "strategy": "Most likely infected (Baker-style)", "ranks": [9.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.5277644634246825}
+{"dataset": "Growing PA", "strategy": "Split candidates (Spinelli-style)", "ranks": [93.0, 44.0, 45.0, 27.0, 32.0, 30.0, 36.0, 24.0, 23.0, 21.0, 22.0], "seconds per pick": 0.25690107345581054}
+{"dataset": "Growing PA", "strategy": "Most likely infected (Baker-style)", "ranks": [93.0, 40.0, 35.0, 35.0, 33.0, 8.0, 6.0, 5.0, 5.0, 5.0, 4.0], "seconds per pick": 9.071199917793274}

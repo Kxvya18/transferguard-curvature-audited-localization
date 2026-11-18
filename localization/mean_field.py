@@ -51,9 +51,13 @@ def mean_field_loglik(
     prob_grid: tuple[float, ...] = (0.1, 0.3, 0.5, 0.7, 0.9),
     n_start_times: int | None = 8,
     floor: float = 1e-4,
+    status_only: bool = False,
 ) -> np.ndarray:
     """Log-likelihood of the observations for every node, shape (start times x probs, n_nodes),
-    start-time major (row = start index * len(prob_grid) + prob index)."""
+    start-time major (row = start index * len(prob_grid) + prob index).
+
+    With `status_only`, a test says only "infected" or "healthy" at t_observe, not when:
+    infected observers must then be given time t_observe - 1, and contribute q(t_observe - 1)."""
     ob, graph = ctx.outbreak, ctx.graph
     n, t_obs = graph.n_nodes, ob.t_observe
     y = ob.observed_times.astype(int)
@@ -87,7 +91,7 @@ def mean_field_loglik(
                 matrix = contacts[t - ctx.t_lo]
                 if matrix is not None:
                     q = 1.0 - (1.0 - q) * np.exp(np.log1p(-np.float32(p) * q) @ matrix)
-            likelihood = np.where(infected[None, :], at - before, still_healthy)
+            likelihood = np.where(infected[None, :], at if status_only else at - before, still_healthy)
             loglik = np.full(n, -np.inf)
             loglik[possible] = np.log(np.maximum(likelihood, floor)).sum(axis=1)
             loglik[possible[begin > first]] = -np.inf
@@ -146,6 +150,7 @@ def message_passing_loglik(
     prob_grid: tuple[float, ...] = (0.1, 0.3, 0.5, 0.7, 0.9),
     n_start_times: int = 8,
     floor: float = 1e-4,
+    status_only: bool = False,
 ) -> np.ndarray:
     """Like `mean_field_loglik`, but with dynamic message passing (Lokhov et al., 2014)
     run on the evolving contacts, for every candidate source at once.
@@ -212,7 +217,7 @@ def message_passing_loglik(
                 new_ps = cavity_susceptible(np.log(np.maximum(theta, tiny)), seed_alive)
                 phi -= new_ps - ps_edge
                 ps_edge = new_ps
-            likelihood = np.where(infected[None, :], at - before, still_healthy)
+            likelihood = np.where(infected[None, :], at if status_only else at - before, still_healthy)
             loglik = np.full(n, -np.inf)
             loglik[possible] = np.log(np.maximum(likelihood, floor)).sum(axis=1)
             loglik[possible[begin > first]] = -np.inf
