@@ -22,8 +22,9 @@ from .estimators import INFEASIBLE, Context
 from .spread import earliest_arrival
 
 
-def _contact_matrices(ctx: Context) -> list[sp.csr_matrix | None]:
-    """Symmetric 0/1 contact matrix for each window in [t_lo, t_observe)."""
+def _contact_matrices(ctx: Context, directed: bool = False) -> list[sp.csr_matrix | None]:
+    """0/1 contact matrix for each window in [t_lo, t_observe): symmetric, or with
+    `directed`, row u -> column v only (pairs are then read as u passes it to v)."""
     n = ctx.graph.n_nodes
     out = []
     for t in range(ctx.t_lo, ctx.outbreak.t_observe):
@@ -31,7 +32,7 @@ def _contact_matrices(ctx: Context) -> list[sp.csr_matrix | None]:
         if not len(c):
             out.append(None)
             continue
-        rows, cols = np.r_[c[:, 0], c[:, 1]], np.r_[c[:, 1], c[:, 0]]
+        rows, cols = (c[:, 0], c[:, 1]) if directed else (np.r_[c[:, 0], c[:, 1]], np.r_[c[:, 1], c[:, 0]])
         matrix = sp.coo_matrix((np.ones(len(rows)), (rows, cols)), shape=(n, n)).tocsr()
         matrix.data[:] = 1.0  # repeated contacts in one window count once
         out.append(matrix.astype(np.float32))
@@ -78,6 +79,9 @@ def mean_field_loglik(
     prune: bool = True,
     recovery_grid: tuple[float, ...] = (0.0,),
     susceptible_grid: tuple[float, ...] = (1.0,),
+    seed_prob: float | None = None,
+    directed: bool = False,
+    candidates: np.ndarray | None = None,
 ) -> np.ndarray:
     """Log-likelihood of the observations for every node, shape (start times x probs, n_nodes),
     start-time major (row = start index * len(prob_grid) + prob index).
@@ -92,6 +96,11 @@ def mean_field_loglik(
     people catch the infection at all (the rest are immune or inactive); sigma = 1, the
     default, is everyone. Rows run over start x prob x recovery x susceptible fraction.
 
+    `seed_prob` gives the source its own transmission probability (a broadcaster can
+    reach far more people per contact than anyone else); None means the same as p.
+    `directed` reads contact pairs as one-way. `candidates` restricts which sources are
+    scored (e.g. only the true one, when fitting the model on past outbreaks).
+
     With `status_only`, a test says only "infected" or "healthy" at t_observe, not when:
     infected observers must then be given time t_observe - 1, and contribute q(t_observe - 1)."""
     ob, graph = ctx.outbreak, ctx.graph
@@ -100,7 +109,7 @@ def mean_field_loglik(
     infected = y < t_obs
     first = int(y[infected].min())
     starts = _start_times(ctx, n_start_times)
-    contacts = _contact_matrices(ctx)
+    contacts = _contact_matrices(ctx, directed)
     # Only nodes that could have reached every infected observer in time can score above
     # the floor, so only those rows are propagated. Infection cannot beat the earliest
     # arrival, whatever the transmission probability, so this drops no possible source.
@@ -109,6 +118,8 @@ def mean_field_loglik(
         possible = np.flatnonzero((graph.join <= first) & np.all(arrival[:, ob.observers[infected]] <= y[infected], axis=1))
     else:
         possible = np.flatnonzero(graph.join <= first)
+    if candidates is not None:
+        possible = np.intersect1d(possible, candidates)
     rows = np.arange(len(possible))
     out = []
     for tau in starts:
@@ -116,12 +127,16 @@ def mean_field_loglik(
         for p, r, sigma in [(p, r, g) for p in prob_grid for r in recovery_grid for g in susceptible_grid]:
             q = np.zeros((len(possible), n), dtype=np.float32)
             spreading = np.zeros_like(q)  # probability of being infected and still infectious
+            seed_spreading = np.zeros(len(possible), dtype=np.float32)  # used only with seed_prob
             at = np.zeros((len(possible), len(y)), dtype=np.float32)  # q at each observer's infection time
             before = np.zeros_like(at)  # q one step earlier
             for t in range(int(tau), t_obs + 1):
                 live = begin == t
                 q[rows[live], possible[live]] = 1.0
-                spreading[rows[live], possible[live]] = 1.0
+                if seed_prob is None:
+                    spreading[rows[live], possible[live]] = 1.0
+                else:
+                    seed_spreading[live] = 1.0
                 current = q[:, ob.observers]
                 at = np.where(y[None, :] == t, current, at)
                 before = np.where(y[None, :] - 1 == t, current, before)
@@ -133,10 +148,14 @@ def mean_field_loglik(
                 new = 0.0
                 if matrix is not None:
                     # a susceptible person not yet infected (probability sigma - q) escapes this window
-                    escape = np.exp(np.log1p(-np.float32(p) * spreading) @ matrix)
+                    log_escape = np.log1p(-np.float32(p) * spreading) @ matrix
+                    if seed_prob is not None:
+                        log_escape += matrix[possible].multiply(np.log1p(-np.float32(seed_prob) * seed_spreading)[:, None]).toarray()
+                    escape = np.exp(log_escape)
                     updated = np.maximum(q, np.float32(sigma) - (np.float32(sigma) - q) * escape)
                     new, q = updated - q, updated
                 spreading = np.float32(1.0 - r) * spreading + new
+                seed_spreading *= np.float32(1.0 - r)
             likelihood = np.where(infected[None, :], at if status_only else at - before, still_healthy)
             loglik = np.full(n, -np.inf)
             loglik[possible] = np.log(np.maximum(likelihood, floor)).sum(axis=1)

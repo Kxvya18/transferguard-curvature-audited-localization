@@ -21,7 +21,7 @@ import numpy as np
 from experiments.benchmark_localization import DATASETS, PROJECT_ROOT, rank_of_source
 from localization import estimators as est
 from localization.mean_field import mean_field_scores
-from localization.placement import candidate_split, edge_cutting, infection_probability, information_gain
+from localization.placement import candidate_split, edge_cutting, infection_probability, information_gain, joint_information_gain
 from localization.spread import Outbreak, spread
 
 FRACTION = 0.05
@@ -75,13 +75,16 @@ def pick(strategy: str, ctx: est.Context, rng: np.random.Generator) -> int:
         return int(np.argmax(prob))
     if strategy == "Edge cutting (EC2)":
         return int(np.argmax(np.where(np.isin(np.arange(ctx.graph.n_nodes), untested), edge_cutting(ctx), -1)))
+    if strategy == "Joint disagreement (AKLD, Sterchi 2023)":
+        return int(np.argmax(np.where(np.isin(np.arange(ctx.graph.n_nodes), untested), joint_information_gain(ctx), -1)))
     if strategy == "Information gain (ours)":
         return int(np.argmax(np.where(np.isin(np.arange(ctx.graph.n_nodes), untested), information_gain(ctx), -1)))
     raise ValueError(strategy)
 
 
 STRATEGIES = ["Random", "Highest degree", "Contact tracing", "Test top suspect", "Information gain (ours)",
-              "Split candidates (Spinelli-style)", "Most likely infected (Baker-style)", "Edge cutting (EC2)"]
+              "Split candidates (Spinelli-style)", "Most likely infected (Baker-style)", "Edge cutting (EC2)",
+              "Joint disagreement (AKLD, Sterchi 2023)"]
 
 
 def main(name: str, count: int, budget: int = 10, seed: int = 301) -> None:
@@ -90,7 +93,8 @@ def main(name: str, count: int, budget: int = 10, seed: int = 301) -> None:
     rng = np.random.default_rng(seed)
     out = PROJECT_ROOT / "outputs" / "observer_placement"
     out.mkdir(parents=True, exist_ok=True)
-    path = out / f"{name.replace(' ', '_')}.jsonl"
+    # Further batches of outbreaks use other seeds and their own files.
+    path = out / (f"{name.replace(' ', '_')}.jsonl" if seed == 301 else f"{name.replace(' ', '_')}_seed{seed}.jsonl")
     # Resume per strategy: outbreaks are regenerated in the same order, so a strategy added
     # later is scored on the same outbreaks as the others.
     rows = [json.loads(line)["strategy"] for line in path.open()] if path.exists() else []

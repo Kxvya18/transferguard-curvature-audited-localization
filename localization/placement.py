@@ -35,9 +35,11 @@ def _entropy(p: np.ndarray, axis: int = -1) -> np.ndarray:
 
 def _reports(ctx: Context, temperature: float = 2.0, max_sources: int = 100,
              prob_grid: tuple[float, ...] = PROBS, n_start_times: int = 8):
-    """(mass, report): posterior mass of the most likely sources, and report[s, v, c], the
-    mass-weighted probability that person v reports class c if s is the source. Class
-    c < t_observe - t_lo is "infected at window t_lo + c"; the last class is "healthy"."""
+    """(mass, report, within): posterior mass of the most likely sources; report[s, v, c], the
+    mass-weighted probability that person v reports class c if s is the source (class
+    c < t_observe - t_lo is "infected at window t_lo + c", the last class is "healthy");
+    and within[v], the mass-weighted entropy of v's report under each full hypothesis
+    (source, start time, probability)."""
     ob, graph = ctx.outbreak, ctx.graph
     n, t_obs = graph.n_nodes, ob.t_observe
     loglik = mean_field_loglik(ctx, prob_grid=prob_grid, n_start_times=n_start_times) / temperature
@@ -52,6 +54,7 @@ def _reports(ctx: Context, temperature: float = 2.0, max_sources: int = 100,
     contacts = _contact_matrices(ctx)
     n_times = t_obs - ctx.t_lo
     report = np.zeros((len(top), n, n_times + 1))
+    within = np.zeros(n)
     rows = np.arange(len(top))
     for i, tau in enumerate(starts):
         begin = np.maximum(tau, graph.join[top])
@@ -61,16 +64,19 @@ def _reports(ctx: Context, temperature: float = 2.0, max_sources: int = 100,
                 continue
             q = np.zeros((len(top), n), dtype=np.float32)
             previous = np.zeros_like(q)
+            hypothesis = np.zeros_like(report)  # report probabilities under this (start, probability)
             for t in range(int(tau), t_obs):
                 live = begin == t
                 q[rows[live], top[live]] = 1.0
-                report[:, :, t - ctx.t_lo] += w[:, None] * (q - previous)
+                hypothesis[:, :, t - ctx.t_lo] = q - previous
                 previous = q.copy()
                 matrix = contacts[t - ctx.t_lo]
                 if matrix is not None:
                     q = 1.0 - (1.0 - q) * np.exp(np.log1p(-np.float32(p) * q) @ matrix)
-            report[:, :, -1] += w[:, None] * (1.0 - previous)  # not infected before t_observe
-    return report[:, 0, :].sum(axis=1), report  # mass is the same whichever v is summed
+            hypothesis[:, :, -1] = 1.0 - previous  # not infected before t_observe
+            report += w[:, None, None] * hypothesis
+            within += w @ _entropy(np.clip(hypothesis, 0.0, 1.0))
+    return report[:, 0, :].sum(axis=1), report, within  # mass is the same whichever v is summed
 
 
 def information_gain(ctx: Context, **kwargs) -> np.ndarray:
@@ -79,11 +85,26 @@ def information_gain(ctx: Context, **kwargs) -> np.ndarray:
     found = _reports(ctx, **kwargs)
     if found is None:
         return np.zeros(ctx.graph.n_nodes)
-    mass, report = found
+    mass, report, _ = found
     conditional = report / np.maximum(mass, 1e-300)[:, None, None]
     marginal = report.sum(axis=0) / mass.sum()
     gain = _entropy(marginal) - (mass @ _entropy(conditional)) / mass.sum()
     gain[ob.observers] = 0.0
+    return np.maximum(gain, 0.0)
+
+
+def joint_information_gain(ctx: Context, **kwargs) -> np.ndarray:
+    """AKLD of Sterchi et al. (Sci Rep 2023): mean KL divergence between each full hypothesis's
+    prediction of v's report and the consensus, sum_h w_h KL(P_h || P) = I(H; Y_v), with
+    hypotheses H = (source, start time, probability). Unlike `information_gain`, it also
+    rewards tests that only pin down the start time or rate. Same mean-field predictions,
+    so only the choice rule differs. 0 for people already tested."""
+    found = _reports(ctx, **kwargs)
+    if found is None:
+        return np.zeros(ctx.graph.n_nodes)
+    mass, report, within = found
+    gain = _entropy(report.sum(axis=0) / mass.sum()) - within / mass.sum()
+    gain[ctx.outbreak.observers] = 0.0
     return np.maximum(gain, 0.0)
 
 
@@ -104,7 +125,7 @@ def edge_cutting(ctx: Context, **kwargs) -> np.ndarray:
     found = _reports(ctx, **kwargs)
     if found is None:
         return np.zeros(ctx.graph.n_nodes)
-    mass, report = found
+    mass, report, _ = found
     w = mass / mass.sum()
     conditional = report / np.maximum(mass, 1e-300)[:, None, None]  # P(c | s) per person
     m = np.einsum("s,svc->vc", w, conditional)
@@ -122,7 +143,7 @@ def infection_probability(ctx: Context, **kwargs) -> np.ndarray:
     found = _reports(ctx, **kwargs)
     if found is None:
         return np.zeros(ctx.graph.n_nodes)
-    mass, report = found
+    mass, report, _ = found
     prob = 1.0 - report[:, :, -1].sum(axis=0) / mass.sum()
     prob[ctx.outbreak.observers] = 0.0
     return prob

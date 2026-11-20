@@ -96,6 +96,22 @@ class LocalizationTests(unittest.TestCase):
             self.assertGreater(mean_field_scores(ctx)[ob.source], -1e11)
             checked += 1
 
+    def test_source_rate_equal_to_rate_changes_nothing(self):
+        """Giving the source its own rate, set equal to everyone else's, is the plain model."""
+        from localization.mean_field import mean_field_loglik
+        from localization.spread import simulate_outbreak
+        from localization.temporal_graph import growing_network
+        rng = np.random.default_rng(11)
+        graph = growing_network(60, 40, rng)
+        ob = None
+        while ob is None:
+            ob = simulate_outbreak(graph, rng, 0.5, 10, 0.3)
+        ctx = build_context(graph, ob, 20)
+        plain = mean_field_loglik(ctx, prob_grid=(0.3,))
+        split = mean_field_loglik(ctx, prob_grid=(0.3,), seed_prob=0.3)
+        self.assertTrue(np.allclose(np.nan_to_num(plain, neginf=-1e9), np.nan_to_num(split, neginf=-1e9), atol=1e-3))
+
 
 if __name__ == "__main__":
     unittest.main()
+
