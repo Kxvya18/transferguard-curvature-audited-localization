@@ -190,7 +190,7 @@ def diagnose(name: str, count: int, seed: int = 901) -> None:
     shape = structure(graph, rng)
     out = PROJECT_ROOT / "outputs" / "mechanism"
     out.mkdir(parents=True, exist_ok=True)
-    path = out / "diagnostics.jsonl"
+    path = out / "diagnostics_v2.jsonl"  # v2 adds the hybrid; same seeds, so the same outbreaks as v1
     done = sum(1 for line in path.open() if json.loads(line)["network"] == name) if path.exists() else 0
     k = 0
     while k < count:
@@ -203,6 +203,9 @@ def diagnose(name: str, count: int, seed: int = 901) -> None:
         ctx = est.build_context(graph, ob, lookback)
         told = replace(ctx, t_lo=ob.t_start)
         loglik, log_seed, errors = bp_scores(ctx, parts=True)
+        mf = mean_field_loglik(ctx)
+        evidence = logsumexp(mf, axis=1)
+        weight = evidence - logsumexp(evidence[np.isfinite(evidence)])
         bp_told_loglik, bp_told_seed, told_errors = bp_scores(told, prob_grid=(p,), n_start_times=1, parts=True)
         finish = lambda s: np.where(np.isfinite(s), s, est.INFEASIBLE)
         row = {"network": name, **shape,
@@ -211,6 +214,8 @@ def diagnose(name: str, count: int, seed: int = 901) -> None:
                "Mean-field, told": rank_of_source(finish(mean_field_loglik(told, prob_grid=(p,), n_start_times=1)[0]), ob.source),
                "Belief propagation, told": rank_of_source(finish(bp_told_seed[0]), ob.source),
                "BP marginals, unweighted": rank_of_source(finish(logsumexp(log_seed, axis=0)), ob.source),
+               "Hybrid (MF weights, BP marginals)": rank_of_source(finish(logsumexp(weight[:, None] + log_seed, axis=0)), ob.source)
+               if len(log_seed) == len(mf) else None,
                "BP error (max over grid)": float(np.nanmax(errors)),
                "BP error, told": float(told_errors[0])}
         with path.open("a") as handle:

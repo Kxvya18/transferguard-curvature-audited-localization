@@ -246,3 +246,75 @@
 {"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [4.0, 4.0, 4.0, 4.0, 3.0, 2.0, 3.0, 3.0, 6.0, 5.0, 2.0], "seconds per pick": 2.434945821762085}
 {"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [43.0, 11.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 8.0, 8.0], "seconds per pick": 0.22574899196624756}
 {"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [43.0, 49.0, 49.0, 34.0, 18.0, 16.0, 17.0, 19.0, 18.0, 18.0, 17.0], "seconds per pick": 11.309443926811218}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [7.0, 6.0, 6.0, 6.0, 5.0, 4.0, 4.0, 4.0, 2.0, 2.0, 2.0], "seconds per pick": 0.7446923971176147}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [7.0, 3.0, 2.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.05354700088501}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [33.0, 23.0, 19.0, 15.0, 16.0, 9.0, 7.0, 14.0, 10.0, 12.0, 1.0], "seconds per pick": 0.7859182357788086}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [33.0, 25.0, 11.0, 17.0, 18.0, 14.0, 16.0, 14.0, 10.0, 8.0, 7.0], "seconds per pick": 3.298004412651062}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.0752095937728883}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 3.0, 3.0], "seconds per pick": 7.359772396087647}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [13.0, 14.0, 14.0, 14.0, 6.0, 7.0, 10.0, 18.0, 26.0, 24.0, 21.0], "seconds per pick": 0.8503517627716064}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [13.0, 4.0, 1.0, 4.0, 3.0, 1.0, 1.0, 15.0, 2.0, 2.0, 2.0], "seconds per pick": 10.899204397201538}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [12.0, 8.0, 5.0, 5.0, 5.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.9229903936386108}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [12.0, 7.0, 5.0, 5.0, 11.0, 4.0, 2.0, 3.0, 46.0, 43.0, 33.0], "seconds per pick": 11.235821962356567}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.9234679937362671}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 1.0, 1.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 12.017242765426635}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [14.0, 12.0, 11.0, 9.0, 9.0, 8.0, 8.0, 33.0, 32.0, 32.0, 14.0], "seconds per pick": 1.2852673530578613}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [14.0, 7.0, 6.0, 4.0, 7.0, 7.0, 7.0, 3.0, 4.0, 2.0, 6.0], "seconds per pick": 12.90674705505371}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.896579909324646}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.9466986417770387}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [10.0, 10.0, 10.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0], "seconds per pick": 0.9716859102249146}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [10.0, 7.0, 22.0, 14.0, 3.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 9.152837133407592}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [10.0, 10.0, 5.0, 41.0, 38.0, 34.0, 34.0, 32.0, 32.0, 42.0, 38.0], "seconds per pick": 1.1119204759597778}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [10.0, 8.0, 37.0, 35.0, 28.0, 30.0, 27.0, 64.0, 61.0, 53.0, 71.0], "seconds per pick": 12.36508219242096}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.8677988529205323}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 13.541250014305115}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [21.0, 21.0, 52.0, 44.0, 58.0, 102.0, 102.0, 101.0, 94.0, 96.0, 95.0], "seconds per pick": 0.9587199449539184}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [21.0, 11.0, 10.0, 14.0, 15.0, 18.0, 20.0, 18.0, 26.0, 14.0, 32.0], "seconds per pick": 11.128367018699645}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [19.0, 19.0, 18.0, 14.0, 12.0, 11.0, 12.0, 12.0, 11.0, 11.0, 11.0], "seconds per pick": 0.7489692449569703}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [19.0, 20.0, 23.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 12.568487668037415}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [9.0, 5.0, 5.0, 5.0, 4.0, 5.0, 5.0, 5.0, 6.0, 7.0, 7.0], "seconds per pick": 0.8317394256591797}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [9.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 8.788084697723388}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [9.0, 9.0, 9.0, 9.0, 7.0, 5.0, 3.0, 3.0, 2.0, 3.0, 3.0], "seconds per pick": 0.776317548751831}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [9.0, 8.0, 8.0, 13.0, 12.0, 8.0, 9.0, 3.0, 3.0, 2.0, 2.0], "seconds per pick": 8.394152784347535}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [26.0, 25.0, 22.0, 19.0, 19.0, 15.0, 15.0, 11.0, 9.0, 9.0, 9.0], "seconds per pick": 0.7095864295959473}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [26.0, 23.0, 23.0, 25.0, 20.0, 14.0, 2.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 6.289414262771606}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [23.0, 18.0, 11.0, 18.0, 21.0, 26.0, 27.0, 28.0, 57.0, 42.0, 52.0], "seconds per pick": 14.31095597743988}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [12.0, 8.0, 8.0, 7.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.359640049934387}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [15.0, 15.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 12.773862171173096}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [7.0, 9.0, 4.0, 4.0, 5.0, 3.0, 2.0, 3.0, 2.0, 2.0, 2.0], "seconds per pick": 10.004724550247193}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 12.747118258476258}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [13.0, 8.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 11.416568994522095}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [4.0, 2.0, 4.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 13.426011180877685}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [24.0, 12.0, 13.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 12.678099322319031}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [4.0, 3.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 13.84243414402008}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 11.235221409797669}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [57.0, 91.0, 94.0, 97.0, 87.0, 86.0, 78.0, 86.0, 87.0, 81.0, 21.0], "seconds per pick": 15.13078215122223}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [1.0, 11.0, 10.0, 3.0, 2.0, 2.0, 2.0, 11.0, 1.0, 1.0, 1.0], "seconds per pick": 11.689268040657044}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [35.0, 29.0, 29.0, 6.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 199.7959097623825}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [54.0, 43.0, 119.0, 101.0, 2.0, 3.0, 2.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 6.161006426811218}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [15.0, 8.0, 2.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.446635103225708}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [4.0, 7.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.6989785432815552}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.5115752696990967}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [59.0, 48.0, 16.0, 21.0, 7.0, 3.0, 3.0, 4.0, 4.0, 1.0, 1.0], "seconds per pick": 1.4512458801269532}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [8.0, 6.0, 8.0, 4.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.478560709953308}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [1.0, 1.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.9120105028152465}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [19.0, 12.0, 10.0, 4.0, 6.0, 8.0, 6.0, 8.0, 3.0, 6.0, 5.0], "seconds per pick": 1.5351003408432007}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [112.0, 109.0, 90.0, 92.0, 74.0, 60.0, 42.0, 31.0, 25.0, 3.0, 1.0], "seconds per pick": 2.0012423038482665}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [4.0, 2.0, 3.0, 3.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.648472213745117}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [43.0, 39.0, 9.0, 10.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.4790941953659056}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [7.0, 3.0, 4.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.3493443250656128}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [33.0, 21.0, 22.0, 21.0, 19.0, 18.0, 18.0, 18.0, 15.0, 5.0, 5.0], "seconds per pick": 0.7508062362670899}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [2.0, 4.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.596518588066101}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [13.0, 24.0, 33.0, 34.0, 36.0, 38.0, 27.0, 11.0, 3.0, 2.0, 3.0], "seconds per pick": 2.1251307487487794}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [12.0, 8.0, 5.0, 4.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.3367353200912477}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.3569939374923705}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [14.0, 19.0, 9.0, 4.0, 4.0, 3.0, 3.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 2.51262845993042}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.954388165473938}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [10.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.4371224880218505}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [10.0, 8.0, 10.0, 2.0, 10.0, 7.0, 13.0, 11.0, 69.0, 64.0, 62.0], "seconds per pick": 3.403304648399353}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.441548991203308}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [21.0, 17.0, 8.0, 68.0, 67.0, 72.0, 2.0, 3.0, 1.0, 1.0, 1.0], "seconds per pick": 3.2370792865753173}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [19.0, 17.0, 16.0, 78.0, 73.0, 5.0, 5.0, 4.0, 3.0, 3.0, 1.0], "seconds per pick": 3.4976378679275513}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [9.0, 8.0, 7.0, 8.0, 5.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.099889802932739}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [9.0, 10.0, 7.0, 8.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.165991520881653}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [26.0, 23.0, 5.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.949202036857605}

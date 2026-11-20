@@ -87,3 +87,34 @@ def bp_scores(
     score = logsumexp(np.array(terms), axis=0) if terms else np.full(n, -np.inf)
     score = np.where(graph.join <= int(ctx.infected_times.min()), score, -np.inf)
     return np.where(np.isfinite(score), score, INFEASIBLE)
+
+
+def hybrid_scores(ctx: Context, prob_grid: tuple[float, ...] = (0.1, 0.3, 0.5, 0.7, 0.9),
+                  n_start_times: int | None = 8, **kwargs) -> np.ndarray:
+    """Mean field chooses the model, belief propagation finds the source.
+
+    The start time and transmission probability are unknown, so a localizer must
+    weigh each (start, rate) pair by how well it explains the reports. BP's Bethe
+    estimate of that evidence is unreliable on loopy contact networks, where BP often
+    does not converge for the wrong (start, rate); mean field is a forward recursion
+    that always gives a finite evidence. So each pair g gets the mean-field weight
+    P(g | reports) = sum_s exp(loglik_MF[g, s]) / Z, and within it BP's posterior
+    probability that s is the seed:
+        score(s) = log sum_g P(g | reports) * P_BP(s is the seed | g, reports).
+    """
+    from .mean_field import mean_field_loglik
+
+    mf = mean_field_loglik(ctx, prob_grid=prob_grid, n_start_times=n_start_times)
+    _, log_seed, _ = bp_scores(ctx, prob_grid=prob_grid, n_start_times=n_start_times, parts=True, **kwargs)
+    if len(log_seed) != len(mf):  # a (start, rate) pair without contacts was skipped by BP
+        return mean_field_scores_fallback(mf)
+    evidence = logsumexp(mf, axis=1)
+    weight = evidence - logsumexp(evidence[np.isfinite(evidence)]) if np.isfinite(evidence).any() else evidence
+    score = logsumexp(weight[:, None] + log_seed, axis=0)
+    score = np.where(ctx.graph.join <= int(ctx.infected_times.min()), score, -np.inf)
+    return np.where(np.isfinite(score), score, INFEASIBLE)
+
+
+def mean_field_scores_fallback(mf: np.ndarray) -> np.ndarray:
+    score = logsumexp(mf, axis=0)
+    return np.where(np.isfinite(score), score, INFEASIBLE)
