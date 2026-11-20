@@ -235,3 +235,13 @@
 {"dataset": "Email-Eu", "strategy": "Split candidates (Spinelli-style)", "ranks": [16.0, 16.0, 15.0, 15.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0], "seconds per pick": 1.1842891931533814}
 {"dataset": "Email-Eu", "strategy": "Most likely infected (Baker-style)", "ranks": [16.0, 13.0, 12.0, 9.0, 8.0, 8.0, 8.0, 8.0, 2.0, 1.0, 1.0], "seconds per pick": 20.720798110961915}
 {"dataset": "Email-Eu", "strategy": "Split candidates (Spinelli-style)", "ranks": [30.0, 30.0, 29.0, 26.0, 26.0, 26.0, 26.0, 25.0, 25.0, 26.0, 26.0], "seconds per pick": 1.173415756225586}
+{"dataset": "Email-Eu", "strategy": "Edge cutting (EC2)", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.565796732902527}
+{"dataset": "Email-Eu", "strategy": "Edge cutting (EC2)", "ranks": [6.0, 8.0, 6.0, 5.0, 1.0, 3.0, 35.0, 7.0, 1.0, 1.0, 1.0], "seconds per pick": 2.9052610397338867}
+{"dataset": "Email-Eu", "strategy": "Edge cutting (EC2)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.3801486253738404}
+{"dataset": "Email-Eu", "strategy": "Edge cutting (EC2)", "ranks": [20.0, 16.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.466582465171814}
+{"dataset": "Email-Eu", "strategy": "Edge cutting (EC2)", "ranks": [12.0, 11.0, 12.0, 11.0, 8.0, 7.0, 3.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 7.867384195327759}
+{"dataset": "Email-Eu", "strategy": "Edge cutting (EC2)", "ranks": [14.0, 14.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.7461656808853148}
+{"dataset": "Email-Eu", "strategy": "Edge cutting (EC2)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.5354395627975466}
+{"dataset": "Email-Eu", "strategy": "Edge cutting (EC2)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.970930814743042}
+{"dataset": "Email-Eu", "strategy": "Edge cutting (EC2)", "ranks": [14.0, 12.0, 20.0, 20.0, 20.0, 14.0, 7.0, 8.0, 7.0, 8.0, 1.0], "seconds per pick": 6.488847661018371}
+{"dataset": "Email-Eu", "strategy": "Edge cutting (EC2)", "ranks": [32.0, 35.0, 7.0, 4.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 6.848727869987488}

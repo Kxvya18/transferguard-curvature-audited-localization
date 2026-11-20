@@ -15,7 +15,8 @@ every window. The first 50 retweets are spread over windows 4 .. 19 (window leng
 time is unknown, as in the simulated benchmark. A random 10% of people are tested
 (never the source): retweeters report their window, everyone else reports healthy.
 
-Run:  python -m experiments.real_cascades 300 [fraction] [seed]
+Run:  python -m experiments.real_cascades 300 [fraction] [seed] [shard] [shards]
+(shard i of n handles every n-th cascade and writes its own part file).
 """
 
 from __future__ import annotations
@@ -30,13 +31,17 @@ import scipy.sparse as sp
 
 from experiments.benchmark_localization import PROJECT_ROOT, rank_of_source
 from localization import estimators as est
-from localization.mean_field import mean_field_scores, message_passing_scores
+from localization.mean_field import mean_field_scores
 from localization.spread import Outbreak
 from localization.temporal_graph import TemporalGraph
 
 RAW = PROJECT_ROOT / "data" / "raw" / "higgs"
 WINDOWS, FIRST, MAX_INFECTED, MIN_INFECTED, MAX_NODES = 20, 4, 50, 10, 4000
-METHODS = {"Mean-field": mean_field_scores, "Message passing": message_passing_scores,
+# Retweet chances per follower are small, so the rate grid is log-spaced down to 0.3%.
+# Message passing is left out: it keeps one value per candidate and directed follower
+# link (about 1,800 x 92,000 here) for every grid point, which does not fit in memory.
+RATES = (0.003, 0.01, 0.03, 0.1, 0.3, 0.9)
+METHODS = {"Mean-field": lambda ctx: mean_field_scores(ctx, prob_grid=RATES),
            "Time-respecting TOA": est.temporal_screen, "Jordan center": est.jordan_center,
            "Distance center": est.distance_center}
 
@@ -73,13 +78,13 @@ def outbreak_graph(adjacency, source: int, retweets: dict[int, int]):
     return graph, local[source], np.array([local[int(u)] for u in infected]), window_of
 
 
-def main(count: int, fraction: float = 0.1, seed: int = 1001) -> None:
+def main(count: int, fraction: float = 0.1, seed: int = 1001, shard: int = 0, shards: int = 1) -> None:
     adjacency, cascades = load()
     rng = np.random.default_rng(seed)
     sources = rng.permutation(sorted(cascades))
     out = PROJECT_ROOT / "outputs" / "real_cascades"
     out.mkdir(parents=True, exist_ok=True)
-    path = out / f"twitter_{int(round(fraction * 100))}pct.jsonl"
+    path = out / f"twitter_{int(round(fraction * 100))}pct_part{shard}.jsonl"
     done = sum(1 for _ in path.open()) if path.exists() else 0
     kept = skipped = 0
     for source in sources:
@@ -99,7 +104,10 @@ def main(count: int, fraction: float = 0.1, seed: int = 1001) -> None:
             skipped += 1
             continue
         kept += 1
-        if kept <= done:
+        if kept % shards != shard:
+            continue
+        done -= 1
+        if done >= 0:
             continue
         ob = Outbreak(src, 0, WINDOWS, observers, status[observers])
         ctx = est.build_context(graph, ob, WINDOWS)
@@ -114,4 +122,4 @@ def main(count: int, fraction: float = 0.1, seed: int = 1001) -> None:
 
 
 if __name__ == "__main__":
-    main(int(sys.argv[1]), *(float(a) for a in sys.argv[2:3]), *(int(a) for a in sys.argv[3:4]))
+    main(int(sys.argv[1]), *(float(a) for a in sys.argv[2:3]), *(int(a) for a in sys.argv[3:6]))
