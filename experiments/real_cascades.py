@@ -23,8 +23,10 @@ from __future__ import annotations
 
 import gzip
 import json
+import os
 import sys
 import time
+from pathlib import Path
 
 import numpy as np
 import scipy.sparse as sp
@@ -35,15 +37,19 @@ from localization.mean_field import mean_field_scores
 from localization.spread import Outbreak
 from localization.temporal_graph import TemporalGraph
 
-RAW = PROJECT_ROOT / "data" / "raw" / "higgs"
+RAW = Path(os.environ.get("HIGGS_DIR", PROJECT_ROOT / "data" / "raw" / "higgs"))
 WINDOWS, FIRST, MAX_INFECTED, MIN_INFECTED, MAX_NODES = 20, 4, 50, 10, 4000
 # Retweet chances per follower are small, so the rate grid is log-spaced down to 0.3%.
-# Message passing is left out: it keeps one value per candidate and directed follower
-# link (about 1,800 x 92,000 here) for every grid point, which does not fit in memory.
+# Most followers never retweet anything, so mean field also sums over the fraction of
+# people who can be "infected" at all (Mean-field); plain SI is kept as an ablation.
+# Left out: message passing keeps one value per candidate and directed follower link
+# (about 1,800 x 92,000 here) per grid point, which does not fit in memory; the
+# time-respecting screen took ~400 s per cascade and ranked the source near last.
 RATES = (0.003, 0.01, 0.03, 0.1, 0.3, 0.9)
-METHODS = {"Mean-field": lambda ctx: mean_field_scores(ctx, prob_grid=RATES),
-           "Time-respecting TOA": est.temporal_screen, "Jordan center": est.jordan_center,
-           "Distance center": est.distance_center}
+METHODS = {"Mean-field": lambda ctx: mean_field_scores(ctx, prob_grid=(0.01, 0.03, 0.1, 0.3),
+                                                       susceptible_grid=(1.0, 0.3, 0.1, 0.03)),
+           "Mean-field (SI)": lambda ctx: mean_field_scores(ctx, prob_grid=RATES),
+           "Jordan center": est.jordan_center, "Distance center": est.distance_center}
 
 
 def load():
@@ -82,7 +88,7 @@ def main(count: int, fraction: float = 0.1, seed: int = 1001, shard: int = 0, sh
     adjacency, cascades = load()
     rng = np.random.default_rng(seed)
     sources = rng.permutation(sorted(cascades))
-    out = PROJECT_ROOT / "outputs" / "real_cascades"
+    out = Path(os.environ.get("OUT_DIR", PROJECT_ROOT / "outputs" / "real_cascades"))
     out.mkdir(parents=True, exist_ok=True)
     path = out / f"twitter_{int(round(fraction * 100))}pct_part{shard}.jsonl"
     done = sum(1 for _ in path.open()) if path.exists() else 0

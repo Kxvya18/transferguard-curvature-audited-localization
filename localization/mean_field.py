@@ -75,9 +75,22 @@ def mean_field_loglik(
     n_start_times: int | None = 8,
     floor: float = 1e-4,
     status_only: bool = False,
+    prune: bool = True,
+    recovery_grid: tuple[float, ...] = (0.0,),
+    susceptible_grid: tuple[float, ...] = (1.0,),
 ) -> np.ndarray:
     """Log-likelihood of the observations for every node, shape (start times x probs, n_nodes),
     start-time major (row = start index * len(prob_grid) + prob index).
+
+    With `prune=False`, no candidate is ruled out for failing to reach an infected
+    observer in time: that report then just scores the floor, as if it came from
+    outside the network. Use this on real data, where some infections do.
+
+    `recovery_grid` lets an infected node stop spreading: each window it stays
+    infectious with probability 1 - r (r = 0, the default, is SI; r = 1 gives each
+    new case one window to pass it on). `susceptible_grid` lets only a fraction sigma of
+    people catch the infection at all (the rest are immune or inactive); sigma = 1, the
+    default, is everyone. Rows run over start x prob x recovery x susceptible fraction.
 
     With `status_only`, a test says only "infected" or "healthy" at t_observe, not when:
     infected observers must then be given time t_observe - 1, and contribute q(t_observe - 1)."""
@@ -91,19 +104,24 @@ def mean_field_loglik(
     # Only nodes that could have reached every infected observer in time can score above
     # the floor, so only those rows are propagated. Infection cannot beat the earliest
     # arrival, whatever the transmission probability, so this drops no possible source.
-    arrival = earliest_arrival(graph, ctx.t_lo, t_obs)
-    possible = np.flatnonzero((graph.join <= first) & np.all(arrival[:, ob.observers[infected]] <= y[infected], axis=1))
+    if prune:
+        arrival = earliest_arrival(graph, ctx.t_lo, t_obs)
+        possible = np.flatnonzero((graph.join <= first) & np.all(arrival[:, ob.observers[infected]] <= y[infected], axis=1))
+    else:
+        possible = np.flatnonzero(graph.join <= first)
     rows = np.arange(len(possible))
     out = []
     for tau in starts:
         begin = np.maximum(tau, graph.join[possible])  # a node cannot start before it joins
-        for p in prob_grid:
+        for p, r, sigma in [(p, r, g) for p in prob_grid for r in recovery_grid for g in susceptible_grid]:
             q = np.zeros((len(possible), n), dtype=np.float32)
+            spreading = np.zeros_like(q)  # probability of being infected and still infectious
             at = np.zeros((len(possible), len(y)), dtype=np.float32)  # q at each observer's infection time
             before = np.zeros_like(at)  # q one step earlier
             for t in range(int(tau), t_obs + 1):
                 live = begin == t
                 q[rows[live], possible[live]] = 1.0
+                spreading[rows[live], possible[live]] = 1.0
                 current = q[:, ob.observers]
                 at = np.where(y[None, :] == t, current, at)
                 before = np.where(y[None, :] - 1 == t, current, before)
@@ -112,8 +130,13 @@ def mean_field_loglik(
                 if t == t_obs:
                     break
                 matrix = contacts[t - ctx.t_lo]
+                new = 0.0
                 if matrix is not None:
-                    q = 1.0 - (1.0 - q) * np.exp(np.log1p(-np.float32(p) * q) @ matrix)
+                    # a susceptible person not yet infected (probability sigma - q) escapes this window
+                    escape = np.exp(np.log1p(-np.float32(p) * spreading) @ matrix)
+                    updated = np.maximum(q, np.float32(sigma) - (np.float32(sigma) - q) * escape)
+                    new, q = updated - q, updated
+                spreading = np.float32(1.0 - r) * spreading + new
             likelihood = np.where(infected[None, :], at if status_only else at - before, still_healthy)
             loglik = np.full(n, -np.inf)
             loglik[possible] = np.log(np.maximum(likelihood, floor)).sum(axis=1)
