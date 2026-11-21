@@ -22,9 +22,10 @@ from .estimators import INFEASIBLE, Context
 from .spread import earliest_arrival
 
 
-def _contact_matrices(ctx: Context, directed: bool = False) -> list[sp.csr_matrix | None]:
+def _contact_matrices(ctx: Context, directed: bool = False, weighted: bool = False) -> list[sp.csr_matrix | None]:
     """0/1 contact matrix for each window in [t_lo, t_observe): symmetric, or with
-    `directed`, row u -> column v only (pairs are then read as u passes it to v)."""
+    `directed`, row u -> column v only (pairs are then read as u passes it to v). With
+    `weighted`, a pair listed k times in a window counts as k independent contacts."""
     n = ctx.graph.n_nodes
     out = []
     for t in range(ctx.t_lo, ctx.outbreak.t_observe):
@@ -34,7 +35,8 @@ def _contact_matrices(ctx: Context, directed: bool = False) -> list[sp.csr_matri
             continue
         rows, cols = (c[:, 0], c[:, 1]) if directed else (np.r_[c[:, 0], c[:, 1]], np.r_[c[:, 1], c[:, 0]])
         matrix = sp.coo_matrix((np.ones(len(rows)), (rows, cols)), shape=(n, n)).tocsr()
-        matrix.data[:] = 1.0  # repeated contacts in one window count once
+        if not weighted:
+            matrix.data[:] = 1.0  # repeated contacts in one window count once
         out.append(matrix.astype(np.float32))
     return out
 
@@ -83,6 +85,10 @@ def mean_field_loglik(
     directed: bool = False,
     candidates: np.ndarray | None = None,
     leak: float = 0.0,
+    weighted: bool = False,
+    detection: np.ndarray | None = None,
+    false_report: np.ndarray | None = None,
+    report_width: int = 1,
 ) -> np.ndarray:
     """Log-likelihood of the observations for every node, shape (start times x probs, n_nodes),
     start-time major (row = start index * len(prob_grid) + prob index).
@@ -103,6 +109,13 @@ def mean_field_loglik(
     scored (e.g. only the true one, when fitting the model on past outbreaks).
     `leak` is the chance per window that a susceptible person is infected from outside
     the network; with it, every report has a proper probability and `floor` can be ~0.
+    `weighted`: see `_contact_matrices`. `detection[j, t]` is the chance that observer j,
+    once infected, is detected in window t (e.g. from how many tests or sequences it ran
+    then); a report is then the first detection, not the infection itself.
+    `false_report[j, t]` (with `detection`) is the chance observer j wrongly reports the
+    infection in window t whether or not it is infected (e.g. a misassigned sequence).
+    `report_width` (with `detection`): a report at y means "first detected in windows
+    y .. y + width - 1", for reports coarser than the model's time step.
 
     With `status_only`, a test says only "infected" or "healthy" at t_observe, not when:
     infected observers must then be given time t_observe - 1, and contribute q(t_observe - 1)."""
@@ -112,7 +125,7 @@ def mean_field_loglik(
     infected = y < t_obs
     first = int(y[infected].min())
     starts = _start_times(ctx, n_start_times)
-    contacts = _contact_matrices(ctx, directed)
+    contacts = _contact_matrices(ctx, directed, weighted)
     # Only nodes that could have reached every infected observer in time can score above
     # the floor, so only those rows are propagated. Infection cannot beat the earliest
     # arrival, whatever the transmission probability, so this drops no possible source.
@@ -133,6 +146,11 @@ def mean_field_loglik(
             seed_spreading = np.zeros(len(possible), dtype=np.float32)  # used only with seed_prob
             at = np.zeros((len(possible), len(y)), dtype=np.float32)  # q at each observer's infection time
             before = np.zeros_like(at)  # q one step earlier
+            undetected = np.zeros_like(at)  # with `detection`: infected, not yet detected
+            previous = np.zeros_like(at)
+            found = np.zeros_like(at)  # with `detection`: truly detected so far
+            no_false = np.ones(len(y), dtype=np.float32)  # no false report so far
+            silent = np.ones_like(at)  # nothing reported so far, after the previous window
             for t in range(int(tau), t_obs + 1):
                 live = begin == t
                 q[rows[live], possible[live]] = 1.0
@@ -141,10 +159,28 @@ def mean_field_loglik(
                 else:
                     seed_spreading[live] = 1.0
                 current = q[:, ob.observers]
-                at = np.where(y[None, :] == t, current, at)
-                before = np.where(y[None, :] - 1 == t, current, before)
-                if t == t_obs - 1:
-                    still_healthy = 1.0 - current  # reported healthy = not infected before t_observe
+                if detection is not None:
+                    # newly infected join the undetected pool, then each is detected with chance h;
+                    # independently, a false report comes with chance f
+                    undetected += current - previous
+                    previous = current
+                    k = min(t, detection.shape[1] - 1)
+                    caught = undetected * detection[None, :, k]
+                    undetected -= caught
+                    found += caught
+                    if false_report is not None:
+                        no_false = no_false * (1.0 - false_report[:, k])
+                    now_silent = no_false[None, :] * (1.0 - found)
+                    before = np.where(y[None, :] == t, silent, before)  # silent until window y
+                    at = np.where(y[None, :] + report_width - 1 == t, now_silent, at)  # still silent after the report period
+                    silent = now_silent
+                    if t == t_obs - 1:
+                        still_healthy = now_silent  # nothing reported before t_observe
+                else:
+                    at = np.where(y[None, :] == t, current, at)
+                    before = np.where(y[None, :] - 1 == t, current, before)
+                    if t == t_obs - 1:
+                        still_healthy = 1.0 - current  # reported healthy = not infected before t_observe
                 if t == t_obs:
                     break
                 matrix = contacts[t - ctx.t_lo]
@@ -161,7 +197,8 @@ def mean_field_loglik(
                     new, q = updated - q, updated
                 spreading = np.float32(1.0 - r) * spreading + new
                 seed_spreading *= np.float32(1.0 - r)
-            likelihood = np.where(infected[None, :], at if status_only else at - before, still_healthy)
+            hit = before - at if detection is not None else (at if status_only else at - before)
+            likelihood = np.where(infected[None, :], hit, still_healthy)
             loglik = np.full(n, -np.inf)
             loglik[possible] = np.log(np.maximum(likelihood, floor)).sum(axis=1)
             loglik[possible[begin > first]] = -np.inf

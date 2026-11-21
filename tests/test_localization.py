@@ -111,6 +111,21 @@ class LocalizationTests(unittest.TestCase):
         split = mean_field_loglik(ctx, prob_grid=(0.3,), seed_prob=0.3)
         self.assertTrue(np.allclose(np.nan_to_num(plain, neginf=-1e9), np.nan_to_num(split, neginf=-1e9), atol=1e-3))
 
+    def test_certain_detection_is_the_plain_model(self):
+        """A detection model in which every infected observer is detected at once is plain mean field."""
+        from localization.mean_field import mean_field_loglik
+        from localization.spread import simulate_outbreak
+        from localization.temporal_graph import growing_network
+        rng = np.random.default_rng(12)
+        graph = growing_network(60, 40, rng)
+        ob = None
+        while ob is None:
+            ob = simulate_outbreak(graph, rng, 0.5, 10, 0.3)
+        ctx = build_context(graph, ob, 20)
+        plain = mean_field_loglik(ctx, prob_grid=(0.3,))
+        certain = mean_field_loglik(ctx, prob_grid=(0.3,), detection=np.ones((len(ob.observers), graph.n_windows)))
+        self.assertTrue(np.allclose(np.nan_to_num(plain, neginf=-1e9), np.nan_to_num(certain, neginf=-1e9), atol=1e-3))
+
 
 if __name__ == "__main__":
     unittest.main()
