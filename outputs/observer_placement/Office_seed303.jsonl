@@ -1,0 +1,360 @@
+{"dataset": "Office", "strategy": "Random", "ranks": [24.0, 24.0, 24.0, 21.0, 21.0, 12.0, 11.0, 6.0, 8.0, 8.0, 8.0], "seconds per pick": 0.0002636909484863281}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [24.0, 6.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.0004630327224731445}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [24.0, 19.0, 7.0, 7.0, 7.0, 7.0, 7.0, 6.0, 6.0, 8.0, 8.0], "seconds per pick": 0.0008660793304443359}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [24.0, 17.0, 13.0, 6.0, 6.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.9262819766998291}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [24.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.983185076713562}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [24.0, 12.0, 12.0, 9.0, 6.0, 6.0, 7.0, 7.0, 7.0, 4.0, 3.0], "seconds per pick": 0.020135331153869628}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [24.0, 11.0, 6.0, 2.0, 6.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.8605944156646728}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [24.0, 11.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.9413937091827393}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [24.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.962251901626587}
+{"dataset": "Office", "strategy": "Random", "ranks": [4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0009792327880859375}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [4.0, 2.0, 1.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0007821083068847656}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [4.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0], "seconds per pick": 0.0008412837982177734}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [4.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.3462424993515015}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6538389205932618}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [4.0, 1.0, 2.0, 1.0, 1.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.02689681053161621}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [4.0, 5.0, 5.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.8217416048049927}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [4.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.7356349706649781}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.7516613960266113}
+{"dataset": "Office", "strategy": "Random", "ranks": [4.0, 4.0, 4.0, 4.0, 4.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.00027272701263427737}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [4.0, 3.0, 3.0, 3.0, 3.0, 3.0, 4.0, 3.0, 4.0, 4.0, 4.0], "seconds per pick": 0.0010876417160034179}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [4.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 2.0], "seconds per pick": 0.0005539417266845703}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [4.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.8783129692077637}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.76841881275177}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [4.0, 3.0, 4.0, 4.0, 3.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0], "seconds per pick": 0.024217104911804198}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [4.0, 3.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.69227397441864}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.283095049858093}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.2708984851837157}
+{"dataset": "Office", "strategy": "Random", "ranks": [12.0, 14.0, 25.0, 25.0, 17.0, 16.0, 14.0, 12.0, 13.0, 11.0, 11.0], "seconds per pick": 0.0005697965621948242}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [12.0, 12.0, 13.0, 8.0, 8.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0], "seconds per pick": 0.0007596492767333984}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [12.0, 11.0, 14.0, 20.0, 20.0, 21.0, 21.0, 21.0, 22.0, 19.0, 18.0], "seconds per pick": 0.0005710601806640625}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [12.0, 13.0, 7.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.7118732929229736}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [12.0, 13.0, 4.0, 3.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.2201787710189818}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [12.0, 12.0, 13.0, 12.0, 11.0, 12.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.022633290290832518}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [12.0, 13.0, 14.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.2042354106903077}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [12.0, 13.0, 4.0, 3.0, 4.0, 4.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 2.2349130630493166}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [12.0, 13.0, 4.0, 3.0, 4.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.2195367336273195}
+{"dataset": "Office", "strategy": "Random", "ranks": [7.0, 7.0, 7.0, 7.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00026667118072509766}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [7.0, 7.0, 7.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00046253204345703125}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [7.0, 7.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0008696556091308594}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [7.0, 4.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.7909871101379394}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [7.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.6476358652114866}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [7.0, 7.0, 7.0, 7.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.02189204692840576}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [7.0, 9.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.6804328680038454}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [7.0, 5.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.636842370033264}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [7.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.5934424877166746}
+{"dataset": "Office", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0005686759948730468}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00045943260192871094}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0005450010299682617}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6888426542282104}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.6989264249801637}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.024567532539367675}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.624005627632141}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.6539714097976685}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.6856345176696776}
+{"dataset": "Office", "strategy": "Random", "ranks": [6.0, 7.0, 4.0, 4.0, 6.0, 6.0, 6.0, 4.0, 4.0, 4.0, 5.0], "seconds per pick": 0.00026268959045410155}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [6.0, 15.0, 22.0, 21.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0004630327224731445}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [6.0, 6.0, 7.0, 7.0, 7.0, 7.0, 6.0, 2.0, 20.0, 20.0, 20.0], "seconds per pick": 0.0005579710006713868}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [6.0, 10.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6525725603103638}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [6.0, 15.0, 11.0, 23.0, 19.0, 19.0, 10.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.245198106765747}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [6.0, 6.0, 6.0, 7.0, 35.0, 36.0, 34.0, 33.0, 32.0, 30.0, 31.0], "seconds per pick": 0.022076678276062012}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [6.0, 15.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.7630945444107056}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [6.0, 3.0, 10.0, 13.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.9329388856887817}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [6.0, 15.0, 28.0, 27.0, 24.0, 22.0, 18.0, 19.0, 3.0, 1.0, 1.0], "seconds per pick": 2.4044390678405763}
+{"dataset": "Office", "strategy": "Random", "ranks": [3.0, 3.0, 5.0, 5.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.00025916099548339844}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [3.0, 5.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.00045719146728515623}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [3.0, 3.0, 3.0, 3.0, 4.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.0005754470825195312}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [3.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6065989017486573}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [3.0, 3.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.8748042821884154}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [3.0, 3.0, 3.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.016620421409606935}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 1.853564715385437}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [3.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.8735476016998291}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [3.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.8505545854568481}
+{"dataset": "Office", "strategy": "Random", "ranks": [17.0, 17.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00026433467864990235}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [17.0, 5.0, 5.0, 4.0, 6.0, 7.0, 5.0, 3.0, 3.0, 2.0, 2.0], "seconds per pick": 0.00048761367797851564}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [17.0, 11.0, 5.0, 8.0, 9.0, 6.0, 7.0, 5.0, 7.0, 5.0, 4.0], "seconds per pick": 0.0005667924880981446}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [17.0, 32.0, 17.0, 15.0, 13.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.642520809173584}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [17.0, 5.0, 7.0, 6.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.050398087501526}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [17.0, 21.0, 36.0, 45.0, 45.0, 40.0, 36.0, 17.0, 15.0, 15.0, 13.0], "seconds per pick": 0.017762184143066406}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [17.0, 5.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 1.0], "seconds per pick": 2.0441246032714844}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [17.0, 7.0, 5.0, 2.0, 2.0, 4.0, 3.0, 4.0, 4.0, 4.0, 4.0], "seconds per pick": 2.0445886135101317}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [17.0, 5.0, 7.0, 6.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.0490391492843627}
+{"dataset": "Office", "strategy": "Random", "ranks": [19.0, 11.0, 9.0, 9.0, 9.0, 10.0, 10.0, 10.0, 10.0, 4.0, 3.0], "seconds per pick": 0.0002501726150512695}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [19.0, 5.0, 14.0, 10.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0004516124725341797}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [19.0, 5.0, 14.0, 1.0, 2.0, 3.0, 3.0, 2.0, 2.0, 2.0, 1.0], "seconds per pick": 0.0005822420120239258}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [19.0, 13.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.611437201499939}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [19.0, 5.0, 4.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.063573932647705}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [19.0, 11.0, 3.0, 3.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 1.0], "seconds per pick": 0.018062424659729005}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [19.0, 4.0, 2.0, 9.0, 9.0, 9.0, 5.0, 2.0, 2.0, 1.0, 1.0], "seconds per pick": 2.0155632734298705}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [19.0, 5.0, 14.0, 3.0, 3.0, 3.0, 3.0, 1.0, 2.0, 2.0, 2.0], "seconds per pick": 2.0524791717529296}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [19.0, 4.0, 2.0, 3.0, 3.0, 5.0, 4.0, 4.0, 2.0, 1.0, 1.0], "seconds per pick": 2.0261807441711426}
+{"dataset": "Office", "strategy": "Random", "ranks": [5.0, 5.0, 5.0, 5.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0002552986145019531}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [5.0, 5.0, 6.0, 5.0, 5.0, 5.0, 3.0, 3.0, 3.0, 4.0, 3.0], "seconds per pick": 0.0004553079605102539}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [5.0, 5.0, 6.0, 2.0, 2.0, 2.0, 2.0, 3.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0005360841751098633}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [5.0, 6.0, 5.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.4084011077880859}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [5.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.9941339492797852}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [5.0, 5.0, 5.0, 6.0, 5.0, 6.0, 6.0, 5.0, 5.0, 5.0, 5.0], "seconds per pick": 0.01375882625579834}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [5.0, 5.0, 6.0, 6.0, 6.0, 4.0, 4.0, 3.0, 4.0, 2.0, 2.0], "seconds per pick": 1.0297374248504638}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [5.0, 5.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.0081103563308715}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [5.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.9835263252258301}
+{"dataset": "Office", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0002574920654296875}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0004702568054199219}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0005863666534423828}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.519087815284729}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.3810425043106078}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.015395402908325195}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 1.7289589881896972}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.3768064737319947}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.3686503887176513}
+{"dataset": "Office", "strategy": "Random", "ranks": [1.0, 2.0, 2.0, 2.0, 2.0, 1.0, 3.0, 3.0, 3.0, 5.0, 5.0], "seconds per pick": 0.00026755332946777345}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [1.0, 4.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 5.0, 5.0, 5.0], "seconds per pick": 0.00045533180236816405}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [1.0, 4.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 5.0, 6.0, 5.0], "seconds per pick": 0.0005574464797973633}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6430846214294433}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.056481885910034}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 2.0, 6.0, 8.0, 8.0, 7.0, 4.0, 4.0], "seconds per pick": 0.017533636093139647}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.00195574760437}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.9844407081604003}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.186896014213562}
+{"dataset": "Office", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00019237995147705078}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0002845048904418945}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00038509368896484376}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.3341941833496094}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.0808687686920166}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.008248400688171387}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.0781383752822875}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.0896434307098388}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.09487943649292}
+{"dataset": "Office", "strategy": "Random", "ranks": [6.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 5.0, 5.0, 4.0, 4.0], "seconds per pick": 0.00019571781158447265}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [6.0, 10.0, 11.0, 11.0, 10.0, 10.0, 10.0, 3.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00030350685119628906}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [6.0, 5.0, 4.0, 5.0, 8.0, 6.0, 7.0, 5.0, 8.0, 2.0, 2.0], "seconds per pick": 0.00036759376525878905}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [6.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.13420569896697998}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [6.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.24832019805908204}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [6.0, 8.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0], "seconds per pick": 0.00728147029876709}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [6.0, 7.0, 9.0, 8.0, 13.0, 17.0, 19.0, 29.0, 29.0, 26.0, 22.0], "seconds per pick": 0.41702847480773925}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [6.0, 2.0, 3.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.2657268285751343}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [6.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.2450390338897705}
+{"dataset": "Office", "strategy": "Random", "ranks": [8.0, 10.0, 10.0, 7.0, 11.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00018308162689208984}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [8.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00029203891754150393}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [8.0, 10.0, 13.0, 12.0, 7.0, 6.0, 5.0, 3.0, 3.0, 3.0, 2.0], "seconds per pick": 0.00040950775146484373}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [8.0, 6.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.3645185470581055}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [8.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.2365307092666626}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [8.0, 10.0, 13.0, 7.0, 7.0, 6.0, 6.0, 5.0, 5.0, 4.0, 1.0], "seconds per pick": 0.008553385734558105}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [8.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.23053879737854}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [8.0, 6.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.2247560501098633}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [8.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.2218433380126954}
+{"dataset": "Office", "strategy": "Random", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 2.0, 2.0], "seconds per pick": 0.00019571781158447265}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0002856731414794922}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [2.0, 1.0, 1.0, 2.0, 2.0, 2.0, 4.0, 3.0, 1.0, 1.0, 1.0], "seconds per pick": 0.000385594367980957}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.3639667272567749}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.2543629646301269}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 2.0, 2.0, 2.0, 5.0, 6.0, 6.0, 6.0, 6.0, 11.0, 12.0], "seconds per pick": 0.008777165412902832}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 1.0, 1.0, 1.0, 2.0, 4.0, 4.0, 3.0, 1.0, 1.0, 1.0], "seconds per pick": 1.2342538595199586}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.2232070446014405}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.25485680103302}
+{"dataset": "Office", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00018937587738037108}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [1.0, 1.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0002868413925170898}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0003930807113647461}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.32598581314086916}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.073210859298706}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 2.0, 2.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 1.0, 2.0], "seconds per pick": 0.008436226844787597}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.1641624689102172}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.0633756160736083}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.0407349586486816}
+{"dataset": "Office", "strategy": "Random", "ranks": [2.0, 1.0, 2.0, 2.0, 2.0, 2.0, 5.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0001863241195678711}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00028691291809082033}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [2.0, 9.0, 19.0, 22.0, 24.0, 28.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0003941059112548828}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [2.0, 2.0, 3.0, 6.0, 4.0, 2.0, 11.0, 9.0, 13.0, 14.0, 4.0], "seconds per pick": 0.32998106479644773}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.1801429986953735}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 2.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.008509469032287598}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.1561673879623413}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [2.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.1580726623535156}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.165981364250183}
+{"dataset": "Office", "strategy": "Random", "ranks": [58.0, 58.0, 54.0, 54.0, 54.0, 27.0, 34.0, 37.0, 34.0, 26.0, 26.0], "seconds per pick": 0.00018465518951416016}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [58.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0], "seconds per pick": 0.00028955936431884766}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [58.0, 49.0, 47.0, 45.0, 50.0, 48.0, 44.0, 43.0, 41.0, 17.0, 2.0], "seconds per pick": 0.00040061473846435546}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [58.0, 26.0, 57.0, 55.0, 53.0, 61.0, 61.0, 60.0, 59.0, 48.0, 31.0], "seconds per pick": 0.27043607234954836}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [58.0, 26.0, 46.0, 31.0, 18.0, 16.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.0304771184921264}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [58.0, 56.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.008161330223083496}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [58.0, 56.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.9788980484008789}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [58.0, 26.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.0251861333847045}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [58.0, 26.0, 11.0, 32.0, 29.0, 19.0, 14.0, 28.0, 2.0, 1.0, 1.0], "seconds per pick": 1.0473987817764283}
+{"dataset": "Office", "strategy": "Random", "ranks": [2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 16.0, 11.0, 1.0, 1.0], "seconds per pick": 0.00019097328186035156}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [2.0, 2.0, 8.0, 7.0, 4.0, 3.0, 3.0, 3.0, 3.0, 1.0, 1.0], "seconds per pick": 0.0002826690673828125}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [2.0, 5.0, 5.0, 5.0, 4.0, 4.0, 4.0, 4.0, 5.0, 6.0, 1.0], "seconds per pick": 0.0003836393356323242}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.3489511013031006}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [2.0, 10.0, 8.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.1777490377426147}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 4.0, 4.0, 10.0, 10.0, 9.0, 7.0, 8.0, 9.0, 9.0, 8.0], "seconds per pick": 0.00844259262084961}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 10.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.1735275983810425}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [2.0, 10.0, 8.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.176194715499878}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.146191906929016}
+{"dataset": "Office", "strategy": "Random", "ranks": [33.0, 17.0, 16.0, 14.0, 16.0, 16.0, 17.0, 15.0, 13.0, 14.0, 9.0], "seconds per pick": 0.00018453598022460938}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [33.0, 21.0, 5.0, 5.0, 6.0, 5.0, 5.0, 5.0, 2.0, 1.0, 1.0], "seconds per pick": 0.00028502941131591797}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [33.0, 22.0, 17.0, 15.0, 16.0, 15.0, 13.0, 13.0, 13.0, 12.0, 11.0], "seconds per pick": 0.00040590763092041016}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [33.0, 32.0, 16.0, 5.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.31175718307495115}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [33.0, 23.0, 4.0, 6.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.9634876012802124}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [33.0, 21.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.008209872245788574}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [33.0, 7.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.0666029691696166}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [33.0, 22.0, 6.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.0708585023880004}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [33.0, 15.0, 4.0, 4.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.9525344848632813}
+{"dataset": "Office", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0001863241195678711}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [1.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00028483867645263673}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 2.0, 1.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0003953695297241211}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.36135263442993165}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.2536672830581665}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 1.0, 2.0, 2.0, 2.0], "seconds per pick": 0.008461236953735352}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.2448899745941162}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.258867621421814}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.2423655986785889}
+{"dataset": "Office", "strategy": "Random", "ranks": [8.0, 4.0, 3.0, 3.0, 4.0, 4.0, 4.0, 4.0, 3.0, 4.0, 3.0], "seconds per pick": 0.0001959562301635742}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [8.0, 8.0, 9.0, 8.0, 9.0, 9.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.00028426647186279296}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [8.0, 9.0, 9.0, 7.0, 5.0, 3.0, 3.0, 3.0, 3.0, 3.0, 1.0], "seconds per pick": 0.0003887176513671875}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [8.0, 4.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.30038866996765134}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [8.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.8147669315338135}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [8.0, 8.0, 9.0, 9.0, 11.0, 11.0, 11.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.008165597915649414}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [8.0, 4.0, 4.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 1.035431933403015}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [8.0, 4.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.8377810955047608}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [8.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.8048237323760986}
+{"dataset": "Office", "strategy": "Random", "ranks": [29.0, 23.0, 20.0, 20.0, 16.0, 15.0, 19.0, 19.0, 18.0, 19.0, 19.0], "seconds per pick": 0.00018739700317382812}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [29.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 1.0], "seconds per pick": 0.0002948760986328125}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [29.0, 1.0, 5.0, 3.0, 4.0, 3.0, 3.0, 3.0, 3.0, 3.0, 2.0], "seconds per pick": 0.0004010200500488281}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [29.0, 6.0, 5.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.33462307453155515}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [29.0, 23.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.2047276258468629}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [29.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0084885835647583}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [29.0, 25.0, 24.0, 26.0, 26.0, 29.0, 22.0, 18.0, 21.0, 1.0, 2.0], "seconds per pick": 1.1311675786972046}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [29.0, 24.0, 1.0, 2.0, 2.0, 2.0, 5.0, 5.0, 4.0, 3.0, 2.0], "seconds per pick": 1.2127170801162719}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [29.0, 23.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.196387028694153}
+{"dataset": "Office", "strategy": "Random", "ranks": [7.0, 7.0, 6.0, 5.0, 4.0, 5.0, 4.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0001786947250366211}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [7.0, 7.0, 7.0, 6.0, 2.0, 2.0, 2.0, 3.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0002803802490234375}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [7.0, 7.0, 6.0, 6.0, 7.0, 7.0, 6.0, 7.0, 7.0, 6.0, 4.0], "seconds per pick": 0.0003864526748657227}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [7.0, 6.0, 5.0, 3.0, 4.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.36403346061706543}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [7.0, 4.0, 3.0, 3.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.2218501329421998}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [7.0, 7.0, 8.0, 7.0, 7.0, 7.0, 8.0, 8.0, 8.0, 7.0, 7.0], "seconds per pick": 0.008690285682678222}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [7.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.2090491771697998}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [7.0, 3.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0], "seconds per pick": 1.2160549640655518}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [7.0, 4.0, 3.0, 3.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.2212438106536865}
+{"dataset": "Office", "strategy": "Random", "ranks": [3.0, 5.0, 6.0, 6.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0], "seconds per pick": 0.00018913745880126952}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [3.0, 4.0, 3.0, 4.0, 3.0, 3.0, 4.0, 4.0, 4.0, 5.0, 3.0], "seconds per pick": 0.00029144287109375}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [3.0, 4.0, 4.0, 4.0, 4.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0003910064697265625}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.27012293338775634}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6872251987457275}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [3.0, 4.0, 6.0, 3.0, 3.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.007757210731506347}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [3.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0], "seconds per pick": 0.6963922023773194}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [3.0, 5.0, 6.0, 5.0, 3.0, 5.0, 5.0, 2.0, 3.0, 3.0, 3.0], "seconds per pick": 0.7027527093887329}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6631649255752563}
+{"dataset": "Office", "strategy": "Random", "ranks": [4.0, 4.0, 4.0, 2.0, 4.0, 4.0, 4.0, 4.0, 4.0, 2.0, 1.0], "seconds per pick": 0.0001857280731201172}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [4.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00029125213623046873}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.000396418571472168}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [4.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.35034363269805907}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.1689566135406495}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [4.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.008571481704711914}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [4.0, 4.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.1434659242630005}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [4.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.1648720026016235}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.138910984992981}
+{"dataset": "Office", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00018279552459716798}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0003000497817993164}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0004046440124511719}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.31833505630493164}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.067567229270935}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.008208107948303223}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.0502999067306518}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.0573281288146972}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.0530427932739257}
+{"dataset": "Office", "strategy": "Random", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.00019669532775878906}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00028269290924072267}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0], "seconds per pick": 0.00039050579071044924}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.371197247505188}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.2620254039764405}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 2.0, 4.0, 5.0, 2.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.008519768714904785}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.2487240076065063}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.2638707876205444}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.2512818336486817}
+{"dataset": "Office", "strategy": "Random", "ranks": [1.0, 3.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0], "seconds per pick": 0.00019326210021972657}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0002980947494506836}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 3.0, 3.0, 2.0, 2.0, 1.0], "seconds per pick": 0.00036869049072265627}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.046997690200805665}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.08771665096282959}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 3.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.006789684295654297}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 3.0, 1.0, 1.0, 1.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.1019700050354004}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [1.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.1841343402862549}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0912708044052124}
+{"dataset": "Office", "strategy": "Random", "ranks": [37.0, 30.0, 28.0, 25.0, 27.0, 27.0, 27.0, 26.0, 27.0, 23.0, 23.0], "seconds per pick": 0.0001881122589111328}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [37.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0002834558486938477}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [37.0, 37.0, 37.0, 10.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0003976106643676758}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [37.0, 11.0, 20.0, 21.0, 18.0, 14.0, 12.0, 10.0, 8.0, 8.0, 7.0], "seconds per pick": 0.35109949111938477}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [37.0, 22.0, 17.0, 18.0, 12.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.2174299716949464}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [37.0, 36.0, 26.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 1.0], "seconds per pick": 0.008969712257385253}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [37.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.2266535997390746}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [37.0, 37.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.2267382144927979}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [37.0, 22.0, 17.0, 8.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.2194501161575317}
+{"dataset": "Office", "strategy": "Random", "ranks": [5.0, 5.0, 5.0, 5.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0001878976821899414}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0002857208251953125}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00037746429443359376}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [5.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.1372749090194702}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [5.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.27419276237487794}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [5.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.006946921348571777}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.3001056432723999}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [5.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.28294389247894286}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [5.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.28054242134094237}
+{"dataset": "Office", "strategy": "Random", "ranks": [7.0, 7.0, 5.0, 5.0, 5.0, 5.0, 10.0, 2.0, 2.0, 2.0, 1.0], "seconds per pick": 0.00020165443420410155}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [7.0, 11.0, 11.0, 9.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0002892017364501953}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [7.0, 11.0, 8.0, 8.0, 7.0, 9.0, 9.0, 9.0, 8.0, 9.0, 8.0], "seconds per pick": 0.00039534568786621095}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [7.0, 7.0, 7.0, 6.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.3446115255355835}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [7.0, 9.0, 14.0, 12.0, 4.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.1794147729873656}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [7.0, 7.0, 9.0, 9.0, 10.0, 12.0, 14.0, 16.0, 16.0, 15.0, 14.0], "seconds per pick": 0.008481788635253906}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [7.0, 11.0, 11.0, 12.0, 9.0, 9.0, 8.0, 8.0, 8.0, 7.0, 9.0], "seconds per pick": 1.2306492805480957}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [7.0, 13.0, 12.0, 16.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.1539859294891357}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [7.0, 9.0, 14.0, 12.0, 15.0, 4.0, 3.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 1.181436824798584}
+{"dataset": "Office", "strategy": "Random", "ranks": [2.0, 6.0, 6.0, 1.0, 1.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0001878976821899414}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0003104448318481445}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.00038669109344482424}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [2.0, 6.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.35683939456939695}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [2.0, 6.0, 5.0, 1.0, 6.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.210223340988159}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.00837380886077881}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 13.0, 29.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.1962568283081054}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [2.0, 2.0, 4.0, 5.0, 3.0, 2.0, 3.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.181835150718689}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 6.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.1861269235610963}
+{"dataset": "Office", "strategy": "Random", "ranks": [12.0, 10.0, 7.0, 6.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0], "seconds per pick": 0.00018937587738037108}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [12.0, 10.0, 9.0, 8.0, 11.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0], "seconds per pick": 0.00030202865600585936}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [12.0, 13.0, 13.0, 14.0, 5.0, 5.0, 5.0, 6.0, 6.0, 6.0, 6.0], "seconds per pick": 0.00043380260467529297}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [12.0, 10.0, 10.0, 5.0, 5.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.365381646156311}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [12.0, 10.0, 7.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.2571614742279054}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [12.0, 10.0, 9.0, 9.0, 10.0, 1.0, 2.0, 2.0, 2.0, 5.0, 5.0], "seconds per pick": 0.008575749397277833}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [12.0, 14.0, 9.0, 9.0, 8.0, 5.0, 5.0, 4.0, 6.0, 4.0, 2.0], "seconds per pick": 1.1983173131942748}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [12.0, 7.0, 6.0, 6.0, 4.0, 5.0, 5.0, 4.0, 1.0, 1.0, 1.0], "seconds per pick": 1.217544436454773}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [12.0, 10.0, 6.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.2475573301315308}
+{"dataset": "Office", "strategy": "Random", "ranks": [3.0, 2.0, 2.0, 2.0, 3.0, 13.0, 6.0, 6.0, 6.0, 7.0, 6.0], "seconds per pick": 0.00019295215606689452}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [3.0, 2.0, 2.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0], "seconds per pick": 0.0002900838851928711}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [3.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 3.0], "seconds per pick": 0.0003886222839355469}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.3435976028442383}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.1480381965637207}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [3.0, 3.0, 3.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 4.0, 3.0], "seconds per pick": 0.008533811569213868}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.1495002269744874}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [3.0, 8.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.1288538694381713}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.1384884119033813}
+{"dataset": "Office", "strategy": "Random", "ranks": [9.0, 9.0, 9.0, 9.0, 9.0, 6.0, 5.0, 7.0, 7.0, 7.0, 7.0], "seconds per pick": 0.0001865386962890625}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [9.0, 9.0, 8.0, 6.0, 7.0, 7.0, 7.0, 6.0, 5.0, 5.0, 5.0], "seconds per pick": 0.000296783447265625}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [9.0, 8.0, 8.0, 7.0, 6.0, 6.0, 1.0, 1.0, 2.0, 2.0, 2.0], "seconds per pick": 0.000377964973449707}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [9.0, 6.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.12552347183227539}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [9.0, 6.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.23453085422515868}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [9.0, 9.0, 8.0, 7.0, 7.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0], "seconds per pick": 0.0071124076843261715}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [9.0, 13.0, 12.0, 11.0, 11.0, 11.0, 7.0, 7.0, 7.0, 6.0, 3.0], "seconds per pick": 0.41949188709259033}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [9.0, 13.0, 11.0, 11.0, 10.0, 7.0, 7.0, 3.0, 1.0, 1.0, 1.0], "seconds per pick": 0.36064672470092773}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [9.0, 6.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.23786442279815673}
+{"dataset": "Office", "strategy": "Random", "ranks": [6.0, 5.0, 5.0, 6.0, 5.0, 4.0, 3.0, 2.0, 2.0, 3.0, 2.0], "seconds per pick": 0.00019199848175048827}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [6.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00030906200408935546}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [6.0, 6.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00037186145782470704}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [6.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.36409151554107666}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [6.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.2103954553604126}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [6.0, 4.0, 3.0, 3.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.008366107940673828}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [6.0, 4.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.2024553775787354}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [6.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.2014259099960327}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [6.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.2053270578384399}
+{"dataset": "Office", "strategy": "Random", "ranks": [16.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00019841194152832032}
+{"dataset": "Office", "strategy": "Highest degree", "ranks": [16.0, 14.0, 14.0, 14.0, 14.0, 13.0, 8.0, 8.0, 9.0, 9.0, 9.0], "seconds per pick": 0.00028634071350097656}
+{"dataset": "Office", "strategy": "Contact tracing", "ranks": [16.0, 15.0, 37.0, 32.0, 29.0, 29.0, 17.0, 15.0, 14.0, 14.0, 9.0], "seconds per pick": 0.0003681182861328125}
+{"dataset": "Office", "strategy": "Test top suspect", "ranks": [16.0, 12.0, 36.0, 37.0, 35.0, 33.0, 31.0, 8.0, 2.0, 2.0, 1.0], "seconds per pick": 0.22494876384735107}
+{"dataset": "Office", "strategy": "Information gain (ours)", "ranks": [16.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.43864829540252687}
+{"dataset": "Office", "strategy": "Split candidates (Spinelli-style)", "ranks": [16.0, 13.0, 14.0, 1.0, 1.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.007306385040283203}
+{"dataset": "Office", "strategy": "Most likely infected (Baker-style)", "ranks": [16.0, 15.0, 15.0, 15.0, 15.0, 15.0, 15.0, 14.0, 16.0, 14.0, 13.0], "seconds per pick": 0.6471467256546021}
+{"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [16.0, 14.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.5609574794769288}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [16.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.48995442390441896}

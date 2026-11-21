@@ -318,3 +318,43 @@
 {"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [4.0, 7.0, 10.0, 8.0, 9.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 1.8069379568099975}
 {"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [14.0, 10.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.8398635864257813}
 {"dataset": "Office", "strategy": "Edge cutting (EC2)", "ranks": [10.0, 8.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 1.6006372213363647}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.5904026508331297}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [5.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.814059782028198}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [7.0, 7.0, 6.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.1104589223861696}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [4.0, 7.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.167860984802246}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [3.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.150423789024353}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [37.0, 28.0, 15.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.0965016365051268}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.1439996004104613}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.2013039350509644}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.871440839767456}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [5.0, 6.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.684430551528931}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [18.0, 2.0, 2.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.049920415878296}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.944180226325989}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [16.0, 7.0, 6.0, 5.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.466245102882385}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.27003462314605714}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [19.0, 5.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.6550142049789427}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.11138458251953125}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [6.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.5329674005508422}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [13.0, 9.0, 11.0, 5.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.4392054080963135}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.1626983404159546}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [22.0, 6.0, 5.0, 5.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.461410140991211}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6949026823043823}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [9.0, 6.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.175854754447937}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.526529812812805}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [11.0, 12.0, 11.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6499238729476928}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [5.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.7075442314147948}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [15.0, 11.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.604127526283264}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.563733768463135}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [13.0, 12.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.4223308563232422}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.4181103229522707}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.5899646520614623}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [5.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.5085713386535646}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.5085272073745726}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [33.0, 15.0, 12.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.5458658218383787}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [22.0, 11.0, 5.0, 13.0, 4.0, 4.0, 5.0, 4.0, 5.0, 5.0, 1.0], "seconds per pick": 2.404921460151672}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.660866618156433}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [29.0, 2.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.3573150396347047}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [11.0, 5.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.45235652923584}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.5723861932754515}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [14.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.5092050790786744}
+{"dataset": "Office", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [10.0, 8.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.3830166816711427}

@@ -69,6 +69,10 @@ if os.environ.get("FIT_STAGE") == "2":
 SOURCE_RATES = (1e-4, 3e-4, 1e-3, 3e-3, 0.01, 0.03, 0.1, 0.3)
 if os.environ.get("FIT_STAGE") == "3":
     FIT_GRID = [(r, s, 0.0, f, l) for r in (0.0, 1e-5, 1e-4) for f in (1.0, 0.3) for l in (3e-4, 1e-3, 3e-3) for s in SOURCE_RATES]
+# Fourth stage: stage 3's best fraction and leak were at the edges of their ranges, so
+# both ranges are extended past them. FIT_STAGE=4.
+if os.environ.get("FIT_STAGE") == "4":
+    FIT_GRID = [(0.0, s, 0.0, f, l) for f in (0.3, 0.1, 0.03) for l in (1e-3, 3e-3, 1e-2, 3e-2) for s in SOURCE_RATES]
 FLOOR = 1e-12  # the leak gives every report a proper probability, so no floor is needed
 LPSI_ALPHAS = (0.1, 0.3, 0.5, 0.7, 0.9)
 
@@ -144,7 +148,7 @@ def fit(count: int) -> None:
     loglik = per_case.sum(axis=0)
     best = FIT_GRID[int(np.argmax(loglik))]
     prior = None
-    if os.environ.get("FIT_STAGE") == "3":
+    if os.environ.get("FIT_STAGE") in ("3", "4"):
         # For each setting of the other parameters, fit the source-rate prior by EM and keep
         # the setting with the highest marginal likelihood.
         bases = sorted({(g[0], g[2], g[3], g[4]) for g in FIT_GRID})

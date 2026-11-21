@@ -1,0 +1,360 @@
+{"dataset": "Hospital", "strategy": "Random", "ranks": [1.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 3.0, 1.0, 1.0], "seconds per pick": 0.0006676197052001953}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [1.0, 1.0, 3.0, 1.0, 1.0, 5.0, 14.0, 13.0, 14.0, 12.0, 12.0], "seconds per pick": 0.001088094711303711}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 5.0, 5.0, 1.0, 2.0, 6.0, 12.0, 11.0], "seconds per pick": 0.001102757453918457}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 1.0, 2.0, 1.0], "seconds per pick": 0.3069224119186401}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 5.0, 1.0, 4.0, 2.0, 1.0], "seconds per pick": 0.5891796350479126}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.015879273414611816}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 2.0, 3.0, 7.0, 9.0, 10.0, 15.0, 15.0, 15.0, 11.0, 11.0], "seconds per pick": 0.5871618747711181}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 8.0, 7.0, 8.0, 10.0, 6.0, 2.0], "seconds per pick": 0.627516770362854}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 5.0, 1.0, 4.0, 2.0, 1.0], "seconds per pick": 0.6502607107162476}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [8.0, 8.0, 8.0, 14.0, 14.0, 14.0, 14.0, 14.0, 12.0, 12.0, 11.0], "seconds per pick": 0.000261688232421875}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [8.0, 17.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0007066011428833007}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [8.0, 17.0, 4.0, 2.0, 2.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00047748088836669923}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [8.0, 17.0, 10.0, 4.0, 4.0, 3.0, 4.0, 7.0, 2.0, 1.0, 1.0], "seconds per pick": 0.30999045372009276}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [8.0, 5.0, 3.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6526723146438599}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [8.0, 5.0, 4.0, 8.0, 10.0, 9.0, 6.0, 6.0, 8.0, 8.0, 8.0], "seconds per pick": 0.01866493225097656}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [8.0, 9.0, 14.0, 13.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6544418096542358}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [8.0, 5.0, 4.0, 2.0, 3.0, 9.0, 6.0, 8.0, 8.0, 9.0, 1.0], "seconds per pick": 0.672801423072815}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [8.0, 5.0, 3.0, 3.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6288881301879883}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [5.0, 5.0, 6.0, 6.0, 5.0, 5.0, 5.0, 4.0, 4.0, 4.0, 4.0], "seconds per pick": 0.00026080608367919924}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [5.0, 4.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0], "seconds per pick": 0.00041704177856445314}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [5.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0005008220672607422}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [5.0, 4.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.32281882762908937}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [5.0, 4.0, 3.0, 4.0, 4.0, 8.0, 7.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.7867194175720215}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [5.0, 3.0, 4.0, 4.0, 5.0, 5.0, 5.0, 5.0, 3.0, 3.0, 3.0], "seconds per pick": 0.019969916343688963}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [5.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0], "seconds per pick": 0.7547956466674804}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [5.0, 4.0, 3.0, 4.0, 3.0, 4.0, 3.0, 6.0, 6.0, 8.0, 9.0], "seconds per pick": 0.8003629922866822}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [5.0, 4.0, 4.0, 4.0, 4.0, 8.0, 7.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.7229562759399414}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0002704143524169922}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0007122993469238281}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.000771188735961914}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.2561836242675781}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.46428258419036866}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.019332456588745116}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.4436837911605835}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 3.0, 3.0], "seconds per pick": 0.45200819969177247}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.4603105068206787}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [33.0, 25.0, 25.0, 27.0, 27.0, 24.0, 24.0, 23.0, 6.0, 6.0, 8.0], "seconds per pick": 0.0014805555343627929}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [33.0, 16.0, 10.0, 10.0, 6.0, 13.0, 10.0, 10.0, 11.0, 1.0, 1.0], "seconds per pick": 0.0007138252258300781}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [33.0, 16.0, 15.0, 11.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0005189180374145508}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [33.0, 13.0, 22.0, 18.0, 16.0, 12.0, 8.0, 12.0, 11.0, 11.0, 10.0], "seconds per pick": 0.3378774642944336}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [33.0, 16.0, 13.0, 11.0, 11.0, 12.0, 11.0, 10.0, 10.0, 6.0, 5.0], "seconds per pick": 0.8100977659225463}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [33.0, 15.0, 21.0, 22.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.01851346492767334}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [33.0, 22.0, 14.0, 11.0, 13.0, 13.0, 12.0, 12.0, 12.0, 4.0, 3.0], "seconds per pick": 0.8169490814208984}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [33.0, 18.0, 6.0, 6.0, 2.0, 12.0, 8.0, 9.0, 2.0, 3.0, 1.0], "seconds per pick": 0.7946444988250733}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [33.0, 16.0, 13.0, 11.0, 11.0, 12.0, 11.0, 11.0, 11.0, 9.0, 8.0], "seconds per pick": 0.8098649024963379}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [9.0, 9.0, 9.0, 9.0, 8.0, 8.0, 8.0, 8.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0002617597579956055}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [9.0, 12.0, 13.0, 14.0, 12.0, 1.0, 1.0, 4.0, 4.0, 6.0, 7.0], "seconds per pick": 0.00041451454162597654}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [9.0, 12.0, 13.0, 14.0, 12.0, 12.0, 13.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0008142232894897461}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [9.0, 8.0, 7.0, 8.0, 7.0, 5.0, 3.0, 2.0, 1.0, 11.0, 10.0], "seconds per pick": 0.3230747222900391}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [9.0, 10.0, 8.0, 8.0, 11.0, 1.0, 1.0, 3.0, 2.0, 1.0, 1.0], "seconds per pick": 0.7868387460708618}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [9.0, 2.0, 7.0, 4.0, 13.0, 12.0, 4.0, 2.0, 3.0, 2.0, 3.0], "seconds per pick": 0.023713231086730957}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [9.0, 4.0, 3.0, 5.0, 5.0, 5.0, 6.0, 5.0, 6.0, 6.0, 5.0], "seconds per pick": 0.7529596567153931}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [9.0, 10.0, 11.0, 10.0, 6.0, 1.0, 3.0, 4.0, 5.0, 5.0, 5.0], "seconds per pick": 0.7917916536331177}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [9.0, 10.0, 11.0, 10.0, 11.0, 1.0, 1.0, 3.0, 5.0, 4.0, 1.0], "seconds per pick": 0.7916494369506836}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [16.0, 16.0, 11.0, 8.0, 8.0, 8.0, 8.0, 8.0, 2.0, 2.0, 2.0], "seconds per pick": 0.00055999755859375}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [16.0, 15.0, 9.0, 12.0, 13.0, 7.0, 8.0, 4.0, 8.0, 8.0, 9.0], "seconds per pick": 0.0007267475128173828}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [16.0, 15.0, 9.0, 10.0, 6.0, 7.0, 8.0, 4.0, 8.0, 8.0, 1.0], "seconds per pick": 0.00047616958618164064}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [16.0, 12.0, 13.0, 12.0, 11.0, 9.0, 9.0, 5.0, 5.0, 3.0, 1.0], "seconds per pick": 0.3076375246047974}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [16.0, 6.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6172211170196533}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [16.0, 19.0, 20.0, 19.0, 19.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.01658923625946045}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [16.0, 18.0, 15.0, 11.0, 9.0, 8.0, 7.0, 8.0, 9.0, 9.0, 9.0], "seconds per pick": 0.6728820562362671}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [16.0, 19.0, 19.0, 18.0, 12.0, 13.0, 13.0, 6.0, 5.0, 7.0, 5.0], "seconds per pick": 0.5308518886566163}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [16.0, 18.0, 16.0, 14.0, 14.0, 12.0, 9.0, 10.0, 5.0, 5.0, 3.0], "seconds per pick": 0.5528491497039795}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [11.0, 11.0, 14.0, 14.0, 9.0, 9.0, 9.0, 6.0, 6.0, 6.0, 7.0], "seconds per pick": 0.0002618551254272461}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [11.0, 11.0, 9.0, 9.0, 6.0, 8.0, 13.0, 13.0, 14.0, 1.0, 1.0], "seconds per pick": 0.00041074752807617186}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [11.0, 11.0, 9.0, 9.0, 6.0, 8.0, 10.0, 9.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0008028030395507812}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [11.0, 8.0, 8.0, 6.0, 3.0, 4.0, 8.0, 8.0, 4.0, 2.0, 1.0], "seconds per pick": 0.2917989492416382}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [11.0, 8.0, 8.0, 5.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6831615209579468}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [11.0, 11.0, 11.0, 11.0, 11.0, 10.0, 10.0, 4.0, 4.0, 4.0, 2.0], "seconds per pick": 0.01685786247253418}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [11.0, 8.0, 4.0, 6.0, 4.0, 4.0, 3.0, 3.0, 3.0, 3.0, 1.0], "seconds per pick": 0.6754101276397705}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [11.0, 8.0, 9.0, 7.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6524794340133667}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [11.0, 10.0, 9.0, 5.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.7325356483459473}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [7.0, 12.0, 9.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00026471614837646483}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [7.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 4.0, 3.0, 3.0], "seconds per pick": 0.0004113912582397461}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [7.0, 7.0, 3.0, 5.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.00047354698181152345}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [7.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.2873586654663086}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [7.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6124840497970581}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [7.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0], "seconds per pick": 0.013431143760681153}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [7.0, 8.0, 7.0, 6.0, 3.0, 3.0, 3.0, 3.0, 2.0, 2.0, 2.0], "seconds per pick": 0.6291875839233398}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [7.0, 3.0, 6.0, 6.0, 3.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.6277023553848267}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [7.0, 3.0, 2.0, 1.0, 1.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6618404865264893}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0002657175064086914}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.00040590763092041016}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [2.0, 4.0, 2.0, 2.0, 2.0, 2.0, 2.0, 4.0, 4.0, 3.0, 2.0], "seconds per pick": 0.0004127025604248047}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [2.0, 6.0, 3.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.2482877254486084}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [2.0, 2.0, 3.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.4442424774169922}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.010892271995544434}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 2.0, 3.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0], "seconds per pick": 0.4678640842437744}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [2.0, 2.0, 2.0, 2.0, 4.0, 4.0, 4.0, 2.0, 3.0, 2.0, 2.0], "seconds per pick": 0.40330369472503663}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.4533130645751953}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [25.0, 25.0, 25.0, 25.0, 24.0, 22.0, 22.0, 22.0, 22.0, 21.0, 21.0], "seconds per pick": 0.000557398796081543}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [25.0, 12.0, 11.0, 6.0, 5.0, 5.0, 5.0, 5.0, 7.0, 8.0, 8.0], "seconds per pick": 0.000507521629333496}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [25.0, 25.0, 25.0, 23.0, 23.0, 18.0, 11.0, 9.0, 7.0, 5.0, 5.0], "seconds per pick": 0.00045287609100341797}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [25.0, 23.0, 11.0, 6.0, 3.0, 3.0, 3.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 0.2583287000656128}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [25.0, 22.0, 21.0, 20.0, 6.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.489711332321167}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [25.0, 20.0, 20.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0], "seconds per pick": 0.009552931785583496}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [25.0, 25.0, 23.0, 18.0, 11.0, 9.0, 8.0, 5.0, 10.0, 8.0, 8.0], "seconds per pick": 0.44013707637786864}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [25.0, 12.0, 9.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.4898889780044556}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [25.0, 10.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.4809144973754883}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [2.0, 3.0, 3.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 1.0, 1.0], "seconds per pick": 0.0003664970397949219}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [2.0, 3.0, 5.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.0004137754440307617}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [2.0, 6.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.00046970844268798826}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.2210223436355591}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [2.0, 5.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.47358121871948244}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0], "seconds per pick": 0.012133216857910157}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 3.0, 3.0, 4.0, 4.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.47075610160827636}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [2.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.4619499444961548}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 5.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.46284592151641846}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [18.0, 18.0, 18.0, 17.0, 17.0, 18.0, 17.0, 17.0, 17.0, 17.0, 17.0], "seconds per pick": 0.0005724430084228516}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [18.0, 18.0, 15.0, 18.0, 15.0, 16.0, 15.0, 14.0, 14.0, 15.0, 12.0], "seconds per pick": 0.0004140615463256836}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [18.0, 18.0, 20.0, 18.0, 15.0, 15.0, 17.0, 16.0, 16.0, 15.0, 16.0], "seconds per pick": 0.0011052846908569335}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [18.0, 19.0, 17.0, 12.0, 14.0, 14.0, 8.0, 4.0, 3.0, 1.0, 1.0], "seconds per pick": 0.2539899110794067}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [18.0, 4.0, 19.0, 16.0, 13.0, 12.0, 11.0, 9.0, 8.0, 5.0, 4.0], "seconds per pick": 0.5499423265457153}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [18.0, 27.0, 19.0, 15.0, 11.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.01191246509552002}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [18.0, 15.0, 15.0, 15.0, 15.0, 14.0, 10.0, 10.0, 9.0, 10.0, 10.0], "seconds per pick": 0.599388837814331}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [18.0, 19.0, 12.0, 13.0, 13.0, 15.0, 15.0, 15.0, 14.0, 11.0, 11.0], "seconds per pick": 0.5853901386260987}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [18.0, 18.0, 18.0, 20.0, 19.0, 17.0, 17.0, 15.0, 11.0, 6.0, 6.0], "seconds per pick": 0.6018784284591675}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 3.0, 6.0, 8.0, 8.0], "seconds per pick": 0.0002569437026977539}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0], "seconds per pick": 0.0004124164581298828}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0007716894149780273}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [2.0, 1.0, 1.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.23279871940612792}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [2.0, 1.0, 1.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.4751064538955688}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 2.0, 2.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.012202692031860352}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0], "seconds per pick": 0.4956716299057007}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 3.0, 3.0, 2.0], "seconds per pick": 0.50699303150177}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 1.0, 1.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.4858339071273804}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [17.0, 17.0, 17.0, 17.0, 17.0, 16.0, 16.0, 16.0, 17.0, 17.0, 17.0], "seconds per pick": 0.00025990009307861326}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [17.0, 16.0, 17.0, 16.0, 16.0, 10.0, 8.0, 7.0, 8.0, 4.0, 4.0], "seconds per pick": 0.0004090785980224609}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [17.0, 16.0, 7.0, 6.0, 10.0, 9.0, 8.0, 7.0, 9.0, 9.0, 9.0], "seconds per pick": 0.0007570266723632812}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [17.0, 16.0, 13.0, 12.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.23565802574157715}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [17.0, 16.0, 13.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.47248857021331786}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [17.0, 5.0, 5.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.016613078117370606}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [17.0, 16.0, 10.0, 8.0, 7.0, 6.0, 8.0, 7.0, 9.0, 8.0, 8.0], "seconds per pick": 0.43998396396636963}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [17.0, 5.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.49975900650024413}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [17.0, 16.0, 13.0, 12.0, 5.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.513629412651062}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [7.0, 7.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0002693891525268555}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [7.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0004134178161621094}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [7.0, 11.0, 11.0, 4.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0004784584045410156}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [7.0, 6.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.24606611728668212}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [7.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.5938787221908569}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [7.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.016589975357055663}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [7.0, 11.0, 2.0, 2.0, 1.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0], "seconds per pick": 0.5756558179855347}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [7.0, 7.0, 10.0, 9.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.576758885383606}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [7.0, 8.0, 8.0, 13.0, 11.0, 7.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.5326516628265381}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [11.0, 6.0, 6.0, 5.0, 2.0, 3.0, 2.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0004794836044311523}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [11.0, 7.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0004111051559448242}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [11.0, 9.0, 4.0, 5.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0008020639419555664}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [11.0, 6.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.28808157444000243}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [11.0, 14.0, 7.0, 3.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6326916933059692}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [11.0, 6.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.014675426483154296}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [11.0, 9.0, 8.0, 6.0, 3.0, 5.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6347661733627319}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [11.0, 6.0, 10.0, 10.0, 25.0, 25.0, 23.0, 6.0, 4.0, 1.0, 1.0], "seconds per pick": 0.5674177408218384}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [11.0, 14.0, 7.0, 3.0, 2.0, 1.0, 1.0, 2.0, 2.0, 1.0, 1.0], "seconds per pick": 0.5812688589096069}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.0002686262130737305}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [3.0, 3.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0], "seconds per pick": 0.0004036188125610352}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 3.0], "seconds per pick": 0.0004215717315673828}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.16645162105560302}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [3.0, 4.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.34292354583740237}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [3.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0], "seconds per pick": 0.0108565092086792}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 4.0, 4.0, 1.0, 1.0, 1.0], "seconds per pick": 0.3902501344680786}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [3.0, 3.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.33853855133056643}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.28943445682525637}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [3.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0], "seconds per pick": 0.00026450157165527346}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [3.0, 3.0, 3.0, 3.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.000727081298828125}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.0004991769790649414}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [3.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.31633734703063965}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6978062629699707}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [3.0, 4.0, 7.0, 7.0, 6.0, 6.0, 6.0, 8.0, 7.0, 7.0, 7.0], "seconds per pick": 0.014007782936096192}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.7210754871368408}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [3.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6718271970748901}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.765548825263977}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [6.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0], "seconds per pick": 0.00025227069854736326}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [6.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0004015445709228516}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [6.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0007746219635009766}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [6.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.20722761154174804}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [6.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.41823885440826414}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [6.0, 3.0, 3.0, 3.0, 4.0, 4.0, 3.0, 3.0, 2.0, 3.0, 3.0], "seconds per pick": 0.012858057022094726}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [6.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.4977962732315063}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [6.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.4569007635116577}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [6.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.41574792861938475}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.000271296501159668}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 2.0, 2.0, 2.0], "seconds per pick": 0.00040781497955322266}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [2.0, 2.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 2.0, 2.0, 2.0], "seconds per pick": 0.00081024169921875}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [2.0, 4.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.2535733938217163}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [2.0, 2.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6265226364135742}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.014912176132202148}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 2.0], "seconds per pick": 0.6064716577529907}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [2.0, 2.0, 2.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.5985607385635376}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 4.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6444418668746948}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [5.0, 5.0, 5.0, 5.0, 5.0, 7.0, 7.0, 7.0, 7.0, 8.0, 3.0], "seconds per pick": 0.0005618572235107422}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00040035247802734376}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [5.0, 1.0, 1.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0004807710647583008}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [5.0, 8.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.218536901473999}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [5.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.4189369440078735}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [5.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.014870071411132812}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [5.0, 4.0, 1.0, 1.0, 1.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6376248598098755}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [5.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.3229635715484619}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.3065129995346069}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00026361942291259767}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.000427556037902832}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00046279430389404295}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [3.0, 1.0, 1.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.19091193675994872}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.3722075939178467}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [3.0, 3.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.010495519638061524}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.3716790199279785}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.3803799867630005}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.38715462684631347}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [18.0, 20.0, 23.0, 20.0, 20.0, 20.0, 17.0, 17.0, 17.0, 15.0, 15.0], "seconds per pick": 0.00026824474334716795}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [18.0, 16.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00041365623474121094}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [18.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0005073785781860351}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [18.0, 2.0, 2.0, 7.0, 18.0, 15.0, 17.0, 9.0, 13.0, 10.0, 7.0], "seconds per pick": 0.23186349868774414}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [18.0, 14.0, 1.0, 1.0, 4.0, 4.0, 4.0, 7.0, 9.0, 7.0, 9.0], "seconds per pick": 0.5165184259414672}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [18.0, 23.0, 10.0, 14.0, 16.0, 17.0, 17.0, 15.0, 14.0, 14.0, 14.0], "seconds per pick": 0.012540173530578614}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [18.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.5242352962493897}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [18.0, 2.0, 2.0, 1.0, 2.0, 6.0, 8.0, 9.0, 8.0, 11.0, 8.0], "seconds per pick": 0.5059188842773438}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [18.0, 14.0, 14.0, 1.0, 5.0, 11.0, 12.0, 15.0, 13.0, 8.0, 1.0], "seconds per pick": 0.5075983524322509}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 10.0, 5.0, 5.0, 5.0], "seconds per pick": 0.0002569437026977539}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [10.0, 6.0, 4.0, 4.0, 4.0, 4.0, 4.0, 2.0, 1.0, 2.0, 2.0], "seconds per pick": 0.0004123687744140625}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [10.0, 10.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0], "seconds per pick": 0.0005018234252929688}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [10.0, 8.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.2263186454772949}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [10.0, 6.0, 4.0, 3.0, 2.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.5316216945648193}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [10.0, 6.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 2.0, 2.0, 2.0], "seconds per pick": 0.011344289779663086}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [10.0, 8.0, 5.0, 5.0, 3.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.5274804592132568}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [10.0, 12.0, 6.0, 4.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.5339695453643799}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [10.0, 6.0, 4.0, 3.0, 2.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.5445824861526489}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [1.0, 1.0, 3.0, 3.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0002788543701171875}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0004413127899169922}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.000489354133605957}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.16073551177978515}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.297987961769104}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 3.0, 2.0, 3.0, 3.0, 4.0, 2.0, 2.0], "seconds per pick": 0.012302613258361817}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.4745308876037598}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [1.0, 1.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.36800532341003417}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.2760405778884888}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [13.0, 13.0, 14.0, 12.0, 12.0, 12.0, 13.0, 11.0, 11.0, 11.0, 10.0], "seconds per pick": 0.00025346279144287107}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [13.0, 7.0, 7.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0004056692123413086}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [13.0, 7.0, 7.0, 6.0, 3.0, 5.0, 5.0, 4.0, 1.0, 1.0, 2.0], "seconds per pick": 0.00043625831604003905}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [13.0, 7.0, 4.0, 3.0, 2.0, 3.0, 3.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 0.17244503498077393}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [13.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.3992631435394287}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [13.0, 15.0, 15.0, 15.0, 5.0, 4.0, 4.0, 4.0, 4.0, 4.0, 6.0], "seconds per pick": 0.009108448028564453}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [13.0, 7.0, 7.0, 6.0, 3.0, 3.0, 4.0, 3.0, 1.0, 1.0, 1.0], "seconds per pick": 0.37185733318328856}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [13.0, 15.0, 6.0, 5.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.38029701709747316}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [13.0, 4.0, 3.0, 5.0, 3.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.3965656518936157}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [18.0, 12.0, 13.0, 13.0, 13.0, 14.0, 15.0, 15.0, 15.0, 15.0, 15.0], "seconds per pick": 0.0002535104751586914}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [18.0, 17.0, 17.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0003885507583618164}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [18.0, 17.0, 18.0, 18.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0], "seconds per pick": 0.0004748106002807617}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [18.0, 17.0, 16.0, 9.0, 9.0, 8.0, 7.0, 9.0, 8.0, 7.0, 7.0], "seconds per pick": 0.1914161205291748}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [18.0, 17.0, 16.0, 9.0, 9.0, 10.0, 9.0, 9.0, 10.0, 12.0, 13.0], "seconds per pick": 0.3994894027709961}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [18.0, 14.0, 11.0, 9.0, 10.0, 11.0, 10.0, 8.0, 8.0, 8.0, 6.0], "seconds per pick": 0.01021714210510254}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [18.0, 17.0, 18.0, 10.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0], "seconds per pick": 0.39484419822692873}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [18.0, 17.0, 16.0, 13.0, 14.0, 13.0, 10.0, 7.0, 7.0, 7.0, 8.0], "seconds per pick": 0.39311532974243163}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [18.0, 8.0, 10.0, 11.0, 9.0, 10.0, 9.0, 11.0, 12.0, 11.0, 10.0], "seconds per pick": 0.40008208751678465}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [19.0, 19.0, 19.0, 19.0, 19.0, 19.0, 19.0, 19.0, 10.0, 7.0, 5.0], "seconds per pick": 0.0002572059631347656}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [19.0, 15.0, 14.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00040106773376464845}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [19.0, 15.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00046651363372802735}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [19.0, 20.0, 8.0, 9.0, 12.0, 14.0, 12.0, 11.0, 10.0, 8.0, 9.0], "seconds per pick": 0.1787114143371582}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [19.0, 19.0, 14.0, 4.0, 3.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.34632039070129395}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [19.0, 13.0, 12.0, 10.0, 8.0, 12.0, 11.0, 10.0, 6.0, 5.0, 1.0], "seconds per pick": 0.01094348430633545}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [19.0, 15.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.2929201602935791}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [19.0, 8.0, 8.0, 4.0, 4.0, 6.0, 5.0, 3.0, 1.0, 1.0, 1.0], "seconds per pick": 0.35806219577789306}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [19.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.2827223062515259}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [7.0, 7.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0], "seconds per pick": 0.0002696514129638672}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [7.0, 7.0, 9.0, 13.0, 13.0, 13.0, 14.0, 14.0, 14.0, 12.0, 1.0], "seconds per pick": 0.00041029453277587893}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [7.0, 7.0, 8.0, 7.0, 11.0, 10.0, 10.0, 10.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0005049467086791992}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [7.0, 8.0, 13.0, 11.0, 9.0, 8.0, 7.0, 6.0, 4.0, 4.0, 3.0], "seconds per pick": 0.23313429355621337}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [7.0, 8.0, 13.0, 13.0, 12.0, 12.0, 11.0, 10.0, 9.0, 9.0, 1.0], "seconds per pick": 0.5563085317611695}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [7.0, 9.0, 9.0, 9.0, 9.0, 8.0, 5.0, 14.0, 14.0, 14.0, 10.0], "seconds per pick": 0.012516093254089356}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [7.0, 7.0, 7.0, 12.0, 9.0, 8.0, 6.0, 6.0, 5.0, 5.0, 5.0], "seconds per pick": 0.542319369316101}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [7.0, 11.0, 7.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.5621895790100098}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [7.0, 9.0, 11.0, 13.0, 13.0, 12.0, 12.0, 10.0, 9.0, 1.0, 1.0], "seconds per pick": 0.5578114271163941}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [13.0, 11.0, 12.0, 11.0, 11.0, 11.0, 5.0, 5.0, 5.0, 5.0, 5.0], "seconds per pick": 0.00025010108947753906}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [13.0, 8.0, 7.0, 6.0, 6.0, 5.0, 6.0, 7.0, 8.0, 8.0, 7.0], "seconds per pick": 0.000412750244140625}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [13.0, 7.0, 5.0, 6.0, 6.0, 5.0, 5.0, 5.0, 5.0, 7.0, 6.0], "seconds per pick": 0.00048127174377441404}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [13.0, 4.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.20010297298431395}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [13.0, 8.0, 8.0, 7.0, 4.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.44379913806915283}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [13.0, 11.0, 11.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.011717653274536133}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [13.0, 8.0, 10.0, 9.0, 8.0, 9.0, 3.0, 4.0, 6.0, 3.0, 3.0], "seconds per pick": 0.4357788324356079}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [13.0, 12.0, 9.0, 8.0, 5.0, 3.0, 4.0, 4.0, 4.0, 1.0, 2.0], "seconds per pick": 0.4506632566452026}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [13.0, 8.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.44403986930847167}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [12.0, 12.0, 12.0, 4.0, 4.0, 4.0, 6.0, 7.0, 6.0, 6.0, 5.0], "seconds per pick": 0.0002730846405029297}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [12.0, 11.0, 5.0, 10.0, 9.0, 10.0, 9.0, 8.0, 8.0, 13.0, 11.0], "seconds per pick": 0.00040984153747558594}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [12.0, 10.0, 12.0, 14.0, 10.0, 8.0, 5.0, 6.0, 9.0, 4.0, 4.0], "seconds per pick": 0.0005054235458374024}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [12.0, 12.0, 15.0, 14.0, 16.0, 13.0, 13.0, 10.0, 7.0, 6.0, 6.0], "seconds per pick": 0.20695481300354004}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [12.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.32141542434692383}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [12.0, 15.0, 13.0, 13.0, 13.0, 13.0, 13.0, 13.0, 11.0, 11.0, 10.0], "seconds per pick": 0.013725638389587402}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [12.0, 11.0, 5.0, 6.0, 5.0, 10.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.4005002021789551}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [12.0, 15.0, 11.0, 14.0, 13.0, 12.0, 12.0, 6.0, 5.0, 7.0, 7.0], "seconds per pick": 0.4584729433059692}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [12.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.3210070848464966}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [12.0, 12.0, 8.0, 8.0, 8.0, 10.0, 10.0, 11.0, 11.0, 12.0, 12.0], "seconds per pick": 0.0002690553665161133}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [12.0, 5.0, 4.0, 4.0, 3.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0004242897033691406}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [12.0, 5.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00047733783721923826}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [12.0, 10.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.19287941455841065}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [12.0, 14.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.3853485345840454}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [12.0, 14.0, 17.0, 13.0, 11.0, 10.0, 4.0, 4.0, 4.0, 4.0, 3.0], "seconds per pick": 0.01124567985534668}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [12.0, 12.0, 11.0, 9.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.4076568126678467}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [12.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.38495645523071287}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [12.0, 14.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.3830831527709961}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [24.0, 27.0, 27.0, 27.0, 27.0, 28.0, 28.0, 28.0, 28.0, 28.0, 28.0], "seconds per pick": 0.00025930404663085935}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [24.0, 16.0, 6.0, 8.0, 4.0, 3.0, 5.0, 6.0, 7.0, 7.0, 8.0], "seconds per pick": 0.0004065513610839844}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [24.0, 16.0, 6.0, 8.0, 4.0, 3.0, 2.0, 6.0, 7.0, 8.0, 7.0], "seconds per pick": 0.0005229949951171875}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [24.0, 12.0, 12.0, 8.0, 7.0, 6.0, 3.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 0.23492162227630614}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [24.0, 12.0, 10.0, 7.0, 7.0, 5.0, 2.0, 2.0, 5.0, 1.0, 1.0], "seconds per pick": 0.5383110523223877}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [24.0, 30.0, 9.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.01339111328125}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [24.0, 14.0, 10.0, 9.0, 6.0, 3.0, 3.0, 4.0, 4.0, 7.0, 6.0], "seconds per pick": 0.527564811706543}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [24.0, 26.0, 15.0, 16.0, 15.0, 6.0, 16.0, 14.0, 14.0, 13.0, 11.0], "seconds per pick": 0.5342149019241333}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [24.0, 12.0, 10.0, 6.0, 5.0, 2.0, 6.0, 3.0, 2.0, 1.0, 1.0], "seconds per pick": 0.5381061792373657}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [18.0, 8.0, 8.0, 6.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 7.0], "seconds per pick": 0.0002603292465209961}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [18.0, 19.0, 16.0, 15.0, 19.0, 17.0, 11.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0004142045974731445}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [18.0, 13.0, 9.0, 8.0, 19.0, 12.0, 11.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0005055427551269531}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [18.0, 9.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.21631429195404053}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [18.0, 11.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.48505573272705077}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [18.0, 15.0, 9.0, 6.0, 8.0, 6.0, 5.0, 3.0, 3.0, 9.0, 9.0], "seconds per pick": 0.011839818954467774}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [18.0, 12.0, 9.0, 7.0, 4.0, 11.0, 7.0, 11.0, 11.0, 1.0, 1.0], "seconds per pick": 0.48600571155548095}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [18.0, 13.0, 6.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 1.0], "seconds per pick": 0.4915321826934814}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [18.0, 11.0, 9.0, 7.0, 4.0, 3.0, 5.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.48227710723876954}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [26.0, 26.0, 26.0, 14.0, 14.0, 14.0, 14.0, 19.0, 19.0, 19.0, 16.0], "seconds per pick": 0.00025770664215087893}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [26.0, 22.0, 20.0, 20.0, 20.0, 18.0, 18.0, 9.0, 9.0, 8.0, 9.0], "seconds per pick": 0.0004276275634765625}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [26.0, 23.0, 20.0, 19.0, 19.0, 19.0, 18.0, 18.0, 19.0, 19.0, 8.0], "seconds per pick": 0.0004800558090209961}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [26.0, 23.0, 20.0, 19.0, 6.0, 5.0, 4.0, 6.0, 7.0, 6.0, 2.0], "seconds per pick": 0.18443024158477783}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [26.0, 3.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.3801720380783081}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [26.0, 24.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 2.0, 2.0, 2.0], "seconds per pick": 0.010742616653442384}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [26.0, 14.0, 18.0, 17.0, 7.0, 8.0, 7.0, 8.0, 8.0, 8.0, 8.0], "seconds per pick": 0.38581252098083496}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [26.0, 23.0, 20.0, 5.0, 5.0, 8.0, 7.0, 9.0, 8.0, 8.0, 7.0], "seconds per pick": 0.3735196113586426}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [26.0, 3.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.3808310508728027}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [4.0, 3.0, 3.0, 4.0, 4.0, 4.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.00026390552520751955}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0004122734069824219}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [4.0, 4.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0005001068115234375}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [4.0, 3.0, 6.0, 8.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.18197085857391357}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [4.0, 9.0, 2.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.3427302122116089}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [4.0, 9.0, 9.0, 9.0, 9.0, 9.0, 8.0, 6.0, 6.0, 7.0, 8.0], "seconds per pick": 0.012098145484924317}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [4.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.3077792406082153}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [4.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.3131711006164551}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [4.0, 9.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.32784740924835204}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [22.0, 22.0, 19.0, 19.0, 21.0, 15.0, 15.0, 14.0, 15.0, 15.0, 15.0], "seconds per pick": 0.0002660274505615234}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [22.0, 19.0, 15.0, 18.0, 17.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00042781829833984377}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [22.0, 19.0, 15.0, 13.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0005050420761108399}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [22.0, 15.0, 15.0, 11.0, 5.0, 5.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.2196979522705078}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [22.0, 15.0, 14.0, 7.0, 5.0, 5.0, 3.0, 1.0, 1.0, 6.0, 19.0], "seconds per pick": 0.48586533069610593}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [22.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.012360262870788574}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [22.0, 18.0, 19.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.47915475368499755}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [22.0, 15.0, 14.0, 9.0, 7.0, 6.0, 10.0, 10.0, 23.0, 20.0, 1.0], "seconds per pick": 0.48920106887817383}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [22.0, 15.0, 7.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.47253386974334716}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [3.0, 2.0, 14.0, 14.0, 15.0, 15.0, 15.0, 15.0, 6.0, 7.0, 7.0], "seconds per pick": 0.0002665996551513672}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [3.0, 4.0, 3.0, 2.0, 2.0, 4.0, 18.0, 16.0, 18.0, 18.0, 17.0], "seconds per pick": 0.0006018877029418945}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [3.0, 4.0, 3.0, 2.0, 2.0, 4.0, 4.0, 4.0, 4.0, 5.0, 1.0], "seconds per pick": 0.0005066394805908203}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [3.0, 20.0, 12.0, 8.0, 8.0, 11.0, 16.0, 15.0, 9.0, 10.0, 8.0], "seconds per pick": 0.22922470569610595}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [3.0, 11.0, 5.0, 6.0, 6.0, 7.0, 7.0, 11.0, 10.0, 12.0, 11.0], "seconds per pick": 0.5265200853347778}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [3.0, 2.0, 2.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 1.0, 1.0], "seconds per pick": 0.012258124351501466}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [3.0, 20.0, 19.0, 15.0, 16.0, 15.0, 12.0, 9.0, 9.0, 16.0, 16.0], "seconds per pick": 0.5164448261260987}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [3.0, 11.0, 9.0, 9.0, 4.0, 4.0, 4.0, 7.0, 11.0, 1.0, 1.0], "seconds per pick": 0.5122324228286743}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [3.0, 11.0, 5.0, 7.0, 6.0, 6.0, 7.0, 8.0, 10.0, 12.0, 10.0], "seconds per pick": 0.5116971015930176}
+{"dataset": "Hospital", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00025818347930908205}
+{"dataset": "Hospital", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00040690898895263673}
+{"dataset": "Hospital", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0005238056182861328}
+{"dataset": "Hospital", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.21435174942016602}
+{"dataset": "Hospital", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.4631381034851074}
+{"dataset": "Hospital", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.011432766914367676}
+{"dataset": "Hospital", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.45968763828277587}
+{"dataset": "Hospital", "strategy": "Edge cutting (EC2)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.4630930423736572}
+{"dataset": "Hospital", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.46119515895843505}
