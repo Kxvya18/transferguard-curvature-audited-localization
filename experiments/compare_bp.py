@@ -1,7 +1,7 @@
 """Mean field against belief propagation (SIB) and dynamic message passing, identical outbreaks.
 
 Needs the `sib` package; run inside its environment:
-    conda run -n sib-bp python -m experiments.compare_bp "Hospital" 0.1 40
+    conda run -n sib-bp python -m experiments.compare_bp "Hospital" 0.1 40 [seed] [rates, e.g. true]
 Appends one JSON line per outbreak to outputs/bp_comparison/.
 """
 
@@ -22,16 +22,19 @@ from localization.spread import simulate_outbreak
 METHODS = {"Mean-field": mean_field_scores, "Message passing": message_passing_scores, "Belief propagation": bp_scores}
 
 
-def main(name: str, fraction: float, count: int, seed: int = 101) -> None:
+def main(name: str, fraction: float, count: int, seed: int = 101, rates: str = "true,low,high") -> None:
     loader, p, horizon, lookback = DATASETS[name]
     graph = loader(seed)
     rng = np.random.default_rng(seed)
     out = PROJECT_ROOT / "outputs" / "bp_comparison"
     out.mkdir(parents=True, exist_ok=True)
-    path = out / f"{name.replace(' ', '_')}_{fraction}.jsonl"
+    # Further batches of outbreaks use other seeds and their own files.
+    path = out / (f"{name.replace(' ', '_')}_{fraction}.jsonl" if seed == 101 else f"{name.replace(' ', '_')}_{fraction}_seed{seed}.jsonl")
     # Resume: outbreaks are regenerated in the same order, and those already scored are skipped.
     existing = [json.loads(line)["test_rate"] for line in path.open()] if path.exists() else []
     for rate_name, rate in (("true", p), ("low", 0.4 * p), ("high", min(0.9, 1.6 * p))):
+        if rate_name not in rates.split(","):
+            continue
         done = 0
         while done < count:
             ob = simulate_outbreak(graph, rng, rate, horizon, fraction)
@@ -52,4 +55,4 @@ def main(name: str, fraction: float, count: int, seed: int = 101) -> None:
 
 
 if __name__ == "__main__":
-    main(sys.argv[1], float(sys.argv[2]), int(sys.argv[3]))
+    main(sys.argv[1], float(sys.argv[2]), int(sys.argv[3]), *(int(a) for a in sys.argv[4:5]), *sys.argv[5:6])

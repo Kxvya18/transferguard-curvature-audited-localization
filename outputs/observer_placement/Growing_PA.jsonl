@@ -307,3 +307,54 @@
 {"dataset": "Growing PA", "strategy": "Edge cutting (EC2)", "ranks": [9.0, 1.0, 3.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.3382425785064698}
 {"dataset": "Growing PA", "strategy": "Edge cutting (EC2)", "ranks": [16.0, 6.0, 3.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.5240485668182373}
 {"dataset": "Growing PA", "strategy": "Edge cutting (EC2)", "ranks": [10.0, 7.0, 4.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.72160861492157}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [7.0, 7.0, 6.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.8584271192550659}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.8864328145980833}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.14222297668457032}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.915753221511841}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [42.0, 30.0, 42.0, 5.0, 4.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.7811505079269407}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [5.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.73495192527771}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.7581461906433105}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [16.0, 10.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.486468434333801}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.966663146018982}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [9.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.8408931970596314}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [93.0, 40.0, 26.0, 5.0, 4.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.4817007303237917}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [18.0, 7.0, 6.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.481658911705017}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [7.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.892147088050843}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [17.0, 12.0, 10.0, 5.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.7328176259994508}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [11.0, 10.0, 9.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.5350476026535034}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.8024260997772217}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [43.0, 5.0, 2.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.0338718414306642}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [4.0, 3.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.11267626285553}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.1988504409790037}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [10.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.655604934692383}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.37037136554718}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.5521158933639527}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [6.0, 5.0, 4.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.8575361490249636}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.9314504623413087}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [4.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.7828418731689453}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.2594056367874145}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [9.0, 1.0, 3.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.9812612533569336}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [16.0, 6.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.523883104324341}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [10.0, 5.0, 4.0, 5.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.7580055952072144}
+{"dataset": "Growing PA", "strategy": "Edge cutting (EC2)", "ranks": [14.0, 13.0, 17.0, 12.0, 8.0, 9.0, 8.0, 6.0, 10.0, 2.0, 1.0], "seconds per pick": 3.9385761499404905}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [14.0, 14.0, 19.0, 13.0, 12.0, 15.0, 11.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 3.8067067146301268}
+{"dataset": "Growing PA", "strategy": "Edge cutting (EC2)", "ranks": [76.0, 98.0, 141.0, 86.0, 76.0, 47.0, 4.0, 2.0, 4.0, 4.0, 3.0], "seconds per pick": 3.9104986906051638}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [76.0, 98.0, 71.0, 41.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.970422077178955}
+{"dataset": "Growing PA", "strategy": "Edge cutting (EC2)", "ranks": [17.0, 16.0, 17.0, 14.0, 14.0, 14.0, 13.0, 11.0, 7.0, 5.0, 12.0], "seconds per pick": 4.203482365608215}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [17.0, 16.0, 14.0, 14.0, 13.0, 11.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.241917109489441}
+{"dataset": "Growing PA", "strategy": "Edge cutting (EC2)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.3860774517059324}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.3910146236419676}
+{"dataset": "Growing PA", "strategy": "Edge cutting (EC2)", "ranks": [3.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.6028779983520507}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.592451477050781}
+{"dataset": "Growing PA", "strategy": "Edge cutting (EC2)", "ranks": [6.0, 6.0, 5.0, 4.0, 3.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.2014975786209106}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [6.0, 5.0, 4.0, 3.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.2026992321014403}
+{"dataset": "Growing PA", "strategy": "Edge cutting (EC2)", "ranks": [11.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.0133534669876099}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [11.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.8595347881317139}
+{"dataset": "Growing PA", "strategy": "Edge cutting (EC2)", "ranks": [2.0, 9.0, 8.0, 8.0, 7.0, 6.0, 5.0, 7.0, 8.0, 10.0, 6.0], "seconds per pick": 4.200032639503479}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 9.0, 12.0, 9.0, 8.0, 8.0, 7.0, 6.0, 6.0, 5.0, 5.0], "seconds per pick": 4.173307466506958}
+{"dataset": "Growing PA", "strategy": "Edge cutting (EC2)", "ranks": [50.0, 21.0, 25.0, 10.0, 8.0, 6.0, 8.0, 12.0, 12.0, 9.0, 12.0], "seconds per pick": 3.933276915550232}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [50.0, 21.0, 6.0, 6.0, 3.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.944560742378235}
+{"dataset": "Growing PA", "strategy": "Edge cutting (EC2)", "ranks": [39.0, 19.0, 14.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.7473909139633177}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [39.0, 23.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.3233975648880003}
+{"dataset": "Growing PA", "strategy": "Edge cutting (EC2)", "ranks": [46.0, 17.0, 14.0, 4.0, 5.0, 5.0, 4.0, 3.0, 1.0, 2.0, 1.0], "seconds per pick": 2.9266603708267214}
+{"dataset": "Growing PA", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [46.0, 30.0, 10.0, 9.0, 4.0, 6.0, 6.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 2.9385193824768066}
