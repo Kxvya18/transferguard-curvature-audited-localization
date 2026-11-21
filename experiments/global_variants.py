@@ -17,11 +17,13 @@ observation time report "not detected". Observation is 6 periods after the first
 detection anywhere; the start may be up to 10 periods before it.
 
 Mean field runs in days, while reports come per two-week period ("first sequenced
-some time in that period"). It adds an observation model: once infected, a country
-detects the variant on a day with probability 1 - exp(-kappa * sequences run that day),
+some time in that period"). It adds an observation model: a days after the variant
+arrives, a country detects it on a day with probability
+1 - exp(-kappa * exp(growth * a) * sequences run that day) (local prevalence, and so the
+chance that a sequence is the variant, grows after arrival),
 and, infected or not, wrongly reports it with probability 1 - exp(-phi * sequences run)
 (misassigned or misdated sequences). Its parameters (rate per route per day, outside
-introductions per day, kappa, phi) are fitted by maximum likelihood at the true origins
+introductions per day, kappa, phi, growth) are fitted by maximum likelihood at the true origins
 of the other outbreaks only (leave one outbreak out). "Mean field,
 untrained" averages over the same grid with no fitting at all. Every baseline gets the
 same reports; LPSI's alpha is tuned leave one out too.
@@ -55,7 +57,9 @@ ORIGINS = {"20A.EU1": "Spain", "20H.Beta.V2": "South Africa", "20I.Alpha.V1": "U
            "21F.Iota": "United States", "21G.Lambda": "Peru", "21H.Mu": "Colombia"}
 RENAME = {"USA": "United States", "Sint Maarten": "Netherlands Antilles"}
 OBSERVE, LOOKBACK, DAYS = 6, 10, 14  # periods after the first detection; periods before it the start may be; days per period
-GRID = list(itertools.product((1e-5, 3e-5, 1e-4, 3e-4, 1e-3), (0.0, 1e-4, 1e-3), (1e-3, 1e-2, 1e-1), (0.0, 1e-5, 1e-4, 1e-3)))
+AGES = 120  # days after arrival over which detectability can keep growing
+# (rate per route per day, outside introductions per day, kappa, phi, growth per day of detectability)
+GRID = list(itertools.product((0.0, 1e-6, 1e-5, 1e-4), (1e-4, 1e-3), (1e-5, 1e-4, 1e-3, 1e-2), (0.0, 1e-5), (0.0, 0.05, 0.1)))
 LPSI_ALPHAS = (0.1, 0.3, 0.5, 0.7, 0.9)
 
 
@@ -109,12 +113,13 @@ def outbreak(variant, names, pairs, found, effort):
     return ctx, index[ORIGINS[variant]], daily
 
 
-def model(ctx, runs, rate, leak, kappa, phi, candidates=None):
+def model(ctx, runs, rate, leak, kappa, phi, growth, candidates=None):
     detection = (1.0 - np.exp(-kappa * runs)).astype(np.float32)
     false_report = (1.0 - np.exp(-phi * runs)).astype(np.float32)
     return mean_field_loglik(ctx, prob_grid=(rate,), leak=leak, floor=1e-12, weighted=True, prune=False,
                              n_start_times=LOOKBACK + 1, detection=detection, false_report=false_report,
-                             report_width=DAYS, candidates=candidates)
+                             report_width=DAYS, candidates=candidates,
+                             detectability=np.exp(growth * np.arange(AGES)) if growth > 0 else None)
 
 
 def effective_distance(ctx, names, pairs):
@@ -173,7 +178,7 @@ def main() -> None:
         earliest[ctx.infected] = -ctx.infected_times
         finish = lambda s: np.where(np.isfinite(s), s, est.INFEASIBLE)
         row = {"variant": v, "origin": names[src], "countries reporting": int(len(ctx.outbreak.observers)),
-               "countries detected": int(len(ctx.infected)), "fitted model": dict(zip(("rate", "leak", "kappa", "phi"), best)),
+               "countries detected": int(len(ctx.infected)), "fitted model": dict(zip(("rate", "leak", "kappa", "phi", "growth"), best)),
                "Mean field, fitted": rank_of_source(finish(fitted), src),
                "Mean field, untrained": rank_of_source(finish(averaged[v]), src),
                "Earliest detection": rank_of_source(earliest, src),

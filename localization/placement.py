@@ -24,7 +24,7 @@ from scipy.special import logsumexp
 
 from .estimators import Context
 from .mean_field import _contact_matrices, _start_times, mean_field_loglik
-from .spread import earliest_arrival
+from .spread import earliest_arrival, spread
 
 PROBS = (0.1, 0.3, 0.5, 0.7, 0.9)
 
@@ -100,6 +100,64 @@ def joint_information_gain(ctx: Context, **kwargs) -> np.ndarray:
     rewards tests that only pin down the start time or rate. Same mean-field predictions,
     so only the choice rule differs. 0 for people already tested."""
     found = _reports(ctx, **kwargs)
+    if found is None:
+        return np.zeros(ctx.graph.n_nodes)
+    mass, report, within = found
+    gain = _entropy(report.sum(axis=0) / mass.sum()) - within / mass.sum()
+    gain[ctx.outbreak.observers] = 0.0
+    return np.maximum(gain, 0.0)
+
+
+def _reports_simulated(ctx: Context, n_runs: int = 10_000, max_sources: int = 100,
+                       prob_grid: tuple[float, ...] = PROBS, n_start_times: int = 8, seed: int = 0):
+    """Like `_reports`, but as Sterchi et al. (2023) do it: each hypothesis's report
+    probabilities are frequencies over `n_runs` simulated outbreaks, and its weight is the
+    product of those frequencies over the reports so far (their naive-Bayes posterior)."""
+    ob, graph = ctx.outbreak, ctx.graph
+    n, t_obs = graph.n_nodes, ob.t_observe
+    rng = np.random.default_rng(seed)
+    y = ob.observed_times.astype(int)
+    starts = _start_times(ctx, n_start_times)
+    candidates = np.flatnonzero(np.isfinite(mean_field_loglik(ctx, prob_grid=prob_grid, n_start_times=n_start_times)).any(axis=0))
+    n_times = t_obs - ctx.t_lo
+    hypotheses, log_weight = [], []
+    for tau in starts:
+        for p in prob_grid:
+            for s in candidates:
+                begin = max(int(tau), int(graph.join[s]))
+                if begin > y[y < t_obs].min():
+                    continue
+                start = np.full((n_runs, n), np.inf)
+                start[:, s] = begin
+                times = np.minimum(spread(graph, start, begin, t_obs, p, rng), t_obs)
+                cls = np.where(times < t_obs, times - ctx.t_lo, n_times).astype(int)
+                freq = np.zeros((n, n_times + 1))
+                np.add.at(freq, (np.broadcast_to(np.arange(n), cls.shape), cls), 1.0 / n_runs)
+                seen = freq[ob.observers, np.where(y < t_obs, y - ctx.t_lo, n_times)]
+                hypotheses.append((s, freq))
+                log_weight.append(np.log(np.maximum(seen, 1e-4)).sum())
+    if not hypotheses:
+        return None
+    log_weight = np.array(log_weight)
+    weight = np.exp(log_weight - logsumexp(log_weight))
+    source_mass = {}
+    for (s, _), w in zip(hypotheses, weight):
+        source_mass[s] = source_mass.get(s, 0.0) + w
+    top = sorted(source_mass, key=source_mass.get, reverse=True)[:max_sources]
+    row = {s: i for i, s in enumerate(top)}
+    report = np.zeros((len(top), n, n_times + 1))
+    within = np.zeros(n)
+    for (s, freq), w in zip(hypotheses, weight):
+        if s in row:
+            report[row[s]] += w * freq
+            within += w * _entropy(freq)
+    return report[:, 0, :].sum(axis=1), report, within
+
+
+def simulated_joint_information_gain(ctx: Context, **kwargs) -> np.ndarray:
+    """AKLD exactly as Sterchi et al. (2023): mean KL disagreement over (source, start, rate)
+    hypotheses, with report probabilities from 10,000 simulations per hypothesis."""
+    found = _reports_simulated(ctx, **kwargs)
     if found is None:
         return np.zeros(ctx.graph.n_nodes)
     mass, report, within = found

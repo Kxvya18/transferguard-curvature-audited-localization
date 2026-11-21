@@ -89,6 +89,7 @@ def mean_field_loglik(
     detection: np.ndarray | None = None,
     false_report: np.ndarray | None = None,
     report_width: int = 1,
+    detectability: np.ndarray | None = None,
 ) -> np.ndarray:
     """Log-likelihood of the observations for every node, shape (start times x probs, n_nodes),
     start-time major (row = start index * len(prob_grid) + prob index).
@@ -116,6 +117,9 @@ def mean_field_loglik(
     infection in window t whether or not it is infected (e.g. a misassigned sequence).
     `report_width` (with `detection`): a report at y means "first detected in windows
     y .. y + width - 1", for reports coarser than the model's time step.
+    `detectability[a]` (with `detection`) scales how detectable an observer is a windows
+    after its infection (e.g. local prevalence growing): the detection chance becomes
+    1 - (1 - detection) ** detectability[a]; ages past the end use the last value.
 
     With `status_only`, a test says only "infected" or "healthy" at t_observe, not when:
     infected observers must then be given time t_observe - 1, and contribute q(t_observe - 1)."""
@@ -146,7 +150,8 @@ def mean_field_loglik(
             seed_spreading = np.zeros(len(possible), dtype=np.float32)  # used only with seed_prob
             at = np.zeros((len(possible), len(y)), dtype=np.float32)  # q at each observer's infection time
             before = np.zeros_like(at)  # q one step earlier
-            undetected = np.zeros_like(at)  # with `detection`: infected, not yet detected
+            ages = 1 if detectability is None else len(detectability)
+            undetected = np.zeros((len(possible), len(y), ages), dtype=np.float32)  # by age since infection
             previous = np.zeros_like(at)
             found = np.zeros_like(at)  # with `detection`: truly detected so far
             no_false = np.ones(len(y), dtype=np.float32)  # no false report so far
@@ -162,11 +167,20 @@ def mean_field_loglik(
                 if detection is not None:
                     # newly infected join the undetected pool, then each is detected with chance h;
                     # independently, a false report comes with chance f
-                    undetected += current - previous
+                    if ages > 1:  # everyone undetected gets one window older; the last age keeps its own
+                        undetected[:, :, -1] += undetected[:, :, -2]
+                        undetected[:, :, 1:-1] = undetected[:, :, :-2].copy()
+                        undetected[:, :, 0] = 0.0
+                    undetected[:, :, 0] += current - previous
                     previous = current
                     k = min(t, detection.shape[1] - 1)
-                    caught = undetected * detection[None, :, k]
-                    undetected -= caught
+                    if ages > 1:
+                        chance = 1.0 - (1.0 - detection[:, k, None]) ** detectability[None, :].astype(np.float32)
+                    else:
+                        chance = detection[:, k, None]
+                    caught_by_age = undetected * chance[None, :, :]
+                    undetected -= caught_by_age
+                    caught = caught_by_age.sum(axis=2)
                     found += caught
                     if false_report is not None:
                         no_false = no_false * (1.0 - false_report[:, k])

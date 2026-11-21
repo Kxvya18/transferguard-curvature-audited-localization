@@ -63,6 +63,12 @@ FIT_GRID = list(itertools.product((1e-4, 3e-4, 1e-3, 3e-3, 1e-2, 3e-2), (0.003, 
 if os.environ.get("FIT_STAGE") == "2":
     FIT_GRID = list(itertools.product((0.0, 1e-5, 3e-5, 1e-4, 3e-4), (0.003, 0.006, 0.01, 0.02), (0.0,), (1.0, 0.3),
                                       (3e-4, 1e-3, 3e-3)))
+# Third stage: each outbreak's source has its own broadcast rate (a big account reaches a
+# smaller share of its followers than a small one); its prior over SOURCE_RATES is fitted
+# by EM on the training outbreaks, for each setting of the other parameters. FIT_STAGE=3.
+SOURCE_RATES = (1e-4, 3e-4, 1e-3, 3e-3, 0.01, 0.03, 0.1, 0.3)
+if os.environ.get("FIT_STAGE") == "3":
+    FIT_GRID = [(r, s, 0.0, f, l) for r in (0.0, 1e-5, 1e-4) for f in (1.0, 0.3) for l in (3e-4, 1e-3, 3e-3) for s in SOURCE_RATES]
 FLOOR = 1e-12  # the leak gives every report a proper probability, so no floor is needed
 LPSI_ALPHAS = (0.1, 0.3, 0.5, 0.7, 0.9)
 
@@ -134,22 +140,53 @@ def fit(count: int) -> None:
         if len(cases) >= count:
             break
     with Pool(int(os.environ.get("WORKERS", 4))) as pool:
-        loglik = np.sum(pool.map(case_loglik, cases), axis=0)
+        per_case = np.array(pool.map(case_loglik, cases))
+    loglik = per_case.sum(axis=0)
     best = FIT_GRID[int(np.argmax(loglik))]
+    prior = None
+    if os.environ.get("FIT_STAGE") == "3":
+        # For each setting of the other parameters, fit the source-rate prior by EM and keep
+        # the setting with the highest marginal likelihood.
+        bases = sorted({(g[0], g[2], g[3], g[4]) for g in FIT_GRID})
+        scored = []
+        for base in bases:
+            cols = [i for i, g in enumerate(FIT_GRID) if (g[0], g[2], g[3], g[4]) == base]
+            sub = per_case[:, cols]
+            w = np.full(len(cols), 1.0 / len(cols))
+            for _ in range(500):
+                post = np.exp(np.log(w) + sub - logsumexp(np.log(w) + sub, axis=1, keepdims=True))
+                w = np.maximum(post.mean(axis=0), 1e-12)
+            scored.append((float(logsumexp(np.log(w) + sub, axis=1).sum()), base, w))
+        marginal, base, w = max(scored, key=lambda x: x[0])
+        best = (base[0], None, base[1], base[2], base[3])
+        prior = {str(r): float(x) for r, x in zip(SOURCE_RATES, w)}
     alpha_mrr = {a: float(np.mean([1 / rank_of_source(est.lpsi(ctx, alpha=a), src) for ctx, src in cases])) for a in LPSI_ALPHAS}
     result = {"training outbreaks": len(cases), "model": dict(zip(("rate", "source rate", "stop", "fraction", "leak"), best)),
               "log-likelihood by model": {str(k): float(v) for k, v in zip(FIT_GRID, loglik)},
-              "LPSI alpha": max(alpha_mrr, key=alpha_mrr.get), "LPSI training MRR": alpha_mrr}
+              "LPSI alpha": max(alpha_mrr, key=alpha_mrr.get), "LPSI training MRR": alpha_mrr,
+              "source rate prior": prior}
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "twitter_fit.json").write_text(json.dumps(result, indent=2))
     print(result["model"], result["LPSI alpha"], flush=True)
 
 
+def mixture_scores(ctx, model, prior) -> np.ndarray:
+    """Mean-field scores with the source's own rate summed out under its fitted prior."""
+    rate, _, stop, fraction, leak = model
+    terms = [np.log(w) + logsumexp(mean_field_loglik(ctx, prune=False, **model_kwargs(rate, float(s), stop, fraction, leak)), axis=0)
+             for s, w in prior.items() if w > 1e-6]
+    score = logsumexp(np.array(terms), axis=0)
+    return np.where(np.isfinite(score), score, est.INFEASIBLE)
+
+
 def test(count: int, shard: int = 0, shards: int = 1) -> None:
     fitted = json.loads((OUT / "twitter_fit.json").read_text())
+    single = json.loads((OUT / "twitter_fit_stage2.json").read_text())
     model, alpha = tuple(fitted["model"].values()), fitted["LPSI alpha"]
+    one_rate = tuple(single["model"].values())
     methods = {
-        "Mean-field, fitted": lambda ctx: mean_field_scores(ctx, prune=False, **model_kwargs(*model)),
+        "Mean-field, fitted": lambda ctx: mixture_scores(ctx, model, fitted["source rate prior"]),
+        "Mean-field, one source rate": lambda ctx: mean_field_scores(ctx, prune=False, **model_kwargs(*one_rate)),
         "Mean-field, untrained": lambda ctx: mean_field_scores(ctx, prob_grid=(0.003, 0.01, 0.03, 0.1, 0.3, 0.9)),
         "LPSI, tuned": lambda ctx: est.lpsi(ctx, alpha=alpha),
         "Pinto-style": est.pinto_style,
@@ -160,6 +197,13 @@ def test(count: int, shard: int = 0, shards: int = 1) -> None:
     either = ((follows + follows.T) > 0).tocsr()
     _, sources = split(cascades)
     path = OUT / f"twitter_test_part{shard}.jsonl"
+    # Columns already computed by the first test run (same outbreaks, same observers) are reused.
+    earlier = {}
+    for f in OUT.glob("twitter_test_v1_part*.jsonl"):
+        for r in map(json.loads, f.open()):
+            r["Mean-field, one source rate"] = r.pop("Mean-field, fitted")
+            r["Mean-field, one source rate seconds"] = r.pop("Mean-field, fitted seconds")
+            earlier[r["source"]] = r
     done = sum(1 for _ in path.open()) if path.exists() else 0
     kept = 0
     for source in sources:
@@ -177,6 +221,9 @@ def test(count: int, shard: int = 0, shards: int = 1) -> None:
         ctx, src = built
         row = {"source": int(source), "people": ctx.graph.n_nodes, "infected observers": int(len(ctx.infected))}
         for label, fn in methods.items():
+            if label in earlier.get(int(source), {}):
+                row[label], row[label + " seconds"] = earlier[int(source)][label], earlier[int(source)][label + " seconds"]
+                continue
             start = time.time()
             row[label] = rank_of_source(fn(ctx), src)
             row[label + " seconds"] = time.time() - start
