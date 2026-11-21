@@ -13,6 +13,7 @@ Appends one JSON line per outbreak and strategy to outputs/observer_placement/.
 from __future__ import annotations
 
 import json
+import os
 import sys
 import time
 
@@ -104,14 +105,20 @@ def main(name: str, count: int, budget: int = 10, seed: int = 301, only: str = "
     path = out / (f"{name.replace(' ', '_')}.jsonl" if seed == 301 else f"{name.replace(' ', '_')}_seed{seed}.jsonl")
     if only:
         path = path.with_name(path.stem + f"_{only}.jsonl")
+    # SHARD="i/n" runs only outbreaks k with k % n == i (same outbreaks, split over machines).
+    shard, shards = map(int, os.environ.get("SHARD", "0/1").split("/"))
+    if shards > 1:
+        path = path.with_name(path.stem + f"_shard{shard}.jsonl")
     # Resume per strategy: outbreaks are regenerated in the same order, so a strategy added
     # later is scored on the same outbreaks as the others.
     rows = [json.loads(line)["strategy"] for line in path.open()] if path.exists() else []
     done = {s: rows.count(s) for s in strategies}
     for k in range(count):
         first, truth = outbreak_with_truth(graph, rng, p, horizon)
+        if k % shards != shard:
+            continue
         for strategy in strategies:
-            if k < done[strategy]:
+            if k // shards < done[strategy]:
                 continue
             pick_rng = np.random.default_rng([seed, k])
             ob = first
