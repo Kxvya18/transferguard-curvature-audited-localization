@@ -36,6 +36,7 @@ import json
 import os
 import sys
 import time
+from multiprocessing import Pool
 from pathlib import Path
 
 import numpy as np
@@ -53,8 +54,16 @@ OUT = Path(os.environ.get("OUT_DIR", PROJECT_ROOT / "outputs" / "real_cascades")
 WINDOWS, FIRST, MAX_INFECTED, MIN_INFECTED, MAX_NODES = 20, 4, 50, 10, 4000
 FRACTION, SEED = 0.1, 1001
 
-# Model grid searched when fitting: (rate, source rate, stop-spreading chance, fraction who can retweet)
-FIT_GRID = list(itertools.product((0.0003, 0.001, 0.003, 0.01, 0.03), (0.01, 0.03, 0.1, 0.3, 0.6), (0.0, 0.5, 1.0), (1.0, 0.3, 0.1, 0.03)))
+# Model grid searched when fitting: (rate, source rate, stop-spreading chance, fraction who
+# can retweet, chance per window of a retweet from outside the follower graph)
+FIT_GRID = list(itertools.product((1e-4, 3e-4, 1e-3, 3e-3, 1e-2, 3e-2), (0.003, 0.01, 0.03, 0.1, 0.3),
+                                  (0.0, 0.5, 1.0), (1.0, 0.3, 0.1), (1e-4, 1e-3, 1e-2)))
+# Second stage, around the first stage's best model (whose rate was the smallest tried):
+# reaches down to no spread between non-sources at all. Selected with FIT_STAGE=2.
+if os.environ.get("FIT_STAGE") == "2":
+    FIT_GRID = list(itertools.product((0.0, 1e-5, 3e-5, 1e-4, 3e-4), (0.003, 0.006, 0.01, 0.02), (0.0,), (1.0, 0.3),
+                                      (3e-4, 1e-3, 3e-3)))
+FLOOR = 1e-12  # the leak gives every report a proper probability, so no floor is needed
 LPSI_ALPHAS = (0.1, 0.3, 0.5, 0.7, 0.9)
 
 
@@ -101,8 +110,16 @@ def split(cascades):
     return order[:half], order[half:]
 
 
-def model_kwargs(rate, source_rate, stop, fraction):
-    return dict(prob_grid=(rate,), seed_prob=source_rate, recovery_grid=(stop,), susceptible_grid=(fraction,), directed=True)
+def model_kwargs(rate, source_rate, stop, fraction, leak):
+    return dict(prob_grid=(rate,), seed_prob=source_rate, recovery_grid=(stop,), susceptible_grid=(fraction,),
+                leak=leak, floor=FLOOR, directed=True)
+
+
+def case_loglik(case) -> np.ndarray:
+    """Log-likelihood of one training outbreak at its true source, for every model in the grid."""
+    ctx, src = case
+    return np.array([logsumexp(mean_field_loglik(ctx, candidates=np.array([src]), prune=False, **model_kwargs(*params))[:, src])
+                     for params in FIT_GRID])  # start time summed out
 
 
 def fit(count: int) -> None:
@@ -116,14 +133,11 @@ def fit(count: int) -> None:
             cases.append(built)
         if len(cases) >= count:
             break
-    loglik = np.zeros(len(FIT_GRID))
-    for ctx, src in cases:
-        for g, params in enumerate(FIT_GRID):
-            rows = mean_field_loglik(ctx, candidates=np.array([src]), prune=False, **model_kwargs(*params))[:, src]
-            loglik[g] += logsumexp(rows)  # start time summed out
+    with Pool(int(os.environ.get("WORKERS", 4))) as pool:
+        loglik = np.sum(pool.map(case_loglik, cases), axis=0)
     best = FIT_GRID[int(np.argmax(loglik))]
     alpha_mrr = {a: float(np.mean([1 / rank_of_source(est.lpsi(ctx, alpha=a), src) for ctx, src in cases])) for a in LPSI_ALPHAS}
-    result = {"training outbreaks": len(cases), "model": dict(zip(("rate", "source rate", "stop", "fraction"), best)),
+    result = {"training outbreaks": len(cases), "model": dict(zip(("rate", "source rate", "stop", "fraction", "leak"), best)),
               "log-likelihood by model": {str(k): float(v) for k, v in zip(FIT_GRID, loglik)},
               "LPSI alpha": max(alpha_mrr, key=alpha_mrr.get), "LPSI training MRR": alpha_mrr}
     OUT.mkdir(parents=True, exist_ok=True)

@@ -82,6 +82,7 @@ def mean_field_loglik(
     seed_prob: float | None = None,
     directed: bool = False,
     candidates: np.ndarray | None = None,
+    leak: float = 0.0,
 ) -> np.ndarray:
     """Log-likelihood of the observations for every node, shape (start times x probs, n_nodes),
     start-time major (row = start index * len(prob_grid) + prob index).
@@ -100,6 +101,8 @@ def mean_field_loglik(
     reach far more people per contact than anyone else); None means the same as p.
     `directed` reads contact pairs as one-way. `candidates` restricts which sources are
     scored (e.g. only the true one, when fitting the model on past outbreaks).
+    `leak` is the chance per window that a susceptible person is infected from outside
+    the network; with it, every report has a proper probability and `floor` can be ~0.
 
     With `status_only`, a test says only "infected" or "healthy" at t_observe, not when:
     infected observers must then be given time t_observe - 1, and contribute q(t_observe - 1)."""
@@ -146,12 +149,14 @@ def mean_field_loglik(
                     break
                 matrix = contacts[t - ctx.t_lo]
                 new = 0.0
-                if matrix is not None:
+                if matrix is not None or leak > 0:
                     # a susceptible person not yet infected (probability sigma - q) escapes this window
-                    log_escape = np.log1p(-np.float32(p) * spreading) @ matrix
-                    if seed_prob is not None:
-                        log_escape += matrix[possible].multiply(np.log1p(-np.float32(seed_prob) * seed_spreading)[:, None]).toarray()
-                    escape = np.exp(log_escape)
+                    escape = np.float32(1.0 - leak)
+                    if matrix is not None:
+                        log_escape = np.log1p(-np.float32(p) * spreading) @ matrix
+                        if seed_prob is not None:
+                            log_escape += matrix[possible].multiply(np.log1p(-np.float32(seed_prob) * seed_spreading)[:, None]).toarray()
+                        escape = escape * np.exp(log_escape)
                     updated = np.maximum(q, np.float32(sigma) - (np.float32(sigma) - q) * escape)
                     new, q = updated - q, updated
                 spreading = np.float32(1.0 - r) * spreading + new
