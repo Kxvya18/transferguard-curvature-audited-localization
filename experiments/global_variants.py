@@ -66,6 +66,11 @@ ORIGINS = {"20A.EU1": "Spain", "20H.Beta.V2": "South Africa", "20I.Alpha.V1": "U
            "21F.Iota": "United States", "21G.Lambda": "Peru", "21H.Mu": "Colombia"}
 HELDOUT = {"21L.Omicron": "South Africa", "22A.Omicron": "South Africa", "22B.Omicron": "South Africa",
            "23H.Omicron": "China", "24B.Omicron": "India", "24C.Omicron": "India"}
+# Secondary pre-registered set: origin named only as a region (UN geoscheme, experiments/un_regions.py);
+# a method's rank is that of its best-ranked country in the region. Run with HELDOUT=2.
+REGIONAL = {"22E.Omicron": ("Middle Africa", "Western Africa"), "22F.Omicron": ("Southern Asia",),
+            "23A.Omicron": ("Northern America",), "23B.Omicron": ("Asia",), "23G.Omicron": ("South America",),
+            "23I.Omicron": ("Southern Africa",), "24A.Omicron": ("Europe",)}
 RENAME = {"USA": "United States", "Sint Maarten": "Netherlands Antilles"}
 OBSERVE, LOOKBACK, DAYS = 6, 10, 14  # periods after the first detection; periods before it the start may be; days per period
 AGES = 120  # days after arrival over which detectability can keep growing
@@ -90,7 +95,7 @@ def network():
 def sequencing():
     """Per variant {country: {period: variant sequences}}, and all sequences run {country: {period: n}}."""
     found, effort = {}, {}
-    for variant in {**ORIGINS, **HELDOUT}:
+    for variant in {**ORIGINS, **HELDOUT, **(REGIONAL if os.environ.get("HELDOUT") == "2" else {})}:
         data = json.load(open(RAW / "covariants" / f"{variant}.json"))
         found[variant] = {}
         for name, v in data.items():
@@ -174,10 +179,19 @@ def model_weights(at_truth, pseudo=1.0):
 
 
 def main() -> None:
-    heldout = os.environ.get("HELDOUT") == "1"
+    mode = os.environ.get("HELDOUT", "0")
+    heldout = mode in ("1", "2")
     names, pairs = network()
     found, effort = sequencing()
-    todo = {**ORIGINS, **HELDOUT} if heldout else ORIGINS
+    in_region = {}
+    if mode == "2":
+        from experiments.un_regions import regions
+        where = regions(names)
+        in_region = {v: np.array([i for i, c in enumerate(names) if where[c] & set(r)]) for v, r in REGIONAL.items()}
+        targets = {v: names[idx[0]] for v, idx in in_region.items()}  # placeholder origin; ranks use the whole region
+    else:
+        targets = HELDOUT
+    todo = {**ORIGINS, **targets} if heldout else ORIGINS
     CASES.update({v: outbreak(v, names, pairs, found, effort, o) for v, o in todo.items()})
     with get_context("fork").Pool(int(os.environ.get("WORKERS", 6))) as pool:  # workers share CASES
         scores = dict(zip(CASES, pool.map(grid_scores, list(CASES))))
@@ -187,30 +201,35 @@ def main() -> None:
     out.mkdir(parents=True, exist_ok=True)
     finish = lambda s: np.where(np.isfinite(s), s, est.INFEASIBLE)
     rows = []
-    for v in (HELDOUT if heldout else ORIGINS):
+    # ranks: of the origin, or of the best-ranked country of the named region
+    for v in (targets if heldout else ORIGINS):
         ctx, src, runs = CASES[v]
+        if v in in_region:  # best-ranked country of the named region
+            ranker = lambda score, _src, idx=in_region[v]: min(rank_of_source(score, int(i)) for i in idx)
+        else:
+            ranker = rank_of_source
         train = list(ORIGINS) if heldout else [u for u in ORIGINS if u != v]
         weights = model_weights([at_truth[u] for u in train])
         best = int(np.argmax(sum(at_truth[u] for u in train)))
         alpha = max(LPSI_ALPHAS, key=lambda a: np.mean([lpsi_mrr[u][a] for u in train]))
         earliest = np.full(len(names), est.INFEASIBLE)
         earliest[ctx.infected] = -ctx.infected_times
-        row = {"variant": v, "origin": names[src], "countries reporting": int(len(ctx.outbreak.observers)),
+        row = {"variant": v, "origin": " / ".join(REGIONAL[v]) if v in in_region else names[src], "countries reporting": int(len(ctx.outbreak.observers)),
                "countries detected": int(len(ctx.infected)),
                "best model": dict(zip(("rate", "leak", "kappa", "phi", "growth"), GRID[best])),
                "models with weight > 1%": int(np.sum(weights > 0.01)),
-               "Mean field, fitted": rank_of_source(finish(logsumexp(np.log(weights)[:, None] + scores[v], axis=0)), src),
-               "Mean field, best model": rank_of_source(finish(scores[v][best]), src),
-               "Mean field, untrained": rank_of_source(finish(logsumexp(scores[v], axis=0)), src),
-               "Earliest detection": rank_of_source(earliest, src),
-               "Effective distance (Brockmann-Helbing)": rank_of_source(effective_distance(ctx, names, pairs), src),
-               "LPSI, tuned": rank_of_source(est.lpsi(ctx, alpha=alpha), src),
-               "Pinto-style": rank_of_source(est.pinto_style(ctx), src),
-               "Jordan center": rank_of_source(est.jordan_center(ctx), src),
-               "Distance center": rank_of_source(est.distance_center(ctx), src)}
+               "Mean field, fitted": ranker(finish(logsumexp(np.log(weights)[:, None] + scores[v], axis=0)), src),
+               "Mean field, best model": ranker(finish(scores[v][best]), src),
+               "Mean field, untrained": ranker(finish(logsumexp(scores[v], axis=0)), src),
+               "Earliest detection": ranker(earliest, src),
+               "Effective distance (Brockmann-Helbing)": ranker(effective_distance(ctx, names, pairs), src),
+               "LPSI, tuned": ranker(est.lpsi(ctx, alpha=alpha), src),
+               "Pinto-style": ranker(est.pinto_style(ctx), src),
+               "Jordan center": ranker(est.jordan_center(ctx), src),
+               "Distance center": ranker(est.distance_center(ctx), src)}
         rows.append(row)
         print(json.dumps(row), flush=True)
-    name = "variants_heldout.jsonl" if heldout else "variants.jsonl"
+    name = {"0": "variants.jsonl", "1": "variants_heldout.jsonl", "2": "variants_regional.jsonl"}[mode]
     (out / name).write_text("".join(json.dumps(r) + "\n" for r in rows))
     np.savez_compressed(out / name.replace(".jsonl", "_scores.npz"), grid=np.array(GRID), **{v: scores[v] for v in CASES})
 
