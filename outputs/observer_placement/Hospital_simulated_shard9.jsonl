@@ -1,0 +1,1 @@
+{"dataset": "Hospital", "outbreak": 9, "strategy": "AKLD by simulation (Sterchi 2023, 10,000 runs)", "ranks": [4.0, 7.0, 2.0, 19.0, 13.0, 9.0, 9.0, 6.0, 4.0, 3.0, 2.0], "seconds per pick": 769.0586546421051}

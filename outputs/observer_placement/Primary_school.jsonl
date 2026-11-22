@@ -318,3 +318,43 @@
 {"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [9.0, 8.0, 7.0, 8.0, 5.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.099889802932739}
 {"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [9.0, 10.0, 7.0, 8.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.165991520881653}
 {"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [26.0, 23.0, 5.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.949202036857605}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [23.0, 14.0, 41.0, 43.0, 34.0, 17.0, 21.0, 28.0, 36.0, 40.0, 35.0], "seconds per pick": 4.346589922904968}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [12.0, 9.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6471980094909668}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [15.0, 13.0, 11.0, 7.0, 15.0, 14.0, 15.0, 3.0, 2.0, 1.0, 1.0], "seconds per pick": 4.1095764398574826}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [7.0, 16.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.045317769050598}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.770573735237122}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [13.0, 14.0, 13.0, 12.0, 9.0, 6.0, 6.0, 3.0, 2.0, 1.0, 1.0], "seconds per pick": 3.393199110031128}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [4.0, 8.0, 3.0, 3.0, 3.0, 4.0, 5.0, 3.0, 1.0, 1.0, 1.0], "seconds per pick": 3.8397939443588256}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [24.0, 13.0, 11.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.9275464057922362}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [4.0, 5.0, 5.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.7586983680725097}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.77273542881012}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [57.0, 26.0, 40.0, 36.0, 20.0, 16.0, 7.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.4164105415344235}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.9644164085388183}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [35.0, 29.0, 17.0, 17.0, 6.0, 5.0, 4.0, 3.0, 2.0, 2.0, 2.0], "seconds per pick": 4.0752339363098145}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [54.0, 115.0, 108.0, 88.0, 79.0, 70.0, 21.0, 10.0, 9.0, 8.0, 2.0], "seconds per pick": 4.407966446876526}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [15.0, 12.0, 11.0, 5.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.712023115158081}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [4.0, 5.0, 57.0, 46.0, 23.0, 61.0, 39.0, 21.0, 26.0, 8.0, 7.0], "seconds per pick": 4.468299341201782}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 29.0, 71.0, 101.0, 96.0], "seconds per pick": 3.810841703414917}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [59.0, 7.0, 10.0, 15.0, 17.0, 16.0, 15.0, 12.0, 5.0, 2.0, 1.0], "seconds per pick": 2.9166086435317995}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [8.0, 7.0, 7.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.1904418230056764}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.84782235622406}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [19.0, 14.0, 9.0, 8.0, 8.0, 6.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.5530747413635253}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [112.0, 110.0, 91.0, 81.0, 91.0, 71.0, 71.0, 68.0, 51.0, 31.0, 22.0], "seconds per pick": 4.944742131233215}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [4.0, 6.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.748482823371887}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [43.0, 39.0, 39.0, 31.0, 9.0, 5.0, 3.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.568488621711731}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [7.0, 3.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.44700438976287843}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [33.0, 23.0, 21.0, 20.0, 18.0, 17.0, 16.0, 15.0, 14.0, 13.0, 12.0], "seconds per pick": 1.0062604904174806}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.9170738220214845}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [13.0, 2.0, 7.0, 6.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.453344917297363}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [12.0, 9.0, 5.0, 3.0, 3.0, 4.0, 3.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.37419912815094}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.016116094589234}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [14.0, 6.0, 10.0, 11.0, 5.0, 1.0, 43.0, 6.0, 5.0, 3.0, 3.0], "seconds per pick": 4.3233234167099}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.3433051824569702}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [10.0, 7.0, 8.0, 7.0, 7.0, 6.0, 2.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 3.5563714027404787}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [10.0, 76.0, 105.0, 87.0, 81.0, 79.0, 63.0, 57.0, 63.0, 61.0, 59.0], "seconds per pick": 3.5399734497070314}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.7328825950622555}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [21.0, 28.0, 33.0, 139.0, 119.0, 73.0, 69.0, 71.0, 64.0, 62.0, 60.0], "seconds per pick": 4.68557345867157}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [19.0, 17.0, 14.0, 70.0, 68.0, 60.0, 4.0, 4.0, 3.0, 3.0, 1.0], "seconds per pick": 5.1670557975769045}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [9.0, 4.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.4813961505889894}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [9.0, 3.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.463195872306824}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [26.0, 23.0, 5.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.5454659700393676}

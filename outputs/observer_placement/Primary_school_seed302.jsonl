@@ -1,0 +1,360 @@
+{"dataset": "Primary school", "strategy": "Random", "ranks": [34.0, 34.0, 7.0, 19.0, 19.0, 9.0, 8.0, 3.0, 3.0, 3.0, 2.0], "seconds per pick": 0.00030393600463867186}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [34.0, 36.0, 41.0, 33.0, 31.0, 37.0, 36.0, 11.0, 11.0, 12.0, 12.0], "seconds per pick": 0.0018316745758056641}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [34.0, 32.0, 27.0, 27.0, 28.0, 26.0, 25.0, 28.0, 26.0, 24.0, 22.0], "seconds per pick": 0.005120587348937988}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [34.0, 34.0, 29.0, 35.0, 31.0, 26.0, 10.0, 10.0, 11.0, 22.0, 26.0], "seconds per pick": 2.0903669595718384}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [34.0, 10.0, 11.0, 9.0, 10.0, 11.0, 9.0, 9.0, 8.0, 7.0, 6.0], "seconds per pick": 4.409309816360474}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [34.0, 65.0, 54.0, 56.0, 67.0, 63.0, 59.0, 61.0, 60.0, 60.0, 59.0], "seconds per pick": 0.21646111011505126}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [34.0, 33.0, 30.0, 26.0, 22.0, 20.0, 21.0, 7.0, 13.0, 18.0, 12.0], "seconds per pick": 5.195754265785217}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [34.0, 32.0, 39.0, 17.0, 16.0, 17.0, 16.0, 10.0, 6.0, 7.0, 6.0], "seconds per pick": 4.882706618309021}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [34.0, 10.0, 5.0, 6.0, 6.0, 5.0, 8.0, 7.0, 6.0, 5.0, 4.0], "seconds per pick": 4.1343464851379395}
+{"dataset": "Primary school", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00030055046081542967}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0012194395065307617}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0036507129669189455}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.108365535736084}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.5317029476165773}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.17110943794250488}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.697317624092102}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.3402095556259157}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.3732537269592284}
+{"dataset": "Primary school", "strategy": "Random", "ranks": [6.0, 6.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 6.0, 6.0, 6.0], "seconds per pick": 0.0002966403961181641}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [6.0, 6.0, 6.0, 6.0, 7.0, 8.0, 7.0, 7.0, 7.0, 7.0, 7.0], "seconds per pick": 0.0018043994903564453}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [6.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 7.0, 7.0, 5.0, 5.0], "seconds per pick": 0.003400254249572754}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [6.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6533767223358155}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [6.0, 5.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.2424495458602904}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [6.0, 7.0, 7.0, 5.0, 5.0, 4.0, 4.0, 5.0, 4.0, 4.0, 2.0], "seconds per pick": 0.16692867279052734}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [6.0, 7.0, 7.0, 6.0, 6.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0], "seconds per pick": 1.283763551712036}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [6.0, 7.0, 4.0, 4.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.3437708139419555}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [6.0, 5.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.0579210996627808}
+{"dataset": "Primary school", "strategy": "Random", "ranks": [17.0, 20.0, 27.0, 24.0, 29.0, 29.0, 29.0, 29.0, 30.0, 30.0, 27.0], "seconds per pick": 0.00034704208374023435}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [17.0, 5.0, 6.0, 6.0, 7.0, 8.0, 11.0, 13.0, 13.0, 15.0, 11.0], "seconds per pick": 0.0014932632446289062}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [17.0, 5.0, 6.0, 6.0, 9.0, 10.0, 4.0, 3.0, 3.0, 5.0, 3.0], "seconds per pick": 0.004379487037658692}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [17.0, 12.0, 12.0, 21.0, 24.0, 43.0, 41.0, 40.0, 31.0, 2.0, 1.0], "seconds per pick": 2.0695607900619506}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [17.0, 16.0, 13.0, 4.0, 3.0, 4.0, 3.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 4.038351058959961}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [17.0, 15.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0], "seconds per pick": 0.2194234848022461}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [17.0, 5.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 13.0, 18.0, 10.0], "seconds per pick": 4.31097264289856}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [17.0, 15.0, 15.0, 13.0, 17.0, 12.0, 2.0, 2.0, 2.0, 2.0, 3.0], "seconds per pick": 4.302233266830444}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [17.0, 16.0, 25.0, 27.0, 46.0, 26.0, 23.0, 12.0, 2.0, 1.0, 1.0], "seconds per pick": 4.660378313064575}
+{"dataset": "Primary school", "strategy": "Random", "ranks": [11.0, 12.0, 11.0, 11.0, 12.0, 12.0, 12.0, 12.0, 12.0, 13.0, 13.0], "seconds per pick": 0.0002885580062866211}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [11.0, 11.0, 13.0, 12.0, 14.0, 9.0, 10.0, 11.0, 11.0, 10.0, 11.0], "seconds per pick": 0.0011546850204467774}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [11.0, 9.0, 11.0, 7.0, 7.0, 7.0, 6.0, 6.0, 6.0, 6.0, 7.0], "seconds per pick": 0.003183913230895996}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [11.0, 10.0, 10.0, 8.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.9900073766708375}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [11.0, 10.0, 7.0, 8.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.220907807350159}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [11.0, 6.0, 6.0, 7.0, 7.0, 7.0, 9.0, 9.0, 9.0, 9.0, 9.0], "seconds per pick": 0.18147618770599366}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [11.0, 11.0, 10.0, 10.0, 10.0, 10.0, 10.0, 15.0, 12.0, 12.0, 9.0], "seconds per pick": 3.8800198554992678}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [11.0, 10.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.030274271965027}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [11.0, 10.0, 10.0, 8.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.19804208278656}
+{"dataset": "Primary school", "strategy": "Random", "ranks": [18.0, 18.0, 15.0, 16.0, 16.0, 22.0, 23.0, 28.0, 20.0, 24.0, 24.0], "seconds per pick": 0.0008307218551635743}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [18.0, 22.0, 18.0, 20.0, 18.0, 17.0, 18.0, 19.0, 20.0, 19.0, 19.0], "seconds per pick": 0.0017981290817260741}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [18.0, 19.0, 4.0, 4.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.003785443305969238}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [18.0, 16.0, 14.0, 14.0, 13.0, 10.0, 2.0, 1.0, 4.0, 1.0, 1.0], "seconds per pick": 2.0486129999160765}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [18.0, 21.0, 24.0, 18.0, 20.0, 13.0, 14.0, 15.0, 11.0, 2.0, 1.0], "seconds per pick": 4.430682373046875}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [18.0, 18.0, 15.0, 1.0, 1.0, 2.0, 1.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.21659045219421386}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [18.0, 23.0, 4.0, 6.0, 6.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.418083047866821}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [18.0, 5.0, 4.0, 2.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.735617685317993}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [18.0, 23.0, 24.0, 17.0, 16.0, 14.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.570062470436096}
+{"dataset": "Primary school", "strategy": "Random", "ranks": [7.0, 9.0, 6.0, 10.0, 10.0, 10.0, 10.0, 9.0, 9.0, 8.0, 9.0], "seconds per pick": 0.0006444215774536133}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [7.0, 9.0, 6.0, 6.0, 6.0, 7.0, 7.0, 7.0, 7.0, 9.0, 9.0], "seconds per pick": 0.00254058837890625}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [7.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00511465072631836}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [7.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.4348811864852905}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [7.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.7713623523712159}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [7.0, 7.0, 4.0, 5.0, 4.0, 6.0, 5.0, 3.0, 2.0, 3.0, 2.0], "seconds per pick": 0.14888174533843995}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [7.0, 6.0, 6.0, 3.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.9805712461471557}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [7.0, 10.0, 11.0, 9.0, 3.0, 2.0, 3.0, 2.0, 3.0, 3.0, 3.0], "seconds per pick": 1.1838719129562378}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [7.0, 6.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.9897846698760986}
+{"dataset": "Primary school", "strategy": "Random", "ranks": [6.0, 6.0, 5.0, 5.0, 6.0, 6.0, 6.0, 5.0, 5.0, 5.0, 5.0], "seconds per pick": 0.0006238222122192383}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [6.0, 4.0, 4.0, 4.0, 4.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0], "seconds per pick": 0.0011874914169311523}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [6.0, 6.0, 5.0, 5.0, 4.0, 4.0, 4.0, 4.0, 4.0, 2.0, 2.0], "seconds per pick": 0.003725767135620117}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [6.0, 7.0, 5.0, 5.0, 3.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.9544123411178589}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [6.0, 5.0, 5.0, 4.0, 3.0, 3.0, 3.0, 3.0, 2.0, 1.0, 1.0], "seconds per pick": 2.496751618385315}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0], "seconds per pick": 0.15018749237060547}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [6.0, 5.0, 5.0, 4.0, 4.0, 2.0, 1.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 2.492825675010681}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [6.0, 5.0, 6.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.487980365753174}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [6.0, 8.0, 7.0, 5.0, 4.0, 3.0, 4.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.484229826927185}
+{"dataset": "Primary school", "strategy": "Random", "ranks": [25.0, 26.0, 2.0, 3.0, 3.0, 40.0, 40.0, 40.0, 39.0, 35.0, 31.0], "seconds per pick": 0.0006201028823852539}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [25.0, 27.0, 18.0, 19.0, 43.0, 36.0, 35.0, 36.0, 34.0, 35.0, 37.0], "seconds per pick": 0.0008219242095947266}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [25.0, 16.0, 6.0, 6.0, 6.0, 5.0, 6.0, 5.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0029186010360717773}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [25.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.8916550397872924}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [25.0, 10.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.697211742401123}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [25.0, 21.0, 20.0, 5.0, 4.0, 5.0, 4.0, 4.0, 4.0, 4.0, 4.0], "seconds per pick": 0.09715347290039063}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [25.0, 26.0, 20.0, 4.0, 4.0, 3.0, 3.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 2.639223265647888}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [25.0, 14.0, 6.0, 4.0, 3.0, 3.0, 2.0, 2.0, 21.0, 1.0, 1.0], "seconds per pick": 2.537626791000366}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [25.0, 10.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.550439238548279}
+{"dataset": "Primary school", "strategy": "Random", "ranks": [9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 12.0, 12.0, 12.0], "seconds per pick": 0.0003637552261352539}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [9.0, 9.0, 10.0, 12.0, 9.0, 15.0, 10.0, 6.0, 4.0, 4.0, 3.0], "seconds per pick": 0.0011364936828613282}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [9.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0], "seconds per pick": 0.0027457475662231445}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [9.0, 7.0, 4.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.8855057716369629}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [9.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.521257781982422}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [9.0, 9.0, 8.0, 5.0, 5.0, 5.0, 6.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.14949564933776854}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [9.0, 3.0, 4.0, 5.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.5294872760772704}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [9.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.589642333984375}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [9.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.522290086746216}
+{"dataset": "Primary school", "strategy": "Random", "ranks": [5.0, 5.0, 4.0, 4.0, 4.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.0003258228302001953}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [5.0, 5.0, 5.0, 5.0, 6.0, 5.0, 6.0, 5.0, 5.0, 5.0, 5.0], "seconds per pick": 0.000881028175354004}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [5.0, 5.0, 6.0, 5.0, 3.0, 3.0, 1.0, 1.0, 6.0, 1.0, 1.0], "seconds per pick": 0.002221226692199707}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.0034420967102051}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [5.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.535724425315857}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [5.0, 2.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0], "seconds per pick": 0.11565122604370118}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [5.0, 18.0, 15.0, 12.0, 11.0, 7.0, 15.0, 6.0, 6.0, 5.0, 5.0], "seconds per pick": 2.646446442604065}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [5.0, 2.0, 1.0, 1.0, 1.0, 8.0, 4.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.495757269859314}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.5589380979537966}
+{"dataset": "Primary school", "strategy": "Random", "ranks": [20.0, 20.0, 18.0, 20.0, 20.0, 20.0, 2.0, 2.0, 2.0, 2.0, 3.0], "seconds per pick": 0.0003039836883544922}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [20.0, 18.0, 17.0, 14.0, 13.0, 13.0, 14.0, 8.0, 4.0, 4.0, 1.0], "seconds per pick": 0.0008491277694702148}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [20.0, 17.0, 15.0, 9.0, 8.0, 8.0, 7.0, 8.0, 6.0, 6.0, 6.0], "seconds per pick": 0.0029896259307861327}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [20.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.415088939666748}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [20.0, 31.0, 21.0, 14.0, 6.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.97552752494812}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [20.0, 16.0, 17.0, 47.0, 47.0, 52.0, 49.0, 49.0, 48.0, 35.0, 17.0], "seconds per pick": 0.13517653942108154}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [20.0, 3.0, 2.0, 1.0, 1.0, 3.0, 4.0, 1.0, 2.0, 2.0, 2.0], "seconds per pick": 2.8888644218444823}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [20.0, 6.0, 10.0, 11.0, 8.0, 10.0, 12.0, 7.0, 1.0, 1.0, 1.0], "seconds per pick": 2.933126974105835}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [20.0, 31.0, 21.0, 15.0, 8.0, 4.0, 4.0, 5.0, 4.0, 3.0, 3.0], "seconds per pick": 2.892474579811096}
+{"dataset": "Primary school", "strategy": "Random", "ranks": [3.0, 4.0, 3.0, 1.0, 2.0, 2.0, 40.0, 40.0, 37.0, 37.0, 32.0], "seconds per pick": 0.00029160976409912107}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [3.0, 3.0, 1.0, 6.0, 7.0, 11.0, 12.0, 12.0, 29.0, 26.0, 23.0], "seconds per pick": 0.0008529186248779297}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [3.0, 63.0, 71.0, 57.0, 50.0, 57.0, 101.0, 66.0, 58.0, 59.0, 55.0], "seconds per pick": 0.0024800777435302736}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.4228041648864747}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [3.0, 2.0, 2.0, 10.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.003203248977661}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 8.0, 8.0, 8.0, 7.0, 6.0], "seconds per pick": 0.10582809448242188}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [3.0, 41.0, 51.0, 45.0, 39.0, 38.0, 26.0, 28.0, 26.0, 17.0, 4.0], "seconds per pick": 2.8712629318237304}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [3.0, 63.0, 56.0, 47.0, 48.0, 4.0, 3.0, 3.0, 3.0, 2.0, 2.0], "seconds per pick": 3.001509761810303}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [3.0, 2.0, 59.0, 10.0, 4.0, 3.0, 7.0, 8.0, 9.0, 15.0, 7.0], "seconds per pick": 2.9750946521759034}
+{"dataset": "Primary school", "strategy": "Random", "ranks": [12.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.000297999382019043}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [12.0, 12.0, 11.0, 11.0, 7.0, 8.0, 8.0, 8.0, 7.0, 7.0, 7.0], "seconds per pick": 0.0008662939071655273}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [12.0, 10.0, 9.0, 11.0, 10.0, 9.0, 8.0, 8.0, 8.0, 8.0, 8.0], "seconds per pick": 0.003258943557739258}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [12.0, 15.0, 8.0, 6.0, 6.0, 8.0, 7.0, 5.0, 3.0, 3.0, 3.0], "seconds per pick": 1.3317505598068238}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [12.0, 11.0, 8.0, 4.0, 3.0, 2.0, 3.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 2.9582613468170167}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 13.0, 12.0, 10.0], "seconds per pick": 0.1444493532180786}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [12.0, 9.0, 4.0, 6.0, 6.0, 6.0, 8.0, 4.0, 4.0, 2.0, 2.0], "seconds per pick": 3.173916983604431}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [12.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.0152695417404174}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [12.0, 4.0, 4.0, 3.0, 6.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.103963088989258}
+{"dataset": "Primary school", "strategy": "Random", "ranks": [20.0, 20.0, 20.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0], "seconds per pick": 0.0006053447723388672}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [20.0, 25.0, 24.0, 24.0, 19.0, 18.0, 20.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.002039790153503418}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [20.0, 20.0, 18.0, 19.0, 19.0, 19.0, 18.0, 18.0, 18.0, 18.0, 16.0], "seconds per pick": 0.0016789197921752929}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [20.0, 20.0, 18.0, 10.0, 3.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.12096445560455323}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [20.0, 20.0, 14.0, 13.0, 11.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.27680923938751223}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [20.0, 7.0, 4.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0750530481338501}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [20.0, 17.0, 21.0, 14.0, 8.0, 9.0, 12.0, 13.0, 3.0, 3.0, 3.0], "seconds per pick": 0.39425208568573}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [20.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.14808249473571777}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [20.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.16069536209106444}
+{"dataset": "Primary school", "strategy": "Random", "ranks": [14.0, 11.0, 10.0, 10.0, 10.0, 11.0, 5.0, 1.0, 5.0, 21.0, 21.0], "seconds per pick": 0.00030481815338134766}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [14.0, 14.0, 13.0, 13.0, 11.0, 12.0, 13.0, 13.0, 7.0, 1.0, 1.0], "seconds per pick": 0.0008270263671875}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [14.0, 14.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0027048349380493163}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [14.0, 109.0, 15.0, 9.0, 6.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.5548755884170533}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [14.0, 9.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.13592791557312}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [14.0, 8.0, 7.0, 7.0, 7.0, 8.0, 8.0, 8.0, 8.0, 8.0, 6.0], "seconds per pick": 0.1323317289352417}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [14.0, 12.0, 12.0, 15.0, 11.0, 12.0, 2.0, 1.0, 2.0, 1.0, 1.0], "seconds per pick": 2.9914942026138305}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [14.0, 10.0, 8.0, 8.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.16392776966095}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [14.0, 70.0, 8.0, 12.0, 11.0, 6.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.097231364250183}
+{"dataset": "Primary school", "strategy": "Random", "ranks": [33.0, 8.0, 21.0, 49.0, 49.0, 51.0, 51.0, 51.0, 50.0, 46.0, 48.0], "seconds per pick": 0.0002883195877075195}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [33.0, 12.0, 14.0, 20.0, 15.0, 40.0, 33.0, 27.0, 22.0, 24.0, 21.0], "seconds per pick": 0.0008427858352661133}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [33.0, 28.0, 29.0, 22.0, 25.0, 27.0, 6.0, 6.0, 5.0, 7.0, 4.0], "seconds per pick": 0.0027265310287475585}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [33.0, 35.0, 25.0, 9.0, 4.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.3752673625946046}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [33.0, 20.0, 30.0, 28.0, 37.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.8749575138092043}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [33.0, 29.0, 41.0, 31.0, 32.0, 28.0, 33.0, 26.0, 26.0, 26.0, 25.0], "seconds per pick": 0.13726379871368408}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [33.0, 28.0, 25.0, 27.0, 24.0, 27.0, 35.0, 44.0, 44.0, 38.0, 30.0], "seconds per pick": 3.082525038719177}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [33.0, 40.0, 44.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.103207230567932}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [33.0, 12.0, 17.0, 23.0, 34.0, 37.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.0650123357772827}
+{"dataset": "Primary school", "strategy": "Random", "ranks": [7.0, 6.0, 3.0, 3.0, 3.0, 3.0, 8.0, 5.0, 4.0, 3.0, 3.0], "seconds per pick": 0.0006483078002929687}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [7.0, 5.0, 5.0, 6.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.0008562564849853516}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [7.0, 8.0, 32.0, 24.0, 30.0, 29.0, 27.0, 34.0, 9.0, 11.0, 8.0], "seconds per pick": 0.002306628227233887}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [7.0, 7.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.3747666597366333}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [7.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.008589673042297}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [7.0, 1.0, 4.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0], "seconds per pick": 0.1460543155670166}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [7.0, 8.0, 15.0, 3.0, 3.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.839143705368042}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [7.0, 9.0, 1.0, 1.0, 1.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.907111954689026}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [7.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.110040807723999}
+{"dataset": "Primary school", "strategy": "Random", "ranks": [15.0, 15.0, 15.0, 16.0, 16.0, 20.0, 20.0, 20.0, 20.0, 20.0, 20.0], "seconds per pick": 0.0002907752990722656}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [15.0, 10.0, 29.0, 27.0, 29.0, 29.0, 28.0, 34.0, 34.0, 32.0, 1.0], "seconds per pick": 0.0008849859237670899}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [15.0, 9.0, 6.0, 6.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0], "seconds per pick": 0.00234375}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [15.0, 15.0, 6.0, 4.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.956785249710083}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [15.0, 8.0, 17.0, 26.0, 23.0, 20.0, 18.0, 16.0, 14.0, 3.0, 1.0], "seconds per pick": 2.4778717517852784}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [15.0, 15.0, 14.0, 12.0, 12.0, 12.0, 13.0, 12.0, 6.0, 24.0, 22.0], "seconds per pick": 0.1098635196685791}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [15.0, 12.0, 8.0, 4.0, 5.0, 5.0, 1.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 2.64875009059906}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [15.0, 12.0, 7.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.613600659370422}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [15.0, 8.0, 17.0, 26.0, 23.0, 20.0, 18.0, 16.0, 15.0, 3.0, 1.0], "seconds per pick": 2.60867555141449}
+{"dataset": "Primary school", "strategy": "Random", "ranks": [6.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0003262042999267578}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [6.0, 3.0, 4.0, 4.0, 5.0, 2.0, 4.0, 5.0, 5.0, 5.0, 7.0], "seconds per pick": 0.0008761167526245117}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [6.0, 7.0, 8.0, 5.0, 5.0, 5.0, 2.0, 2.0, 5.0, 4.0, 5.0], "seconds per pick": 0.0026924848556518556}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [6.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.9534294605255127}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [6.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.5357171297073364}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [6.0, 3.0, 3.0, 3.0, 3.0, 3.0, 2.0, 2.0, 2.0, 2.0, 3.0], "seconds per pick": 0.12983520030975343}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [6.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.511815881729126}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [6.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 2.501735973358154}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [6.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.8920578241348265}
+{"dataset": "Primary school", "strategy": "Random", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0003131866455078125}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [2.0, 1.0, 3.0, 2.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0015101194381713866}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0031744003295898437}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.4507662534713745}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [2.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.9880900859832764}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.12377479076385497}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.3208985090255738}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [2.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.9848594427108764}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.7915551424026489}
+{"dataset": "Primary school", "strategy": "Random", "ranks": [13.0, 11.0, 10.0, 10.0, 11.0, 8.0, 6.0, 6.0, 6.0, 6.0, 6.0], "seconds per pick": 0.0003021240234375}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [13.0, 14.0, 12.0, 13.0, 14.0, 12.0, 12.0, 12.0, 6.0, 8.0, 8.0], "seconds per pick": 0.0009326457977294922}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [13.0, 10.0, 5.0, 4.0, 3.0, 3.0, 4.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0025936365127563477}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [13.0, 12.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.9442138433456421}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [13.0, 11.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.55671226978302}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [13.0, 9.0, 4.0, 4.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.12584192752838136}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [13.0, 3.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0], "seconds per pick": 2.5220065116882324}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [13.0, 10.0, 8.0, 4.0, 4.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.4292136669158935}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [13.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.501133108139038}
+{"dataset": "Primary school", "strategy": "Random", "ranks": [17.0, 17.0, 21.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 4.0], "seconds per pick": 0.00030155181884765624}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [17.0, 24.0, 27.0, 5.0, 4.0, 4.0, 3.0, 3.0, 3.0, 4.0, 4.0], "seconds per pick": 0.0008909225463867188}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [17.0, 5.0, 5.0, 5.0, 5.0, 5.0, 3.0, 5.0, 3.0, 3.0, 3.0], "seconds per pick": 0.0034239768981933595}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [17.0, 12.0, 5.0, 3.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.3925801038742065}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [17.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.971353316307068}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [17.0, 17.0, 16.0, 12.0, 12.0, 12.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.1422959804534912}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [17.0, 5.0, 5.0, 4.0, 5.0, 4.0, 4.0, 4.0, 4.0, 2.0, 1.0], "seconds per pick": 2.8968456268310545}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [17.0, 12.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.92236704826355}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [17.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.129102420806885}
+{"dataset": "Primary school", "strategy": "Random", "ranks": [164.0, 146.0, 134.0, 118.0, 117.0, 117.0, 116.0, 111.0, 98.0, 94.0, 94.0], "seconds per pick": 0.0006117343902587891}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [164.0, 158.0, 150.0, 143.0, 145.0, 114.0, 116.0, 114.0, 114.0, 82.0, 81.0], "seconds per pick": 0.0011861562728881837}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [164.0, 154.0, 149.0, 137.0, 127.0, 126.0, 121.0, 116.0, 71.0, 63.0, 63.0], "seconds per pick": 0.0030098915100097655}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [164.0, 142.0, 138.0, 132.0, 126.0, 109.0, 118.0, 103.0, 102.0, 101.0, 100.0], "seconds per pick": 1.4100939750671386}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [164.0, 107.0, 107.0, 104.0, 93.0, 65.0, 64.0, 39.0, 38.0, 37.0, 36.0], "seconds per pick": 3.128088355064392}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [164.0, 163.0, 147.0, 146.0, 137.0, 137.0, 134.0, 110.0, 118.0, 116.0, 105.0], "seconds per pick": 0.17504286766052246}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [164.0, 171.0, 151.0, 135.0, 118.0, 108.0, 82.0, 65.0, 57.0, 42.0, 35.0], "seconds per pick": 3.151097536087036}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [164.0, 141.0, 131.0, 129.0, 82.0, 58.0, 49.0, 83.0, 78.0, 50.0, 48.0], "seconds per pick": 3.0958370923995973}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [164.0, 107.0, 107.0, 99.0, 93.0, 76.0, 68.0, 45.0, 40.0, 38.0, 32.0], "seconds per pick": 3.1668389081954955}
+{"dataset": "Primary school", "strategy": "Random", "ranks": [7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0], "seconds per pick": 0.0003185749053955078}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [7.0, 5.0, 4.0, 5.0, 5.0, 5.0, 5.0, 5.0, 4.0, 5.0, 5.0], "seconds per pick": 0.0009362697601318359}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [7.0, 5.0, 4.0, 4.0, 4.0, 4.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.0024297237396240234}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [7.0, 6.0, 5.0, 4.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.5077353954315185}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [7.0, 6.0, 4.0, 4.0, 3.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.157673215866089}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [7.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 1.0, 1.0], "seconds per pick": 0.14182028770446778}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [7.0, 7.0, 7.0, 7.0, 7.0, 4.0, 4.0, 5.0, 3.0, 3.0, 4.0], "seconds per pick": 3.033694362640381}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [7.0, 6.0, 5.0, 5.0, 4.0, 3.0, 3.0, 3.0, 3.0, 2.0, 2.0], "seconds per pick": 3.168592357635498}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [7.0, 6.0, 4.0, 4.0, 3.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.0217304468154906}
+{"dataset": "Primary school", "strategy": "Random", "ranks": [2.0, 2.0, 2.0, 5.0, 5.0, 5.0, 5.0, 4.0, 5.0, 5.0, 5.0], "seconds per pick": 0.0003008842468261719}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [2.0, 3.0, 3.0, 5.0, 4.0, 2.0, 3.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0010455846786499023}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [2.0, 3.0, 6.0, 3.0, 3.0, 2.0, 2.0, 1.0, 2.0, 1.0, 1.0], "seconds per pick": 0.003091859817504883}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.2376553773880006}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [2.0, 2.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.0127847671508787}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 2.0, 4.0, 4.0, 4.0, 5.0, 4.0, 4.0, 2.0, 2.0, 2.0], "seconds per pick": 0.133929443359375}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 3.0, 5.0, 7.0, 5.0, 4.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 2.8816317081451417}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [2.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.943545866012573}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.9405411958694456}
+{"dataset": "Primary school", "strategy": "Random", "ranks": [1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00029754638671875}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0012467384338378906}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 2.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0026930570602416992}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.34244966506958}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.0327679395675657}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.11728663444519043}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 4.0, 4.0, 1.0, 2.0, 3.0, 1.0, 1.0, 1.0, 2.0], "seconds per pick": 2.8760100603103638}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 3.0, 3.0, 1.0, 2.0, 2.0], "seconds per pick": 2.8205321073532104}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.8597520351409913}
+{"dataset": "Primary school", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00032372474670410155}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0015065431594848632}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0023917198181152345}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.48989171981811525}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.2713841676712037}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.11519794464111328}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.1859624862670899}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.210723638534546}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.2576557874679566}
+{"dataset": "Primary school", "strategy": "Random", "ranks": [16.0, 16.0, 13.0, 4.0, 4.0, 4.0, 4.0, 8.0, 8.0, 9.0, 10.0], "seconds per pick": 0.0002904653549194336}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [16.0, 19.0, 14.0, 33.0, 34.0, 30.0, 20.0, 20.0, 20.0, 12.0, 11.0], "seconds per pick": 0.0008700370788574218}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [16.0, 29.0, 34.0, 33.0, 7.0, 6.0, 3.0, 3.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0032262563705444335}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [16.0, 18.0, 18.0, 7.0, 11.0, 10.0, 2.0, 3.0, 2.0, 1.0, 1.0], "seconds per pick": 0.9919453144073487}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [16.0, 5.0, 7.0, 5.0, 6.0, 7.0, 4.0, 2.0, 2.0, 3.0, 2.0], "seconds per pick": 2.4558895587921143}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [16.0, 16.0, 17.0, 23.0, 23.0, 32.0, 32.0, 37.0, 37.0, 37.0, 37.0], "seconds per pick": 0.12733783721923828}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [16.0, 11.0, 17.0, 6.0, 6.0, 6.0, 7.0, 7.0, 3.0, 2.0, 1.0], "seconds per pick": 2.379600930213928}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [16.0, 11.0, 11.0, 5.0, 9.0, 9.0, 11.0, 9.0, 6.0, 4.0, 2.0], "seconds per pick": 2.5957110643386843}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [16.0, 4.0, 6.0, 4.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.7648084163665771}
+{"dataset": "Primary school", "strategy": "Random", "ranks": [3.0, 3.0, 3.0, 19.0, 16.0, 16.0, 12.0, 12.0, 9.0, 9.0, 8.0], "seconds per pick": 0.00030643939971923827}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [3.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0008409500122070312}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [3.0, 3.0, 7.0, 4.0, 3.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0], "seconds per pick": 0.0025605678558349608}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.5436956882476807}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.0421228885650633}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [3.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 2.0, 2.0, 3.0], "seconds per pick": 0.14865851402282715}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0], "seconds per pick": 2.9288533449172975}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [3.0, 1.0, 1.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.912067437171936}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [3.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.9786059856414795}
+{"dataset": "Primary school", "strategy": "Random", "ranks": [2.0, 2.0, 5.0, 5.0, 5.0, 4.0, 4.0, 4.0, 4.0, 4.0, 5.0], "seconds per pick": 0.00031917095184326173}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [2.0, 3.0, 3.0, 3.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0], "seconds per pick": 0.0011634111404418945}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [2.0, 2.0, 3.0, 4.0, 5.0, 5.0, 5.0, 5.0, 4.0, 5.0, 3.0], "seconds per pick": 0.0030683040618896484}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.42988617420196534}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.9968163728713989}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 2.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 5.0], "seconds per pick": 0.1451974868774414}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 3.0, 5.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.5602092742919922}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 5.0, 2.0, 1.0, 2.0, 4.0], "seconds per pick": 2.7363091707229614}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.9606420755386352}
+{"dataset": "Primary school", "strategy": "Random", "ranks": [10.0, 10.0, 10.0, 12.0, 14.0, 14.0, 14.0, 14.0, 12.0, 14.0, 14.0], "seconds per pick": 0.00029511451721191405}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [10.0, 4.0, 5.0, 5.0, 4.0, 5.0, 6.0, 6.0, 5.0, 9.0, 9.0], "seconds per pick": 0.001158428192138672}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [10.0, 11.0, 12.0, 11.0, 11.0, 11.0, 11.0, 12.0, 10.0, 8.0, 8.0], "seconds per pick": 0.0032688140869140624}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [10.0, 10.0, 9.0, 4.0, 4.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.0129942893981934}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [10.0, 10.0, 7.0, 10.0, 7.0, 8.0, 5.0, 6.0, 4.0, 2.0, 1.0], "seconds per pick": 2.5270100831985474}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [10.0, 10.0, 10.0, 10.0, 11.0, 11.0, 9.0, 9.0, 9.0, 7.0, 7.0], "seconds per pick": 0.13378515243530273}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [10.0, 15.0, 14.0, 14.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 2.592907500267029}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [10.0, 4.0, 3.0, 2.0, 3.0, 3.0, 4.0, 5.0, 5.0, 5.0, 5.0], "seconds per pick": 2.7792166233062745}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [10.0, 4.0, 3.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.7045854330062866}
+{"dataset": "Primary school", "strategy": "Random", "ranks": [7.0, 14.0, 17.0, 18.0, 21.0, 18.0, 18.0, 18.0, 18.0, 18.0, 18.0], "seconds per pick": 0.0005945920944213867}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [7.0, 12.0, 8.0, 11.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0], "seconds per pick": 0.0009250164031982422}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [7.0, 19.0, 19.0, 19.0, 19.0, 19.0, 19.0, 19.0, 18.0, 18.0, 19.0], "seconds per pick": 0.0025278329849243164}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [7.0, 22.0, 9.0, 7.0, 6.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.2068256378173828}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [7.0, 7.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.5105348825454712}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [7.0, 7.0, 12.0, 9.0, 20.0, 16.0, 13.0, 5.0, 3.0, 3.0, 3.0], "seconds per pick": 0.11927988529205322}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [7.0, 6.0, 5.0, 8.0, 12.0, 11.0, 9.0, 10.0, 8.0, 4.0, 4.0], "seconds per pick": 0.558112382888794}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [7.0, 4.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.4938588857650757}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [7.0, 10.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.4668363809585571}
+{"dataset": "Primary school", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0009181976318359375}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 3.0, 3.0, 3.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0009032487869262695}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0025931596755981445}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.9705966949462891}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.6300124168395995}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.11992597579956055}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.6164018154144286}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.570938515663147}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.671537256240845}
+{"dataset": "Primary school", "strategy": "Random", "ranks": [24.0, 25.0, 24.0, 24.0, 23.0, 23.0, 5.0, 5.0, 5.0, 5.0, 9.0], "seconds per pick": 0.00029392242431640624}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [24.0, 26.0, 23.0, 5.0, 4.0, 4.0, 6.0, 9.0, 13.0, 9.0, 10.0], "seconds per pick": 0.001175069808959961}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [24.0, 25.0, 25.0, 15.0, 15.0, 3.0, 3.0, 3.0, 3.0, 3.0, 7.0], "seconds per pick": 0.002270007133483887}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [24.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.3399672985076904}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [24.0, 1.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.8963837623596191}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [24.0, 5.0, 5.0, 5.0, 4.0, 5.0, 5.0, 7.0, 7.0, 8.0, 8.0], "seconds per pick": 0.11578218936920166}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [24.0, 23.0, 2.0, 3.0, 3.0, 1.0, 1.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 0.919933557510376}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [24.0, 6.0, 6.0, 5.0, 7.0, 8.0, 10.0, 9.0, 10.0, 11.0, 10.0], "seconds per pick": 1.7992685556411743}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [24.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.7679544448852539}
+{"dataset": "Primary school", "strategy": "Random", "ranks": [22.0, 17.0, 17.0, 17.0, 19.0, 20.0, 20.0, 19.0, 19.0, 19.0, 20.0], "seconds per pick": 0.0002908229827880859}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [22.0, 22.0, 24.0, 24.0, 24.0, 24.0, 23.0, 22.0, 22.0, 24.0, 25.0], "seconds per pick": 0.001262807846069336}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [22.0, 26.0, 26.0, 25.0, 26.0, 23.0, 24.0, 24.0, 24.0, 26.0, 26.0], "seconds per pick": 0.0024000167846679687}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [22.0, 18.0, 11.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.4636817932128906}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [22.0, 14.0, 16.0, 9.0, 14.0, 11.0, 9.0, 3.0, 2.0, 1.0, 1.0], "seconds per pick": 1.064428448677063}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [22.0, 22.0, 22.0, 22.0, 22.0, 22.0, 22.0, 22.0, 22.0, 22.0, 22.0], "seconds per pick": 0.13473000526428222}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [22.0, 21.0, 21.0, 23.0, 28.0, 25.0, 25.0, 24.0, 23.0, 20.0, 14.0], "seconds per pick": 2.093753457069397}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [22.0, 8.0, 3.0, 5.0, 5.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 1.1671313047409058}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [22.0, 14.0, 19.0, 9.0, 14.0, 11.0, 3.0, 3.0, 2.0, 1.0, 1.0], "seconds per pick": 1.0038206577301025}
+{"dataset": "Primary school", "strategy": "Random", "ranks": [3.0, 3.0, 3.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00032291412353515627}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [3.0, 2.0, 1.0, 4.0, 7.0, 5.0, 7.0, 5.0, 4.0, 4.0, 5.0], "seconds per pick": 0.000911879539489746}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [3.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 1.0, 1.0], "seconds per pick": 0.003188323974609375}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [3.0, 3.0, 2.0, 2.0, 4.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.1494269609451293}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.8163848638534545}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [3.0, 3.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 6.0, 4.0], "seconds per pick": 0.1598208427429199}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [3.0, 1.0, 2.0, 1.0, 1.0, 2.0, 2.0, 2.0, 1.0, 1.0, 2.0], "seconds per pick": 2.87315034866333}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [3.0, 1.0, 23.0, 23.0, 22.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0], "seconds per pick": 3.0187892436981203}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.8057938814163208}
+{"dataset": "Primary school", "strategy": "Random", "ranks": [2.0, 3.0, 12.0, 12.0, 12.0, 10.0, 10.0, 10.0, 10.0, 9.0, 6.0], "seconds per pick": 0.0003411054611206055}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 3.0, 8.0, 5.0, 4.0, 11.0], "seconds per pick": 0.0012635231018066407}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.00231781005859375}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.3194800138473511}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.7310278415679932}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 10.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 12.0], "seconds per pick": 0.12130932807922364}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 2.0, 3.0, 3.0, 2.0, 6.0, 5.0, 2.0, 2.0, 1.0, 2.0], "seconds per pick": 1.8466089725494386}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [2.0, 2.0, 3.0, 10.0, 12.0, 16.0, 13.0, 14.0, 14.0, 9.0, 12.0], "seconds per pick": 1.2521179437637329}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.639919662475586}
+{"dataset": "Primary school", "strategy": "Random", "ranks": [2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.00029349327087402344}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 12.0, 12.0, 12.0, 12.0, 12.0], "seconds per pick": 0.0011782646179199219}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.002532505989074707}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.21051423549652098}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.34636411666870115}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.1107804536819458}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 2.0, 3.0, 3.0, 2.0, 4.0, 3.0, 3.0, 2.0, 1.0, 1.0], "seconds per pick": 0.529789137840271}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.484963583946228}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.3717705965042114}
+{"dataset": "Primary school", "strategy": "Random", "ranks": [6.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.0002852201461791992}
+{"dataset": "Primary school", "strategy": "Highest degree", "ranks": [6.0, 5.0, 17.0, 27.0, 20.0, 8.0, 8.0, 13.0, 35.0, 1.0, 1.0], "seconds per pick": 0.001556062698364258}
+{"dataset": "Primary school", "strategy": "Contact tracing", "ranks": [6.0, 26.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0031584501266479492}
+{"dataset": "Primary school", "strategy": "Test top suspect", "ranks": [6.0, 5.0, 89.0, 78.0, 7.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.4009241342544556}
+{"dataset": "Primary school", "strategy": "Information gain (ours)", "ranks": [6.0, 7.0, 6.0, 27.0, 24.0, 12.0, 8.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.955812907218933}
+{"dataset": "Primary school", "strategy": "Split candidates (Spinelli-style)", "ranks": [6.0, 5.0, 11.0, 4.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.15586330890655517}
+{"dataset": "Primary school", "strategy": "Most likely infected (Baker-style)", "ranks": [6.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.0111977815628053}
+{"dataset": "Primary school", "strategy": "Edge cutting (EC2)", "ranks": [6.0, 16.0, 39.0, 49.0, 35.0, 34.0, 34.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.0283485651016235}
+{"dataset": "Primary school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [6.0, 7.0, 6.0, 4.0, 24.0, 14.0, 6.0, 2.0, 3.0, 2.0, 1.0], "seconds per pick": 2.9975198030471804}

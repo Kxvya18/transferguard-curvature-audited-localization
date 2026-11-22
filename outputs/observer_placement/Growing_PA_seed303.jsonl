@@ -1,0 +1,360 @@
+{"dataset": "Growing PA", "outbreak": 0, "strategy": "Random", "ranks": [69.0, 66.0, 70.0, 71.0, 75.0, 74.0, 90.0, 92.0, 56.0, 61.0, 61.0], "seconds per pick": 0.00034656524658203123}
+{"dataset": "Growing PA", "outbreak": 0, "strategy": "Highest degree", "ranks": [69.0, 74.0, 76.0, 80.0, 80.0, 84.0, 90.0, 31.0, 29.0, 24.0, 29.0], "seconds per pick": 0.0038013696670532227}
+{"dataset": "Growing PA", "outbreak": 0, "strategy": "Contact tracing", "ranks": [69.0, 74.0, 76.0, 83.0, 77.0, 79.0, 84.0, 87.0, 63.0, 61.0, 44.0], "seconds per pick": 0.002012968063354492}
+{"dataset": "Growing PA", "outbreak": 0, "strategy": "Test top suspect", "ranks": [69.0, 42.0, 36.0, 32.0, 34.0, 16.0, 7.0, 5.0, 4.0, 3.0, 2.0], "seconds per pick": 5.731236386299133}
+{"dataset": "Growing PA", "outbreak": 0, "strategy": "Information gain (ours)", "ranks": [69.0, 58.0, 63.0, 70.0, 51.0, 48.0, 10.0, 9.0, 5.0, 5.0, 4.0], "seconds per pick": 12.59592671394348}
+{"dataset": "Growing PA", "outbreak": 0, "strategy": "Split candidates (Spinelli-style)", "ranks": [69.0, 27.0, 28.0, 28.0, 27.0, 25.0, 22.0, 21.0, 19.0, 18.0, 24.0], "seconds per pick": 0.2867440223693848}
+{"dataset": "Growing PA", "outbreak": 0, "strategy": "Most likely infected (Baker-style)", "ranks": [69.0, 70.0, 67.0, 74.0, 19.0, 2.0, 2.0, 3.0, 3.0, 3.0, 2.0], "seconds per pick": 10.98994710445404}
+{"dataset": "Growing PA", "outbreak": 0, "strategy": "Edge cutting (EC2)", "ranks": [69.0, 58.0, 60.0, 72.0, 3.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 12.382413506507874}
+{"dataset": "Growing PA", "outbreak": 0, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [69.0, 58.0, 63.0, 70.0, 51.0, 48.0, 10.0, 9.0, 5.0, 3.0, 2.0], "seconds per pick": 11.658000540733337}
+{"dataset": "Growing PA", "outbreak": 1, "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0003329277038574219}
+{"dataset": "Growing PA", "outbreak": 1, "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0014784097671508788}
+{"dataset": "Growing PA", "outbreak": 1, "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0029726266860961915}
+{"dataset": "Growing PA", "outbreak": 1, "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6759804248809814}
+{"dataset": "Growing PA", "outbreak": 1, "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.116516923904419}
+{"dataset": "Growing PA", "outbreak": 1, "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.18474512100219725}
+{"dataset": "Growing PA", "outbreak": 1, "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 7.037471413612366}
+{"dataset": "Growing PA", "outbreak": 1, "strategy": "Edge cutting (EC2)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.756627416610718}
+{"dataset": "Growing PA", "outbreak": 1, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.540754556655884}
+{"dataset": "Growing PA", "outbreak": 2, "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00032682418823242186}
+{"dataset": "Growing PA", "outbreak": 2, "strategy": "Highest degree", "ranks": [1.0, 1.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0031195640563964843}
+{"dataset": "Growing PA", "outbreak": 2, "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0034479856491088866}
+{"dataset": "Growing PA", "outbreak": 2, "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.3775808572769166}
+{"dataset": "Growing PA", "outbreak": 2, "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 7.890583467483521}
+{"dataset": "Growing PA", "outbreak": 2, "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.33587596416473386}
+{"dataset": "Growing PA", "outbreak": 2, "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 8.917561602592468}
+{"dataset": "Growing PA", "outbreak": 2, "strategy": "Edge cutting (EC2)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 8.266362953186036}
+{"dataset": "Growing PA", "outbreak": 2, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 7.981401753425598}
+{"dataset": "Growing PA", "outbreak": 3, "strategy": "Random", "ranks": [11.0, 6.0, 10.0, 10.0, 9.0, 9.0, 3.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0003146648406982422}
+{"dataset": "Growing PA", "outbreak": 3, "strategy": "Highest degree", "ranks": [11.0, 2.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.003123903274536133}
+{"dataset": "Growing PA", "outbreak": 3, "strategy": "Contact tracing", "ranks": [11.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0031754255294799806}
+{"dataset": "Growing PA", "outbreak": 3, "strategy": "Test top suspect", "ranks": [11.0, 5.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 5.042178273200989}
+{"dataset": "Growing PA", "outbreak": 3, "strategy": "Information gain (ours)", "ranks": [11.0, 9.0, 10.0, 7.0, 6.0, 4.0, 11.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 10.670343446731568}
+{"dataset": "Growing PA", "outbreak": 3, "strategy": "Split candidates (Spinelli-style)", "ranks": [11.0, 5.0, 7.0, 7.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.3019539833068848}
+{"dataset": "Growing PA", "outbreak": 3, "strategy": "Most likely infected (Baker-style)", "ranks": [11.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 10.824591040611267}
+{"dataset": "Growing PA", "outbreak": 3, "strategy": "Edge cutting (EC2)", "ranks": [11.0, 3.0, 3.0, 15.0, 8.0, 4.0, 2.0, 2.0, 2.0, 1.0, 1.0], "seconds per pick": 10.663481783866882}
+{"dataset": "Growing PA", "outbreak": 3, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [11.0, 9.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 10.529056835174561}
+{"dataset": "Growing PA", "outbreak": 4, "strategy": "Random", "ranks": [17.0, 17.0, 17.0, 13.0, 11.0, 11.0, 11.0, 9.0, 9.0, 11.0, 11.0], "seconds per pick": 0.0003298044204711914}
+{"dataset": "Growing PA", "outbreak": 4, "strategy": "Highest degree", "ranks": [17.0, 12.0, 12.0, 13.0, 10.0, 10.0, 8.0, 5.0, 4.0, 4.0, 4.0], "seconds per pick": 0.0033282041549682617}
+{"dataset": "Growing PA", "outbreak": 4, "strategy": "Contact tracing", "ranks": [17.0, 15.0, 14.0, 7.0, 6.0, 6.0, 6.0, 6.0, 6.0, 4.0, 5.0], "seconds per pick": 0.0026155948638916016}
+{"dataset": "Growing PA", "outbreak": 4, "strategy": "Test top suspect", "ranks": [17.0, 6.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 6.432018828392029}
+{"dataset": "Growing PA", "outbreak": 4, "strategy": "Information gain (ours)", "ranks": [17.0, 6.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 13.064378094673156}
+{"dataset": "Growing PA", "outbreak": 4, "strategy": "Split candidates (Spinelli-style)", "ranks": [17.0, 14.0, 9.0, 4.0, 5.0, 5.0, 5.0, 4.0, 4.0, 4.0, 4.0], "seconds per pick": 0.29801766872406005}
+{"dataset": "Growing PA", "outbreak": 4, "strategy": "Most likely infected (Baker-style)", "ranks": [17.0, 15.0, 13.0, 14.0, 12.0, 13.0, 11.0, 10.0, 10.0, 10.0, 10.0], "seconds per pick": 11.278210353851318}
+{"dataset": "Growing PA", "outbreak": 4, "strategy": "Edge cutting (EC2)", "ranks": [17.0, 15.0, 14.0, 14.0, 16.0, 13.0, 12.0, 10.0, 10.0, 10.0, 7.0], "seconds per pick": 12.665881896018982}
+{"dataset": "Growing PA", "outbreak": 4, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [17.0, 6.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 12.587362957000732}
+{"dataset": "Growing PA", "outbreak": 5, "strategy": "Random", "ranks": [95.0, 90.0, 90.0, 88.0, 107.0, 92.0, 87.0, 74.0, 73.0, 80.0, 81.0], "seconds per pick": 0.0006348371505737304}
+{"dataset": "Growing PA", "outbreak": 5, "strategy": "Highest degree", "ranks": [95.0, 64.0, 56.0, 47.0, 43.0, 53.0, 45.0, 55.0, 50.0, 54.0, 50.0], "seconds per pick": 0.0033823966979980467}
+{"dataset": "Growing PA", "outbreak": 5, "strategy": "Contact tracing", "ranks": [95.0, 68.0, 75.0, 66.0, 65.0, 59.0, 51.0, 51.0, 44.0, 38.0, 21.0], "seconds per pick": 0.0026532649993896485}
+{"dataset": "Growing PA", "outbreak": 5, "strategy": "Test top suspect", "ranks": [95.0, 105.0, 105.0, 90.0, 79.0, 81.0, 78.0, 41.0, 33.0, 17.0, 7.0], "seconds per pick": 6.998346590995789}
+{"dataset": "Growing PA", "outbreak": 5, "strategy": "Information gain (ours)", "ranks": [95.0, 23.0, 10.0, 10.0, 10.0, 5.0, 3.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 12.543190908432006}
+{"dataset": "Growing PA", "outbreak": 5, "strategy": "Split candidates (Spinelli-style)", "ranks": [95.0, 82.0, 76.0, 72.0, 44.0, 64.0, 79.0, 84.0, 84.0, 79.0, 75.0], "seconds per pick": 0.35760886669158937}
+{"dataset": "Growing PA", "outbreak": 5, "strategy": "Most likely infected (Baker-style)", "ranks": [95.0, 97.0, 88.0, 47.0, 55.0, 65.0, 8.0, 12.0, 10.0, 10.0, 2.0], "seconds per pick": 13.403538370132447}
+{"dataset": "Growing PA", "outbreak": 5, "strategy": "Edge cutting (EC2)", "ranks": [95.0, 93.0, 97.0, 95.0, 55.0, 65.0, 8.0, 12.0, 13.0, 14.0, 11.0], "seconds per pick": 12.892872762680053}
+{"dataset": "Growing PA", "outbreak": 5, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [95.0, 23.0, 10.0, 10.0, 10.0, 5.0, 5.0, 5.0, 3.0, 1.0, 1.0], "seconds per pick": 13.945091795921325}
+{"dataset": "Growing PA", "outbreak": 6, "strategy": "Random", "ranks": [1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0009458303451538086}
+{"dataset": "Growing PA", "outbreak": 6, "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0032052516937255858}
+{"dataset": "Growing PA", "outbreak": 6, "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.002958536148071289}
+{"dataset": "Growing PA", "outbreak": 6, "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.4957910060882569}
+{"dataset": "Growing PA", "outbreak": 6, "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 5.726010990142822}
+{"dataset": "Growing PA", "outbreak": 6, "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.09923369884490967}
+{"dataset": "Growing PA", "outbreak": 6, "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 5.442810845375061}
+{"dataset": "Growing PA", "outbreak": 6, "strategy": "Edge cutting (EC2)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 5.355167007446289}
+{"dataset": "Growing PA", "outbreak": 6, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 5.264507293701172}
+{"dataset": "Growing PA", "outbreak": 7, "strategy": "Random", "ranks": [49.0, 49.0, 48.0, 48.0, 48.0, 48.0, 48.0, 48.0, 38.0, 37.0, 44.0], "seconds per pick": 0.00032618045806884763}
+{"dataset": "Growing PA", "outbreak": 7, "strategy": "Highest degree", "ranks": [49.0, 60.0, 56.0, 26.0, 6.0, 3.0, 3.0, 3.0, 3.0, 2.0, 3.0], "seconds per pick": 0.0033272504806518555}
+{"dataset": "Growing PA", "outbreak": 7, "strategy": "Contact tracing", "ranks": [49.0, 11.0, 10.0, 12.0, 14.0, 3.0, 3.0, 3.0, 5.0, 6.0, 4.0], "seconds per pick": 0.001447749137878418}
+{"dataset": "Growing PA", "outbreak": 7, "strategy": "Test top suspect", "ranks": [49.0, 43.0, 39.0, 35.0, 13.0, 4.0, 2.0, 5.0, 2.0, 1.0, 1.0], "seconds per pick": 2.357971215248108}
+{"dataset": "Growing PA", "outbreak": 7, "strategy": "Information gain (ours)", "ranks": [49.0, 46.0, 48.0, 5.0, 4.0, 5.0, 4.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 7.843427324295044}
+{"dataset": "Growing PA", "outbreak": 7, "strategy": "Split candidates (Spinelli-style)", "ranks": [49.0, 42.0, 54.0, 30.0, 16.0, 17.0, 16.0, 5.0, 3.0, 3.0, 6.0], "seconds per pick": 0.12260932922363281}
+{"dataset": "Growing PA", "outbreak": 7, "strategy": "Most likely infected (Baker-style)", "ranks": [49.0, 60.0, 34.0, 19.0, 19.0, 18.0, 17.0, 16.0, 23.0, 26.0, 20.0], "seconds per pick": 7.605909967422486}
+{"dataset": "Growing PA", "outbreak": 7, "strategy": "Edge cutting (EC2)", "ranks": [49.0, 16.0, 14.0, 11.0, 19.0, 14.0, 4.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 7.773680186271667}
+{"dataset": "Growing PA", "outbreak": 7, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [49.0, 46.0, 48.0, 58.0, 45.0, 7.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 7.574914884567261}
+{"dataset": "Growing PA", "outbreak": 8, "strategy": "Random", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0006328582763671875}
+{"dataset": "Growing PA", "outbreak": 8, "strategy": "Highest degree", "ranks": [2.0, 2.0, 2.0, 1.0, 2.0, 2.0, 2.0, 1.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0029797792434692384}
+{"dataset": "Growing PA", "outbreak": 8, "strategy": "Contact tracing", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0029231548309326173}
+{"dataset": "Growing PA", "outbreak": 8, "strategy": "Test top suspect", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.6637530088424684}
+{"dataset": "Growing PA", "outbreak": 8, "strategy": "Information gain (ours)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 9.42299656867981}
+{"dataset": "Growing PA", "outbreak": 8, "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 2.0, 2.0], "seconds per pick": 0.22488152980804443}
+{"dataset": "Growing PA", "outbreak": 8, "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 9.517907881736756}
+{"dataset": "Growing PA", "outbreak": 8, "strategy": "Edge cutting (EC2)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 10.087878394126893}
+{"dataset": "Growing PA", "outbreak": 8, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 8.854745483398437}
+{"dataset": "Growing PA", "outbreak": 9, "strategy": "Random", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 2.0, 2.0, 2.0, 2.0, 1.0], "seconds per pick": 0.00032021999359130857}
+{"dataset": "Growing PA", "outbreak": 9, "strategy": "Highest degree", "ranks": [2.0, 2.0, 3.0, 3.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.002389979362487793}
+{"dataset": "Growing PA", "outbreak": 9, "strategy": "Contact tracing", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.002999734878540039}
+{"dataset": "Growing PA", "outbreak": 9, "strategy": "Test top suspect", "ranks": [2.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.04275062084198}
+{"dataset": "Growing PA", "outbreak": 9, "strategy": "Information gain (ours)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 8.55884916782379}
+{"dataset": "Growing PA", "outbreak": 9, "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 1.0, 1.0, 2.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 2.0], "seconds per pick": 0.11595387458801269}
+{"dataset": "Growing PA", "outbreak": 9, "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 8.046568822860717}
+{"dataset": "Growing PA", "outbreak": 9, "strategy": "Edge cutting (EC2)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 8.185447573661804}
+{"dataset": "Growing PA", "outbreak": 9, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 7.291957521438599}
+{"dataset": "Growing PA", "outbreak": 10, "strategy": "Random", "ranks": [9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 15.0, 15.0, 11.0], "seconds per pick": 0.00033061504364013673}
+{"dataset": "Growing PA", "outbreak": 10, "strategy": "Highest degree", "ranks": [9.0, 10.0, 8.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.002641129493713379}
+{"dataset": "Growing PA", "outbreak": 10, "strategy": "Contact tracing", "ranks": [9.0, 10.0, 12.0, 12.0, 8.0, 7.0, 7.0, 7.0, 6.0, 6.0, 6.0], "seconds per pick": 0.002011823654174805}
+{"dataset": "Growing PA", "outbreak": 10, "strategy": "Test top suspect", "ranks": [9.0, 4.0, 2.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.718602991104126}
+{"dataset": "Growing PA", "outbreak": 10, "strategy": "Information gain (ours)", "ranks": [9.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.1310721158981325}
+{"dataset": "Growing PA", "outbreak": 10, "strategy": "Split candidates (Spinelli-style)", "ranks": [9.0, 24.0, 13.0, 17.0, 15.0, 10.0, 9.0, 9.0, 8.0, 8.0, 10.0], "seconds per pick": 0.11617956161499024}
+{"dataset": "Growing PA", "outbreak": 10, "strategy": "Most likely infected (Baker-style)", "ranks": [9.0, 10.0, 8.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.197978067398071}
+{"dataset": "Growing PA", "outbreak": 10, "strategy": "Edge cutting (EC2)", "ranks": [9.0, 3.0, 3.0, 5.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.8714544773101807}
+{"dataset": "Growing PA", "outbreak": 10, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [9.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.8032648086547853}
+{"dataset": "Growing PA", "outbreak": 11, "strategy": "Random", "ranks": [2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0006435155868530273}
+{"dataset": "Growing PA", "outbreak": 11, "strategy": "Highest degree", "ranks": [2.0, 4.0, 4.0, 4.0, 2.0, 3.0, 3.0, 5.0, 5.0, 5.0, 6.0], "seconds per pick": 0.0017284631729125976}
+{"dataset": "Growing PA", "outbreak": 11, "strategy": "Contact tracing", "ranks": [2.0, 4.0, 4.0, 4.0, 4.0, 3.0, 3.0, 3.0, 4.0, 4.0, 3.0], "seconds per pick": 0.002606916427612305}
+{"dataset": "Growing PA", "outbreak": 11, "strategy": "Test top suspect", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 5.883257961273193}
+{"dataset": "Growing PA", "outbreak": 11, "strategy": "Information gain (ours)", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 12.03110113143921}
+{"dataset": "Growing PA", "outbreak": 11, "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 2.0, 2.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.2954063415527344}
+{"dataset": "Growing PA", "outbreak": 11, "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 4.0, 4.0, 4.0, 4.0, 3.0, 3.0, 3.0, 2.0, 2.0, 2.0], "seconds per pick": 12.275281357765198}
+{"dataset": "Growing PA", "outbreak": 11, "strategy": "Edge cutting (EC2)", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 2.0, 3.0, 2.0, 3.0, 2.0], "seconds per pick": 11.584644675254822}
+{"dataset": "Growing PA", "outbreak": 11, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 4.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 11.582748746871948}
+{"dataset": "Growing PA", "outbreak": 12, "strategy": "Random", "ranks": [13.0, 13.0, 13.0, 13.0, 13.0, 13.0, 13.0, 13.0, 13.0, 13.0, 13.0], "seconds per pick": 0.0009361028671264649}
+{"dataset": "Growing PA", "outbreak": 12, "strategy": "Highest degree", "ranks": [13.0, 26.0, 11.0, 11.0, 6.0, 6.0, 6.0, 6.0, 5.0, 5.0, 5.0], "seconds per pick": 0.0032425165176391602}
+{"dataset": "Growing PA", "outbreak": 12, "strategy": "Contact tracing", "ranks": [13.0, 5.0, 5.0, 4.0, 4.0, 11.0, 13.0, 11.0, 8.0, 8.0, 9.0], "seconds per pick": 0.00426778793334961}
+{"dataset": "Growing PA", "outbreak": 12, "strategy": "Test top suspect", "ranks": [13.0, 4.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.5869860649108887}
+{"dataset": "Growing PA", "outbreak": 12, "strategy": "Information gain (ours)", "ranks": [13.0, 7.0, 2.0, 3.0, 2.0, 3.0, 3.0, 3.0, 1.0, 1.0, 1.0], "seconds per pick": 2.6278974533081056}
+{"dataset": "Growing PA", "outbreak": 12, "strategy": "Split candidates (Spinelli-style)", "ranks": [13.0, 6.0, 6.0, 4.0, 4.0, 4.0, 9.0, 9.0, 9.0, 8.0, 4.0], "seconds per pick": 0.08184959888458251}
+{"dataset": "Growing PA", "outbreak": 12, "strategy": "Most likely infected (Baker-style)", "ranks": [13.0, 5.0, 6.0, 12.0, 7.0, 6.0, 6.0, 6.0, 6.0, 5.0, 4.0], "seconds per pick": 2.9274753093719483}
+{"dataset": "Growing PA", "outbreak": 12, "strategy": "Edge cutting (EC2)", "ranks": [13.0, 7.0, 12.0, 7.0, 5.0, 3.0, 4.0, 3.0, 2.0, 3.0, 3.0], "seconds per pick": 2.760014057159424}
+{"dataset": "Growing PA", "outbreak": 12, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [13.0, 7.0, 4.0, 3.0, 2.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 2.562849998474121}
+{"dataset": "Growing PA", "outbreak": 13, "strategy": "Random", "ranks": [3.0, 3.0, 3.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0], "seconds per pick": 0.000287628173828125}
+{"dataset": "Growing PA", "outbreak": 13, "strategy": "Highest degree", "ranks": [3.0, 4.0, 2.0, 2.0, 3.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.00143887996673584}
+{"dataset": "Growing PA", "outbreak": 13, "strategy": "Contact tracing", "ranks": [3.0, 2.0, 2.0, 1.0, 2.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0025248050689697264}
+{"dataset": "Growing PA", "outbreak": 13, "strategy": "Test top suspect", "ranks": [3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.658158540725708}
+{"dataset": "Growing PA", "outbreak": 13, "strategy": "Information gain (ours)", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.1161451816558836}
+{"dataset": "Growing PA", "outbreak": 13, "strategy": "Split candidates (Spinelli-style)", "ranks": [3.0, 2.0, 3.0, 3.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.09261841773986816}
+{"dataset": "Growing PA", "outbreak": 13, "strategy": "Most likely infected (Baker-style)", "ranks": [3.0, 3.0, 4.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.6240992069244387}
+{"dataset": "Growing PA", "outbreak": 13, "strategy": "Edge cutting (EC2)", "ranks": [3.0, 4.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.221583843231201}
+{"dataset": "Growing PA", "outbreak": 13, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.7948683023452758}
+{"dataset": "Growing PA", "outbreak": 14, "strategy": "Random", "ranks": [72.0, 61.0, 61.0, 61.0, 61.0, 61.0, 61.0, 65.0, 65.0, 65.0, 52.0], "seconds per pick": 0.000312352180480957}
+{"dataset": "Growing PA", "outbreak": 14, "strategy": "Highest degree", "ranks": [72.0, 38.0, 46.0, 119.0, 84.0, 84.0, 83.0, 70.0, 14.0, 12.0, 11.0], "seconds per pick": 0.0019089460372924804}
+{"dataset": "Growing PA", "outbreak": 14, "strategy": "Contact tracing", "ranks": [72.0, 45.0, 44.0, 24.0, 24.0, 26.0, 29.0, 24.0, 24.0, 21.0, 15.0], "seconds per pick": 0.001888132095336914}
+{"dataset": "Growing PA", "outbreak": 14, "strategy": "Test top suspect", "ranks": [72.0, 58.0, 57.0, 35.0, 12.0, 4.0, 3.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 3.7335086107254027}
+{"dataset": "Growing PA", "outbreak": 14, "strategy": "Information gain (ours)", "ranks": [72.0, 54.0, 44.0, 30.0, 10.0, 4.0, 5.0, 3.0, 3.0, 2.0, 9.0], "seconds per pick": 9.815668439865112}
+{"dataset": "Growing PA", "outbreak": 14, "strategy": "Split candidates (Spinelli-style)", "ranks": [72.0, 38.0, 34.0, 6.0, 5.0, 4.0, 5.0, 6.0, 8.0, 8.0, 6.0], "seconds per pick": 0.2308189630508423}
+{"dataset": "Growing PA", "outbreak": 14, "strategy": "Most likely infected (Baker-style)", "ranks": [72.0, 45.0, 25.0, 5.0, 6.0, 5.0, 6.0, 6.0, 5.0, 4.0, 15.0], "seconds per pick": 10.087571954727172}
+{"dataset": "Growing PA", "outbreak": 14, "strategy": "Edge cutting (EC2)", "ranks": [72.0, 63.0, 19.0, 13.0, 7.0, 6.0, 4.0, 2.0, 3.0, 2.0, 3.0], "seconds per pick": 9.259724044799805}
+{"dataset": "Growing PA", "outbreak": 14, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [72.0, 54.0, 44.0, 30.0, 10.0, 9.0, 5.0, 3.0, 3.0, 2.0, 9.0], "seconds per pick": 9.540445828437806}
+{"dataset": "Growing PA", "outbreak": 15, "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0003315925598144531}
+{"dataset": "Growing PA", "outbreak": 15, "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.003077578544616699}
+{"dataset": "Growing PA", "outbreak": 15, "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.002525615692138672}
+{"dataset": "Growing PA", "outbreak": 15, "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.4890721321105955}
+{"dataset": "Growing PA", "outbreak": 15, "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 10.520601725578308}
+{"dataset": "Growing PA", "outbreak": 15, "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.20460011959075927}
+{"dataset": "Growing PA", "outbreak": 15, "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 9.971205949783325}
+{"dataset": "Growing PA", "outbreak": 15, "strategy": "Edge cutting (EC2)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 10.955634140968323}
+{"dataset": "Growing PA", "outbreak": 15, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 10.52745463848114}
+{"dataset": "Growing PA", "outbreak": 16, "strategy": "Random", "ranks": [2.0, 2.0, 6.0, 5.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0003417015075683594}
+{"dataset": "Growing PA", "outbreak": 16, "strategy": "Highest degree", "ranks": [2.0, 5.0, 3.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0021688222885131838}
+{"dataset": "Growing PA", "outbreak": 16, "strategy": "Contact tracing", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 7.0, 5.0, 1.0], "seconds per pick": 0.003722739219665527}
+{"dataset": "Growing PA", "outbreak": 16, "strategy": "Test top suspect", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.118440580368042}
+{"dataset": "Growing PA", "outbreak": 16, "strategy": "Information gain (ours)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 9.970856094360352}
+{"dataset": "Growing PA", "outbreak": 16, "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 5.0, 9.0, 10.0, 9.0, 9.0, 8.0, 8.0, 8.0, 6.0, 6.0], "seconds per pick": 0.22407732009887696}
+{"dataset": "Growing PA", "outbreak": 16, "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 2.0, 3.0, 3.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 9.130162334442138}
+{"dataset": "Growing PA", "outbreak": 16, "strategy": "Edge cutting (EC2)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 9.090858888626098}
+{"dataset": "Growing PA", "outbreak": 16, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 9.788358974456788}
+{"dataset": "Growing PA", "outbreak": 17, "strategy": "Random", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0011217355728149413}
+{"dataset": "Growing PA", "outbreak": 17, "strategy": "Highest degree", "ranks": [2.0, 2.0, 2.0, 3.0, 3.0, 4.0, 3.0, 3.0, 3.0, 3.0, 2.0], "seconds per pick": 0.0024277925491333007}
+{"dataset": "Growing PA", "outbreak": 17, "strategy": "Contact tracing", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 6.0], "seconds per pick": 0.0022252559661865234}
+{"dataset": "Growing PA", "outbreak": 17, "strategy": "Test top suspect", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.218552279472351}
+{"dataset": "Growing PA", "outbreak": 17, "strategy": "Information gain (ours)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 9.746347093582154}
+{"dataset": "Growing PA", "outbreak": 17, "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 2.0, 2.0, 5.0, 5.0, 4.0, 5.0, 8.0, 7.0, 6.0, 6.0], "seconds per pick": 0.18936939239501954}
+{"dataset": "Growing PA", "outbreak": 17, "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 4.0, 5.0, 7.0, 9.0], "seconds per pick": 11.129954409599303}
+{"dataset": "Growing PA", "outbreak": 17, "strategy": "Edge cutting (EC2)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 8.079695630073548}
+{"dataset": "Growing PA", "outbreak": 17, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 8.752008295059204}
+{"dataset": "Growing PA", "outbreak": 18, "strategy": "Random", "ranks": [2.0, 3.0, 3.0, 3.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0], "seconds per pick": 0.000336456298828125}
+{"dataset": "Growing PA", "outbreak": 18, "strategy": "Highest degree", "ranks": [2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.002865290641784668}
+{"dataset": "Growing PA", "outbreak": 18, "strategy": "Contact tracing", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 1.0, 2.0, 3.0, 2.0], "seconds per pick": 0.0030104875564575194}
+{"dataset": "Growing PA", "outbreak": 18, "strategy": "Test top suspect", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.0706690549850464}
+{"dataset": "Growing PA", "outbreak": 18, "strategy": "Information gain (ours)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.1473188161849976}
+{"dataset": "Growing PA", "outbreak": 18, "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 1.0, 8.0, 8.0, 4.0, 4.0, 2.0, 2.0, 3.0, 3.0, 3.0], "seconds per pick": 0.08031842708587647}
+{"dataset": "Growing PA", "outbreak": 18, "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.319615602493286}
+{"dataset": "Growing PA", "outbreak": 18, "strategy": "Edge cutting (EC2)", "ranks": [2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.770712637901306}
+{"dataset": "Growing PA", "outbreak": 18, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.6794143676757813}
+{"dataset": "Growing PA", "outbreak": 19, "strategy": "Random", "ranks": [32.0, 32.0, 32.0, 32.0, 32.0, 32.0, 45.0, 52.0, 52.0, 69.0, 69.0], "seconds per pick": 0.0009383201599121094}
+{"dataset": "Growing PA", "outbreak": 19, "strategy": "Highest degree", "ranks": [32.0, 33.0, 42.0, 62.0, 105.0, 91.0, 55.0, 53.0, 73.0, 66.0, 61.0], "seconds per pick": 0.0030447006225585937}
+{"dataset": "Growing PA", "outbreak": 19, "strategy": "Contact tracing", "ranks": [32.0, 33.0, 22.0, 19.0, 17.0, 16.0, 15.0, 16.0, 18.0, 19.0, 19.0], "seconds per pick": 0.002462911605834961}
+{"dataset": "Growing PA", "outbreak": 19, "strategy": "Test top suspect", "ranks": [32.0, 35.0, 5.0, 4.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.948599600791931}
+{"dataset": "Growing PA", "outbreak": 19, "strategy": "Information gain (ours)", "ranks": [32.0, 57.0, 8.0, 5.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 5.384661316871643}
+{"dataset": "Growing PA", "outbreak": 19, "strategy": "Split candidates (Spinelli-style)", "ranks": [32.0, 33.0, 32.0, 44.0, 81.0, 80.0, 93.0, 104.0, 94.0, 95.0, 104.0], "seconds per pick": 0.21148405075073243}
+{"dataset": "Growing PA", "outbreak": 19, "strategy": "Most likely infected (Baker-style)", "ranks": [32.0, 33.0, 34.0, 27.0, 21.0, 18.0, 4.0, 4.0, 4.0, 2.0, 3.0], "seconds per pick": 9.114943480491638}
+{"dataset": "Growing PA", "outbreak": 19, "strategy": "Edge cutting (EC2)", "ranks": [32.0, 33.0, 12.0, 14.0, 5.0, 3.0, 1.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 8.018587803840637}
+{"dataset": "Growing PA", "outbreak": 19, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [32.0, 57.0, 8.0, 5.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 5.801328873634338}
+{"dataset": "Growing PA", "outbreak": 20, "strategy": "Random", "ranks": [7.0, 4.0, 4.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.0008083581924438477}
+{"dataset": "Growing PA", "outbreak": 20, "strategy": "Highest degree", "ranks": [7.0, 5.0, 5.0, 7.0, 7.0, 8.0, 13.0, 12.0, 9.0, 7.0, 9.0], "seconds per pick": 0.0017789125442504883}
+{"dataset": "Growing PA", "outbreak": 20, "strategy": "Contact tracing", "ranks": [7.0, 5.0, 5.0, 5.0, 7.0, 9.0, 8.0, 5.0, 8.0, 5.0, 5.0], "seconds per pick": 0.003213834762573242}
+{"dataset": "Growing PA", "outbreak": 20, "strategy": "Test top suspect", "ranks": [7.0, 8.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.5621306896209717}
+{"dataset": "Growing PA", "outbreak": 20, "strategy": "Information gain (ours)", "ranks": [7.0, 5.0, 4.0, 3.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 8.080662202835082}
+{"dataset": "Growing PA", "outbreak": 20, "strategy": "Split candidates (Spinelli-style)", "ranks": [7.0, 5.0, 6.0, 17.0, 14.0, 11.0, 12.0, 13.0, 11.0, 10.0, 14.0], "seconds per pick": 0.15547702312469483}
+{"dataset": "Growing PA", "outbreak": 20, "strategy": "Most likely infected (Baker-style)", "ranks": [7.0, 5.0, 5.0, 5.0, 4.0, 5.0, 5.0, 5.0, 5.0, 4.0, 4.0], "seconds per pick": 8.744916582107544}
+{"dataset": "Growing PA", "outbreak": 20, "strategy": "Edge cutting (EC2)", "ranks": [7.0, 5.0, 5.0, 4.0, 4.0, 6.0, 4.0, 4.0, 3.0, 3.0, 2.0], "seconds per pick": 8.815122509002686}
+{"dataset": "Growing PA", "outbreak": 20, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [7.0, 5.0, 5.0, 3.0, 3.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 8.485314226150512}
+{"dataset": "Growing PA", "outbreak": 21, "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0006564617156982422}
+{"dataset": "Growing PA", "outbreak": 21, "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0021352052688598635}
+{"dataset": "Growing PA", "outbreak": 21, "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0025213479995727537}
+{"dataset": "Growing PA", "outbreak": 21, "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.476026916503906}
+{"dataset": "Growing PA", "outbreak": 21, "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 9.07318012714386}
+{"dataset": "Growing PA", "outbreak": 21, "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.21455731391906738}
+{"dataset": "Growing PA", "outbreak": 21, "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 8.769908690452576}
+{"dataset": "Growing PA", "outbreak": 21, "strategy": "Edge cutting (EC2)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 9.606922674179078}
+{"dataset": "Growing PA", "outbreak": 21, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 9.514061069488525}
+{"dataset": "Growing PA", "outbreak": 22, "strategy": "Random", "ranks": [8.0, 8.0, 7.0, 7.0, 7.0, 8.0, 7.0, 7.0, 9.0, 8.0, 8.0], "seconds per pick": 0.00030579566955566404}
+{"dataset": "Growing PA", "outbreak": 22, "strategy": "Highest degree", "ranks": [8.0, 8.0, 1.0, 2.0, 4.0, 1.0, 2.0, 2.0, 2.0, 7.0, 5.0], "seconds per pick": 0.0033029794692993166}
+{"dataset": "Growing PA", "outbreak": 22, "strategy": "Contact tracing", "ranks": [8.0, 8.0, 8.0, 8.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0036229848861694335}
+{"dataset": "Growing PA", "outbreak": 22, "strategy": "Test top suspect", "ranks": [8.0, 6.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 6.1186201810836796}
+{"dataset": "Growing PA", "outbreak": 22, "strategy": "Information gain (ours)", "ranks": [8.0, 4.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 13.231749272346496}
+{"dataset": "Growing PA", "outbreak": 22, "strategy": "Split candidates (Spinelli-style)", "ranks": [8.0, 8.0, 8.0, 6.0, 6.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.33003873825073243}
+{"dataset": "Growing PA", "outbreak": 22, "strategy": "Most likely infected (Baker-style)", "ranks": [8.0, 8.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 12.884501481056214}
+{"dataset": "Growing PA", "outbreak": 22, "strategy": "Edge cutting (EC2)", "ranks": [8.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 12.692095088958741}
+{"dataset": "Growing PA", "outbreak": 22, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [8.0, 4.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 12.383032155036926}
+{"dataset": "Growing PA", "outbreak": 23, "strategy": "Random", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 10.0, 10.0, 10.0], "seconds per pick": 0.00032181739807128905}
+{"dataset": "Growing PA", "outbreak": 23, "strategy": "Highest degree", "ranks": [2.0, 2.0, 9.0, 9.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.0027887582778930663}
+{"dataset": "Growing PA", "outbreak": 23, "strategy": "Contact tracing", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.00252377986907959}
+{"dataset": "Growing PA", "outbreak": 23, "strategy": "Test top suspect", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.4369072675704956}
+{"dataset": "Growing PA", "outbreak": 23, "strategy": "Information gain (ours)", "ranks": [2.0, 2.0, 6.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.556142258644104}
+{"dataset": "Growing PA", "outbreak": 23, "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 2.0, 2.0, 2.0, 7.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.07427787780761719}
+{"dataset": "Growing PA", "outbreak": 23, "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 3.0629205465316773}
+{"dataset": "Growing PA", "outbreak": 23, "strategy": "Edge cutting (EC2)", "ranks": [2.0, 2.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.1043012857437136}
+{"dataset": "Growing PA", "outbreak": 23, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.4774109840393066}
+{"dataset": "Growing PA", "outbreak": 24, "strategy": "Random", "ranks": [7.0, 7.0, 7.0, 7.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 9.0], "seconds per pick": 0.0002947568893432617}
+{"dataset": "Growing PA", "outbreak": 24, "strategy": "Highest degree", "ranks": [7.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 1.0, 1.0], "seconds per pick": 0.0019038915634155273}
+{"dataset": "Growing PA", "outbreak": 24, "strategy": "Contact tracing", "ranks": [7.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 6.0, 6.0, 6.0, 2.0], "seconds per pick": 0.0025957345962524412}
+{"dataset": "Growing PA", "outbreak": 24, "strategy": "Test top suspect", "ranks": [7.0, 3.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6860496044158936}
+{"dataset": "Growing PA", "outbreak": 24, "strategy": "Information gain (ours)", "ranks": [7.0, 14.0, 3.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.1242349624633787}
+{"dataset": "Growing PA", "outbreak": 24, "strategy": "Split candidates (Spinelli-style)", "ranks": [7.0, 7.0, 8.0, 8.0, 5.0, 5.0, 5.0, 5.0, 6.0, 4.0, 1.0], "seconds per pick": 0.11387484073638916}
+{"dataset": "Growing PA", "outbreak": 24, "strategy": "Most likely infected (Baker-style)", "ranks": [7.0, 5.0, 4.0, 4.0, 4.0, 4.0, 3.0, 4.0, 4.0, 4.0, 2.0], "seconds per pick": 2.4989795684814453}
+{"dataset": "Growing PA", "outbreak": 24, "strategy": "Edge cutting (EC2)", "ranks": [7.0, 14.0, 3.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.636216950416565}
+{"dataset": "Growing PA", "outbreak": 24, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [7.0, 5.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.686959719657898}
+{"dataset": "Growing PA", "outbreak": 25, "strategy": "Random", "ranks": [17.0, 17.0, 17.0, 17.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 9.0], "seconds per pick": 0.0006451845169067383}
+{"dataset": "Growing PA", "outbreak": 25, "strategy": "Highest degree", "ranks": [17.0, 15.0, 26.0, 12.0, 14.0, 8.0, 8.0, 5.0, 6.0, 4.0, 4.0], "seconds per pick": 0.0030831813812255858}
+{"dataset": "Growing PA", "outbreak": 25, "strategy": "Contact tracing", "ranks": [17.0, 15.0, 33.0, 26.0, 24.0, 12.0, 11.0, 10.0, 12.0, 11.0, 11.0], "seconds per pick": 0.004069828987121582}
+{"dataset": "Growing PA", "outbreak": 25, "strategy": "Test top suspect", "ranks": [17.0, 10.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 6.044391131401062}
+{"dataset": "Growing PA", "outbreak": 25, "strategy": "Information gain (ours)", "ranks": [17.0, 3.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 12.149761271476745}
+{"dataset": "Growing PA", "outbreak": 25, "strategy": "Split candidates (Spinelli-style)", "ranks": [17.0, 7.0, 11.0, 10.0, 7.0, 6.0, 6.0, 6.0, 6.0, 4.0, 5.0], "seconds per pick": 0.30154826641082766}
+{"dataset": "Growing PA", "outbreak": 25, "strategy": "Most likely infected (Baker-style)", "ranks": [17.0, 26.0, 22.0, 11.0, 9.0, 5.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 11.267513728141784}
+{"dataset": "Growing PA", "outbreak": 25, "strategy": "Edge cutting (EC2)", "ranks": [17.0, 29.0, 10.0, 8.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 12.094648122787476}
+{"dataset": "Growing PA", "outbreak": 25, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [17.0, 3.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 12.692992329597473}
+{"dataset": "Growing PA", "outbreak": 26, "strategy": "Random", "ranks": [80.0, 80.0, 80.0, 76.0, 76.0, 76.0, 76.0, 76.0, 75.0, 75.0, 75.0], "seconds per pick": 0.0006140708923339844}
+{"dataset": "Growing PA", "outbreak": 26, "strategy": "Highest degree", "ranks": [80.0, 64.0, 18.0, 8.0, 22.0, 17.0, 20.0, 18.0, 19.0, 15.0, 8.0], "seconds per pick": 0.003075718879699707}
+{"dataset": "Growing PA", "outbreak": 26, "strategy": "Contact tracing", "ranks": [80.0, 77.0, 61.0, 64.0, 55.0, 50.0, 53.0, 31.0, 22.0, 21.0, 26.0], "seconds per pick": 0.0014882802963256836}
+{"dataset": "Growing PA", "outbreak": 26, "strategy": "Test top suspect", "ranks": [80.0, 8.0, 14.0, 12.0, 20.0, 22.0, 18.0, 14.0, 14.0, 15.0, 17.0], "seconds per pick": 2.7049500226974486}
+{"dataset": "Growing PA", "outbreak": 26, "strategy": "Information gain (ours)", "ranks": [80.0, 64.0, 64.0, 60.0, 55.0, 48.0, 19.0, 10.0, 7.0, 5.0, 4.0], "seconds per pick": 8.273998236656189}
+{"dataset": "Growing PA", "outbreak": 26, "strategy": "Split candidates (Spinelli-style)", "ranks": [80.0, 75.0, 12.0, 15.0, 15.0, 9.0, 16.0, 23.0, 23.0, 19.0, 17.0], "seconds per pick": 0.1537111759185791}
+{"dataset": "Growing PA", "outbreak": 26, "strategy": "Most likely infected (Baker-style)", "ranks": [80.0, 64.0, 61.0, 62.0, 61.0, 54.0, 57.0, 52.0, 54.0, 55.0, 54.0], "seconds per pick": 7.820520806312561}
+{"dataset": "Growing PA", "outbreak": 26, "strategy": "Edge cutting (EC2)", "ranks": [80.0, 75.0, 71.0, 68.0, 17.0, 4.0, 4.0, 4.0, 2.0, 13.0, 4.0], "seconds per pick": 7.9721375703811646}
+{"dataset": "Growing PA", "outbreak": 26, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [80.0, 64.0, 64.0, 60.0, 55.0, 24.0, 16.0, 7.0, 19.0, 9.0, 6.0], "seconds per pick": 8.099686360359192}
+{"dataset": "Growing PA", "outbreak": 27, "strategy": "Random", "ranks": [4.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0], "seconds per pick": 0.0003126621246337891}
+{"dataset": "Growing PA", "outbreak": 27, "strategy": "Highest degree", "ranks": [4.0, 2.0, 5.0, 6.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0032709360122680662}
+{"dataset": "Growing PA", "outbreak": 27, "strategy": "Contact tracing", "ranks": [4.0, 2.0, 5.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0013105154037475586}
+{"dataset": "Growing PA", "outbreak": 27, "strategy": "Test top suspect", "ranks": [4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6480476140975953}
+{"dataset": "Growing PA", "outbreak": 27, "strategy": "Information gain (ours)", "ranks": [4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.3728821754455565}
+{"dataset": "Growing PA", "outbreak": 27, "strategy": "Split candidates (Spinelli-style)", "ranks": [4.0, 3.0, 2.0, 2.0, 2.0, 2.0, 3.0, 2.0, 5.0, 1.0, 1.0], "seconds per pick": 0.11126782894134521}
+{"dataset": "Growing PA", "outbreak": 27, "strategy": "Most likely infected (Baker-style)", "ranks": [4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.1024978876113893}
+{"dataset": "Growing PA", "outbreak": 27, "strategy": "Edge cutting (EC2)", "ranks": [4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.44518141746521}
+{"dataset": "Growing PA", "outbreak": 27, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.7541709661483766}
+{"dataset": "Growing PA", "outbreak": 28, "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0003211498260498047}
+{"dataset": "Growing PA", "outbreak": 28, "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 1.0], "seconds per pick": 0.0027011871337890626}
+{"dataset": "Growing PA", "outbreak": 28, "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0025629520416259764}
+{"dataset": "Growing PA", "outbreak": 28, "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.8779616117477418}
+{"dataset": "Growing PA", "outbreak": 28, "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 7.491258335113526}
+{"dataset": "Growing PA", "outbreak": 28, "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.13860273361206055}
+{"dataset": "Growing PA", "outbreak": 28, "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 7.569880890846252}
+{"dataset": "Growing PA", "outbreak": 28, "strategy": "Edge cutting (EC2)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 7.510439372062683}
+{"dataset": "Growing PA", "outbreak": 28, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 8.308448767662048}
+{"dataset": "Growing PA", "outbreak": 29, "strategy": "Random", "ranks": [26.0, 17.0, 13.0, 13.0, 13.0, 13.0, 13.0, 12.0, 12.0, 11.0, 11.0], "seconds per pick": 0.0003219127655029297}
+{"dataset": "Growing PA", "outbreak": 29, "strategy": "Highest degree", "ranks": [26.0, 13.0, 15.0, 16.0, 10.0, 11.0, 8.0, 10.0, 8.0, 12.0, 8.0], "seconds per pick": 0.0026260137557983397}
+{"dataset": "Growing PA", "outbreak": 29, "strategy": "Contact tracing", "ranks": [26.0, 22.0, 78.0, 15.0, 14.0, 10.0, 10.0, 15.0, 15.0, 10.0, 10.0], "seconds per pick": 0.0024490833282470705}
+{"dataset": "Growing PA", "outbreak": 29, "strategy": "Test top suspect", "ranks": [26.0, 31.0, 11.0, 10.0, 7.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.3347503662109377}
+{"dataset": "Growing PA", "outbreak": 29, "strategy": "Information gain (ours)", "ranks": [26.0, 59.0, 47.0, 49.0, 5.0, 4.0, 3.0, 2.0, 2.0, 2.0, 1.0], "seconds per pick": 10.540988898277282}
+{"dataset": "Growing PA", "outbreak": 29, "strategy": "Split candidates (Spinelli-style)", "ranks": [26.0, 46.0, 57.0, 13.0, 13.0, 21.0, 19.0, 8.0, 9.0, 9.0, 9.0], "seconds per pick": 0.22873659133911134}
+{"dataset": "Growing PA", "outbreak": 29, "strategy": "Most likely infected (Baker-style)", "ranks": [26.0, 13.0, 9.0, 9.0, 8.0, 9.0, 9.0, 9.0, 6.0, 5.0, 5.0], "seconds per pick": 9.58260977268219}
+{"dataset": "Growing PA", "outbreak": 29, "strategy": "Edge cutting (EC2)", "ranks": [26.0, 59.0, 71.0, 57.0, 46.0, 48.0, 53.0, 6.0, 4.0, 3.0, 2.0], "seconds per pick": 8.315814089775085}
+{"dataset": "Growing PA", "outbreak": 29, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [26.0, 59.0, 47.0, 49.0, 5.0, 4.0, 3.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 9.514627695083618}
+{"dataset": "Growing PA", "outbreak": 30, "strategy": "Random", "ranks": [11.0, 11.0, 11.0, 7.0, 7.0, 7.0, 5.0, 5.0, 5.0, 5.0, 4.0], "seconds per pick": 0.0006468772888183593}
+{"dataset": "Growing PA", "outbreak": 30, "strategy": "Highest degree", "ranks": [11.0, 9.0, 6.0, 5.0, 2.0, 6.0, 4.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0018159866333007813}
+{"dataset": "Growing PA", "outbreak": 30, "strategy": "Contact tracing", "ranks": [11.0, 10.0, 11.0, 10.0, 7.0, 5.0, 5.0, 2.0, 3.0, 1.0, 1.0], "seconds per pick": 0.003052353858947754}
+{"dataset": "Growing PA", "outbreak": 30, "strategy": "Test top suspect", "ranks": [11.0, 9.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.46893470287323}
+{"dataset": "Growing PA", "outbreak": 30, "strategy": "Information gain (ours)", "ranks": [11.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 9.992877793312072}
+{"dataset": "Growing PA", "outbreak": 30, "strategy": "Split candidates (Spinelli-style)", "ranks": [11.0, 9.0, 8.0, 7.0, 5.0, 3.0, 3.0, 3.0, 1.0, 1.0, 2.0], "seconds per pick": 0.2526475191116333}
+{"dataset": "Growing PA", "outbreak": 30, "strategy": "Most likely infected (Baker-style)", "ranks": [11.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 9.845782709121703}
+{"dataset": "Growing PA", "outbreak": 30, "strategy": "Edge cutting (EC2)", "ranks": [11.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 10.342299675941467}
+{"dataset": "Growing PA", "outbreak": 30, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [11.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 9.978886127471924}
+{"dataset": "Growing PA", "outbreak": 31, "strategy": "Random", "ranks": [36.0, 36.0, 25.0, 25.0, 25.0, 25.0, 25.0, 25.0, 15.0, 15.0, 15.0], "seconds per pick": 0.0006203413009643555}
+{"dataset": "Growing PA", "outbreak": 31, "strategy": "Highest degree", "ranks": [36.0, 25.0, 9.0, 7.0, 4.0, 3.0, 3.0, 3.0, 2.0, 3.0, 3.0], "seconds per pick": 0.0022854328155517576}
+{"dataset": "Growing PA", "outbreak": 31, "strategy": "Contact tracing", "ranks": [36.0, 15.0, 10.0, 12.0, 9.0, 10.0, 9.0, 6.0, 6.0, 4.0, 8.0], "seconds per pick": 0.0025519847869873045}
+{"dataset": "Growing PA", "outbreak": 31, "strategy": "Test top suspect", "ranks": [36.0, 26.0, 24.0, 14.0, 22.0, 14.0, 4.0, 3.0, 1.0, 1.0, 1.0], "seconds per pick": 0.9399399518966675}
+{"dataset": "Growing PA", "outbreak": 31, "strategy": "Information gain (ours)", "ranks": [36.0, 23.0, 11.0, 7.0, 4.0, 4.0, 3.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.739186096191406}
+{"dataset": "Growing PA", "outbreak": 31, "strategy": "Split candidates (Spinelli-style)", "ranks": [36.0, 25.0, 13.0, 4.0, 3.0, 3.0, 3.0, 3.0, 3.0, 2.0, 4.0], "seconds per pick": 0.10271284580230713}
+{"dataset": "Growing PA", "outbreak": 31, "strategy": "Most likely infected (Baker-style)", "ranks": [36.0, 33.0, 18.0, 13.0, 5.0, 4.0, 4.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 4.470104551315307}
+{"dataset": "Growing PA", "outbreak": 31, "strategy": "Edge cutting (EC2)", "ranks": [36.0, 15.0, 4.0, 4.0, 3.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 3.7550007104873657}
+{"dataset": "Growing PA", "outbreak": 31, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [36.0, 15.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.4187316417694094}
+{"dataset": "Growing PA", "outbreak": 32, "strategy": "Random", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0], "seconds per pick": 0.0006585597991943359}
+{"dataset": "Growing PA", "outbreak": 32, "strategy": "Highest degree", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0024277687072753905}
+{"dataset": "Growing PA", "outbreak": 32, "strategy": "Contact tracing", "ranks": [2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0022994041442871093}
+{"dataset": "Growing PA", "outbreak": 32, "strategy": "Test top suspect", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.514174485206604}
+{"dataset": "Growing PA", "outbreak": 32, "strategy": "Information gain (ours)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 8.239582014083862}
+{"dataset": "Growing PA", "outbreak": 32, "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.16077208518981934}
+{"dataset": "Growing PA", "outbreak": 32, "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 8.625182723999023}
+{"dataset": "Growing PA", "outbreak": 32, "strategy": "Edge cutting (EC2)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 7.946592044830322}
+{"dataset": "Growing PA", "outbreak": 32, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 8.10823016166687}
+{"dataset": "Growing PA", "outbreak": 33, "strategy": "Random", "ranks": [9.0, 8.0, 8.0, 8.0, 8.0, 8.0, 7.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0006485939025878906}
+{"dataset": "Growing PA", "outbreak": 33, "strategy": "Highest degree", "ranks": [9.0, 7.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0, 12.0], "seconds per pick": 0.0024678707122802734}
+{"dataset": "Growing PA", "outbreak": 33, "strategy": "Contact tracing", "ranks": [9.0, 7.0, 9.0, 10.0, 14.0, 14.0, 15.0, 13.0, 13.0, 13.0, 12.0], "seconds per pick": 0.003070163726806641}
+{"dataset": "Growing PA", "outbreak": 33, "strategy": "Test top suspect", "ranks": [9.0, 13.0, 8.0, 6.0, 4.0, 3.0, 4.0, 2.0, 3.0, 2.0, 1.0], "seconds per pick": 3.5139036417007445}
+{"dataset": "Growing PA", "outbreak": 33, "strategy": "Information gain (ours)", "ranks": [9.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 9.742527151107788}
+{"dataset": "Growing PA", "outbreak": 33, "strategy": "Split candidates (Spinelli-style)", "ranks": [9.0, 7.0, 7.0, 12.0, 13.0, 1.0, 1.0, 2.0, 2.0, 1.0, 1.0], "seconds per pick": 0.16232690811157227}
+{"dataset": "Growing PA", "outbreak": 33, "strategy": "Most likely infected (Baker-style)", "ranks": [9.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 9.653766083717347}
+{"dataset": "Growing PA", "outbreak": 33, "strategy": "Edge cutting (EC2)", "ranks": [9.0, 4.0, 3.0, 5.0, 4.0, 3.0, 3.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 8.89333472251892}
+{"dataset": "Growing PA", "outbreak": 33, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [9.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 9.06626877784729}
+{"dataset": "Growing PA", "outbreak": 34, "strategy": "Random", "ranks": [77.0, 7.0, 5.0, 5.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.0009239673614501953}
+{"dataset": "Growing PA", "outbreak": 34, "strategy": "Highest degree", "ranks": [77.0, 45.0, 22.0, 46.0, 8.0, 6.0, 3.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.002682805061340332}
+{"dataset": "Growing PA", "outbreak": 34, "strategy": "Contact tracing", "ranks": [77.0, 45.0, 40.0, 37.0, 21.0, 19.0, 21.0, 26.0, 37.0, 35.0, 36.0], "seconds per pick": 0.0027988433837890627}
+{"dataset": "Growing PA", "outbreak": 34, "strategy": "Test top suspect", "ranks": [77.0, 57.0, 58.0, 53.0, 12.0, 5.0, 4.0, 3.0, 4.0, 4.0, 3.0], "seconds per pick": 2.3611724376678467}
+{"dataset": "Growing PA", "outbreak": 34, "strategy": "Information gain (ours)", "ranks": [77.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 8.03799889087677}
+{"dataset": "Growing PA", "outbreak": 34, "strategy": "Split candidates (Spinelli-style)", "ranks": [77.0, 63.0, 51.0, 58.0, 39.0, 19.0, 34.0, 23.0, 23.0, 21.0, 17.0], "seconds per pick": 0.12553839683532714}
+{"dataset": "Growing PA", "outbreak": 34, "strategy": "Most likely infected (Baker-style)", "ranks": [77.0, 45.0, 42.0, 32.0, 25.0, 28.0, 30.0, 37.0, 33.0, 30.0, 27.0], "seconds per pick": 7.8873552799224855}
+{"dataset": "Growing PA", "outbreak": 34, "strategy": "Edge cutting (EC2)", "ranks": [77.0, 45.0, 22.0, 6.0, 5.0, 3.0, 2.0, 3.0, 3.0, 2.0, 2.0], "seconds per pick": 7.069175720214844}
+{"dataset": "Growing PA", "outbreak": 34, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [77.0, 79.0, 65.0, 43.0, 6.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 8.839917731285095}
+{"dataset": "Growing PA", "outbreak": 35, "strategy": "Random", "ranks": [1.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0009357213973999023}
+{"dataset": "Growing PA", "outbreak": 35, "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 3.0, 3.0, 3.0], "seconds per pick": 0.0024544954299926757}
+{"dataset": "Growing PA", "outbreak": 35, "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0], "seconds per pick": 0.0029972553253173827}
+{"dataset": "Growing PA", "outbreak": 35, "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 5.2906214714050295}
+{"dataset": "Growing PA", "outbreak": 35, "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 12.367883825302124}
+{"dataset": "Growing PA", "outbreak": 35, "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 1.0, 3.0, 3.0, 3.0, 2.0], "seconds per pick": 0.35323946475982665}
+{"dataset": "Growing PA", "outbreak": 35, "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 12.336596059799195}
+{"dataset": "Growing PA", "outbreak": 35, "strategy": "Edge cutting (EC2)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 12.713131070137024}
+{"dataset": "Growing PA", "outbreak": 35, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 11.351052737236023}
+{"dataset": "Growing PA", "outbreak": 36, "strategy": "Random", "ranks": [5.0, 5.0, 5.0, 5.0, 5.0, 4.0, 4.0, 4.0, 4.0, 6.0, 5.0], "seconds per pick": 0.0006036996841430664}
+{"dataset": "Growing PA", "outbreak": 36, "strategy": "Highest degree", "ranks": [5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0023569107055664063}
+{"dataset": "Growing PA", "outbreak": 36, "strategy": "Contact tracing", "ranks": [5.0, 6.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00255279541015625}
+{"dataset": "Growing PA", "outbreak": 36, "strategy": "Test top suspect", "ranks": [5.0, 8.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.29890587329864504}
+{"dataset": "Growing PA", "outbreak": 36, "strategy": "Information gain (ours)", "ranks": [5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.473939323425293}
+{"dataset": "Growing PA", "outbreak": 36, "strategy": "Split candidates (Spinelli-style)", "ranks": [5.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 4.0], "seconds per pick": 0.08144907951354981}
+{"dataset": "Growing PA", "outbreak": 36, "strategy": "Most likely infected (Baker-style)", "ranks": [5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.671929144859314}
+{"dataset": "Growing PA", "outbreak": 36, "strategy": "Edge cutting (EC2)", "ranks": [5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.4542898178100586}
+{"dataset": "Growing PA", "outbreak": 36, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.4432485580444336}
+{"dataset": "Growing PA", "outbreak": 37, "strategy": "Random", "ranks": [30.0, 30.0, 30.0, 34.0, 34.0, 32.0, 28.0, 28.0, 30.0, 31.0, 31.0], "seconds per pick": 0.0009563684463500977}
+{"dataset": "Growing PA", "outbreak": 37, "strategy": "Highest degree", "ranks": [30.0, 21.0, 9.0, 17.0, 14.0, 16.0, 21.0, 19.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0023363113403320314}
+{"dataset": "Growing PA", "outbreak": 37, "strategy": "Contact tracing", "ranks": [30.0, 34.0, 40.0, 51.0, 44.0, 20.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.002757549285888672}
+{"dataset": "Growing PA", "outbreak": 37, "strategy": "Test top suspect", "ranks": [30.0, 29.0, 24.0, 5.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.786628580093384}
+{"dataset": "Growing PA", "outbreak": 37, "strategy": "Information gain (ours)", "ranks": [30.0, 23.0, 20.0, 28.0, 17.0, 13.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 7.601592373847962}
+{"dataset": "Growing PA", "outbreak": 37, "strategy": "Split candidates (Spinelli-style)", "ranks": [30.0, 21.0, 27.0, 19.0, 25.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.15438427925109863}
+{"dataset": "Growing PA", "outbreak": 37, "strategy": "Most likely infected (Baker-style)", "ranks": [30.0, 57.0, 23.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 7.867537808418274}
+{"dataset": "Growing PA", "outbreak": 37, "strategy": "Edge cutting (EC2)", "ranks": [30.0, 57.0, 23.0, 11.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 7.741309690475464}
+{"dataset": "Growing PA", "outbreak": 37, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [30.0, 23.0, 20.0, 13.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 7.732766103744507}
+{"dataset": "Growing PA", "outbreak": 38, "strategy": "Random", "ranks": [5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0, 5.0], "seconds per pick": 0.00030055046081542967}
+{"dataset": "Growing PA", "outbreak": 38, "strategy": "Highest degree", "ranks": [5.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0023175716400146485}
+{"dataset": "Growing PA", "outbreak": 38, "strategy": "Contact tracing", "ranks": [5.0, 4.0, 5.0, 5.0, 7.0, 4.0, 2.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0024221181869506837}
+{"dataset": "Growing PA", "outbreak": 38, "strategy": "Test top suspect", "ranks": [5.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.18918631076812745}
+{"dataset": "Growing PA", "outbreak": 38, "strategy": "Information gain (ours)", "ranks": [5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.33407504558563234}
+{"dataset": "Growing PA", "outbreak": 38, "strategy": "Split candidates (Spinelli-style)", "ranks": [5.0, 5.0, 4.0, 5.0, 5.0, 3.0, 3.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.09091248512268066}
+{"dataset": "Growing PA", "outbreak": 38, "strategy": "Most likely infected (Baker-style)", "ranks": [5.0, 4.0, 4.0, 2.0, 6.0, 3.0, 5.0, 4.0, 4.0, 3.0, 2.0], "seconds per pick": 1.5048734188079833}
+{"dataset": "Growing PA", "outbreak": 38, "strategy": "Edge cutting (EC2)", "ranks": [5.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.4354375123977661}
+{"dataset": "Growing PA", "outbreak": 38, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [5.0, 12.0, 9.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.5842169284820556}
+{"dataset": "Growing PA", "outbreak": 39, "strategy": "Random", "ranks": [3.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0009388446807861329}
+{"dataset": "Growing PA", "outbreak": 39, "strategy": "Highest degree", "ranks": [3.0, 2.0, 2.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0020711660385131837}
+{"dataset": "Growing PA", "outbreak": 39, "strategy": "Contact tracing", "ranks": [3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0023001670837402345}
+{"dataset": "Growing PA", "outbreak": 39, "strategy": "Test top suspect", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.8048600196838379}
+{"dataset": "Growing PA", "outbreak": 39, "strategy": "Information gain (ours)", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.9039963245391847}
+{"dataset": "Growing PA", "outbreak": 39, "strategy": "Split candidates (Spinelli-style)", "ranks": [3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.08807826042175293}
+{"dataset": "Growing PA", "outbreak": 39, "strategy": "Most likely infected (Baker-style)", "ranks": [3.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.4141600131988525}
+{"dataset": "Growing PA", "outbreak": 39, "strategy": "Edge cutting (EC2)", "ranks": [3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.078721284866333}
+{"dataset": "Growing PA", "outbreak": 39, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.7654522180557253}

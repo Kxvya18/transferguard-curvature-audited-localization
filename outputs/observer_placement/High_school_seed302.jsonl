@@ -1,0 +1,360 @@
+{"dataset": "High school", "strategy": "Random", "ranks": [13.0, 13.0, 13.0, 15.0, 15.0, 12.0, 11.0, 10.0, 10.0, 10.0, 13.0], "seconds per pick": 0.0003154754638671875}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [13.0, 13.0, 12.0, 12.0, 12.0, 16.0, 14.0, 13.0, 13.0, 11.0, 11.0], "seconds per pick": 0.0018532752990722656}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [13.0, 12.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.001982593536376953}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [13.0, 8.0, 7.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.6802590370178223}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [13.0, 9.0, 8.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 6.577539396286011}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [13.0, 13.0, 13.0, 12.0, 9.0, 9.0, 9.0, 14.0, 14.0, 14.0, 14.0], "seconds per pick": 0.09355309009552001}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [13.0, 12.0, 1.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 6.58297107219696}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [13.0, 12.0, 6.0, 5.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 6.102589702606201}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [13.0, 8.0, 7.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 5.761329197883606}
+{"dataset": "High school", "strategy": "Random", "ranks": [15.0, 13.0, 12.0, 14.0, 15.0, 17.0, 17.0, 17.0, 17.0, 15.0, 15.0], "seconds per pick": 0.0002960681915283203}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [15.0, 17.0, 12.0, 21.0, 12.0, 17.0, 17.0, 15.0, 13.0, 12.0, 12.0], "seconds per pick": 0.0016582250595092774}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [15.0, 8.0, 8.0, 8.0, 9.0, 10.0, 6.0, 6.0, 8.0, 9.0, 9.0], "seconds per pick": 0.001986980438232422}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [15.0, 12.0, 7.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.8161454916000366}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [15.0, 12.0, 10.0, 7.0, 5.0, 4.0, 2.0, 2.0, 3.0, 1.0, 1.0], "seconds per pick": 5.701242089271545}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [15.0, 13.0, 23.0, 26.0, 25.0, 23.0, 23.0, 22.0, 21.0, 19.0, 19.0], "seconds per pick": 0.08301637172698975}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [15.0, 9.0, 9.0, 9.0, 10.0, 8.0, 7.0, 6.0, 5.0, 6.0, 4.0], "seconds per pick": 5.439258694648743}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [15.0, 12.0, 7.0, 7.0, 6.0, 4.0, 4.0, 6.0, 1.0, 1.0, 1.0], "seconds per pick": 5.369766068458557}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [15.0, 12.0, 8.0, 5.0, 4.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 6.089611601829529}
+{"dataset": "High school", "strategy": "Random", "ranks": [6.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0010257244110107421}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [6.0, 5.0, 4.0, 4.0, 2.0, 4.0, 2.0, 3.0, 3.0, 3.0, 2.0], "seconds per pick": 0.001026010513305664}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [6.0, 5.0, 2.0, 5.0, 4.0, 4.0, 3.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0023356199264526365}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [6.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.2926652908325194}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [6.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 5.366791367530823}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [6.0, 10.0, 8.0, 6.0, 3.0, 3.0, 3.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.06966245174407959}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [6.0, 4.0, 2.0, 2.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 5.63589334487915}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [6.0, 2.0, 6.0, 8.0, 10.0, 6.0, 3.0, 4.0, 4.0, 6.0, 5.0], "seconds per pick": 5.414946556091309}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [6.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 5.413681936264038}
+{"dataset": "High school", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0002777099609375}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00099029541015625}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0021814584732055666}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.605814003944397}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.110270094871521}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.05211548805236817}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.1955326318740844}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.0316736459732057}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.9893805742263794}
+{"dataset": "High school", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0005929708480834961}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.001000356674194336}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0017695903778076171}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.053854942321777344}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.1089597463607788}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.04782025814056397}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.09869441986083985}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.09548614025115967}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.10103039741516114}
+{"dataset": "High school", "strategy": "Random", "ranks": [12.0, 12.0, 12.0, 5.0, 5.0, 5.0, 4.0, 4.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0005992412567138672}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [12.0, 13.0, 11.0, 6.0, 6.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0015447378158569337}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [12.0, 13.0, 11.0, 6.0, 6.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.002704906463623047}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [12.0, 6.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.9802711009979248}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [12.0, 10.0, 10.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 5.890961813926697}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [12.0, 13.0, 13.0, 12.0, 13.0, 12.0, 11.0, 10.0, 11.0, 12.0, 12.0], "seconds per pick": 0.08400521278381348}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [12.0, 5.0, 5.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 5.547770929336548}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [12.0, 13.0, 8.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 5.460055136680603}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [12.0, 10.0, 10.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 6.250336837768555}
+{"dataset": "High school", "strategy": "Random", "ranks": [50.0, 72.0, 57.0, 46.0, 17.0, 16.0, 16.0, 16.0, 16.0, 16.0, 16.0], "seconds per pick": 0.0006329774856567383}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [50.0, 39.0, 30.0, 26.0, 25.0, 8.0, 5.0, 6.0, 6.0, 3.0, 5.0], "seconds per pick": 0.0013918638229370116}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [50.0, 63.0, 52.0, 52.0, 56.0, 56.0, 54.0, 52.0, 52.0, 59.0, 59.0], "seconds per pick": 0.0035579442977905274}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [50.0, 7.0, 6.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.3243115901947022}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [50.0, 20.0, 18.0, 8.0, 6.0, 3.0, 6.0, 19.0, 18.0, 6.0, 4.0], "seconds per pick": 5.889255142211914}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [50.0, 51.0, 52.0, 1.0, 1.0, 5.0, 7.0, 7.0, 8.0, 9.0, 6.0], "seconds per pick": 0.0795130729675293}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [50.0, 68.0, 71.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.572616386413574}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [50.0, 18.0, 7.0, 5.0, 6.0, 6.0, 9.0, 4.0, 2.0, 1.0, 2.0], "seconds per pick": 4.005125093460083}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [50.0, 18.0, 19.0, 8.0, 7.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.042434430122375}
+{"dataset": "High school", "strategy": "Random", "ranks": [9.0, 9.0, 10.0, 14.0, 4.0, 6.0, 6.0, 2.0, 2.0, 1.0, 1.0], "seconds per pick": 0.00031027793884277346}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [9.0, 9.0, 9.0, 10.0, 5.0, 7.0, 2.0, 2.0, 2.0, 2.0, 3.0], "seconds per pick": 0.0012933015823364258}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [9.0, 9.0, 10.0, 10.0, 11.0, 11.0, 9.0, 9.0, 6.0, 5.0, 6.0], "seconds per pick": 0.0013871192932128906}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [9.0, 3.0, 11.0, 1.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.44478440284729}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [9.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.229449272155762}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [9.0, 2.0, 2.0, 2.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.04964041709899902}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [9.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.118029546737671}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [9.0, 2.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.2252548933029175}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [9.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.2449537992477415}
+{"dataset": "High school", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0003015279769897461}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0010714292526245116}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0012320756912231445}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.31395008563995364}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6178110599517822}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.04921603202819824}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.7549823999404908}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6091064214706421}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.5783663511276245}
+{"dataset": "High school", "strategy": "Random", "ranks": [9.0, 7.0, 4.0, 2.0, 14.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0], "seconds per pick": 0.0003379106521606445}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [9.0, 9.0, 6.0, 5.0, 1.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.000742340087890625}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [9.0, 8.0, 9.0, 9.0, 9.0, 10.0, 12.0, 13.0, 18.0, 18.0, 18.0], "seconds per pick": 0.001556062698364258}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [9.0, 10.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.1932185411453247}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [9.0, 10.0, 6.0, 4.0, 2.0, 1.0, 1.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 3.916090488433838}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [9.0, 2.0, 2.0, 2.0, 2.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0466874361038208}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [9.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.6853795528411863}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [9.0, 8.0, 8.0, 6.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 3.6909154891967773}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [9.0, 10.0, 5.0, 5.0, 1.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.6834001779556274}
+{"dataset": "High school", "strategy": "Random", "ranks": [3.0, 3.0, 3.0, 1.0, 1.0, 2.0, 2.0, 3.0, 4.0, 3.0, 3.0], "seconds per pick": 0.0005876541137695313}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [3.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0006580591201782226}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0010425329208374023}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.061630916595459}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.6905396461486815}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.04216413497924805}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [3.0, 2.0, 3.0, 4.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.649780011177063}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.676417279243469}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.658708953857422}
+{"dataset": "High school", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0002909183502197266}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 2.0, 2.0, 1.0, 2.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 0.000663304328918457}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0011302709579467773}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.1572794198989869}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.8059454679489138}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.05105016231536865}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.722982144355774}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.837491750717163}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.9213396549224853}
+{"dataset": "High school", "strategy": "Random", "ranks": [7.0, 7.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 10.0, 11.0], "seconds per pick": 0.00029735565185546876}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [7.0, 8.0, 8.0, 8.0, 10.0, 10.0, 10.0, 12.0, 12.0, 12.0, 12.0], "seconds per pick": 0.0007382869720458984}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [7.0, 8.0, 8.0, 8.0, 10.0, 9.0, 10.0, 10.0, 10.0, 10.0, 9.0], "seconds per pick": 0.002114701271057129}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [7.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.7625458717346192}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [7.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.4841856718063355}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [7.0, 7.0, 6.0, 10.0, 10.0, 11.0, 11.0, 11.0, 11.0, 11.0, 12.0], "seconds per pick": 0.051951122283935544}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [7.0, 7.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.4561933279037476}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [7.0, 11.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.4766441106796266}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [7.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.5214694499969483}
+{"dataset": "High school", "strategy": "Random", "ranks": [27.0, 29.0, 29.0, 25.0, 27.0, 28.0, 28.0, 28.0, 18.0, 18.0, 17.0], "seconds per pick": 0.000627589225769043}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [27.0, 24.0, 22.0, 10.0, 9.0, 7.0, 7.0, 7.0, 29.0, 27.0, 21.0], "seconds per pick": 0.0006860494613647461}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [27.0, 27.0, 24.0, 25.0, 22.0, 21.0, 23.0, 23.0, 23.0, 23.0, 24.0], "seconds per pick": 0.0017562627792358399}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [27.0, 18.0, 18.0, 5.0, 4.0, 2.0, 1.0, 35.0, 37.0, 30.0, 28.0], "seconds per pick": 1.164755392074585}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [27.0, 27.0, 6.0, 5.0, 6.0, 11.0, 20.0, 18.0, 17.0, 15.0, 6.0], "seconds per pick": 3.7867334365844725}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [27.0, 26.0, 32.0, 30.0, 29.0, 28.0, 28.0, 33.0, 31.0, 29.0, 29.0], "seconds per pick": 0.04598913192749023}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [27.0, 14.0, 14.0, 19.0, 10.0, 4.0, 12.0, 11.0, 9.0, 7.0, 6.0], "seconds per pick": 3.7793812274932863}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [27.0, 27.0, 16.0, 10.0, 5.0, 3.0, 3.0, 3.0, 1.0, 1.0, 2.0], "seconds per pick": 3.822988176345825}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [27.0, 27.0, 6.0, 5.0, 6.0, 11.0, 20.0, 18.0, 17.0, 15.0, 6.0], "seconds per pick": 3.747430658340454}
+{"dataset": "High school", "strategy": "Random", "ranks": [7.0, 7.0, 8.0, 7.0, 6.0, 6.0, 7.0, 7.0, 7.0, 8.0, 7.0], "seconds per pick": 0.0002755403518676758}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [7.0, 7.0, 2.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.0012952804565429688}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [7.0, 7.0, 2.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.0010394573211669922}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [7.0, 3.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.25254480838775634}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [7.0, 3.0, 3.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.5658532619476319}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [7.0, 8.0, 6.0, 5.0, 5.0, 4.0, 2.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 0.04212265014648438}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [7.0, 8.0, 8.0, 7.0, 6.0, 6.0, 7.0, 10.0, 7.0, 6.0, 6.0], "seconds per pick": 0.8700809955596924}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [7.0, 4.0, 3.0, 3.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6065230131149292}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [7.0, 4.0, 3.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.5662031412124634}
+{"dataset": "High school", "strategy": "Random", "ranks": [3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 4.0], "seconds per pick": 0.00028574466705322266}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0], "seconds per pick": 0.0007871150970458985}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 4.0], "seconds per pick": 0.0014519929885864259}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.332460379600525}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [3.0, 3.0, 1.0, 2.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.9879475355148317}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [3.0, 3.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.05726597309112549}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.031373834609985}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [3.0, 3.0, 1.0, 3.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.233431029319763}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [3.0, 3.0, 6.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.1748213291168215}
+{"dataset": "High school", "strategy": "Random", "ranks": [20.0, 20.0, 17.0, 19.0, 16.0, 14.0, 14.0, 14.0, 14.0, 14.0, 33.0], "seconds per pick": 0.00028982162475585935}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [20.0, 19.0, 30.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0], "seconds per pick": 0.0006997823715209961}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [20.0, 20.0, 20.0, 20.0, 19.0, 19.0, 19.0, 19.0, 24.0, 20.0, 23.0], "seconds per pick": 0.00137021541595459}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [20.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.2698672533035278}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [20.0, 4.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.8918264150619506}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [20.0, 12.0, 12.0, 29.0, 16.0, 16.0, 16.0, 16.0, 14.0, 14.0, 10.0], "seconds per pick": 0.05093626976013184}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [20.0, 20.0, 6.0, 28.0, 28.0, 27.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.5862892866134644}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [20.0, 28.0, 6.0, 5.0, 5.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 3.781213140487671}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [20.0, 7.0, 5.0, 4.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.775173854827881}
+{"dataset": "High school", "strategy": "Random", "ranks": [26.0, 22.0, 12.0, 11.0, 11.0, 11.0, 11.0, 12.0, 12.0, 10.0, 10.0], "seconds per pick": 0.0005975961685180664}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [26.0, 7.0, 4.0, 5.0, 6.0, 6.0, 6.0, 7.0, 6.0, 6.0, 6.0], "seconds per pick": 0.000977778434753418}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [26.0, 7.0, 7.0, 7.0, 7.0, 6.0, 6.0, 5.0, 4.0, 4.0, 4.0], "seconds per pick": 0.0014178037643432617}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [26.0, 15.0, 4.0, 6.0, 5.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.113063669204712}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [26.0, 5.0, 4.0, 6.0, 4.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.7282735824584963}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [26.0, 7.0, 6.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.04605460166931152}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [26.0, 7.0, 4.0, 5.0, 4.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.8185506105422973}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [26.0, 15.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.799964356422424}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [26.0, 15.0, 21.0, 10.0, 7.0, 6.0, 6.0, 7.0, 6.0, 6.0, 5.0], "seconds per pick": 3.681943440437317}
+{"dataset": "High school", "strategy": "Random", "ranks": [4.0, 4.0, 2.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 2.0, 2.0], "seconds per pick": 0.00030117034912109376}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 6.0, 6.0, 6.0, 6.0], "seconds per pick": 0.0007555961608886718}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [4.0, 3.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.001126861572265625}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [4.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.554504132270813}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [4.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.1972044706344604}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [4.0, 5.0, 4.0, 4.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.047165536880493165}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [4.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.5507184982299804}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [4.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.2415708780288697}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [4.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.4182373046875}
+{"dataset": "High school", "strategy": "Random", "ranks": [8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0003722429275512695}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [8.0, 2.0, 3.0, 3.0, 3.0, 3.0, 4.0, 4.0, 4.0, 4.0, 5.0], "seconds per pick": 0.0007954835891723633}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [8.0, 8.0, 8.0, 8.0, 9.0, 9.0, 10.0, 10.0, 11.0, 14.0, 20.0], "seconds per pick": 0.0014364242553710938}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [8.0, 8.0, 9.0, 6.0, 6.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.1723134756088256}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [8.0, 5.0, 4.0, 4.0, 3.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.6547773361206053}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [8.0, 8.0, 9.0, 10.0, 10.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0], "seconds per pick": 0.04272663593292236}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [8.0, 4.0, 4.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.831556868553162}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [8.0, 4.0, 5.0, 4.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.677075505256653}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [8.0, 5.0, 4.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.662999081611633}
+{"dataset": "High school", "strategy": "Random", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.000927734375}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 2.0], "seconds per pick": 0.000675201416015625}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 2.0, 2.0, 2.0, 3.0, 2.0], "seconds per pick": 0.002006125450134277}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.018423581123352}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.8206961154937744}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0463679313659668}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.7871793508529663}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.696463418006897}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.7474449396133425}
+{"dataset": "High school", "strategy": "Random", "ranks": [2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00042791366577148436}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [2.0, 2.0, 4.0, 4.0, 4.0, 2.0, 2.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.0007166624069213867}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [2.0, 3.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 3.0, 3.0, 2.0], "seconds per pick": 0.0011274576187133788}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.001732873916626}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.8847524642944338}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.05048456192016602}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 1.0, 1.0, 2.0, 2.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 4.266412520408631}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.188792943954468}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.8427266836166383}
+{"dataset": "High school", "strategy": "Random", "ranks": [25.0, 27.0, 18.0, 15.0, 15.0, 16.0, 19.0, 19.0, 21.0, 19.0, 14.0], "seconds per pick": 0.0003151416778564453}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [25.0, 24.0, 26.0, 20.0, 20.0, 20.0, 20.0, 16.0, 15.0, 15.0, 15.0], "seconds per pick": 0.0007087945938110352}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [25.0, 23.0, 21.0, 12.0, 12.0, 8.0, 7.0, 8.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0011279582977294922}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [25.0, 22.0, 8.0, 5.0, 4.0, 3.0, 3.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 1.1398209571838378}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [25.0, 22.0, 20.0, 7.0, 4.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 3.7317062616348267}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [25.0, 24.0, 23.0, 23.0, 23.0, 23.0, 23.0, 25.0, 25.0, 25.0, 25.0], "seconds per pick": 0.04439342021942139}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [25.0, 23.0, 21.0, 6.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.6920762777328493}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [25.0, 16.0, 16.0, 14.0, 12.0, 10.0, 6.0, 3.0, 2.0, 3.0, 3.0], "seconds per pick": 3.8242533206939697}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [25.0, 22.0, 20.0, 7.0, 4.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0], "seconds per pick": 3.694930601119995}
+{"dataset": "High school", "strategy": "Random", "ranks": [3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 4.0, 3.0, 3.0, 4.0, 5.0], "seconds per pick": 0.00027408599853515623}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [3.0, 4.0, 4.0, 4.0, 7.0, 13.0, 15.0, 14.0, 12.0, 12.0, 12.0], "seconds per pick": 0.0006652116775512695}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [3.0, 4.0, 4.0, 3.0, 3.0, 12.0, 10.0, 7.0, 6.0, 9.0, 19.0], "seconds per pick": 0.001144099235534668}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.817224383354187}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.7293634176254273}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [3.0, 3.0, 4.0, 5.0, 6.0, 8.0, 8.0, 8.0, 14.0, 12.0, 27.0], "seconds per pick": 0.051325631141662595}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [3.0, 1.0, 1.0, 1.0, 3.0, 1.0, 2.0, 5.0, 5.0, 5.0, 5.0], "seconds per pick": 3.3640507459640503}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [3.0, 4.0, 4.0, 2.0, 2.0, 3.0, 5.0, 4.0, 3.0, 2.0, 2.0], "seconds per pick": 3.3081321239471437}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [3.0, 3.0, 1.0, 1.0, 1.0, 2.0, 1.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 3.2056355237960816}
+{"dataset": "High school", "strategy": "Random", "ranks": [3.0, 2.0, 2.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.000282740592956543}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.0013289213180541991}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [3.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.0012990474700927735}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [3.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.93878653049469}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.4272450685501097}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 2.0, 3.0, 3.0], "seconds per pick": 0.04119405746459961}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [3.0, 5.0, 4.0, 5.0, 4.0, 4.0, 4.0, 4.0, 3.0, 3.0, 3.0], "seconds per pick": 3.7457643508911134}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [3.0, 4.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.3755042791366576}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [3.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.437120795249939}
+{"dataset": "High school", "strategy": "Random", "ranks": [53.0, 50.0, 46.0, 53.0, 51.0, 34.0, 33.0, 33.0, 24.0, 24.0, 24.0], "seconds per pick": 0.000611424446105957}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [53.0, 50.0, 5.0, 9.0, 7.0, 9.0, 10.0, 9.0, 10.0, 10.0, 1.0], "seconds per pick": 0.0007024288177490234}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [53.0, 47.0, 10.0, 4.0, 4.0, 4.0, 3.0, 4.0, 5.0, 4.0, 4.0], "seconds per pick": 0.001160407066345215}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [53.0, 25.0, 9.0, 7.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6190035820007325}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [53.0, 46.0, 10.0, 5.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.8608189582824708}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [53.0, 47.0, 7.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.046660876274108885}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [53.0, 13.0, 9.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.9396689414978028}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [53.0, 13.0, 11.0, 12.0, 3.0, 1.0, 1.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 2.891512393951416}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [53.0, 46.0, 10.0, 5.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.8233687162399292}
+{"dataset": "High school", "strategy": "Random", "ranks": [61.0, 59.0, 59.0, 29.0, 30.0, 30.0, 30.0, 27.0, 16.0, 16.0, 13.0], "seconds per pick": 0.00029938220977783204}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [61.0, 25.0, 18.0, 15.0, 9.0, 7.0, 7.0, 7.0, 6.0, 5.0, 5.0], "seconds per pick": 0.0006628990173339844}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [61.0, 36.0, 36.0, 30.0, 34.0, 42.0, 27.0, 22.0, 31.0, 27.0, 23.0], "seconds per pick": 0.0013192415237426758}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [61.0, 59.0, 5.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.2506953716278075}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [61.0, 42.0, 45.0, 46.0, 46.0, 52.0, 9.0, 8.0, 4.0, 1.0, 1.0], "seconds per pick": 3.8227219104766847}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [61.0, 48.0, 48.0, 23.0, 12.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.049061131477355954}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [61.0, 42.0, 53.0, 7.0, 5.0, 4.0, 5.0, 4.0, 4.0, 4.0, 3.0], "seconds per pick": 3.798102784156799}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [61.0, 25.0, 10.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.785735082626343}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [61.0, 25.0, 12.0, 11.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.8724440336227417}
+{"dataset": "High school", "strategy": "Random", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0008961915969848633}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0006767749786376953}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [2.0, 2.0, 4.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0014023780822753906}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.5127976417541504}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [2.0, 1.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.061382150650024}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.05478758811950683}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 3.756349205970764}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [2.0, 2.0, 2.0, 4.0, 4.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.8417582511901855}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 1.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.9915881395339965}
+{"dataset": "High school", "strategy": "Random", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0006000757217407227}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [3.0, 2.0, 2.0, 8.0, 8.0, 3.0, 3.0, 3.0, 4.0, 6.0, 4.0], "seconds per pick": 0.0006489038467407226}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [3.0, 3.0, 2.0, 3.0, 3.0, 2.0, 1.0, 3.0, 3.0, 3.0, 2.0], "seconds per pick": 0.0010983705520629882}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [3.0, 11.0, 5.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.3677948236465454}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [3.0, 16.0, 6.0, 4.0, 3.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.9280019283294676}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [3.0, 3.0, 1.0, 3.0, 4.0, 4.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.048245930671691896}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [3.0, 2.0, 2.0, 1.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 3.974025750160217}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [3.0, 6.0, 6.0, 5.0, 4.0, 1.0, 2.0, 2.0, 2.0, 1.0, 1.0], "seconds per pick": 3.8677151441574096}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [3.0, 4.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.053951478004455}
+{"dataset": "High school", "strategy": "Random", "ranks": [2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0], "seconds per pick": 0.00030558109283447267}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 1.0], "seconds per pick": 0.0008983373641967774}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0016998291015625}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.0651725292205811}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.5598036289215087}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.06069924831390381}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.6146624803543093}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.5640843391418455}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.6155895948410035}
+{"dataset": "High school", "strategy": "Random", "ranks": [6.0, 7.0, 4.0, 3.0, 3.0, 8.0, 8.0, 8.0, 7.0, 18.0, 12.0], "seconds per pick": 0.000269317626953125}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [6.0, 8.0, 7.0, 7.0, 10.0, 22.0, 18.0, 19.0, 20.0, 21.0, 17.0], "seconds per pick": 0.0009745359420776367}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [6.0, 6.0, 7.0, 4.0, 5.0, 4.0, 5.0, 4.0, 3.0, 4.0, 4.0], "seconds per pick": 0.0013709306716918946}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [6.0, 14.0, 17.0, 15.0, 3.0, 16.0, 21.0, 28.0, 22.0, 11.0, 7.0], "seconds per pick": 0.7597770690917969}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [6.0, 19.0, 24.0, 27.0, 19.0, 17.0, 4.0, 2.0, 2.0, 1.0, 1.0], "seconds per pick": 2.031410837173462}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [6.0, 6.0, 8.0, 22.0, 22.0, 22.0, 20.0, 14.0, 20.0, 18.0, 14.0], "seconds per pick": 0.045797109603881836}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [6.0, 7.0, 7.0, 7.0, 9.0, 9.0, 11.0, 25.0, 30.0, 32.0, 28.0], "seconds per pick": 2.736359429359436}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [6.0, 7.0, 7.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0], "seconds per pick": 1.6156453609466552}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [6.0, 19.0, 26.0, 27.0, 28.0, 17.0, 14.0, 3.0, 2.0, 2.0, 2.0], "seconds per pick": 2.3016612052917482}
+{"dataset": "High school", "strategy": "Random", "ranks": [97.0, 15.0, 15.0, 15.0, 12.0, 12.0, 12.0, 10.0, 10.0, 11.0, 10.0], "seconds per pick": 0.0002993106842041016}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [97.0, 60.0, 49.0, 8.0, 8.0, 6.0, 6.0, 1.0, 1.0, 2.0, 1.0], "seconds per pick": 0.001009821891784668}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [97.0, 85.0, 98.0, 78.0, 86.0, 70.0, 73.0, 71.0, 24.0, 27.0, 23.0], "seconds per pick": 0.0010602951049804687}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [97.0, 102.0, 105.0, 95.0, 70.0, 73.0, 68.0, 35.0, 31.0, 25.0, 23.0], "seconds per pick": 1.1943315267562866}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [97.0, 76.0, 11.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.9072513818740844}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [97.0, 76.0, 73.0, 73.0, 68.0, 63.0, 58.0, 50.0, 19.0, 5.0, 5.0], "seconds per pick": 0.05673954486846924}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [97.0, 82.0, 77.0, 73.0, 73.0, 72.0, 69.0, 6.0, 4.0, 2.0, 2.0], "seconds per pick": 3.6700104475021362}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [97.0, 76.0, 37.0, 3.0, 4.0, 3.0, 3.0, 2.0, 2.0, 2.0, 1.0], "seconds per pick": 3.7709102392196656}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [97.0, 76.0, 11.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.877770018577576}
+{"dataset": "High school", "strategy": "Random", "ranks": [13.0, 14.0, 29.0, 34.0, 29.0, 3.0, 2.0, 2.0, 3.0, 3.0, 2.0], "seconds per pick": 0.00028545856475830077}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [13.0, 5.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0006699800491333008}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [13.0, 13.0, 11.0, 11.0, 3.0, 3.0, 3.0, 5.0, 5.0, 5.0, 5.0], "seconds per pick": 0.001042938232421875}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [13.0, 18.0, 4.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.1755903959274292}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [13.0, 41.0, 48.0, 18.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.8458375215530394}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [13.0, 8.0, 12.0, 4.0, 2.0, 3.0, 3.0, 4.0, 4.0, 5.0, 5.0], "seconds per pick": 0.04864234924316406}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [13.0, 13.0, 2.0, 2.0, 4.0, 5.0, 4.0, 4.0, 5.0, 5.0, 5.0], "seconds per pick": 3.7610867261886596}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [13.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.8617635488510134}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [13.0, 41.0, 48.0, 10.0, 4.0, 3.0, 2.0, 1.0, 1.0, 2.0, 1.0], "seconds per pick": 3.606752133369446}
+{"dataset": "High school", "strategy": "Random", "ranks": [8.0, 7.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.0002971172332763672}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [8.0, 6.0, 5.0, 1.0, 10.0, 5.0, 5.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0009866714477539062}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [8.0, 6.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0016726016998291015}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [8.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.5875616312026978}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [8.0, 2.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.6689421892166139}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [8.0, 4.0, 3.0, 7.0, 6.0, 11.0, 12.0, 11.0, 11.0, 10.0, 10.0], "seconds per pick": 0.04751870632171631}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [8.0, 4.0, 2.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 3.1763293504714967}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [8.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.408757710456848}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [8.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.6027640581130982}
+{"dataset": "High school", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.00028865337371826173}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0007181882858276368}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.001047039031982422}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.0810949802398682}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.2144096374511717}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.03692505359649658}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.8013924598693847}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.7810332059860228}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.7881808280944824}
+{"dataset": "High school", "strategy": "Random", "ranks": [8.0, 11.0, 9.0, 12.0, 10.0, 11.0, 11.0, 10.0, 9.0, 16.0, 15.0], "seconds per pick": 0.00028207302093505857}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [8.0, 18.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0006769895553588867}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [8.0, 3.0, 2.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0010553836822509766}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [8.0, 14.0, 17.0, 14.0, 12.0, 18.0, 16.0, 15.0, 16.0, 11.0, 8.0], "seconds per pick": 1.0384265184402466}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [8.0, 14.0, 8.0, 11.0, 8.0, 5.0, 5.0, 6.0, 9.0, 8.0, 11.0], "seconds per pick": 3.0404654502868653}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [8.0, 10.0, 11.0, 20.0, 20.0, 20.0, 24.0, 25.0, 23.0, 18.0, 16.0], "seconds per pick": 0.03982210159301758}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [8.0, 9.0, 2.0, 1.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.1250672578811645}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [8.0, 19.0, 12.0, 13.0, 16.0, 17.0, 9.0, 8.0, 8.0, 4.0, 3.0], "seconds per pick": 3.0768358945846557}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [8.0, 19.0, 12.0, 12.0, 11.0, 11.0, 11.0, 4.0, 5.0, 5.0, 6.0], "seconds per pick": 3.0846830129623415}
+{"dataset": "High school", "strategy": "Random", "ranks": [11.0, 11.0, 4.0, 5.0, 7.0, 7.0, 7.0, 7.0, 6.0, 7.0, 7.0], "seconds per pick": 0.000289607048034668}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [11.0, 6.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 2.0, 3.0, 2.0], "seconds per pick": 0.0006894826889038086}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [11.0, 6.0, 2.0, 2.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0009485721588134765}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [11.0, 6.0, 9.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.08093423843383789}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [11.0, 4.0, 6.0, 4.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.2175050973892212}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [11.0, 7.0, 4.0, 7.0, 8.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.032515215873718264}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [11.0, 10.0, 6.0, 5.0, 3.0, 2.0, 3.0, 5.0, 6.0, 5.0, 5.0], "seconds per pick": 0.2906419992446899}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [11.0, 6.0, 10.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.18516457080841064}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [11.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.126151442527771}
+{"dataset": "High school", "strategy": "Random", "ranks": [39.0, 39.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 3.0], "seconds per pick": 0.00026895999908447263}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [39.0, 15.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0007211208343505859}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [39.0, 15.0, 5.0, 5.0, 4.0, 4.0, 3.0, 3.0, 3.0, 4.0, 4.0], "seconds per pick": 0.0010594844818115235}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [39.0, 54.0, 7.0, 6.0, 6.0, 5.0, 4.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 1.0370981454849244}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [39.0, 19.0, 6.0, 2.0, 2.0, 3.0, 2.0, 3.0, 3.0, 3.0, 1.0], "seconds per pick": 3.0703288316726685}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [39.0, 28.0, 33.0, 22.0, 3.0, 5.0, 4.0, 3.0, 4.0, 4.0, 3.0], "seconds per pick": 0.03805844783782959}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [39.0, 10.0, 4.0, 3.0, 3.0, 3.0, 3.0, 2.0, 2.0, 4.0, 4.0], "seconds per pick": 2.417713737487793}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [39.0, 21.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.847521257400513}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [39.0, 15.0, 10.0, 11.0, 13.0, 4.0, 3.0, 3.0, 2.0, 2.0, 1.0], "seconds per pick": 2.6969189643859863}
+{"dataset": "High school", "strategy": "Random", "ranks": [1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0], "seconds per pick": 0.00029499530792236327}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0006633996963500977}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.001076483726501465}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.07370450496673583}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.12283933162689209}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.03220796585083008}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.15357749462127684}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.11532633304595948}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.11510670185089111}
+{"dataset": "High school", "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0], "seconds per pick": 0.00028290748596191404}
+{"dataset": "High school", "strategy": "Highest degree", "ranks": [1.0, 1.0, 2.0, 2.0, 11.0, 11.0, 6.0, 11.0, 14.0, 14.0, 1.0], "seconds per pick": 0.0006548643112182617}
+{"dataset": "High school", "strategy": "Contact tracing", "ranks": [1.0, 1.0, 2.0, 3.0, 9.0, 9.0, 11.0, 14.0, 14.0, 14.0, 14.0], "seconds per pick": 0.0007006645202636719}
+{"dataset": "High school", "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.0977199792861938}
+{"dataset": "High school", "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.2699777841567994}
+{"dataset": "High school", "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.023515987396240234}
+{"dataset": "High school", "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.2577980279922487}
+{"dataset": "High school", "strategy": "Edge cutting (EC2)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.143006110191345}
+{"dataset": "High school", "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.993115711212158}
