@@ -1,0 +1,55 @@
+# Exact likelihood by Monte Carlo on Office and High school (as for Hospital), 200 outbreaks each. Runs when this file changes on the paper branch.
+name: exact-limits
+on:
+  workflow_dispatch:
+  push:
+    branches: [revision/ojcs-reviews]
+    paths: [.github/workflows/exact_limits.yml]
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {name: exact-told-office-0, cmd: "for i in 0 1 2 3; do python -W ignore -m experiments.limits_exact_told 'Office' 200 20000 $i 16 outputs/limits/exact_told_office_part$i.jsonl & done; wait"}
+          - {name: exact-told-office-1, cmd: "for i in 4 5 6 7; do python -W ignore -m experiments.limits_exact_told 'Office' 200 20000 $i 16 outputs/limits/exact_told_office_part$i.jsonl & done; wait"}
+          - {name: exact-told-office-2, cmd: "for i in 8 9 10 11; do python -W ignore -m experiments.limits_exact_told 'Office' 200 20000 $i 16 outputs/limits/exact_told_office_part$i.jsonl & done; wait"}
+          - {name: exact-told-office-3, cmd: "for i in 12 13 14 15; do python -W ignore -m experiments.limits_exact_told 'Office' 200 20000 $i 16 outputs/limits/exact_told_office_part$i.jsonl & done; wait"}
+          - {name: exact-grid-office-0, cmd: "for i in 0 1 2 3; do python -W ignore -m experiments.limits_exact_grid 'Office' 200 5000 $i 16 outputs/limits/exact_grid_office_part$i.jsonl & done; wait"}
+          - {name: exact-grid-office-1, cmd: "for i in 4 5 6 7; do python -W ignore -m experiments.limits_exact_grid 'Office' 200 5000 $i 16 outputs/limits/exact_grid_office_part$i.jsonl & done; wait"}
+          - {name: exact-grid-office-2, cmd: "for i in 8 9 10 11; do python -W ignore -m experiments.limits_exact_grid 'Office' 200 5000 $i 16 outputs/limits/exact_grid_office_part$i.jsonl & done; wait"}
+          - {name: exact-grid-office-3, cmd: "for i in 12 13 14 15; do python -W ignore -m experiments.limits_exact_grid 'Office' 200 5000 $i 16 outputs/limits/exact_grid_office_part$i.jsonl & done; wait"}
+          - {name: exact-told-high_school-0, cmd: "for i in 0 1 2 3; do python -W ignore -m experiments.limits_exact_told 'High school' 200 20000 $i 16 outputs/limits/exact_told_high_school_part$i.jsonl & done; wait"}
+          - {name: exact-told-high_school-1, cmd: "for i in 4 5 6 7; do python -W ignore -m experiments.limits_exact_told 'High school' 200 20000 $i 16 outputs/limits/exact_told_high_school_part$i.jsonl & done; wait"}
+          - {name: exact-told-high_school-2, cmd: "for i in 8 9 10 11; do python -W ignore -m experiments.limits_exact_told 'High school' 200 20000 $i 16 outputs/limits/exact_told_high_school_part$i.jsonl & done; wait"}
+          - {name: exact-told-high_school-3, cmd: "for i in 12 13 14 15; do python -W ignore -m experiments.limits_exact_told 'High school' 200 20000 $i 16 outputs/limits/exact_told_high_school_part$i.jsonl & done; wait"}
+          - {name: exact-grid-high_school-0, cmd: "for i in 0 1 2 3; do python -W ignore -m experiments.limits_exact_grid 'High school' 200 5000 $i 16 outputs/limits/exact_grid_high_school_part$i.jsonl & done; wait"}
+          - {name: exact-grid-high_school-1, cmd: "for i in 4 5 6 7; do python -W ignore -m experiments.limits_exact_grid 'High school' 200 5000 $i 16 outputs/limits/exact_grid_high_school_part$i.jsonl & done; wait"}
+          - {name: exact-grid-high_school-2, cmd: "for i in 8 9 10 11; do python -W ignore -m experiments.limits_exact_grid 'High school' 200 5000 $i 16 outputs/limits/exact_grid_high_school_part$i.jsonl & done; wait"}
+          - {name: exact-grid-high_school-3, cmd: "for i in 12 13 14 15; do python -W ignore -m experiments.limits_exact_grid 'High school' 200 5000 $i 16 outputs/limits/exact_grid_high_school_part$i.jsonl & done; wait"}
+    env:
+      OMP_NUM_THREADS: "1"
+      OPENBLAS_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install numpy scipy networkx
+      - if: startsWith(matrix.name, 'bp-')
+        run: pip install "git+https://github.com/sibyl-team/sib.git@5b762da"
+      - name: Data (SNAP, Netzschleuder)
+        run: |
+          mkdir -p data/raw/temporal data/raw/sociopatterns
+          for f in CollegeMsg.txt.gz email-Eu-core-temporal.txt.gz; do curl -sSfL "https://snap.stanford.edu/data/$f" -o "data/raw/temporal/$f"; done
+          for n in sp_hospital sp_office sp_primary_school; do curl -sSfL "https://networks.skewed.de/net/$n/files/$n.csv.zip" -o "data/raw/sociopatterns/$n.csv.zip"; done
+          curl -sSfL "https://networks.skewed.de/net/sp_high_school_new/files/2012.csv.zip" -o data/raw/sociopatterns/sp_high_school_2012.csv.zip
+      - run: ${{ matrix.cmd }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: exact-limits-${{ matrix.name }}
+          path: outputs/limits/exact_*_part*.jsonl
