@@ -41,3 +41,29 @@ Mean field's parameters are fitted on the earlier (training) half only, as befor
 Mean reciprocal rank, top-1 and top-10 rate, the size of the 90% conformal source set
 (calibrated on the development outbreaks of the same dataset), paired differences to the best
 baseline with bootstrap 95% intervals and a paired Wilcoxon test, and every individual rank.
+
+## Addendum, 2026-11-22: two outbreaks with independently known origins
+
+Fixed before any method was run on them. These test what the variants cannot: their origins
+are established by epidemiological investigation, not by who reported first.
+
+| Outbreak | Origin | Data (open) |
+|---|---|---|
+| H1N1 pandemic, 2009 | Mexico | WHO situation updates by country, 24 Apr - 6 Jul 2009 (Kaggle imdevskp/h1n1-swine-flu-2009-pandemic-dataset, data.csv) |
+| SARS, 2003 | China (Guangdong) | WHO cumulative case tables by country, 17 Mar - 11 Jul 2003 (Kaggle imdevskp/sars-outbreak-2003-complete-dataset) |
+
+Protocol (`experiments/independent_origins.py`):
+- Network: countries linked by airline routes (OpenFlights, as for the variants), one contact
+  per route per day. Country names are matched to OpenFlights by a fixed table in the script;
+  territories go to their own OpenFlights entry where one exists, otherwise they are dropped.
+- Report: a country's first day with at least one WHO-reported case. Every country in the
+  network is an observer (WHO collected reports from all member states); a country with no case
+  by the observation day reports "not infected".
+- Observation day: 28 days after the first report anywhere. The start may be up to 150 days
+  before the first report (SARS emerged months before the WHO tables begin).
+- Mean field: no training data exist for these diseases, so it is untrained: the average over
+  a fixed grid of rate per route per day (1e-5, 1e-4, 1e-3), outside introductions per day
+  (0, 1e-5, 1e-4), and chance per day that an infected country reports (0.02, 0.1, 0.5).
+- Baselines on the same reports: earliest detection, distance center, Jordan center, LPSI
+  (alpha 0.5, no tuning data), Pinto-style, effective distance (Brockmann and Helbing 2013).
+- Reported: the rank of the origin under every method (ties share the average rank).
