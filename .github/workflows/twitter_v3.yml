@@ -1,8 +1,11 @@
 # Twitter (Higgs) real-outbreak runs, version 3 (experiments/real_cascades.py "score").
-# Started by hand; each job runs four shards on a 4-core runner and uploads its rows.
+# Runs when this file changes on the paper branch; each job runs four shards on a 4-core runner and uploads its rows.
 name: twitter-v3
 on:
   workflow_dispatch:
+  push:
+    branches: [revision/ojcs-reviews]
+    paths: [.github/workflows/twitter_v3.yml]
 jobs:
   score:
     runs-on: ubuntu-latest
