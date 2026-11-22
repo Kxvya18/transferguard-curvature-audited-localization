@@ -26,23 +26,37 @@ It needs no training and no random simulations.
 
 ## Data
 
-Not tracked. Download into `data/raw/`:
+All data are open; nothing was requested from anyone. Not tracked; the GitHub Actions
+workflows in `.github/workflows/` download each file at a fixed version, and so can you:
 
-- `temporal/`: `CollegeMsg.txt.gz` and `email-Eu-core-temporal.txt.gz` from SNAP.
-- `sociopatterns/`: SocioPatterns face-to-face contact data as Netzschleuder CSV zips,
-  `https://networks.skewed.de/net/<name>/files/<name>.csv.zip` for `sp_hospital`,
-  `sp_primary_school` and `sp_office`, and `sp_high_school_new/files/2012.csv.zip`
-  saved as `sp_high_school_2012.csv.zip`.
+| Folder in `data/raw/` | Files | Source |
+|---|---|---|
+| `temporal/` | `CollegeMsg.txt.gz`, `email-Eu-core-temporal.txt.gz` | SNAP (snap.stanford.edu/data) |
+| `sociopatterns/` | `sp_hospital`, `sp_primary_school`, `sp_office` `.csv.zip`; `sp_high_school_2012.csv.zip` | Netzschleuder (`networks.skewed.de/net/<name>/files/<name>.csv.zip`; high school: `sp_high_school_new/files/2012.csv.zip`) |
+| `higgs/` | `higgs-social_network.edgelist.gz`, `higgs-activity_time.txt.gz` | SNAP (De Domenico et al. 2013) |
+| `global/` | `airports.dat`, `routes.dat` | OpenFlights, commit 3b0e4d8 |
+| `global/covariants/` | `<cluster>.json` | CoVariants `cluster_tables/<cluster>_data.json`, commit f42c1e2 |
+| `global/un_regions.csv` | UN geoscheme | lukes/ISO-3166-Countries-with-Regional-Codes `all/all.csv`, commit 145f1ad |
+| `heldout/` | H1N1 2009 and SARS 2003 WHO country tables | Kaggle `imdevskp/h1n1-swine-flu-2009-pandemic-dataset`, `imdevskp/sars-outbreak-2003-complete-dataset` |
 
-## Run
+Belief propagation needs `sib` (`pip install git+https://github.com/sibyl-team/sib.git@5b762da`).
 
-```bash
-python -m unittest tests.test_localization
-python -m experiments.compare_mean_field "Email-Eu" 0.1 40
-python -m experiments.compare_learned "Email-Eu" 0.1 201 60
-```
+## Reproducing the paper
 
-## Status
+Every table: `python -m experiments.make_tables` (reads `outputs/`, writes `outputs/tables.json`).
+Seeds are fixed in each script (BP comparison 101-113, test selection 301-303, Twitter 1001).
 
-Pilot results are in `outputs/`. They are preliminary (one or two seeds) and
-the comparison on CollegeMsg is incomplete.
+| Result | Command | Output |
+|---|---|---|
+| Mean field vs BP vs message passing | `python -m experiments.compare_bp <network> 0.1 40 <seed> [true]` | `outputs/bp_comparison/` |
+| Test selection (9 strategies) | `python -m experiments.observer_placement <network> 40 10 <seed>` | `outputs/observer_placement/` |
+| Sterchi et al. 2023 by simulation | `SHARD=i/16 python -m experiments.observer_placement Hospital 16 10 301 simulated` | `outputs/observer_placement/Hospital_simulated_*` |
+| Exact likelihood (limits) | `experiments/limits_*.py` | `outputs/limits/` |
+| Source sets with coverage | `python -m experiments.conformal_sets` | `outputs/conformal_sets.json` |
+| Separability (selection guarantee) | `python -m experiments.separability` | `outputs/separability.json` |
+| Twitter (Higgs) | `real_cascades fit 200`, then `real_cascades score train 0 200`, `score test 0 300`, `score test 300 100000`; `twitter_v3_summary` | `outputs/real_cascades/` |
+| SARS-CoV-2 variants | `python -m experiments.global_variants` (`HELDOUT=1`, `HELDOUT=2` for the pre-registered sets) | `outputs/real_epidemics/` |
+| H1N1 2009, SARS 2003 | `python -m experiments.independent_origins` | `outputs/real_epidemics/independent_origins.jsonl` |
+
+The real-outbreak test sets were fixed before any method was run on them:
+`docs/preregistration_real_outbreaks.md`. Theory notes: `docs/theory.md`.
