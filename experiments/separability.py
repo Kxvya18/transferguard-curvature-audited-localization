@@ -72,7 +72,7 @@ def main(count=5, top_k=20):
         result[name] = {"S_min (median over outbreaks)": float(np.median(values)), "gamma = 7 / S_min": float(7 / np.median(values)),
                         "median 5% quantile of squared TV": float(np.median(q05))}
         print(name, result[name], flush=True)
-    (PROJECT_ROOT / "outputs" / "separability.json").write_text(json.dumps(result, indent=2))
+        (PROJECT_ROOT / "outputs" / "separability.json").write_text(json.dumps(result, indent=2))
 
 
 if __name__ == "__main__":

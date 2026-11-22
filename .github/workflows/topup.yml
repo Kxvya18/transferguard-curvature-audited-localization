@@ -1,0 +1,56 @@
+# Remaining simulation runs: BP comparison to 200 outbreaks, unfinished test-selection seeds,
+# the last Sterchi outbreaks, and separability. Runs when this file changes on the paper branch.
+name: topup
+on:
+  workflow_dispatch:
+  push:
+    branches: [revision/ojcs-reviews]
+    paths: [.github/workflows/topup.yml]
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {name: bp-collegemsg, cmd: "for s in 106 107 108 109; do python -W ignore -m experiments.compare_bp CollegeMsg 0.1 8 $s true & done; wait"}
+          - {name: bp-primary-a, cmd: "for s in 106 107 108 109; do python -W ignore -m experiments.compare_bp 'Primary school' 0.1 5 $s true & done; wait"}
+          - {name: bp-primary-b, cmd: "for s in 110 111 112 113; do python -W ignore -m experiments.compare_bp 'Primary school' 0.1 5 $s true & done; wait"}
+          - {name: place-college-301a, cmd: "for i in 0 1 2 3; do SHARD=$i/8 python -W ignore -m experiments.observer_placement CollegeMsg 40 10 301 & done; wait"}
+          - {name: place-college-301b, cmd: "for i in 4 5 6 7; do SHARD=$i/8 python -W ignore -m experiments.observer_placement CollegeMsg 40 10 301 & done; wait"}
+          - {name: place-college-302a, cmd: "for i in 0 1 2 3; do SHARD=$i/8 python -W ignore -m experiments.observer_placement CollegeMsg 40 10 302 & done; wait"}
+          - {name: place-college-302b, cmd: "for i in 4 5 6 7; do SHARD=$i/8 python -W ignore -m experiments.observer_placement CollegeMsg 40 10 302 & done; wait"}
+          - {name: place-college-303a, cmd: "for i in 0 1 2 3; do SHARD=$i/8 python -W ignore -m experiments.observer_placement CollegeMsg 40 10 303 & done; wait"}
+          - {name: place-college-303b, cmd: "for i in 4 5 6 7; do SHARD=$i/8 python -W ignore -m experiments.observer_placement CollegeMsg 40 10 303 & done; wait"}
+          - {name: place-email-302, cmd: "for i in 0 1 2 3; do SHARD=$i/4 python -W ignore -m experiments.observer_placement Email-Eu 40 10 302 & done; wait"}
+          - {name: place-email-303, cmd: "for i in 0 1 2 3; do SHARD=$i/4 python -W ignore -m experiments.observer_placement Email-Eu 40 10 303 & done; wait"}
+          - {name: sterchi-12-15, cmd: "for i in 12 13 14 15; do SHARD=$i/16 python -W ignore -m experiments.observer_placement Hospital 16 10 301 simulated & done; wait"}
+          - {name: separability, cmd: "python -W ignore -m experiments.separability"}
+    env:
+      OMP_NUM_THREADS: "1"
+      OPENBLAS_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install numpy scipy networkx
+      - if: startsWith(matrix.name, 'bp-')
+        run: pip install "git+https://github.com/sibyl-team/sib.git@5b762da"
+      - name: Data (SNAP, Netzschleuder)
+        run: |
+          mkdir -p data/raw/temporal data/raw/sociopatterns
+          for f in CollegeMsg.txt.gz email-Eu-core-temporal.txt.gz; do curl -sSfL "https://snap.stanford.edu/data/$f" -o "data/raw/temporal/$f"; done
+          for n in sp_hospital sp_office sp_primary_school; do curl -sSfL "https://networks.skewed.de/net/$n/files/$n.csv.zip" -o "data/raw/sociopatterns/$n.csv.zip"; done
+          curl -sSfL "https://networks.skewed.de/net/sp_high_school_new/files/2012.csv.zip" -o data/raw/sociopatterns/sp_high_school_2012.csv.zip
+      - run: ${{ matrix.cmd }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: topup-${{ matrix.name }}
+          path: |
+            outputs/bp_comparison/*_seed1*.jsonl
+            outputs/observer_placement/*_shard*.jsonl
+            outputs/separability.json
