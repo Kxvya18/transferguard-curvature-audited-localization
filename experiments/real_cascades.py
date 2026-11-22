@@ -23,9 +23,18 @@ Protocol (no information from the test outbreaks is used to build any method):
   by mean reciprocal rank;
 - "test": every method ranks every person in each test outbreak.
 
+"score" (version 3) adds two things fixed on the development cascades, and both are fitted
+on the training half only: (1) the source-rate prior gets a weak pseudo-count (one
+outbreak's worth, uniform), so no rate is ruled out for a test source unlike any training
+one; (2) a prior on who starts a cascade, P(source = c) proportional to
+(1 + followers of c) ** beta, with beta chosen on the training cascades. Every test row keeps
+the rank for every beta in BETAS, so the choice can be checked. "Most followers" ranks people
+by follower count alone, so the prior's own contribution is visible.
+
 Run:
     python -m experiments.real_cascades fit 150
     python -m experiments.real_cascades test 300 [shard] [shards]
+    python -m experiments.real_cascades score train|test START COUNT [shard] [shards]
 """
 
 from __future__ import annotations
@@ -91,11 +100,17 @@ def load():
     return follows, {s: c for s, c in cascades.items() if len(c) >= MIN_INFECTED}
 
 
+def cascade_people(either, retweets: dict[int, int]) -> np.ndarray:
+    """Global ids of everyone in a cascade's network: the first retweeters and their neighbours."""
+    order = sorted(retweets, key=retweets.get)[:MAX_INFECTED]
+    return np.unique(np.r_[order, either[order].indices])
+
+
 def outbreak(follows, either, source: int, retweets: dict[int, int]):
     """Context and local source index for one cascade, or None if it is unusable."""
     order = sorted(retweets, key=retweets.get)[:MAX_INFECTED]
     times = np.array([retweets[u] for u in order], dtype=float)
-    nodes = np.unique(np.r_[order, either[order].indices])
+    nodes = cascade_people(either, retweets)
     if source not in set(nodes.tolist()) or len(nodes) > MAX_NODES:
         return None
     local = {int(v): i for i, v in enumerate(nodes)}
@@ -235,8 +250,59 @@ def test(count: int, shard: int = 0, shards: int = 1) -> None:
             handle.write(json.dumps(row) + "\n")
 
 
+BETAS = (0.0, 0.25, 0.5, 0.75, 1.0, 1.5, 2.0, 3.0)
+
+
+def smoothed_prior(fitted, pseudo=1.0):
+    """The EM source-rate prior with `pseudo` outbreaks' worth of uniform weight added."""
+    n, prior = fitted["training outbreaks"], fitted["source rate prior"]
+    return {r: (n * w + pseudo / len(prior)) / (n + pseudo) for r, w in prior.items()}
+
+
+def score(which: str, start: int, count: int, shard: int = 0, shards: int = 1) -> None:
+    """Version 3 on usable cascades start .. start + count - 1 of one half (training or test)."""
+    fitted = json.loads((OUT / "twitter_fit.json").read_text())
+    model, alpha, prior = tuple(fitted["model"].values()), fitted["LPSI alpha"], smoothed_prior(fitted)
+    follows, cascades = load()
+    either = ((follows + follows.T) > 0).tocsr()
+    followers = np.asarray(follows.sum(axis=0)).ravel()  # row a follows column b
+    train, test_half = split(cascades)
+    path = OUT / f"twitter_v3_{which}_{start}_part{shard}.jsonl"
+    done = {json.loads(line)["source"] for line in path.open()} if path.exists() else set()
+    kept = 0
+    for source in (train if which == "train" else test_half):
+        built = outbreak(follows, either, source, cascades[source])
+        if built is None:
+            continue
+        kept += 1
+        if kept <= start or (kept - 1) % shards != shard or source in done:
+            continue
+        if kept > start + count:
+            break
+        ctx, src = built
+        popularity = np.log1p(followers[cascade_people(either, cascades[source])])
+        row = {"source": int(source), "people": ctx.graph.n_nodes, "infected observers": int(len(ctx.infected))}
+        t0 = time.time()
+        mf = mixture_scores(ctx, model, prior)
+        row["Mean-field seconds"] = time.time() - t0
+        for beta in BETAS:
+            post = mf + beta * popularity
+            row[f"Mean-field, beta {beta}"] = rank_of_source(post, src)
+            row[f"log posterior at source, beta {beta}"] = float(post[src] - logsumexp(post[mf > est.INFEASIBLE]))
+        if which == "test":
+            baselines = {"Most followers": lambda c: popularity, "LPSI, tuned": lambda c: est.lpsi(c, alpha=alpha),
+                         "Pinto-style": est.pinto_style, "Jordan center": est.jordan_center, "Distance center": est.distance_center,
+                         "Mean-field, untrained": lambda c: mean_field_scores(c, prob_grid=(0.003, 0.01, 0.03, 0.1, 0.3, 0.9))}
+            for label, fn in baselines.items():
+                row[label] = rank_of_source(fn(ctx), src)
+        with path.open("a") as handle:
+            handle.write(json.dumps(row) + "\n")
+
+
 if __name__ == "__main__":
     if sys.argv[1] == "fit":
         fit(int(sys.argv[2]))
+    elif sys.argv[1] == "score":
+        score(sys.argv[2], *(int(a) for a in sys.argv[3:7]))
     else:
         test(int(sys.argv[2]), *(int(a) for a in sys.argv[3:5]))

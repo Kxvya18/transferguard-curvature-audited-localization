@@ -28,6 +28,15 @@ of the other outbreaks only (leave one outbreak out). "Mean field,
 untrained" averages over the same grid with no fitting at all. Every baseline gets the
 same reports; LPSI's alpha is tuned leave one out too.
 
+"Mean field, fitted" does not bet on the single best model: with ten outbreaks the best one
+flips when one outbreak is left out. It learns instead how often each model in the grid
+describes an outbreak (weights fitted by EM to the training outbreaks' likelihoods at their
+true origins, with a weak pseudo-count so no model is ruled out) and averages over them.
+"Mean field, best model" is the single best model, for comparison.
+
+With HELDOUT=1 the pre-registered test variants (docs/preregistration_real_outbreaks.md)
+are scored instead, with everything fitted on all ten development variants.
+
 Run:  python -m experiments.global_variants
 """
 
@@ -55,11 +64,13 @@ RAW = PROJECT_ROOT / "data" / "raw" / "global"
 ORIGINS = {"20A.EU1": "Spain", "20H.Beta.V2": "South Africa", "20I.Alpha.V1": "United Kingdom",
            "20J.Gamma.V3": "Brazil", "21A.Delta": "India", "21B.Kappa": "India", "21C.Epsilon": "United States",
            "21F.Iota": "United States", "21G.Lambda": "Peru", "21H.Mu": "Colombia"}
+HELDOUT = {"21L.Omicron": "South Africa", "22A.Omicron": "South Africa", "22B.Omicron": "South Africa",
+           "23H.Omicron": "China", "24B.Omicron": "India", "24C.Omicron": "India"}
 RENAME = {"USA": "United States", "Sint Maarten": "Netherlands Antilles"}
 OBSERVE, LOOKBACK, DAYS = 6, 10, 14  # periods after the first detection; periods before it the start may be; days per period
 AGES = 120  # days after arrival over which detectability can keep growing
 # (rate per route per day, outside introductions per day, kappa, phi, growth per day of detectability)
-GRID = list(itertools.product((0.0, 1e-6, 1e-5, 1e-4), (1e-4, 1e-3), (1e-5, 1e-4, 1e-3, 1e-2), (0.0, 1e-5), (0.0, 0.05, 0.1)))
+GRID = list(itertools.product((0.0, 1e-6, 1e-5, 1e-4), (1e-4, 1e-3), (1e-5, 1e-4, 1e-3, 1e-2), (0.0, 1e-5, 1e-4), (0.0, 0.05, 0.1)))
 LPSI_ALPHAS = (0.1, 0.3, 0.5, 0.7, 0.9)
 
 
@@ -79,7 +90,7 @@ def network():
 def sequencing():
     """Per variant {country: {period: variant sequences}}, and all sequences run {country: {period: n}}."""
     found, effort = {}, {}
-    for variant in ORIGINS:
+    for variant in {**ORIGINS, **HELDOUT}:
         data = json.load(open(RAW / "covariants" / f"{variant}.json"))
         found[variant] = {}
         for name, v in data.items():
@@ -90,7 +101,7 @@ def sequencing():
     return found, effort
 
 
-def outbreak(variant, names, pairs, found, effort):
+def outbreak(variant, names, pairs, found, effort, origin):
     """Context, true origin index, and detection chance per observer per period (as a function of kappa)."""
     weeks = sorted({w for c in effort.values() for w in c})
     assert all((date.fromisoformat(b) - date.fromisoformat(a)).days == 14 for a, b in zip(weeks, weeks[1:]))
@@ -107,10 +118,10 @@ def outbreak(variant, names, pairs, found, effort):
     observers = np.flatnonzero(runs[:, t_lo:t_obs].sum(axis=1) > 0)
     reported = np.array([min(first.get(names[i], t_obs), t_obs) for i in observers], dtype=float) * DAYS
     graph = TemporalGraph(variant, len(names), [pairs] * (t_obs * DAYS + 1), np.zeros(len(names), dtype=int))
-    ob = Outbreak(index[ORIGINS[variant]], t_lo * DAYS, t_obs * DAYS, observers, reported)
+    ob = Outbreak(index[origin], t_lo * DAYS, t_obs * DAYS, observers, reported)
     ctx = est.build_context(graph, ob, (t_obs - t_lo) * DAYS)
     daily = np.repeat(runs[observers], DAYS, axis=1) / DAYS  # sequences per day
-    return ctx, index[ORIGINS[variant]], daily
+    return ctx, index[origin], daily
 
 
 def model(ctx, runs, rate, leak, kappa, phi, growth, candidates=None):
@@ -145,42 +156,52 @@ def effective_distance(ctx, names, pairs):
 CASES = {}
 
 
-def truth_loglik(v):
-    """Log-likelihood of outbreak v at its true origin, start summed out, for every model."""
-    ctx, src, runs = CASES[v]
-    return np.array([logsumexp(model(ctx, runs, *g, candidates=np.array([src]))[:, src]) for g in GRID])
-
-
-def untrained(v):
-    """Scores averaged over every model in the grid, with no fitting."""
+def grid_scores(v):
+    """Log-likelihood of outbreak v at every country, start summed out, for every model."""
     ctx, _, runs = CASES[v]
-    return logsumexp(np.array([logsumexp(model(ctx, runs, *g), axis=0) for g in GRID]), axis=0)
+    return np.array([logsumexp(model(ctx, runs, *g), axis=0) for g in GRID])
+
+
+def model_weights(at_truth, pseudo=1.0):
+    """How often each model describes an outbreak: EM on the mixture likelihood of the
+    training outbreaks at their true origins, with `pseudo` outbreaks' worth of uniform prior."""
+    L = np.array(at_truth)  # outbreaks x models
+    w = np.full(L.shape[1], 1.0 / L.shape[1])
+    for _ in range(1000):
+        post = np.exp(np.log(w) + L - logsumexp(np.log(w) + L, axis=1, keepdims=True))
+        w = (post.sum(axis=0) + pseudo / L.shape[1]) / (len(L) + pseudo)
+    return w
 
 
 def main() -> None:
+    heldout = os.environ.get("HELDOUT") == "1"
     names, pairs = network()
     found, effort = sequencing()
-    CASES.update({v: outbreak(v, names, pairs, found, effort) for v in ORIGINS})
-    cases = CASES
+    todo = {**ORIGINS, **HELDOUT} if heldout else ORIGINS
+    CASES.update({v: outbreak(v, names, pairs, found, effort, o) for v, o in todo.items()})
     with get_context("fork").Pool(int(os.environ.get("WORKERS", 6))) as pool:  # workers share CASES
-        at_truth = dict(zip(ORIGINS, pool.map(truth_loglik, list(ORIGINS))))
-        averaged = dict(zip(ORIGINS, pool.map(untrained, list(ORIGINS))))
-    lpsi_mrr = {v: {a: 1 / rank_of_source(est.lpsi(ctx, alpha=a), src) for a in LPSI_ALPHAS} for v, (ctx, src, _) in cases.items()}
+        scores = dict(zip(CASES, pool.map(grid_scores, list(CASES))))
+    at_truth = {v: scores[v][:, src] for v, (_, src, _) in CASES.items()}
+    lpsi_mrr = {v: {a: 1 / rank_of_source(est.lpsi(ctx, alpha=a), src) for a in LPSI_ALPHAS} for v, (ctx, src, _) in CASES.items()}
     out = PROJECT_ROOT / "outputs" / "real_epidemics"
     out.mkdir(parents=True, exist_ok=True)
+    finish = lambda s: np.where(np.isfinite(s), s, est.INFEASIBLE)
     rows = []
-    for v, (ctx, src, runs) in cases.items():
-        others = [u for u in ORIGINS if u != v]
-        best = GRID[int(np.argmax(sum(at_truth[u] for u in others)))]
-        alpha = max(LPSI_ALPHAS, key=lambda a: np.mean([lpsi_mrr[u][a] for u in others]))
-        fitted = logsumexp(model(ctx, runs, *best), axis=0)
+    for v in (HELDOUT if heldout else ORIGINS):
+        ctx, src, runs = CASES[v]
+        train = list(ORIGINS) if heldout else [u for u in ORIGINS if u != v]
+        weights = model_weights([at_truth[u] for u in train])
+        best = int(np.argmax(sum(at_truth[u] for u in train)))
+        alpha = max(LPSI_ALPHAS, key=lambda a: np.mean([lpsi_mrr[u][a] for u in train]))
         earliest = np.full(len(names), est.INFEASIBLE)
         earliest[ctx.infected] = -ctx.infected_times
-        finish = lambda s: np.where(np.isfinite(s), s, est.INFEASIBLE)
         row = {"variant": v, "origin": names[src], "countries reporting": int(len(ctx.outbreak.observers)),
-               "countries detected": int(len(ctx.infected)), "fitted model": dict(zip(("rate", "leak", "kappa", "phi", "growth"), best)),
-               "Mean field, fitted": rank_of_source(finish(fitted), src),
-               "Mean field, untrained": rank_of_source(finish(averaged[v]), src),
+               "countries detected": int(len(ctx.infected)),
+               "best model": dict(zip(("rate", "leak", "kappa", "phi", "growth"), GRID[best])),
+               "models with weight > 1%": int(np.sum(weights > 0.01)),
+               "Mean field, fitted": rank_of_source(finish(logsumexp(np.log(weights)[:, None] + scores[v], axis=0)), src),
+               "Mean field, best model": rank_of_source(finish(scores[v][best]), src),
+               "Mean field, untrained": rank_of_source(finish(logsumexp(scores[v], axis=0)), src),
                "Earliest detection": rank_of_source(earliest, src),
                "Effective distance (Brockmann-Helbing)": rank_of_source(effective_distance(ctx, names, pairs), src),
                "LPSI, tuned": rank_of_source(est.lpsi(ctx, alpha=alpha), src),
@@ -189,7 +210,9 @@ def main() -> None:
                "Distance center": rank_of_source(est.distance_center(ctx), src)}
         rows.append(row)
         print(json.dumps(row), flush=True)
-    (out / "variants.jsonl").write_text("".join(json.dumps(r) + "\n" for r in rows))
+    name = "variants_heldout.jsonl" if heldout else "variants.jsonl"
+    (out / name).write_text("".join(json.dumps(r) + "\n" for r in rows))
+    np.savez_compressed(out / name.replace(".jsonl", "_scores.npz"), grid=np.array(GRID), **{v: scores[v] for v in CASES})
 
 
 if __name__ == "__main__":
