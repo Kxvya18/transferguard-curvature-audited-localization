@@ -250,6 +250,46 @@ def test(count: int, shard: int = 0, shards: int = 1) -> None:
             handle.write(json.dumps(row) + "\n")
 
 
+def directed_hops(ctx):
+    """Hops from every person to each infected observer along follow links (followed -> follower)."""
+    import networkx as nx
+    pairs = np.unique(np.concatenate([w for w in ctx.graph.windows if len(w)]), axis=0)
+    reverse = nx.DiGraph()
+    reverse.add_nodes_from(range(ctx.graph.n_nodes))
+    reverse.add_edges_from((int(b), int(a)) for a, b in pairs)  # walk back from an observer to who could reach it
+    hop = np.full((ctx.graph.n_nodes, len(ctx.infected)), np.inf)
+    for j, obs in enumerate(ctx.infected):
+        for node, d in nx.single_source_shortest_path_length(reverse, int(obs)).items():
+            hop[node, j] = d
+    return hop
+
+
+def directed_baselines(which: str, start: int, count: int, shard: int = 0, shards: int = 1) -> None:
+    """Distance and Jordan centers on the directed follow graph (mean field uses the directions,
+    so the baselines get them too), on the same cascades as `score`."""
+    follows, cascades = load()
+    either = ((follows + follows.T) > 0).tocsr()
+    train, test_half = split(cascades)
+    path = OUT / f"twitter_v3_directed_{which}_{start}_part{shard}.jsonl"
+    kept = 0
+    for source in (train if which == "train" else test_half):
+        built = outbreak(follows, either, source, cascades[source])
+        if built is None:
+            continue
+        kept += 1
+        if kept <= start or (kept - 1) % shards != shard:
+            continue
+        if kept > start + count:
+            break
+        ctx, src = built
+        hop = directed_hops(ctx)
+        row = {"source": int(source),
+               "Distance center, directed": rank_of_source(np.where(np.isfinite(hop.sum(1)), -hop.sum(1), est.INFEASIBLE), src),
+               "Jordan center, directed": rank_of_source(np.where(np.isfinite(hop.max(1)), -hop.max(1), est.INFEASIBLE), src)}
+        with path.open("a") as handle:
+            handle.write(json.dumps(row) + "\n")
+
+
 BETAS = (0.0, 0.25, 0.5, 0.75, 1.0, 1.5, 2.0, 3.0)
 
 
@@ -302,6 +342,8 @@ def score(which: str, start: int, count: int, shard: int = 0, shards: int = 1) -
 if __name__ == "__main__":
     if sys.argv[1] == "fit":
         fit(int(sys.argv[2]))
+    elif sys.argv[1] == "directed":
+        directed_baselines(sys.argv[2], *(int(a) for a in sys.argv[3:7]))
     elif sys.argv[1] == "score":
         score(sys.argv[2], *(int(a) for a in sys.argv[3:7]))
     else:

@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import itertools
 import json
+import os
 from datetime import date
 
 import numpy as np
@@ -51,7 +52,8 @@ NAMES = {
     "Netherlands Antilles, CuraÃ§ao": "Netherlands Antilles", "Netherlands Antilles, Sint Maarten": "Netherlands Antilles",
     "Netherlands, Aruba": "Aruba", "Cook Island": "Cook Islands", "West Bank and Gaza Strip": "Palestine",
 }
-OBSERVE, LOOKBACK = 28, 150  # days after the first report; days before it the start may be
+OBSERVE = int(os.environ.get("OBSERVE", 28))  # days after the first report (pre-registered: 28)
+LOOKBACK = int(os.environ.get("LOOKBACK", 150))  # days before it the start may be (pre-registered: 150)
 GRID = list(itertools.product((1e-5, 1e-4, 1e-3), (0.0, 1e-5, 1e-4), (0.02, 0.1, 0.5)))  # rate, leak, report chance per day
 
 
@@ -104,7 +106,8 @@ def main() -> None:
                "Effective distance (Brockmann-Helbing)": rank_of_source(effective_distance(ctx, names, pairs), src)}
         rows.append(row)
         print(json.dumps(row), flush=True)
-    out = PROJECT_ROOT / "outputs" / "real_epidemics" / "independent_origins.jsonl"
+    suffix = "" if (OBSERVE, LOOKBACK) == (28, 150) else f"_observe{OBSERVE}_lookback{LOOKBACK}"  # robustness runs
+    out = PROJECT_ROOT / "outputs" / "real_epidemics" / f"independent_origins{suffix}.jsonl"
     out.write_text("".join(json.dumps(r) + "\n" for r in rows))
 
 

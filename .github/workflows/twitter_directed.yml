@@ -1,0 +1,47 @@
+# Twitter (Higgs): directed distance and Jordan centers on the same cascades as version 3.
+# Runs when this file changes on the paper branch; each job runs four shards on a 4-core runner and uploads its rows.
+name: twitter-v3-directed
+on:
+  workflow_dispatch:
+  push:
+    branches: [revision/ojcs-reviews]
+    paths: [.github/workflows/twitter_directed.yml]
+jobs:
+  score:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    strategy:
+      fail-fast: false
+      matrix:
+        # which half, first usable cascade, how many, total shards, first shard of this job
+        include:
+          - {which: test, start: 0, count: 300, shards: 4, first: 0}
+          - {which: test, start: 300, count: 100000, shards: 4, first: 0}
+    env:
+      HIGGS_DIR: ${{ github.workspace }}/higgs
+      OUT_DIR: ${{ github.workspace }}/out
+      OMP_NUM_THREADS: "1"
+      OPENBLAS_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install numpy scipy networkx
+      - name: Data (SNAP, De Domenico et al. 2013)
+        run: |
+          mkdir -p higgs out
+          for f in higgs-social_network.edgelist.gz higgs-activity_time.txt.gz; do curl -sSfL "https://snap.stanford.edu/data/$f" -o "higgs/$f"; done
+          cp outputs/real_cascades/twitter_fit.json out/
+      - name: Score four shards
+        run: |
+          for i in 0 1 2 3; do
+            python -W ignore -m experiments.real_cascades directed ${{ matrix.which }} ${{ matrix.start }} ${{ matrix.count }} $(( ${{ matrix.first }} + i )) ${{ matrix.shards }} &
+          done
+          wait
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: twitter-v3-directed-${{ matrix.which }}-${{ matrix.start }}-${{ matrix.first }}
+          path: out/twitter_v3_directed_*.jsonl
