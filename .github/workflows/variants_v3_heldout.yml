@@ -1,0 +1,41 @@
+# SARS-CoV-2 variants on the air-travel network (experiments/global_variants.py), pre-registered held-out set (docs/preregistration_real_outbreaks.md), scored once.
+# Runs when this file changes on the paper branch. Data are pinned to fixed commits.
+name: variants-v3-heldout
+on:
+  workflow_dispatch:
+  push:
+    branches: [revision/ojcs-reviews]
+    paths: [.github/workflows/variants_v3_heldout.yml]
+jobs:
+  heldout:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    env:
+      WORKERS: "4"
+      HELDOUT: "1"
+      OMP_NUM_THREADS: "1"
+      OPENBLAS_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
+      COVARIANTS: https://raw.githubusercontent.com/hodcroftlab/covariants/f42c1e27fbcf5f8958f2af92b5ce8881582879f3/cluster_tables
+      OPENFLIGHTS: https://raw.githubusercontent.com/jpatokal/openflights/3b0e4d82e0f1c660c706c92bc00dec608a7d8eab/data
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install numpy scipy networkx
+      - name: Data (OpenFlights, CoVariants)
+        run: |
+          mkdir -p data/raw/global/covariants
+          for f in airports.dat routes.dat; do curl -sSfL "$OPENFLIGHTS/$f" -o "data/raw/global/$f"; done
+          for v in 20A.EU1 20H.Beta.V2 20I.Alpha.V1 20J.Gamma.V3 21A.Delta 21B.Kappa 21C.Epsilon 21F.Iota 21G.Lambda 21H.Mu 21L.Omicron 22A.Omicron 22B.Omicron 23H.Omicron 24B.Omicron 24C.Omicron; do
+            curl -sSfL "$COVARIANTS/${v}_data.json" -o "data/raw/global/covariants/$v.json"
+          done
+      - run: python -W ignore -m experiments.global_variants
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: variants-v3-heldout
+          path: |
+            outputs/real_epidemics/variants_heldout.jsonl
+            outputs/real_epidemics/variants_heldout_scores.npz
