@@ -26,28 +26,28 @@
       }
     },
     "Primary_school": {
-      "outbreaks": 162,
-      "MRR Mean-field": 0.3730892052476106,
-      "MRR Belief propagation": 0.1378557669225814,
-      "MRR Message passing": 0.38199917296838826,
-      "seconds Mean-field": 0.7886311993186856,
-      "seconds Belief propagation": 1144.2205651336246,
-      "seconds Message passing": 33.85166739975965,
+      "outbreaks": 202,
+      "MRR Mean-field": 0.37231681568725505,
+      "MRR Belief propagation": 0.142469474844992,
+      "MRR Message passing": 0.38170870799908607,
+      "seconds Mean-field": 0.6794482375135517,
+      "seconds Belief propagation": 1029.7103451407781,
+      "seconds Message passing": 29.208641655374283,
       "MF - BP": {
-        "difference": 0.23523343832502921,
+        "difference": 0.22984734084226316,
         "interval": [
-          0.17193320450852959,
-          0.297738020392897
+          0.17413167995632065,
+          0.2843882313781297
         ],
-        "p": 1.1139893272397904e-15
+        "p": 1.1474598470389238e-18
       },
       "MF - MP": {
-        "difference": -0.008909967720777625,
+        "difference": -0.009391892311830921,
         "interval": [
-          -0.02016393452559657,
-          0.00048703059878748027
+          -0.0212729196968362,
+          0.0015609627863433207
         ],
-        "p": 0.45367256503354014
+        "p": 0.2650520183711307
       }
     },
     "Office": {
@@ -126,28 +126,28 @@
       }
     },
     "CollegeMsg": {
-      "outbreaks": 168,
-      "MRR Mean-field": 0.3990376367987707,
-      "MRR Belief propagation": 0.3435291260513228,
-      "MRR Message passing": 0.45743220237736926,
-      "seconds Mean-field": 26.242656998691103,
-      "seconds Belief propagation": 744.7909518338386,
-      "seconds Message passing": 295.09850802733786,
+      "outbreaks": 200,
+      "MRR Mean-field": 0.3924523967908378,
+      "MRR Belief propagation": 0.32692846867790765,
+      "MRR Message passing": 0.44270178261680326,
+      "seconds Mean-field": 22.949989433288575,
+      "seconds Belief propagation": 675.7769462072849,
+      "seconds Message passing": 266.66232494711875,
       "MF - BP": {
-        "difference": 0.05550851074744794,
+        "difference": 0.06552392811293016,
         "interval": [
-          0.0022183875919695676,
-          0.11037467638030996
+          0.015959497862405324,
+          0.11565476162505879
         ],
-        "p": 0.2450566253773938
+        "p": 0.047707045331643265
       },
       "MF - MP": {
-        "difference": -0.05839456557859858,
+        "difference": -0.05024938582596555,
         "interval": [
-          -0.09501559793988588,
-          -0.02429879020227825
+          -0.08164037924315283,
+          -0.02104133664447021
         ],
-        "p": 0.005818850780972418
+        "p": 0.020756531074711183
       }
     },
     "Growing_PA": {
@@ -590,208 +590,208 @@
       }
     },
     "Email-Eu": {
-      "outbreaks": 101,
+      "outbreaks": 120,
       "Random": {
-        "MRR": 0.3129004334603961,
-        "tests to rank 1": 8.871287128712872,
+        "MRR": 0.3258485400361502,
+        "tests to rank 1": 8.658333333333333,
         "ours - this": {
-          "difference": 0.3146240592778717,
+          "difference": 0.31649947267192846,
           "interval": [
-            0.2611751259249964,
-            0.366921433880428
+            0.2674840262052437,
+            0.36541020073744496
           ],
-          "p": 8.050819812544555e-15
+          "p": 3.6952801784866653e-17
         }
       },
       "Highest degree": {
-        "MRR": 0.35285687153864925,
-        "tests to rank 1": 8.326732673267326,
+        "MRR": 0.36819841906100426,
+        "tests to rank 1": 8.075,
         "ours - this": {
-          "difference": 0.2746676211996185,
+          "difference": 0.2741495936470744,
           "interval": [
-            0.21789879962171818,
-            0.3297447856231506
+            0.22291705280019924,
+            0.32360670682143533
           ],
-          "p": 1.9188260609935066e-12
+          "p": 9.591909737568482e-15
         }
       },
       "Contact tracing": {
-        "MRR": 0.4940334029646115,
-        "tests to rank 1": 6.2772277227722775,
+        "MRR": 0.49228627730955904,
+        "tests to rank 1": 6.291666666666667,
         "ours - this": {
-          "difference": 0.13349108977365615,
+          "difference": 0.15006173539851958,
           "interval": [
-            0.0782454528217883,
-            0.18825829194765042
+            0.0990503169365786,
+            0.20167819837837925
           ],
-          "p": 3.366067194761625e-06
+          "p": 4.5179332277685435e-08
         }
       },
       "Test top suspect": {
-        "MRR": 0.577178432235299,
-        "tests to rank 1": 5.336633663366337,
+        "MRR": 0.5884072727091499,
+        "tests to rank 1": 5.208333333333333,
         "ours - this": {
-          "difference": 0.050346060502968776,
+          "difference": 0.05394073999892872,
           "interval": [
-            0.00738587942424328,
-            0.0959556183168374
+            0.014683840413292716,
+            0.09545199718072028
           ],
-          "p": 0.05097573327442951
+          "p": 0.020215681231800373
         }
       },
       "Information gain (ours)": {
-        "MRR": 0.6275244927382677,
-        "tests to rank 1": 4.920792079207921
+        "MRR": 0.6423480127080786,
+        "tests to rank 1": 4.708333333333333
       },
       "Split candidates (Spinelli-style)": {
-        "MRR": 0.3744328998401511,
-        "tests to rank 1": 8.267326732673267,
+        "MRR": 0.3849822896836284,
+        "tests to rank 1": 8.058333333333334,
         "ours - this": {
-          "difference": 0.2530915928981165,
+          "difference": 0.2573657230244502,
           "interval": [
-            0.19715010094705115,
-            0.3073652307173453
+            0.2072071514236535,
+            0.3086404565980975
           ],
-          "p": 5.345180920811149e-12
+          "p": 3.414774127610293e-14
         }
       },
       "Most likely infected (Baker-style)": {
-        "MRR": 0.5215871336130266,
-        "tests to rank 1": 6.0,
+        "MRR": 0.5353405353613051,
+        "tests to rank 1": 5.841666666666667,
         "ours - this": {
-          "difference": 0.1059373591252412,
+          "difference": 0.10700747734677357,
           "interval": [
-            0.05565508154999915,
-            0.1558566222109101
+            0.06130841661139586,
+            0.15314232692359178
           ],
-          "p": 9.283861819815806e-05
+          "p": 1.7648842542555216e-05
         }
       },
       "Edge cutting (EC2)": {
-        "MRR": 0.585885263029121,
-        "tests to rank 1": 5.247524752475248,
+        "MRR": 0.5948217111705688,
+        "tests to rank 1": 5.133333333333334,
         "ours - this": {
-          "difference": 0.04163922970914661,
+          "difference": 0.04752630153750984,
           "interval": [
-            -0.0023523114852295793,
-            0.08548673087502018
+            0.006425082847484747,
+            0.08962282686296881
           ],
-          "p": 0.06494750716865859
+          "p": 0.024263349499779787
         }
       },
       "Joint disagreement (AKLD, Sterchi 2023)": {
-        "MRR": 0.6375605082546081,
-        "tests to rank 1": 4.732673267326732,
+        "MRR": 0.6466914965613484,
+        "tests to rank 1": 4.625,
         "ours - this": {
-          "difference": -0.010036015516340285,
+          "difference": -0.004343483853269701,
           "interval": [
-            -0.028068735236517466,
-            0.006549598247254429
+            -0.021353152631380875,
+            0.013093715526403614
           ],
-          "p": 0.4932136286078238
+          "p": 0.7968134634372004
         }
       }
     },
     "CollegeMsg": {
-      "outbreaks": 21,
+      "outbreaks": 120,
       "Random": {
-        "MRR": 0.24800967389668077,
-        "tests to rank 1": 9.095238095238095,
+        "MRR": 0.24442650472080044,
+        "tests to rank 1": 9.5,
         "ours - this": {
-          "difference": 0.3907663924711765,
+          "difference": 0.3105801234347492,
           "interval": [
-            0.27202577690212376,
-            0.5035493802470618
+            0.25689374266857357,
+            0.36375951737224915
           ],
-          "p": 0.0001318338889828333
+          "p": 6.943076597269622e-16
         }
       },
       "Highest degree": {
-        "MRR": 0.3716372557569639,
-        "tests to rank 1": 8.095238095238095,
+        "MRR": 0.3330712559050826,
+        "tests to rank 1": 8.341666666666667,
         "ours - this": {
-          "difference": 0.26713881061089345,
+          "difference": 0.2219353722504671,
           "interval": [
-            0.16517773958815146,
-            0.3719094017996688
+            0.16824855213960802,
+            0.2750927713022886
           ],
-          "p": 0.000292564384401933
+          "p": 1.4409634806215874e-11
         }
       },
       "Contact tracing": {
-        "MRR": 0.3449950229578028,
-        "tests to rank 1": 8.0,
+        "MRR": 0.3372258777670703,
+        "tests to rank 1": 8.2,
         "ours - this": {
-          "difference": 0.2937810434100545,
+          "difference": 0.21778075038847935,
           "interval": [
-            0.18048558056184627,
-            0.4094007166064949
+            0.1618831552078746,
+            0.2737186898181463
           ],
-          "p": 0.0004633944245426166
+          "p": 3.803850534119465e-11
         }
       },
       "Test top suspect": {
-        "MRR": 0.458403620305807,
-        "tests to rank 1": 6.428571428571429,
+        "MRR": 0.516341441464226,
+        "tests to rank 1": 5.908333333333333,
         "ours - this": {
-          "difference": 0.1803724460620502,
+          "difference": 0.03866518669132357,
           "interval": [
-            0.07968434844566413,
-            0.2926842759047466
+            -0.010424219168296547,
+            0.08883296802676252
           ],
-          "p": 0.007481778161526851
+          "p": 0.10859638361434339
         }
       },
       "Information gain (ours)": {
-        "MRR": 0.6387760663678573,
-        "tests to rank 1": 4.666666666666667
+        "MRR": 0.5550066281555497,
+        "tests to rank 1": 5.583333333333333
       },
       "Split candidates (Spinelli-style)": {
-        "MRR": 0.3964076413241888,
-        "tests to rank 1": 7.761904761904762,
+        "MRR": 0.3328222532688619,
+        "tests to rank 1": 8.433333333333334,
         "ours - this": {
-          "difference": 0.24236842504366848,
+          "difference": 0.2221843748866878,
           "interval": [
-            0.15031949013482826,
-            0.3367790884326259
+            0.17178924851002247,
+            0.2724232700983375
           ],
-          "p": 0.0005356728053985814
+          "p": 1.0722566389962318e-12
         }
       },
       "Most likely infected (Baker-style)": {
-        "MRR": 0.30327930003612064,
-        "tests to rank 1": 8.571428571428571,
+        "MRR": 0.3086394321338515,
+        "tests to rank 1": 8.65,
         "ours - this": {
-          "difference": 0.3354967663317367,
+          "difference": 0.2463671960216982,
           "interval": [
-            0.22654951988907893,
-            0.4432169792272169
+            0.19428735665690772,
+            0.29870805941136336
           ],
-          "p": 0.00016285576606790402
+          "p": 3.01804920849601e-13
         }
       },
       "Edge cutting (EC2)": {
-        "MRR": 0.47083141085721747,
-        "tests to rank 1": 6.285714285714286,
+        "MRR": 0.37121607741363444,
+        "tests to rank 1": 7.7,
         "ours - this": {
-          "difference": 0.16794465551063983,
+          "difference": 0.1837905507419152,
           "interval": [
-            0.0669483926551301,
-            0.2866319022655986
+            0.13533505474303628,
+            0.23396532132665354
           ],
-          "p": 0.008607429037984109
+          "p": 1.996923244603387e-09
         }
       },
       "Joint disagreement (AKLD, Sterchi 2023)": {
-        "MRR": 0.6317957405676496,
-        "tests to rank 1": 4.714285714285714,
+        "MRR": 0.5646519260387856,
+        "tests to rank 1": 5.416666666666667,
         "ours - this": {
-          "difference": 0.00698032580020766,
+          "difference": -0.009645297883235952,
           "interval": [
-            -0.02216990537816498,
-            0.04220035822729364
+            -0.03226359791187157,
+            0.013193522210543433
           ],
-          "p": 0.5067455281526702
+          "p": 0.1838422322363532
         }
       }
     },
@@ -900,16 +900,16 @@
     }
   },
   "Sterchi simulation": {
-    "outbreaks": 12,
+    "outbreaks": 16,
     "AKLD by simulation (Sterchi 2023)": {
-      "MRR": 0.5115834411403296,
-      "seconds per pick": 728.9538638015589
+      "MRR": 0.5662402159214692,
+      "seconds per pick": 610.8235837101937
     },
     "Information gain (ours)": {
-      "MRR": 0.5321489798279927
+      "MRR": 0.5793814125838541
     },
     "Joint disagreement (AKLD, Sterchi 2023)": {
-      "MRR": 0.500352475794004
+      "MRR": 0.5512741451422232
     }
   },
   "real outbreaks": {
@@ -1168,6 +1168,125 @@
           9.5,
           18.0,
           25.5
+        ]
+      }
+    },
+    "variants_regional": {
+      "outbreaks": [
+        "22E.Omicron",
+        "22F.Omicron",
+        "23A.Omicron",
+        "23B.Omicron",
+        "23G.Omicron",
+        "23I.Omicron",
+        "24A.Omicron"
+      ],
+      "Mean field, fitted": {
+        "MRR": 0.6937984496124031,
+        "ranks": [
+          2.0,
+          3.0,
+          43.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "Mean field, best model": {
+        "MRR": 0.49134199134199136,
+        "ranks": [
+          1.0,
+          3.0,
+          66.0,
+          2.0,
+          2.0,
+          1.0,
+          11.0
+        ]
+      },
+      "Mean field, untrained": {
+        "MRR": 0.6937984496124031,
+        "ranks": [
+          2.0,
+          3.0,
+          43.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "Earliest detection": {
+        "MRR": 0.4244897959183673,
+        "ranks": [
+          2.0,
+          4.0,
+          2.5,
+          4.0,
+          1.0,
+          3.5,
+          3.5
+        ]
+      },
+      "Effective distance (Brockmann-Helbing)": {
+        "MRR": 0.4764492753623189,
+        "ranks": [
+          1.0,
+          1.0,
+          12.0,
+          23.0,
+          1.0,
+          120.0,
+          5.0
+        ]
+      },
+      "LPSI, tuned": {
+        "MRR": 0.37670841703099767,
+        "ranks": [
+          36.0,
+          13.0,
+          6.0,
+          3.0,
+          1.0,
+          31.0,
+          1.0
+        ]
+      },
+      "Pinto-style": {
+        "MRR": 0.3525703463203463,
+        "ranks": [
+          1.0,
+          3.0,
+          32.0,
+          11.0,
+          2.0,
+          80.0,
+          2.0
+        ]
+      },
+      "Jordan center": {
+        "MRR": 0.052471084687053623,
+        "ranks": [
+          13.5,
+          16.0,
+          13.5,
+          29.5,
+          54.5,
+          15.0,
+          26.5
+        ]
+      },
+      "Distance center": {
+        "MRR": 0.24068407476660975,
+        "ranks": [
+          55.5,
+          23.0,
+          6.0,
+          2.5,
+          29.5,
+          44.0,
+          1.0
         ]
       }
     },
@@ -1474,19 +1593,19 @@
   "conformal_sets": {
     "bp: CollegeMsg": {
       "Mean-field": {
-        "set size for 90%": 80.0,
-        "test coverage": 0.917,
-        "calibration outbreaks": 84
+        "set size for 90%": 67.0,
+        "test coverage": 0.9,
+        "calibration outbreaks": 100
       },
       "Belief propagation": {
-        "set size for 90%": 1015.0,
-        "test coverage": 0.952,
-        "calibration outbreaks": 84
+        "set size for 90%": 1181.0,
+        "test coverage": 0.97,
+        "calibration outbreaks": 100
       },
       "Message passing": {
         "set size for 90%": 57.0,
-        "test coverage": 0.869,
-        "calibration outbreaks": 84
+        "test coverage": 0.86,
+        "calibration outbreaks": 100
       }
     },
     "bp: Email-Eu": {
@@ -1576,19 +1695,19 @@
     },
     "bp: Primary_school": {
       "Mean-field": {
-        "set size for 90%": 32.0,
-        "test coverage": 0.938,
-        "calibration outbreaks": 81
+        "set size for 90%": 30.0,
+        "test coverage": 0.921,
+        "calibration outbreaks": 101
       },
       "Belief propagation": {
-        "set size for 90%": 198.0,
-        "test coverage": 0.901,
-        "calibration outbreaks": 81
+        "set size for 90%": 199.0,
+        "test coverage": 0.921,
+        "calibration outbreaks": 101
       },
       "Message passing": {
-        "set size for 90%": 32.0,
-        "test coverage": 0.938,
-        "calibration outbreaks": 81
+        "set size for 90%": 31.0,
+        "test coverage": 0.931,
+        "calibration outbreaks": 101
       }
     },
     "twitter: Twitter": {
@@ -1628,7 +1747,7 @@
     "Growing PA": {
       "S_min (median over outbreaks)": 1.0000000000575112e-12,
       "gamma = 7 / S_min": 6999999999597.421,
-      "median 5% quantile of squared TV": 6.6993625341852525e-06
+      "median 5% quantile of squared TV": 6.699362534185828e-06
     },
     "CollegeMsg": {
       "S_min (median over outbreaks)": 1.0000000000575112e-12,
@@ -1638,7 +1757,7 @@
     "Email-Eu": {
       "S_min (median over outbreaks)": 1.0000000000575112e-12,
       "gamma = 7 / S_min": 6999999999597.421,
-      "median 5% quantile of squared TV": 4.03965379633662e-08
+      "median 5% quantile of squared TV": 4.039653796341083e-08
     },
     "Hospital": {
       "S_min (median over outbreaks)": 1.0010445802314363e-12,

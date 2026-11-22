@@ -1,153 +1,153 @@
 {
   "bp: CollegeMsg": {
     "Mean-field": {
-      "set size for 90%": Infinity,
-      "test coverage": 1.0,
-      "calibration outbreaks": 7
+      "set size for 90%": 67.0,
+      "test coverage": 0.9,
+      "calibration outbreaks": 100
     },
     "Belief propagation": {
-      "set size for 90%": Infinity,
-      "test coverage": 1.0,
-      "calibration outbreaks": 7
+      "set size for 90%": 1181.0,
+      "test coverage": 0.97,
+      "calibration outbreaks": 100
     },
     "Message passing": {
-      "set size for 90%": Infinity,
-      "test coverage": 1.0,
-      "calibration outbreaks": 7
+      "set size for 90%": 57.0,
+      "test coverage": 0.86,
+      "calibration outbreaks": 100
     }
   },
   "bp: Email-Eu": {
     "Mean-field": {
-      "set size for 90%": 40.0,
-      "test coverage": 0.95,
-      "calibration outbreaks": 20
+      "set size for 90%": 28.0,
+      "test coverage": 0.91,
+      "calibration outbreaks": 100
     },
     "Belief propagation": {
-      "set size for 90%": 758.0,
-      "test coverage": 1.0,
-      "calibration outbreaks": 20
+      "set size for 90%": 704.0,
+      "test coverage": 0.93,
+      "calibration outbreaks": 100
     },
     "Message passing": {
-      "set size for 90%": 32.0,
-      "test coverage": 0.95,
-      "calibration outbreaks": 20
+      "set size for 90%": 26.0,
+      "test coverage": 0.89,
+      "calibration outbreaks": 100
     }
   },
   "bp: Growing_PA": {
     "Mean-field": {
-      "set size for 90%": 13.0,
-      "test coverage": 0.8,
-      "calibration outbreaks": 20
+      "set size for 90%": 24.0,
+      "test coverage": 0.93,
+      "calibration outbreaks": 100
     },
     "Belief propagation": {
-      "set size for 90%": 22.0,
-      "test coverage": 0.9,
-      "calibration outbreaks": 20
+      "set size for 90%": 15.0,
+      "test coverage": 0.85,
+      "calibration outbreaks": 100
     },
     "Message passing": {
-      "set size for 90%": 8.0,
-      "test coverage": 0.75,
-      "calibration outbreaks": 20
+      "set size for 90%": 15.0,
+      "test coverage": 0.89,
+      "calibration outbreaks": 100
     }
   },
   "bp: High_school": {
     "Mean-field": {
-      "set size for 90%": 20.0,
-      "test coverage": 0.95,
-      "calibration outbreaks": 20
+      "set size for 90%": 18.0,
+      "test coverage": 0.92,
+      "calibration outbreaks": 100
     },
     "Belief propagation": {
-      "set size for 90%": 94.0,
-      "test coverage": 0.95,
-      "calibration outbreaks": 20
+      "set size for 90%": 95.0,
+      "test coverage": 0.93,
+      "calibration outbreaks": 100
     },
     "Message passing": {
-      "set size for 90%": 21.0,
-      "test coverage": 0.95,
-      "calibration outbreaks": 20
+      "set size for 90%": 17.0,
+      "test coverage": 0.91,
+      "calibration outbreaks": 100
     }
   },
   "bp: Hospital": {
     "Mean-field": {
-      "set size for 90%": 30.0,
-      "test coverage": 1.0,
-      "calibration outbreaks": 20
+      "set size for 90%": 25.0,
+      "test coverage": 0.92,
+      "calibration outbreaks": 100
     },
     "Belief propagation": {
       "set size for 90%": 57.0,
-      "test coverage": 1.0,
-      "calibration outbreaks": 20
+      "test coverage": 0.94,
+      "calibration outbreaks": 100
     },
     "Message passing": {
-      "set size for 90%": 29.0,
-      "test coverage": 1.0,
-      "calibration outbreaks": 20
+      "set size for 90%": 24.0,
+      "test coverage": 0.92,
+      "calibration outbreaks": 100
     }
   },
   "bp: Office": {
     "Mean-field": {
-      "set size for 90%": 22.0,
-      "test coverage": 0.95,
-      "calibration outbreaks": 20
+      "set size for 90%": 18.0,
+      "test coverage": 0.92,
+      "calibration outbreaks": 100
     },
     "Belief propagation": {
-      "set size for 90%": 49.0,
-      "test coverage": 0.95,
-      "calibration outbreaks": 20
+      "set size for 90%": 41.0,
+      "test coverage": 0.92,
+      "calibration outbreaks": 100
     },
     "Message passing": {
-      "set size for 90%": 16.0,
-      "test coverage": 0.95,
-      "calibration outbreaks": 20
+      "set size for 90%": 18.0,
+      "test coverage": 0.94,
+      "calibration outbreaks": 100
     }
   },
   "bp: Primary_school": {
     "Mean-field": {
-      "set size for 90%": 25.0,
-      "test coverage": 0.9,
-      "calibration outbreaks": 20
+      "set size for 90%": 30.0,
+      "test coverage": 0.921,
+      "calibration outbreaks": 101
     },
     "Belief propagation": {
-      "set size for 90%": 157.0,
-      "test coverage": 0.85,
-      "calibration outbreaks": 20
+      "set size for 90%": 199.0,
+      "test coverage": 0.921,
+      "calibration outbreaks": 101
     },
     "Message passing": {
-      "set size for 90%": 25.0,
-      "test coverage": 0.9,
-      "calibration outbreaks": 20
+      "set size for 90%": 31.0,
+      "test coverage": 0.931,
+      "calibration outbreaks": 101
     }
   },
   "twitter: Twitter": {
     "Mean-field, fitted": {
-      "set size for 90%": 457.0,
-      "test coverage": 0.875,
-      "calibration outbreaks": 32
+      "set size for 90%": 1204.0,
+      "test coverage": 0.887,
+      "calibration outbreaks": 141
     },
     "Mean-field, untrained": {
-      "set size for 90%": 2238.0,
-      "test coverage": 0.938,
-      "calibration outbreaks": 32
+      "set size for 90%": 1914.0,
+      "test coverage": 0.88,
+      "calibration outbreaks": 141
     },
     "Distance center": {
-      "set size for 90%": 378.0,
-      "test coverage": 0.938,
-      "calibration outbreaks": 32
+      "set size for 90%": 430.0,
+      "test coverage": 0.873,
+      "calibration outbreaks": 141
     },
     "Jordan center": {
-      "set size for 90%": 920.0,
-      "test coverage": 0.969,
-      "calibration outbreaks": 32
+      "set size for 90%": 990.0,
+      "test coverage": 0.873,
+      "calibration outbreaks": 141
     },
     "LPSI, tuned": {
-      "set size for 90%": 2335.0,
-      "test coverage": 0.938,
-      "calibration outbreaks": 32
+      "set size for 90%": 2276.0,
+      "test coverage": 0.901,
+      "calibration outbreaks": 141
     },
     "Pinto-style": {
-      "set size for 90%": 1844.0,
-      "test coverage": 1.0,
-      "calibration outbreaks": 32
+      "set size for 90%": 1415.0,
+      "test coverage": 0.866,
+      "calibration outbreaks": 141
     }
   }
 }

@@ -1,0 +1,37 @@
+{
+  "Growing PA": {
+    "S_min (median over outbreaks)": 1.0000000000575112e-12,
+    "gamma = 7 / S_min": 6999999999597.421,
+    "median 5% quantile of squared TV": 6.699362534185828e-06
+  },
+  "CollegeMsg": {
+    "S_min (median over outbreaks)": 1.0000000000575112e-12,
+    "gamma = 7 / S_min": 6999999999597.421,
+    "median 5% quantile of squared TV": 4.5848441498255847e-07
+  },
+  "Email-Eu": {
+    "S_min (median over outbreaks)": 1.0000000000575112e-12,
+    "gamma = 7 / S_min": 6999999999597.421,
+    "median 5% quantile of squared TV": 4.039653796341083e-08
+  },
+  "Hospital": {
+    "S_min (median over outbreaks)": 1.0010445802314363e-12,
+    "gamma = 7 / S_min": 6992695568444.75,
+    "median 5% quantile of squared TV": 0.009128819902707856
+  },
+  "Primary school": {
+    "S_min (median over outbreaks)": 1.0000000000575112e-12,
+    "gamma = 7 / S_min": 6999999999597.421,
+    "median 5% quantile of squared TV": 0.004728327793618968
+  },
+  "Office": {
+    "S_min (median over outbreaks)": 1.0000000000575112e-12,
+    "gamma = 7 / S_min": 6999999999597.421,
+    "median 5% quantile of squared TV": 0.0008788463443746273
+  },
+  "High school": {
+    "S_min (median over outbreaks)": 1.0000000000575112e-12,
+    "gamma = 7 / S_min": 6999999999597.421,
+    "median 5% quantile of squared TV": 9.614498520418846e-05
+  }
+}

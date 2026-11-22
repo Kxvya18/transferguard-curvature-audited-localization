@@ -1,0 +1,45 @@
+{"dataset": "CollegeMsg", "outbreak": 2, "strategy": "Random", "ranks": [11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0], "seconds per pick": 0.0005877733230590821}
+{"dataset": "CollegeMsg", "outbreak": 2, "strategy": "Highest degree", "ranks": [11.0, 14.0, 15.0, 11.0, 11.0, 16.0, 16.0, 14.0, 14.0, 13.0, 18.0], "seconds per pick": 0.0033148765563964845}
+{"dataset": "CollegeMsg", "outbreak": 2, "strategy": "Contact tracing", "ranks": [11.0, 14.0, 19.0, 20.0, 7.0, 7.0, 5.0, 7.0, 8.0, 8.0, 8.0], "seconds per pick": 0.005412960052490234}
+{"dataset": "CollegeMsg", "outbreak": 2, "strategy": "Test top suspect", "ranks": [11.0, 12.0, 10.0, 10.0, 8.0, 7.0, 5.0, 4.0, 3.0, 2.0, 4.0], "seconds per pick": 30.126458406448364}
+{"dataset": "CollegeMsg", "outbreak": 2, "strategy": "Information gain (ours)", "ranks": [11.0, 12.0, 10.0, 10.0, 9.0, 8.0, 7.0, 5.0, 3.0, 3.0, 3.0], "seconds per pick": 38.47038011550903}
+{"dataset": "CollegeMsg", "outbreak": 2, "strategy": "Split candidates (Spinelli-style)", "ranks": [11.0, 11.0, 11.0, 10.0, 12.0, 11.0, 13.0, 12.0, 12.0, 11.0, 11.0], "seconds per pick": 1.0638187646865844}
+{"dataset": "CollegeMsg", "outbreak": 2, "strategy": "Most likely infected (Baker-style)", "ranks": [11.0, 14.0, 17.0, 16.0, 15.0, 16.0, 18.0, 25.0, 27.0, 26.0, 25.0], "seconds per pick": 35.7862247467041}
+{"dataset": "CollegeMsg", "outbreak": 2, "strategy": "Edge cutting (EC2)", "ranks": [11.0, 10.0, 10.0, 11.0, 14.0, 15.0, 18.0, 20.0, 22.0, 20.0, 20.0], "seconds per pick": 36.10896501541138}
+{"dataset": "CollegeMsg", "outbreak": 2, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [11.0, 12.0, 10.0, 10.0, 8.0, 7.0, 5.0, 4.0, 4.0, 3.0, 3.0], "seconds per pick": 39.13134286403656}
+{"dataset": "CollegeMsg", "outbreak": 10, "strategy": "Random", "ranks": [11.0, 9.0, 11.0, 10.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 10.0], "seconds per pick": 0.0005835056304931641}
+{"dataset": "CollegeMsg", "outbreak": 10, "strategy": "Highest degree", "ranks": [11.0, 4.0, 4.0, 4.0, 4.0, 4.0, 3.0, 3.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0033705949783325194}
+{"dataset": "CollegeMsg", "outbreak": 10, "strategy": "Contact tracing", "ranks": [11.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 3.0, 3.0, 3.0], "seconds per pick": 0.005653500556945801}
+{"dataset": "CollegeMsg", "outbreak": 10, "strategy": "Test top suspect", "ranks": [11.0, 8.0, 5.0, 4.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 19.48813750743866}
+{"dataset": "CollegeMsg", "outbreak": 10, "strategy": "Information gain (ours)", "ranks": [11.0, 8.0, 5.0, 4.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 28.01369788646698}
+{"dataset": "CollegeMsg", "outbreak": 10, "strategy": "Split candidates (Spinelli-style)", "ranks": [11.0, 8.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0], "seconds per pick": 0.9571456432342529}
+{"dataset": "CollegeMsg", "outbreak": 10, "strategy": "Most likely infected (Baker-style)", "ranks": [11.0, 9.0, 8.0, 7.0, 5.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0], "seconds per pick": 26.30187702178955}
+{"dataset": "CollegeMsg", "outbreak": 10, "strategy": "Edge cutting (EC2)", "ranks": [11.0, 10.0, 6.0, 6.0, 5.0, 4.0, 4.0, 5.0, 6.0, 6.0, 5.0], "seconds per pick": 19.797438144683838}
+{"dataset": "CollegeMsg", "outbreak": 10, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [11.0, 8.0, 5.0, 4.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 20.915602850914002}
+{"dataset": "CollegeMsg", "outbreak": 18, "strategy": "Random", "ranks": [198.0, 198.0, 198.0, 197.0, 197.0, 197.0, 119.0, 93.0, 93.0, 93.0, 93.0], "seconds per pick": 0.0005747795104980469}
+{"dataset": "CollegeMsg", "outbreak": 18, "strategy": "Highest degree", "ranks": [198.0, 73.0, 18.0, 17.0, 17.0, 90.0, 60.0, 56.0, 57.0, 36.0, 85.0], "seconds per pick": 0.0023299694061279298}
+{"dataset": "CollegeMsg", "outbreak": 18, "strategy": "Contact tracing", "ranks": [198.0, 78.0, 50.0, 36.0, 38.0, 69.0, 64.0, 36.0, 13.0, 10.0, 8.0], "seconds per pick": 0.003672957420349121}
+{"dataset": "CollegeMsg", "outbreak": 18, "strategy": "Test top suspect", "ranks": [198.0, 337.0, 172.0, 186.0, 227.0, 264.0, 221.0, 219.0, 204.0, 185.0, 227.0], "seconds per pick": 20.528622460365295}
+{"dataset": "CollegeMsg", "outbreak": 18, "strategy": "Information gain (ours)", "ranks": [198.0, 41.0, 123.0, 61.0, 20.0, 41.0, 42.0, 53.0, 57.0, 41.0, 71.0], "seconds per pick": 28.27191016674042}
+{"dataset": "CollegeMsg", "outbreak": 18, "strategy": "Split candidates (Spinelli-style)", "ranks": [198.0, 333.0, 280.0, 221.0, 231.0, 192.0, 89.0, 67.0, 88.0, 92.0, 68.0], "seconds per pick": 0.6911908388137817}
+{"dataset": "CollegeMsg", "outbreak": 18, "strategy": "Most likely infected (Baker-style)", "ranks": [198.0, 154.0, 8.0, 9.0, 7.0, 7.0, 71.0, 74.0, 40.0, 27.0, 27.0], "seconds per pick": 29.660264587402345}
+{"dataset": "CollegeMsg", "outbreak": 18, "strategy": "Edge cutting (EC2)", "ranks": [198.0, 41.0, 10.0, 9.0, 9.0, 8.0, 7.0, 8.0, 8.0, 6.0, 3.0], "seconds per pick": 28.33056197166443}
+{"dataset": "CollegeMsg", "outbreak": 18, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [198.0, 41.0, 123.0, 61.0, 20.0, 41.0, 42.0, 53.0, 57.0, 41.0, 71.0], "seconds per pick": 28.815322160720825}
+{"dataset": "CollegeMsg", "outbreak": 26, "strategy": "Random", "ranks": [136.0, 136.0, 136.0, 124.0, 124.0, 124.0, 124.0, 124.0, 83.0, 83.0, 83.0], "seconds per pick": 0.0005563497543334961}
+{"dataset": "CollegeMsg", "outbreak": 26, "strategy": "Highest degree", "ranks": [136.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 5.0, 7.0, 8.0, 8.0], "seconds per pick": 0.0031865596771240234}
+{"dataset": "CollegeMsg", "outbreak": 26, "strategy": "Contact tracing", "ranks": [136.0, 4.0, 4.0, 5.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 5.0], "seconds per pick": 0.004584670066833496}
+{"dataset": "CollegeMsg", "outbreak": 26, "strategy": "Test top suspect", "ranks": [136.0, 136.0, 6.0, 10.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.059632802009583}
+{"dataset": "CollegeMsg", "outbreak": 26, "strategy": "Information gain (ours)", "ranks": [136.0, 136.0, 150.0, 3.0, 8.0, 7.0, 6.0, 5.0, 3.0, 3.0, 3.0], "seconds per pick": 12.483174681663513}
+{"dataset": "CollegeMsg", "outbreak": 26, "strategy": "Split candidates (Spinelli-style)", "ranks": [136.0, 138.0, 137.0, 146.0, 142.0, 153.0, 150.0, 7.0, 5.0, 5.0, 5.0], "seconds per pick": 0.4780739307403564}
+{"dataset": "CollegeMsg", "outbreak": 26, "strategy": "Most likely infected (Baker-style)", "ranks": [136.0, 13.0, 12.0, 12.0, 11.0, 5.0, 5.0, 6.0, 4.0, 4.0, 4.0], "seconds per pick": 11.9180757522583}
+{"dataset": "CollegeMsg", "outbreak": 26, "strategy": "Edge cutting (EC2)", "ranks": [136.0, 128.0, 140.0, 127.0, 126.0, 114.0, 121.0, 8.0, 8.0, 8.0, 8.0], "seconds per pick": 9.44758448600769}
+{"dataset": "CollegeMsg", "outbreak": 26, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [136.0, 5.0, 8.0, 7.0, 6.0, 5.0, 3.0, 2.0, 2.0, 1.0, 1.0], "seconds per pick": 7.95122230052948}
+{"dataset": "CollegeMsg", "outbreak": 34, "strategy": "Random", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 4.0, 4.0], "seconds per pick": 0.0003993511199951172}
+{"dataset": "CollegeMsg", "outbreak": 34, "strategy": "Highest degree", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 1.0, 1.0, 2.0], "seconds per pick": 0.0019748449325561524}
+{"dataset": "CollegeMsg", "outbreak": 34, "strategy": "Contact tracing", "ranks": [2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 3.0, 3.0, 4.0, 4.0], "seconds per pick": 0.0033811330795288086}
+{"dataset": "CollegeMsg", "outbreak": 34, "strategy": "Test top suspect", "ranks": [2.0, 1.0, 6.0, 9.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 14.32670624256134}
+{"dataset": "CollegeMsg", "outbreak": 34, "strategy": "Information gain (ours)", "ranks": [2.0, 12.0, 13.0, 2.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 20.595489597320558}
+{"dataset": "CollegeMsg", "outbreak": 34, "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 3.0, 3.0, 4.0, 4.0, 4.0, 3.0, 3.0, 4.0, 3.0, 3.0], "seconds per pick": 0.6648727178573608}
+{"dataset": "CollegeMsg", "outbreak": 34, "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 2.0, 2.0, 2.0, 45.0, 25.0, 21.0, 15.0, 19.0, 11.0, 8.0], "seconds per pick": 19.164615869522095}
+{"dataset": "CollegeMsg", "outbreak": 34, "strategy": "Edge cutting (EC2)", "ranks": [2.0, 12.0, 11.0, 20.0, 21.0, 21.0, 17.0, 25.0, 29.0, 21.0, 13.0], "seconds per pick": 19.97567057609558}
+{"dataset": "CollegeMsg", "outbreak": 34, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 12.0, 13.0, 2.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 19.115903043746947}

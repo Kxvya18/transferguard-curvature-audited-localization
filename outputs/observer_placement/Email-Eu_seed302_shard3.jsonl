@@ -1,0 +1,90 @@
+{"dataset": "Email-Eu", "outbreak": 3, "strategy": "Random", "ranks": [8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0, 8.0], "seconds per pick": 0.0004335641860961914}
+{"dataset": "Email-Eu", "outbreak": 3, "strategy": "Highest degree", "ranks": [8.0, 7.0, 10.0, 9.0, 9.0, 9.0, 9.0, 9.0, 10.0, 11.0, 11.0], "seconds per pick": 0.001964378356933594}
+{"dataset": "Email-Eu", "outbreak": 3, "strategy": "Contact tracing", "ranks": [8.0, 7.0, 9.0, 9.0, 9.0, 9.0, 10.0, 8.0, 8.0, 7.0, 7.0], "seconds per pick": 0.0031625509262084963}
+{"dataset": "Email-Eu", "outbreak": 3, "strategy": "Test top suspect", "ranks": [8.0, 7.0, 6.0, 5.0, 3.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.8696357488632203}
+{"dataset": "Email-Eu", "outbreak": 3, "strategy": "Information gain (ours)", "ranks": [8.0, 5.0, 4.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.8973809480667114}
+{"dataset": "Email-Eu", "outbreak": 3, "strategy": "Split candidates (Spinelli-style)", "ranks": [8.0, 8.0, 9.0, 9.0, 9.0, 9.0, 7.0, 7.0, 7.0, 7.0, 7.0], "seconds per pick": 0.25190176963806155}
+{"dataset": "Email-Eu", "outbreak": 3, "strategy": "Most likely infected (Baker-style)", "ranks": [8.0, 8.0, 8.0, 8.0, 5.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.1028059959411625}
+{"dataset": "Email-Eu", "outbreak": 3, "strategy": "Edge cutting (EC2)", "ranks": [8.0, 8.0, 5.0, 5.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.118749284744263}
+{"dataset": "Email-Eu", "outbreak": 3, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [8.0, 5.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.0921470642089846}
+{"dataset": "Email-Eu", "outbreak": 7, "strategy": "Random", "ranks": [6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0, 6.0], "seconds per pick": 0.0004627227783203125}
+{"dataset": "Email-Eu", "outbreak": 7, "strategy": "Highest degree", "ranks": [6.0, 5.0, 5.0, 5.0, 5.0, 5.0, 2.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 0.002151966094970703}
+{"dataset": "Email-Eu", "outbreak": 7, "strategy": "Contact tracing", "ranks": [6.0, 5.0, 11.0, 9.0, 9.0, 9.0, 9.0, 9.0, 9.0, 7.0, 7.0], "seconds per pick": 0.0028147459030151366}
+{"dataset": "Email-Eu", "outbreak": 7, "strategy": "Test top suspect", "ranks": [6.0, 5.0, 4.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.486639952659607}
+{"dataset": "Email-Eu", "outbreak": 7, "strategy": "Information gain (ours)", "ranks": [6.0, 5.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.8652523279190065}
+{"dataset": "Email-Eu", "outbreak": 7, "strategy": "Split candidates (Spinelli-style)", "ranks": [6.0, 6.0, 5.0, 5.0, 5.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.33844637870788574}
+{"dataset": "Email-Eu", "outbreak": 7, "strategy": "Most likely infected (Baker-style)", "ranks": [6.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 1.0, 1.0], "seconds per pick": 4.652597880363464}
+{"dataset": "Email-Eu", "outbreak": 7, "strategy": "Edge cutting (EC2)", "ranks": [6.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0], "seconds per pick": 4.610714316368103}
+{"dataset": "Email-Eu", "outbreak": 7, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [6.0, 5.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.780594205856323}
+{"dataset": "Email-Eu", "outbreak": 11, "strategy": "Random", "ranks": [2.0, 2.0, 2.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.00047817230224609373}
+{"dataset": "Email-Eu", "outbreak": 11, "strategy": "Highest degree", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0, 3.0, 3.0], "seconds per pick": 0.002088046073913574}
+{"dataset": "Email-Eu", "outbreak": 11, "strategy": "Contact tracing", "ranks": [2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0029227495193481444}
+{"dataset": "Email-Eu", "outbreak": 11, "strategy": "Test top suspect", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.5553954124450684}
+{"dataset": "Email-Eu", "outbreak": 11, "strategy": "Information gain (ours)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.9520208835601807}
+{"dataset": "Email-Eu", "outbreak": 11, "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 2.0, 2.0, 2.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0, 4.0], "seconds per pick": 0.29245729446411134}
+{"dataset": "Email-Eu", "outbreak": 11, "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.8405397653579714}
+{"dataset": "Email-Eu", "outbreak": 11, "strategy": "Edge cutting (EC2)", "ranks": [2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.717735695838928}
+{"dataset": "Email-Eu", "outbreak": 11, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.8051424503326414}
+{"dataset": "Email-Eu", "outbreak": 15, "strategy": "Random", "ranks": [14.0, 14.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0, 6.0, 6.0, 6.0], "seconds per pick": 0.0004737615585327148}
+{"dataset": "Email-Eu", "outbreak": 15, "strategy": "Highest degree", "ranks": [14.0, 14.0, 16.0, 14.0, 8.0, 8.0, 7.0, 7.0, 7.0, 6.0, 7.0], "seconds per pick": 0.002138996124267578}
+{"dataset": "Email-Eu", "outbreak": 15, "strategy": "Contact tracing", "ranks": [14.0, 13.0, 10.0, 10.0, 9.0, 10.0, 1.0, 2.0, 2.0, 2.0, 4.0], "seconds per pick": 0.0031109094619750977}
+{"dataset": "Email-Eu", "outbreak": 15, "strategy": "Test top suspect", "ranks": [14.0, 13.0, 9.0, 9.0, 8.0, 8.0, 8.0, 5.0, 2.0, 1.0, 1.0], "seconds per pick": 2.734982466697693}
+{"dataset": "Email-Eu", "outbreak": 15, "strategy": "Information gain (ours)", "ranks": [14.0, 13.0, 9.0, 8.0, 7.0, 10.0, 10.0, 9.0, 2.0, 2.0, 1.0], "seconds per pick": 4.990672159194946}
+{"dataset": "Email-Eu", "outbreak": 15, "strategy": "Split candidates (Spinelli-style)", "ranks": [14.0, 11.0, 15.0, 15.0, 8.0, 7.0, 8.0, 8.0, 8.0, 8.0, 10.0], "seconds per pick": 0.36276865005493164}
+{"dataset": "Email-Eu", "outbreak": 15, "strategy": "Most likely infected (Baker-style)", "ranks": [14.0, 11.0, 13.0, 4.0, 2.0, 1.0, 1.0, 3.0, 7.0, 8.0, 5.0], "seconds per pick": 5.320241785049438}
+{"dataset": "Email-Eu", "outbreak": 15, "strategy": "Edge cutting (EC2)", "ranks": [14.0, 11.0, 9.0, 9.0, 5.0, 3.0, 2.0, 8.0, 7.0, 7.0, 5.0], "seconds per pick": 5.256289911270142}
+{"dataset": "Email-Eu", "outbreak": 15, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [14.0, 11.0, 9.0, 2.0, 2.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 5.022362279891968}
+{"dataset": "Email-Eu", "outbreak": 19, "strategy": "Random", "ranks": [6.0, 6.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0, 7.0], "seconds per pick": 0.0004414796829223633}
+{"dataset": "Email-Eu", "outbreak": 19, "strategy": "Highest degree", "ranks": [6.0, 6.0, 8.0, 9.0, 11.0, 10.0, 12.0, 12.0, 10.0, 7.0, 6.0], "seconds per pick": 0.0021169424057006837}
+{"dataset": "Email-Eu", "outbreak": 19, "strategy": "Contact tracing", "ranks": [6.0, 8.0, 5.0, 5.0, 6.0, 6.0, 6.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0031145811080932617}
+{"dataset": "Email-Eu", "outbreak": 19, "strategy": "Test top suspect", "ranks": [6.0, 5.0, 3.0, 3.0, 5.0, 4.0, 4.0, 1.0, 9.0, 7.0, 6.0], "seconds per pick": 3.125960087776184}
+{"dataset": "Email-Eu", "outbreak": 19, "strategy": "Information gain (ours)", "ranks": [6.0, 5.0, 6.0, 6.0, 5.0, 4.0, 4.0, 3.0, 3.0, 3.0, 2.0], "seconds per pick": 5.405461621284485}
+{"dataset": "Email-Eu", "outbreak": 19, "strategy": "Split candidates (Spinelli-style)", "ranks": [6.0, 6.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.36724052429199217}
+{"dataset": "Email-Eu", "outbreak": 19, "strategy": "Most likely infected (Baker-style)", "ranks": [6.0, 3.0, 3.0, 3.0, 1.0, 4.0, 4.0, 4.0, 1.0, 1.0, 1.0], "seconds per pick": 4.892103910446167}
+{"dataset": "Email-Eu", "outbreak": 19, "strategy": "Edge cutting (EC2)", "ranks": [6.0, 8.0, 5.0, 3.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 5.217563486099243}
+{"dataset": "Email-Eu", "outbreak": 19, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [6.0, 8.0, 5.0, 4.0, 3.0, 2.0, 1.0, 1.0, 3.0, 2.0, 2.0], "seconds per pick": 5.070598244667053}
+{"dataset": "Email-Eu", "outbreak": 23, "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0004348278045654297}
+{"dataset": "Email-Eu", "outbreak": 23, "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.002126002311706543}
+{"dataset": "Email-Eu", "outbreak": 23, "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0028219699859619142}
+{"dataset": "Email-Eu", "outbreak": 23, "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6942447423934937}
+{"dataset": "Email-Eu", "outbreak": 23, "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.8860520124435425}
+{"dataset": "Email-Eu", "outbreak": 23, "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.2862578868865967}
+{"dataset": "Email-Eu", "outbreak": 23, "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.331411266326904}
+{"dataset": "Email-Eu", "outbreak": 23, "strategy": "Edge cutting (EC2)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.1021478891372682}
+{"dataset": "Email-Eu", "outbreak": 23, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.8106262683868408}
+{"dataset": "Email-Eu", "outbreak": 27, "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0004643917083740234}
+{"dataset": "Email-Eu", "outbreak": 27, "strategy": "Highest degree", "ranks": [1.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0020642518997192384}
+{"dataset": "Email-Eu", "outbreak": 27, "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0028229236602783205}
+{"dataset": "Email-Eu", "outbreak": 27, "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.6779806852340697}
+{"dataset": "Email-Eu", "outbreak": 27, "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.0182034254074095}
+{"dataset": "Email-Eu", "outbreak": 27, "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.31987509727478025}
+{"dataset": "Email-Eu", "outbreak": 27, "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.063762307167053}
+{"dataset": "Email-Eu", "outbreak": 27, "strategy": "Edge cutting (EC2)", "ranks": [1.0, 1.0, 2.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.145476055145264}
+{"dataset": "Email-Eu", "outbreak": 27, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.171486353874206}
+{"dataset": "Email-Eu", "outbreak": 31, "strategy": "Random", "ranks": [10.0, 10.0, 10.0, 10.0, 10.0, 11.0, 11.0, 11.0, 11.0, 11.0, 11.0], "seconds per pick": 0.0004529714584350586}
+{"dataset": "Email-Eu", "outbreak": 31, "strategy": "Highest degree", "ranks": [10.0, 5.0, 5.0, 5.0, 7.0, 7.0, 4.0, 4.0, 4.0, 4.0, 5.0], "seconds per pick": 0.002259707450866699}
+{"dataset": "Email-Eu", "outbreak": 31, "strategy": "Contact tracing", "ranks": [10.0, 5.0, 5.0, 4.0, 4.0, 5.0, 5.0, 6.0, 5.0, 8.0, 10.0], "seconds per pick": 0.0027074098587036135}
+{"dataset": "Email-Eu", "outbreak": 31, "strategy": "Test top suspect", "ranks": [10.0, 11.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.7254592657089234}
+{"dataset": "Email-Eu", "outbreak": 31, "strategy": "Information gain (ours)", "ranks": [10.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.1143676996231076}
+{"dataset": "Email-Eu", "outbreak": 31, "strategy": "Split candidates (Spinelli-style)", "ranks": [10.0, 10.0, 10.0, 10.0, 4.0, 4.0, 28.0, 22.0, 21.0, 20.0, 20.0], "seconds per pick": 0.2763696193695068}
+{"dataset": "Email-Eu", "outbreak": 31, "strategy": "Most likely infected (Baker-style)", "ranks": [10.0, 3.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.786707711219788}
+{"dataset": "Email-Eu", "outbreak": 31, "strategy": "Edge cutting (EC2)", "ranks": [10.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.32633786201477}
+{"dataset": "Email-Eu", "outbreak": 31, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [10.0, 6.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.2366265773773195}
+{"dataset": "Email-Eu", "outbreak": 35, "strategy": "Random", "ranks": [2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0], "seconds per pick": 0.0004379749298095703}
+{"dataset": "Email-Eu", "outbreak": 35, "strategy": "Highest degree", "ranks": [2.0, 2.0, 2.0, 1.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 3.0], "seconds per pick": 0.002260255813598633}
+{"dataset": "Email-Eu", "outbreak": 35, "strategy": "Contact tracing", "ranks": [2.0, 2.0, 3.0, 3.0, 3.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0031839609146118164}
+{"dataset": "Email-Eu", "outbreak": 35, "strategy": "Test top suspect", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.0547785997390746}
+{"dataset": "Email-Eu", "outbreak": 35, "strategy": "Information gain (ours)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 5.457211875915528}
+{"dataset": "Email-Eu", "outbreak": 35, "strategy": "Split candidates (Spinelli-style)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.38747477531433105}
+{"dataset": "Email-Eu", "outbreak": 35, "strategy": "Most likely infected (Baker-style)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 5.658280944824218}
+{"dataset": "Email-Eu", "outbreak": 35, "strategy": "Edge cutting (EC2)", "ranks": [2.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 5.66575288772583}
+{"dataset": "Email-Eu", "outbreak": 35, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 4.136358976364136}
+{"dataset": "Email-Eu", "outbreak": 39, "strategy": "Random", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0002851009368896484}
+{"dataset": "Email-Eu", "outbreak": 39, "strategy": "Highest degree", "ranks": [1.0, 1.0, 1.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.001132035255432129}
+{"dataset": "Email-Eu", "outbreak": 39, "strategy": "Contact tracing", "ranks": [1.0, 1.0, 1.0, 2.0, 1.0, 1.0, 2.0, 3.0, 3.0, 3.0, 3.0], "seconds per pick": 0.0014629125595092773}
+{"dataset": "Email-Eu", "outbreak": 39, "strategy": "Test top suspect", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.6457272529602051}
+{"dataset": "Email-Eu", "outbreak": 39, "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.6494261026382446}
+{"dataset": "Email-Eu", "outbreak": 39, "strategy": "Split candidates (Spinelli-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.29976258277893064}
+{"dataset": "Email-Eu", "outbreak": 39, "strategy": "Most likely infected (Baker-style)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.9221985578536986}
+{"dataset": "Email-Eu", "outbreak": 39, "strategy": "Edge cutting (EC2)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 3.008747124671936}
+{"dataset": "Email-Eu", "outbreak": 39, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.0406290769577025}
