@@ -24,14 +24,14 @@ Everything kept in the paper must support one clause of this sentence.
 | # | Clause | Evidence | Verdict |
 |---|---|---|---|
 | C1 | near-optimal | MF vs exact Monte Carlo likelihood, Hospital 200 outbreaks (told: 0.470 vs 0.475; grid: MF 0.352 vs exact 0.324). Office and High school running. | Holds for Hospital; must hold on the two new networks before the word "near-optimal" is used without qualification |
-| C2 | better than BP on real contact networks | 200 outbreaks per network (162-168 for Primary school, CollegeMsg until top-up lands). MF - BP: Hospital +0.057, Primary +0.235, Office +0.043, High school +0.119, Email-Eu +0.123, CollegeMsg +0.056 (bootstrap interval excludes 0; Wilcoxon p = 0.25). | Holds on 6/6 real networks; CollegeMsg is the weakest and must be re-checked at 200 |
+| C2 | better than BP on real contact networks | 200 outbreaks per network (202 Primary school). MF - BP: Hospital +0.057 (p 2e-6), Primary +0.230 (p 1e-18), Office +0.043 (p 2e-4), High school +0.119 (p 6e-9), Email-Eu +0.123 (p 1e-9), CollegeMsg +0.066 [+0.016, +0.116] (p 0.048) | Holds on 6/6 real networks, all significant |
 | C3 | 40-1400x lower cost | Measured seconds per outbreak, same machine class, single core | Holds |
 | C3b | when BP wins | Growing PA (synthetic, clustering 0.018, the only near-tree graph): MF - BP -0.034 (n.s.) | Explained by theory (BP exact on trees); kept as the boundary of the claim |
-| C4 | active test selection practical | Our criterion ties Sterchi et al. (2023) and beats 7 strategies on 6/7 networks; Sterchi's own simulation pipeline 729 s per pick vs 0.3 s, no better (12 outbreaks, 4 more running) | Holds; Primary school: "test the top suspect" is better (must be reported) |
+| C4 | active test selection practical | 120 outbreaks per network (3 seeds): our criterion ties the joint (Sterchi-type) criterion on all 7 networks and beats the other 7 strategies on 6/7; Sterchi's own simulation pipeline, 16 Hospital outbreaks: 0.566 MRR at 611 s per pick vs ours 0.579 at 0.3 s | Holds; Primary school: "test the top suspect" is better (-0.043 [-0.073, -0.014]); on CollegeMsg it is not significantly worse (+0.039 [-0.010, +0.089]) |
 | C5 | calibrated source sets | Split conformal, coverage 0.85-0.94 at nominal 0.90; MF sets 18-32 people vs BP 41-704 | Holds; recompute after top-up |
-| C6 | real outbreaks, origin hidden from the reports | Pre-registered, run once: SARS 2003 MF ranks China 1st (earliest detection 16th, distance center 8.5, LPSI 14); H1N1 2009 MF 3rd (earliest detection 1.5, LPSI 2). Robustness to window and look-back running. | Strong case study, but n = 2: worded as a case study, never as a statistical claim |
-| C7 | real cascades (Twitter, 381 untouched) | MRR tie with distance center (+0.016 [-0.015, +0.046]); top-1 45% vs 39% (McNemar p = 0.003); top-10 61% vs 65% (p = 0.04); 90% sets 572 vs 464 | Partial support: MF is the most precise, not the most robust; report as such |
-| C8 | SARS-CoV-2 variants | Pre-registered held-out: MF 0.308 vs earliest detection 0.464 | Does not support the claim (see 4.3) |
+| C6 | real outbreaks, origin hidden from the reports | Pre-registered, run once: SARS 2003 MF ranks China 1st (earliest detection 16th, distance center 8.5, LPSI 14); H1N1 2009 MF 3rd (earliest detection 1.5, LPSI 2). Robustness over 5 window/look-back settings: SARS MF 1-7 (best in every setting), H1N1 MF 1-3; mean reciprocal rank MF 0.50, earliest detection 0.37, LPSI 0.23 | Strong case study, but n = 2: worded as a case study, never as a statistical claim |
+| C7 | real cascades (Twitter, 381 untouched) | MRR tie with undirected distance center (+0.016 [-0.015, +0.046]); better than directed distance center (+0.038 [+0.006, +0.070]); top-1 45% vs 39% (McNemar p = 0.003); top-10 61% vs 65% (p = 0.04); 90% sets 572 vs 464 | Partial support: MF is the most precise, not the most robust; report as such |
+| C8 | SARS-CoV-2 variants | Pre-registered, single-country origins (6): MF 0.308 vs earliest detection 0.464. Pre-registered, origin named as a region (7): MF 0.694 vs effective distance 0.476, earliest detection 0.424 (MF names the right region first in 4/7) | Mixed: MF loses where the label is the first sequencing country and wins where the label is a region; both reported, the first with the label explanation |
 
 ## 3. Fix 1: message passing vs mean field
 
@@ -51,8 +51,8 @@ method, and is labelled "our likelihood, DMP engine". The paper must not claim M
 ## 4. Fix 2: the test-selection guarantee
 
 Finding: Chen et al. (COLT 2015, Theorem 2) applies exactly to the joint-hypothesis criterion
-under the mean-field model, but its constant γ = 7 / S_min is vacuous here: S_min ≈ 1e-12 on every
-network computed so far (some hypotheses give nearly identical report distributions). Even after
+under the mean-field model, but its constant γ = 7 / S_min is vacuous here: S_min ≈ 1e-12 on all 7
+networks (some hypotheses give nearly identical report distributions). Even after
 merging hypotheses closer than the 5% quantile of pairwise squared TV (1e-4 to 5e-3), γ ≥ 1400,
 so the bound says nothing for 10 tests.
 
@@ -68,7 +68,7 @@ limit. A vacuous theorem would weaken, not strengthen, the paper.
 | High | "Near-optimal" rested on one network (Hospital) | Exact likelihood now running on Office and High school |
 | High | Twitter: MF used follow directions, distance and Jordan centers did not | Directed versions added as extra baselines (running); undirected kept |
 | High | Twitter fitted model has zero spread between non-sources (rate 0): there MF is a "source broadcasts to followers, plus background" model, not multi-hop propagation | Must be stated plainly; it is what the training data chose |
-| High | Variants: origin labels are essentially "first to sequence it", which makes earliest detection correct by construction | Variants move to the supplement as a pre-registered negative result with this explanation |
+| High | Variants: single-country origin labels are essentially "first to sequence it", which makes earliest detection correct by construction | Reported in the main text next to the regional set, where the label is an inferred region and MF wins; the contrast is the finding |
 | Medium | CollegeMsg and Primary school had 168 and 162 outbreaks in the BP table | Top-up to 200 running |
 | Medium | Test selection: CollegeMsg had 21 complete outbreaks, Email-Eu 101 | Top-up running |
 | Medium | H1N1/SARS: one fixed window and look-back | Robustness runs (window 14/42 days, look-back 90/210 days) running; all reported |
@@ -85,10 +85,11 @@ Keep (main text):
 - DMP as engine ablation.
 - Active test selection (vs Sterchi 2023 and 7 strategies), with cost.
 - Conformal source sets (coverage theorem is standard; the result is the set sizes).
-- Real outbreaks: SARS 2003 / H1N1 2009 (pre-registered case study) and Twitter (381 untouched cascades).
+- Real outbreaks, all pre-registered and scored once: SARS 2003 / H1N1 2009 (case study with robustness), SARS-CoV-2 clusters (13: MF wins where the origin is an inferred region, loses where it is the first sequencing country), Twitter (381 untouched cascades).
+  Story: MF wins when the origin is genuinely hidden from the reports, and loses when the label is defined by who reported first.
 
 Move to supplement:
-- SARS-CoV-2 variants (development, held-out, regional): pre-registered, reported in full, with the label explanation.
+- SARS-CoV-2 development variants (10) and per-variant tables.
 - Extensions not used in the main results (recovery, immunity, weighted/directed links, detection model details).
 - MF variants and robustness tables (floors, grids).
 
@@ -100,9 +101,6 @@ Remove:
 
 ## 7. Still open before writing
 
-1. Exact likelihood on Office and High school (C1).
-2. BP at 200 on CollegeMsg and Primary school (C2).
-3. Test-selection top-up; Sterchi 16 outbreaks (C4).
-4. Directed baselines on Twitter (C7).
-5. H1N1/SARS robustness (C6).
-6. Rebuild every table; re-check every number in this file against `tables.json`.
+1. Exact likelihood on Office and High school (C1): the run hit the 6-hour limit; results are being downloaded.
+2. Done: BP at 200 (C2); test selection at 120 and Sterchi at 16 (C4); directed Twitter baselines (C7); H1N1/SARS robustness (C6); regional variants (C8).
+3. Every number in this file was re-checked against `outputs/tables.json` on 2026-11-23, except C1.
