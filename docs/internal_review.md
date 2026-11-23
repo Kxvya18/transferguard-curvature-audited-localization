@@ -23,7 +23,7 @@ Everything kept in the paper must support one clause of this sentence.
 
 | # | Clause | Evidence | Verdict |
 |---|---|---|---|
-| C1 | near-optimal | MF vs exact Monte Carlo likelihood, Hospital 200 outbreaks (told: 0.470 vs 0.475; grid: MF 0.352 vs exact 0.324). Office and High school running. | Holds for Hospital; must hold on the two new networks before the word "near-optimal" is used without qualification |
+| C1 | near-optimal | MF vs the exact likelihood estimated by Monte Carlo (exact matching of every report), 200 outbreaks per network. Told the true start and rate: Hospital +0.005 [-0.020, +0.030], Office -0.001 [-0.038, +0.035]; High school inconclusive (the Monte Carlo estimate is zero for every candidate in 28% of outbreaks). With start and rate unknown MF is above the Monte Carlo estimate on all three (+0.028, +0.050, +0.139): that estimate is noisy, so it is not a ceiling there | Holds on 2 networks, stated as 'matches the exact likelihood when it can be estimated'; never 'beats the optimum' |
 | C2 | better than BP on real contact networks | 200 outbreaks per network (202 Primary school). MF - BP: Hospital +0.057 (p 2e-6), Primary +0.230 (p 1e-18), Office +0.043 (p 2e-4), High school +0.119 (p 6e-9), Email-Eu +0.123 (p 1e-9), CollegeMsg +0.066 [+0.016, +0.116] (p 0.048) | Holds on 6/6 real networks, all significant |
 | C3 | 40-1400x lower cost | Measured seconds per outbreak, same machine class, single core | Holds |
 | C3b | when BP wins | Growing PA (synthetic, clustering 0.018, the only near-tree graph): MF - BP -0.034 (n.s.) | Explained by theory (BP exact on trees); kept as the boundary of the claim |
@@ -101,6 +101,6 @@ Remove:
 
 ## 7. Still open before writing
 
-1. Exact likelihood on Office and High school (C1): the run hit the 6-hour limit; results are being downloaded.
+1. Done: exact likelihood on Office and High school (C1).
 2. Done: BP at 200 (C2); test selection at 120 and Sterchi at 16 (C4); directed Twitter baselines (C7); H1N1/SARS robustness (C6); regional variants (C8).
-3. Every number in this file was re-checked against `outputs/tables.json` on 2026-11-23, except C1.
+3. Every number in this file was re-checked against `outputs/tables.json` on 2026-11-23.
