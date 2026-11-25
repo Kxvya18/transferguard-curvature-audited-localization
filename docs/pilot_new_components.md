@@ -52,3 +52,18 @@ Rules:
   >= 0.03 MRR with the interval excluding 0 on at least one network AND it can run with start and rate unknown at
   <= 100x MF cost. Otherwise it is used only as the exact reference (supplement), which fixes
   M2 on High school.
+
+### Pilot #1, stage 1 result (told the truth, 40 outbreaks, 1000 particles)
+
+Estimate finite for the true source in 100% of outbreaks on all four networks (rule met).
+Exact minus MF, told: High school +0.105 [+0.035, +0.179]; Hospital -0.026 [-0.073, +0.019];
+Office +0.022 [-0.034, +0.086]; Primary school +0.041 [-0.025, +0.114]. Cost 76-191x MF.
+
+### Pilot #1, stage 2 rule (fixed before running)
+
+End to end, start and rate unknown: score(s) = log sum over the same 8 starts x 5 rates as
+MF of the particle-filter likelihood, 200 particles, MF-pruned candidates, 40 outbreaks of the
+BP-comparison protocol per network (Hospital, High school, Office, Primary school).
+#1 is claimed as a method only if it beats MF by >= 0.03 MRR with the interval excluding 0 on
+at least one network, loses significantly on none, and its median cost is <= 100x MF.
+Otherwise it is the exact reference only.
