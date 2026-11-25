@@ -96,6 +96,9 @@ SIMULATED = "AKLD by simulation (Sterchi 2023, 10,000 runs)"
 def main(name: str, count: int, budget: int = 10, seed: int = 301, only: str = "") -> None:
     """With only="simulated", run just the slow simulation-based AKLD, into its own file."""
     strategies = [SIMULATED] if only == "simulated" else STRATEGIES
+    if only == "temperature":  # sensitivity of the two information criteria to the posterior temperature
+        strategies = ["Information gain (ours)", "Joint disagreement (AKLD, Sterchi 2023)"]
+        only = f"temperature{os.environ['SELECTION_TEMPERATURE']}"
     loader, p, horizon, lookback = DATASETS[name]
     graph = loader(seed)
     rng = np.random.default_rng(seed)

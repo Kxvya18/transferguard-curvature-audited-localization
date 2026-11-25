@@ -270,7 +270,7 @@ def directed_baselines(which: str, start: int, count: int, shard: int = 0, shard
     follows, cascades = load()
     either = ((follows + follows.T) > 0).tocsr()
     train, test_half = split(cascades)
-    path = OUT / f"twitter_v3_directed_{which}_{start}_part{shard}.jsonl"
+    path = OUT / f"twitter_v3_simple_{which}_{start}_part{shard}.jsonl"  # second run: adds the follower baselines
     kept = 0
     for source in (train if which == "train" else test_half):
         built = outbreak(follows, either, source, cascades[source])
@@ -283,7 +283,17 @@ def directed_baselines(which: str, start: int, count: int, shard: int = 0, shard
             break
         ctx, src = built
         hop = directed_hops(ctx)
+        # trivial check: does the candidate's own follower list explain the reports? (share of its
+        # observed followers who retweeted, with one pseudo-count each way)
+        follow = np.zeros((ctx.graph.n_nodes, ctx.graph.n_nodes), dtype=bool)
+        pairs = np.unique(np.concatenate([w for w in ctx.graph.windows if len(w)]), axis=0)
+        follow[pairs[:, 0], pairs[:, 1]] = True  # followed -> follower
+        obs, status = ctx.outbreak.observers, ctx.outbreak.observed_times < ctx.outbreak.t_observe
+        hits = follow[:, obs[status]].sum(axis=1)
+        seen = follow[:, obs].sum(axis=1)
         row = {"source": int(source),
+               "Follower retweet share": rank_of_source((hits + 1) / (seen + 2), src),
+               "Infected followers": rank_of_source(hits.astype(float), src),
                "Distance center, directed": rank_of_source(np.where(np.isfinite(hop.sum(1)), -hop.sum(1), est.INFEASIBLE), src),
                "Jordan center, directed": rank_of_source(np.where(np.isfinite(hop.max(1)), -hop.max(1), est.INFEASIBLE), src)}
         with path.open("a") as handle:

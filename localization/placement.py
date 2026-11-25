@@ -19,6 +19,8 @@ step; mean field gets it for all of them in one pass.
 
 from __future__ import annotations
 
+import os
+
 import numpy as np
 from scipy.special import logsumexp
 
@@ -33,7 +35,7 @@ def _entropy(p: np.ndarray, axis: int = -1) -> np.ndarray:
     return -np.sum(np.where(p > 0, p * np.log(np.maximum(p, 1e-300)), 0.0), axis=axis)
 
 
-def _reports(ctx: Context, temperature: float = 2.0, max_sources: int = 100,
+def _reports(ctx: Context, temperature: float | None = None, max_sources: int = 100,
              prob_grid: tuple[float, ...] = PROBS, n_start_times: int = 8):
     """(mass, report, within): posterior mass of the most likely sources; report[s, v, c], the
     mass-weighted probability that person v reports class c if s is the source (class
@@ -42,6 +44,8 @@ def _reports(ctx: Context, temperature: float = 2.0, max_sources: int = 100,
     (source, start time, probability)."""
     ob, graph = ctx.outbreak, ctx.graph
     n, t_obs = graph.n_nodes, ob.t_observe
+    if temperature is None:  # 2.0 by default; SELECTION_TEMPERATURE only for the sensitivity check
+        temperature = float(os.environ.get("SELECTION_TEMPERATURE", 2.0))
     loglik = mean_field_loglik(ctx, prob_grid=prob_grid, n_start_times=n_start_times) / temperature
     finite = np.isfinite(loglik)
     if not finite.any():

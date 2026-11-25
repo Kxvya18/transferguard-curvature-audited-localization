@@ -1,0 +1,54 @@
+# Reviewer-style checks: BP damping and convergence, trivial follower baselines on Twitter,
+# and the test-selection temperature. Runs when this file changes on the paper branch.
+name: reviewer-checks
+on:
+  workflow_dispatch:
+  push:
+    branches: [revision/ojcs-reviews]
+    paths: [.github/workflows/reviewer_checks.yml]
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {name: bp-hospital, cmd: "for d in 0.2 0.5 0.8; do python -W ignore -m experiments.bp_sensitivity Hospital 20 $d & done; wait"}
+          - {name: bp-office, cmd: "for d in 0.2 0.5 0.8; do python -W ignore -m experiments.bp_sensitivity Office 20 $d & done; wait"}
+          - {name: bp-primary-02, cmd: "for i in 0 1 2 3; do python -W ignore -m experiments.bp_sensitivity 'Primary school' 20 0.2 $i 4 & done; wait"}
+          - {name: bp-primary-05, cmd: "for i in 0 1 2 3; do python -W ignore -m experiments.bp_sensitivity 'Primary school' 20 0.5 $i 4 & done; wait"}
+          - {name: bp-primary-08, cmd: "for i in 0 1 2 3; do python -W ignore -m experiments.bp_sensitivity 'Primary school' 20 0.8 $i 4 & done; wait"}
+          - {name: temp-hospital, cmd: "for t in 1.0 4.0; do SELECTION_TEMPERATURE=$t python -W ignore -m experiments.observer_placement Hospital 40 10 301 temperature & done; wait"}
+          - {name: temp-email, cmd: "for t in 1.0 4.0; do for i in 0 1; do SHARD=$i/2 SELECTION_TEMPERATURE=$t python -W ignore -m experiments.observer_placement Email-Eu 40 10 301 temperature & done; done; wait"}
+          - {name: twitter-simple, cmd: "python -W ignore -m experiments.real_cascades directed test 0 300 0 2 & python -W ignore -m experiments.real_cascades directed test 0 300 1 2 & python -W ignore -m experiments.real_cascades directed test 300 100000 0 2 & python -W ignore -m experiments.real_cascades directed test 300 100000 1 2 & wait"}
+    env:
+      OMP_NUM_THREADS: "1"
+      OPENBLAS_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
+      HIGGS_DIR: ${{ github.workspace }}/higgs
+      OUT_DIR: ${{ github.workspace }}/outputs/real_cascades
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install numpy scipy networkx
+      - if: startsWith(matrix.name, 'bp-')
+        run: pip install "git+https://github.com/sibyl-team/sib.git@5b762da"
+      - name: Data (SNAP, Netzschleuder)
+        run: |
+          mkdir -p data/raw/temporal data/raw/sociopatterns higgs
+          for f in CollegeMsg.txt.gz email-Eu-core-temporal.txt.gz; do curl -sSfL "https://snap.stanford.edu/data/$f" -o "data/raw/temporal/$f"; done
+          for n in sp_hospital sp_office sp_primary_school; do curl -sSfL "https://networks.skewed.de/net/$n/files/$n.csv.zip" -o "data/raw/sociopatterns/$n.csv.zip"; done
+          curl -sSfL "https://networks.skewed.de/net/sp_high_school_new/files/2012.csv.zip" -o data/raw/sociopatterns/sp_high_school_2012.csv.zip
+          if [ "${{ matrix.name }}" = "twitter-simple" ]; then for f in higgs-social_network.edgelist.gz higgs-activity_time.txt.gz; do curl -sSfL "https://snap.stanford.edu/data/$f" -o "higgs/$f"; done; fi
+      - run: ${{ matrix.cmd }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: checks-${{ matrix.name }}
+          path: |
+            outputs/bp_sensitivity/*.jsonl
+            outputs/observer_placement/*temperature*.jsonl
+            outputs/real_cascades/twitter_v3_simple_*.jsonl
