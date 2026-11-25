@@ -1,0 +1,80 @@
+{"dataset": "Hospital", "outbreak": 0, "strategy": "Information gain (ours)", "ranks": [17.0, 14.0, 10.0, 9.0, 11.0, 9.0, 8.0, 4.0, 3.0, 3.0, 1.0], "seconds per pick": 0.09625160694122314}
+{"dataset": "Hospital", "outbreak": 0, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [17.0, 15.0, 14.0, 12.0, 11.0, 9.0, 4.0, 3.0, 3.0, 2.0, 2.0], "seconds per pick": 0.09347424507141114}
+{"dataset": "Hospital", "outbreak": 1, "strategy": "Information gain (ours)", "ranks": [38.0, 11.0, 10.0, 7.0, 6.0, 5.0, 3.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.09694051742553711}
+{"dataset": "Hospital", "outbreak": 1, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [38.0, 11.0, 10.0, 7.0, 7.0, 7.0, 3.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.09646692276000976}
+{"dataset": "Hospital", "outbreak": 2, "strategy": "Information gain (ours)", "ranks": [20.0, 6.0, 5.0, 7.0, 4.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.08189189434051514}
+{"dataset": "Hospital", "outbreak": 2, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [20.0, 16.0, 15.0, 13.0, 15.0, 14.0, 12.0, 14.0, 12.0, 12.0, 12.0], "seconds per pick": 0.083530855178833}
+{"dataset": "Hospital", "outbreak": 3, "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.03170955181121826}
+{"dataset": "Hospital", "outbreak": 3, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.03194010257720947}
+{"dataset": "Hospital", "outbreak": 4, "strategy": "Information gain (ours)", "ranks": [19.0, 17.0, 15.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.07570264339447022}
+{"dataset": "Hospital", "outbreak": 4, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [19.0, 17.0, 15.0, 1.0, 1.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.08025846481323243}
+{"dataset": "Hospital", "outbreak": 5, "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.09071469306945801}
+{"dataset": "Hospital", "outbreak": 5, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0901170015335083}
+{"dataset": "Hospital", "outbreak": 6, "strategy": "Information gain (ours)", "ranks": [9.0, 5.0, 4.0, 4.0, 3.0, 1.0, 1.0, 4.0, 2.0, 4.0, 3.0], "seconds per pick": 0.10798275470733643}
+{"dataset": "Hospital", "outbreak": 6, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [9.0, 9.0, 7.0, 5.0, 5.0, 4.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.10908641815185546}
+{"dataset": "Hospital", "outbreak": 7, "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.07530488967895507}
+{"dataset": "Hospital", "outbreak": 7, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0768010139465332}
+{"dataset": "Hospital", "outbreak": 8, "strategy": "Information gain (ours)", "ranks": [12.0, 10.0, 8.0, 7.0, 10.0, 9.0, 8.0, 11.0, 10.0, 9.0, 7.0], "seconds per pick": 0.09351677894592285}
+{"dataset": "Hospital", "outbreak": 8, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [12.0, 10.0, 8.0, 11.0, 11.0, 10.0, 8.0, 9.0, 9.0, 8.0, 4.0], "seconds per pick": 0.09267051219940185}
+{"dataset": "Hospital", "outbreak": 9, "strategy": "Information gain (ours)", "ranks": [4.0, 7.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.09156312942504882}
+{"dataset": "Hospital", "outbreak": 9, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [4.0, 7.0, 5.0, 5.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.09409027099609375}
+{"dataset": "Hospital", "outbreak": 10, "strategy": "Information gain (ours)", "ranks": [6.0, 18.0, 22.0, 24.0, 22.0, 21.0, 20.0, 18.0, 17.0, 16.0, 16.0], "seconds per pick": 0.10362226963043213}
+{"dataset": "Hospital", "outbreak": 10, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [6.0, 2.0, 2.0, 14.0, 22.0, 20.0, 19.0, 19.0, 19.0, 18.0, 17.0], "seconds per pick": 0.1027458667755127}
+{"dataset": "Hospital", "outbreak": 11, "strategy": "Information gain (ours)", "ranks": [15.0, 10.0, 20.0, 18.0, 5.0, 4.0, 4.0, 4.0, 3.0, 1.0, 1.0], "seconds per pick": 0.09924921989440919}
+{"dataset": "Hospital", "outbreak": 11, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [15.0, 21.0, 20.0, 9.0, 9.0, 6.0, 6.0, 5.0, 6.0, 7.0, 6.0], "seconds per pick": 0.09991486072540283}
+{"dataset": "Hospital", "outbreak": 12, "strategy": "Information gain (ours)", "ranks": [1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.10380856990814209}
+{"dataset": "Hospital", "outbreak": 12, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 3.0, 2.0, 5.0, 5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.10332684516906739}
+{"dataset": "Hospital", "outbreak": 13, "strategy": "Information gain (ours)", "ranks": [13.0, 18.0, 12.0, 19.0, 16.0, 15.0, 15.0, 9.0, 15.0, 16.0, 15.0], "seconds per pick": 0.10384273529052734}
+{"dataset": "Hospital", "outbreak": 13, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [13.0, 6.0, 4.0, 5.0, 5.0, 8.0, 8.0, 12.0, 14.0, 13.0, 12.0], "seconds per pick": 0.10410704612731933}
+{"dataset": "Hospital", "outbreak": 14, "strategy": "Information gain (ours)", "ranks": [1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.07973499298095703}
+{"dataset": "Hospital", "outbreak": 14, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.07932724952697753}
+{"dataset": "Hospital", "outbreak": 15, "strategy": "Information gain (ours)", "ranks": [27.0, 1.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.07954323291778564}
+{"dataset": "Hospital", "outbreak": 15, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [27.0, 1.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.07912065982818603}
+{"dataset": "Hospital", "outbreak": 16, "strategy": "Information gain (ours)", "ranks": [30.0, 6.0, 2.0, 1.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.08665108680725098}
+{"dataset": "Hospital", "outbreak": 16, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [30.0, 6.0, 2.0, 3.0, 5.0, 3.0, 7.0, 5.0, 9.0, 4.0, 1.0], "seconds per pick": 0.08651673793792725}
+{"dataset": "Hospital", "outbreak": 17, "strategy": "Information gain (ours)", "ranks": [21.0, 18.0, 21.0, 20.0, 11.0, 9.0, 2.0, 1.0, 2.0, 2.0, 1.0], "seconds per pick": 0.10665354728698731}
+{"dataset": "Hospital", "outbreak": 17, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [21.0, 8.0, 5.0, 6.0, 6.0, 9.0, 9.0, 7.0, 5.0, 4.0, 4.0], "seconds per pick": 0.10528202056884765}
+{"dataset": "Hospital", "outbreak": 18, "strategy": "Information gain (ours)", "ranks": [14.0, 4.0, 5.0, 3.0, 2.0, 1.0, 1.0, 1.0, 2.0, 1.0, 1.0], "seconds per pick": 0.09060099124908447}
+{"dataset": "Hospital", "outbreak": 18, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [14.0, 4.0, 4.0, 3.0, 2.0, 2.0, 2.0, 2.0, 2.0, 2.0, 1.0], "seconds per pick": 0.08986313343048095}
+{"dataset": "Hospital", "outbreak": 19, "strategy": "Information gain (ours)", "ranks": [14.0, 5.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.07961740493774414}
+{"dataset": "Hospital", "outbreak": 19, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [14.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.08033819198608398}
+{"dataset": "Hospital", "outbreak": 20, "strategy": "Information gain (ours)", "ranks": [9.0, 7.0, 6.0, 6.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.12624857425689698}
+{"dataset": "Hospital", "outbreak": 20, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [9.0, 6.0, 6.0, 8.0, 8.0, 5.0, 5.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 0.10865094661712646}
+{"dataset": "Hospital", "outbreak": 21, "strategy": "Information gain (ours)", "ranks": [2.0, 1.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.11018340587615967}
+{"dataset": "Hospital", "outbreak": 21, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 1.0, 1.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.10881707668304444}
+{"dataset": "Hospital", "outbreak": 22, "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.11025838851928711}
+{"dataset": "Hospital", "outbreak": 22, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.10838522911071777}
+{"dataset": "Hospital", "outbreak": 23, "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.10735576152801514}
+{"dataset": "Hospital", "outbreak": 23, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.10748815536499023}
+{"dataset": "Hospital", "outbreak": 24, "strategy": "Information gain (ours)", "ranks": [3.0, 4.0, 4.0, 8.0, 10.0, 8.0, 6.0, 5.0, 6.0, 5.0, 5.0], "seconds per pick": 0.09602577686309814}
+{"dataset": "Hospital", "outbreak": 24, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [3.0, 4.0, 9.0, 10.0, 8.0, 7.0, 7.0, 7.0, 6.0, 8.0, 7.0], "seconds per pick": 0.09525604248046875}
+{"dataset": "Hospital", "outbreak": 25, "strategy": "Information gain (ours)", "ranks": [11.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.07687397003173828}
+{"dataset": "Hospital", "outbreak": 25, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [11.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.07699766159057617}
+{"dataset": "Hospital", "outbreak": 26, "strategy": "Information gain (ours)", "ranks": [3.0, 15.0, 12.0, 12.0, 10.0, 17.0, 12.0, 8.0, 13.0, 8.0, 9.0], "seconds per pick": 0.10243120193481445}
+{"dataset": "Hospital", "outbreak": 26, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [3.0, 15.0, 20.0, 13.0, 13.0, 10.0, 12.0, 9.0, 9.0, 8.0, 6.0], "seconds per pick": 0.10210695266723632}
+{"dataset": "Hospital", "outbreak": 27, "strategy": "Information gain (ours)", "ranks": [14.0, 14.0, 11.0, 11.0, 10.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0911672830581665}
+{"dataset": "Hospital", "outbreak": 27, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [14.0, 14.0, 11.0, 11.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.09102935791015625}
+{"dataset": "Hospital", "outbreak": 28, "strategy": "Information gain (ours)", "ranks": [3.0, 12.0, 12.0, 12.0, 10.0, 11.0, 11.0, 8.0, 11.0, 9.0, 5.0], "seconds per pick": 0.09859323501586914}
+{"dataset": "Hospital", "outbreak": 28, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [3.0, 3.0, 14.0, 13.0, 13.0, 14.0, 14.0, 12.0, 9.0, 6.0, 1.0], "seconds per pick": 0.09813864231109619}
+{"dataset": "Hospital", "outbreak": 29, "strategy": "Information gain (ours)", "ranks": [8.0, 17.0, 18.0, 13.0, 12.0, 11.0, 11.0, 10.0, 9.0, 4.0, 4.0], "seconds per pick": 0.10185792446136474}
+{"dataset": "Hospital", "outbreak": 29, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [8.0, 19.0, 16.0, 16.0, 16.0, 13.0, 12.0, 10.0, 10.0, 11.0, 9.0], "seconds per pick": 0.10277659893035888}
+{"dataset": "Hospital", "outbreak": 30, "strategy": "Information gain (ours)", "ranks": [29.0, 27.0, 26.0, 25.0, 24.0, 21.0, 23.0, 20.0, 22.0, 18.0, 19.0], "seconds per pick": 0.09261500835418701}
+{"dataset": "Hospital", "outbreak": 30, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [29.0, 25.0, 23.0, 4.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0], "seconds per pick": 0.09313328266143799}
+{"dataset": "Hospital", "outbreak": 31, "strategy": "Information gain (ours)", "ranks": [20.0, 22.0, 21.0, 21.0, 17.0, 15.0, 18.0, 14.0, 14.0, 14.0, 12.0], "seconds per pick": 0.0901233434677124}
+{"dataset": "Hospital", "outbreak": 31, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [20.0, 24.0, 20.0, 19.0, 18.0, 17.0, 18.0, 17.0, 14.0, 14.0, 13.0], "seconds per pick": 0.08998115062713623}
+{"dataset": "Hospital", "outbreak": 32, "strategy": "Information gain (ours)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.09110925197601319}
+{"dataset": "Hospital", "outbreak": 32, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.0906862497329712}
+{"dataset": "Hospital", "outbreak": 33, "strategy": "Information gain (ours)", "ranks": [4.0, 4.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.08537499904632569}
+{"dataset": "Hospital", "outbreak": 33, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [4.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.08644266128540039}
+{"dataset": "Hospital", "outbreak": 34, "strategy": "Information gain (ours)", "ranks": [18.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.09030616283416748}
+{"dataset": "Hospital", "outbreak": 34, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [18.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.08996810913085937}
+{"dataset": "Hospital", "outbreak": 35, "strategy": "Information gain (ours)", "ranks": [15.0, 13.0, 11.0, 11.0, 10.0, 10.0, 9.0, 6.0, 5.0, 2.0, 1.0], "seconds per pick": 0.07794194221496582}
+{"dataset": "Hospital", "outbreak": 35, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [15.0, 13.0, 11.0, 11.0, 18.0, 10.0, 8.0, 7.0, 6.0, 5.0, 4.0], "seconds per pick": 0.07939589023590088}
+{"dataset": "Hospital", "outbreak": 36, "strategy": "Information gain (ours)", "ranks": [4.0, 10.0, 11.0, 11.0, 9.0, 1.0, 5.0, 3.0, 4.0, 3.0, 2.0], "seconds per pick": 0.09141311645507813}
+{"dataset": "Hospital", "outbreak": 36, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [4.0, 10.0, 6.0, 3.0, 1.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.08997964859008789}
+{"dataset": "Hospital", "outbreak": 37, "strategy": "Information gain (ours)", "ranks": [11.0, 9.0, 8.0, 9.0, 10.0, 8.0, 8.0, 7.0, 6.0, 5.0, 3.0], "seconds per pick": 0.10082719326019288}
+{"dataset": "Hospital", "outbreak": 37, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [11.0, 9.0, 7.0, 8.0, 4.0, 4.0, 5.0, 5.0, 5.0, 4.0, 3.0], "seconds per pick": 0.10072624683380127}
+{"dataset": "Hospital", "outbreak": 38, "strategy": "Information gain (ours)", "ranks": [3.0, 5.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.07132697105407715}
+{"dataset": "Hospital", "outbreak": 38, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [3.0, 5.0, 4.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.07155818939208984}
+{"dataset": "Hospital", "outbreak": 39, "strategy": "Information gain (ours)", "ranks": [16.0, 14.0, 14.0, 11.0, 12.0, 9.0, 10.0, 3.0, 1.0, 1.0, 1.0], "seconds per pick": 0.09182610511779785}
+{"dataset": "Hospital", "outbreak": 39, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [16.0, 8.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.09072437286376953}

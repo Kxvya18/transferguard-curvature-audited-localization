@@ -1,0 +1,5 @@
+{"network": "Primary school", "outbreak": 1, "damping": 0.5, "rank": 65.0, "share not converged": 0.7, "seconds": 653.3807418346405}
+{"network": "Primary school", "outbreak": 5, "damping": 0.5, "rank": 3.0, "share not converged": 0.575, "seconds": 300.1975317001343}
+{"network": "Primary school", "outbreak": 9, "damping": 0.5, "rank": 104.0, "share not converged": 0.85, "seconds": 667.1446444988251}
+{"network": "Primary school", "outbreak": 13, "damping": 0.5, "rank": 26.0, "share not converged": 0.725, "seconds": 619.500776052475}
+{"network": "Primary school", "outbreak": 17, "damping": 0.5, "rank": 9.0, "share not converged": 0.7, "seconds": 544.2302761077881}

@@ -8,6 +8,7 @@ Appends one JSON line per outbreak to outputs/bp_comparison/.
 from __future__ import annotations
 
 import json
+import os
 import sys
 import time
 
@@ -30,6 +31,12 @@ def main(name: str, fraction: float, count: int, seed: int = 101, rates: str = "
     out.mkdir(parents=True, exist_ok=True)
     # Further batches of outbreaks use other seeds and their own files.
     path = out / (f"{name.replace(' ', '_')}_{fraction}.jsonl" if seed == 101 else f"{name.replace(' ', '_')}_{fraction}_seed{seed}.jsonl")
+    # BP_DAMPING (rerun of the BP column at another damping, same outbreaks) and SHARD="i/n":
+    # own files, every method recomputed so each row is paired.
+    damping = float(os.environ.get("BP_DAMPING", 0.5))
+    shard, shards = map(int, os.environ.get("SHARD", "0/1").split("/"))
+    if damping != 0.5 or shards > 1:
+        path = path.with_name(path.stem + f"_damping{damping}_shard{shard}.jsonl")
     # Resume: outbreaks are regenerated in the same order, and those already scored are skipped.
     existing = [json.loads(line)["test_rate"] for line in path.open()] if path.exists() else []
     for rate_name, rate in (("true", p), ("low", 0.4 * p), ("high", min(0.9, 1.6 * p))):
@@ -40,14 +47,14 @@ def main(name: str, fraction: float, count: int, seed: int = 101, rates: str = "
             ob = simulate_outbreak(graph, rng, rate, horizon, fraction)
             if ob is None:
                 continue
-            if done < existing.count(rate_name):
+            if done < existing.count(rate_name) or done % shards != shard:
                 done += 1
                 continue
             ctx = est.build_context(graph, ob, lookback)
-            row = {"dataset": name, "test_rate": rate_name}
+            row = {"dataset": name, "test_rate": rate_name, "outbreak": done}
             for label, fn in METHODS.items():
                 start = time.time()
-                row[label] = rank_of_source(fn(ctx), ob.source)
+                row[label] = rank_of_source(fn(ctx, damping=damping) if label == "Belief propagation" else fn(ctx), ob.source)
                 row[label + " seconds"] = time.time() - start
             with path.open("a") as handle:
                 handle.write(json.dumps(row) + "\n")

@@ -112,3 +112,12 @@ will judge the paper an incremental, well-executed benchmark.
 | X4 | Scalability: MF time and memory on a 10^4-10^5-node temporal network (e.g. SNAP sx-mathoverflow / wiki-talk temporal), with and without pruning | E1 |
 | X5 | Soft-margin estimator (Antulov-Fantulin) and the learned models on the 200-outbreak protocol, at least 3 networks | E2 |
 | X6 | SIR and heterogeneous-rate outbreaks on 2 networks (code exists) | E6 |
+
+## 8. Outcomes of the four checks (2026-11-25), decided by rules fixed beforehand
+
+| Check | Result | Rule fixed in advance | Decision |
+|---|---|---|---|
+| M1 BP damping (20 outbreaks each) | Damping 0.8 helps BP: Hospital 0.398 (0.5: 0.316), Office 0.574 (0.5: 0.534); Primary school stays poor at every damping (<= 0.155); BP fails to converge on 20-73% of runs at every damping | "If BP improves materially at another damping, rerun the BP table at that damping" | BP table rerun at damping 0.8 on all 6 real networks, same outbreaks (running). The main BP comparison uses whichever damping is better for BP |
+| M3 Twitter trivial baselines (681 cascades) | "Infected followers" (count of a candidate's followers who retweeted) 0.531 / 0.526 vs mean field 0.518 / 0.506; difference -0.013 [-0.039, +0.012] and -0.020 [-0.044, +0.004] | "If the trivial follower baselines match mean field, the Twitter section is cut" | **Twitter removed as evidence for the claim.** The fitted model has no spread between ordinary users, so it reduces to follower counting. Kept, if at all, as one sentence in limitations |
+| M4 Selection temperature 1 / 2 / 4 | Our criterion 0.507-0.551 (Hospital), 0.629-0.660 (Email-Eu); joint criterion 0.537-0.674 | none | Robust within +/-0.04; report T = 2 with this range |
+| M5 Observer fraction 5% / 20% (40 each) | MF >= BP in 5/6 settings (Office 5%: -0.008, tie); significant on High school only | none | Supports C2 directionally; reported as robustness |

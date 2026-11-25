@@ -1,0 +1,40 @@
+{"dataset": "Email-Eu", "outbreak": 1, "strategy": "Information gain (ours)", "ranks": [6.0, 5.0, 4.0, 1.0, 1.0, 1.0, 1.0, 16.0, 14.0, 13.0, 1.0], "seconds per pick": 2.417398476600647}
+{"dataset": "Email-Eu", "outbreak": 1, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [6.0, 5.0, 4.0, 1.0, 1.0, 1.0, 1.0, 16.0, 14.0, 13.0, 9.0], "seconds per pick": 2.3988351345062258}
+{"dataset": "Email-Eu", "outbreak": 3, "strategy": "Information gain (ours)", "ranks": [20.0, 19.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.23355872631073}
+{"dataset": "Email-Eu", "outbreak": 3, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [20.0, 19.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.230096936225891}
+{"dataset": "Email-Eu", "outbreak": 5, "strategy": "Information gain (ours)", "ranks": [14.0, 14.0, 5.0, 4.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.1811195850372314}
+{"dataset": "Email-Eu", "outbreak": 5, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [14.0, 14.0, 12.0, 4.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.2413063049316406}
+{"dataset": "Email-Eu", "outbreak": 7, "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.080290985107422}
+{"dataset": "Email-Eu", "outbreak": 7, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.9131987810134887}
+{"dataset": "Email-Eu", "outbreak": 9, "strategy": "Information gain (ours)", "ranks": [32.0, 33.0, 32.0, 28.0, 28.0, 25.0, 20.0, 20.0, 32.0, 21.0, 13.0], "seconds per pick": 2.748754048347473}
+{"dataset": "Email-Eu", "outbreak": 9, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [32.0, 33.0, 32.0, 28.0, 28.0, 26.0, 20.0, 20.0, 32.0, 21.0, 13.0], "seconds per pick": 2.902056908607483}
+{"dataset": "Email-Eu", "outbreak": 11, "strategy": "Information gain (ours)", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.869112491607666}
+{"dataset": "Email-Eu", "outbreak": 11, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.418502974510193}
+{"dataset": "Email-Eu", "outbreak": 13, "strategy": "Information gain (ours)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.2581337928771973}
+{"dataset": "Email-Eu", "outbreak": 13, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.27431836128234866}
+{"dataset": "Email-Eu", "outbreak": 15, "strategy": "Information gain (ours)", "ranks": [4.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.9117668390274047}
+{"dataset": "Email-Eu", "outbreak": 15, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [4.0, 3.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.8486387014389039}
+{"dataset": "Email-Eu", "outbreak": 17, "strategy": "Information gain (ours)", "ranks": [16.0, 15.0, 14.0, 14.0, 14.0, 13.0, 14.0, 14.0, 10.0, 7.0, 4.0], "seconds per pick": 2.2988861799240112}
+{"dataset": "Email-Eu", "outbreak": 17, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [16.0, 15.0, 14.0, 13.0, 11.0, 10.0, 9.0, 7.0, 8.0, 6.0, 5.0], "seconds per pick": 2.4397186279296874}
+{"dataset": "Email-Eu", "outbreak": 19, "strategy": "Information gain (ours)", "ranks": [5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.7884009599685669}
+{"dataset": "Email-Eu", "outbreak": 19, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [5.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.6881268262863158}
+{"dataset": "Email-Eu", "outbreak": 21, "strategy": "Information gain (ours)", "ranks": [3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.1055160045623778}
+{"dataset": "Email-Eu", "outbreak": 21, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.0204573392868044}
+{"dataset": "Email-Eu", "outbreak": 23, "strategy": "Information gain (ours)", "ranks": [156.0, 7.0, 2.0, 1.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.5384216785430906}
+{"dataset": "Email-Eu", "outbreak": 23, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [156.0, 7.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.568245220184326}
+{"dataset": "Email-Eu", "outbreak": 25, "strategy": "Information gain (ours)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.995789885520935}
+{"dataset": "Email-Eu", "outbreak": 25, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.9642505884170531}
+{"dataset": "Email-Eu", "outbreak": 27, "strategy": "Information gain (ours)", "ranks": [13.0, 16.0, 6.0, 7.0, 15.0, 15.0, 9.0, 8.0, 2.0, 2.0, 1.0], "seconds per pick": 2.1440946102142333}
+{"dataset": "Email-Eu", "outbreak": 27, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [13.0, 16.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.1388986587524412}
+{"dataset": "Email-Eu", "outbreak": 29, "strategy": "Information gain (ours)", "ranks": [24.0, 16.0, 14.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.3236692428588865}
+{"dataset": "Email-Eu", "outbreak": 29, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [24.0, 16.0, 14.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.3612587213516236}
+{"dataset": "Email-Eu", "outbreak": 31, "strategy": "Information gain (ours)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.7490401029586793}
+{"dataset": "Email-Eu", "outbreak": 31, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.623075532913208}
+{"dataset": "Email-Eu", "outbreak": 33, "strategy": "Information gain (ours)", "ranks": [9.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 0.972255802154541}
+{"dataset": "Email-Eu", "outbreak": 33, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [9.0, 3.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 1.027761173248291}
+{"dataset": "Email-Eu", "outbreak": 35, "strategy": "Information gain (ours)", "ranks": [1.0, 3.0, 2.0, 2.0, 2.0, 1.0, 2.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.559607243537903}
+{"dataset": "Email-Eu", "outbreak": 35, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [1.0, 3.0, 2.0, 2.0, 2.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.589338517189026}
+{"dataset": "Email-Eu", "outbreak": 37, "strategy": "Information gain (ours)", "ranks": [9.0, 7.0, 6.0, 5.0, 4.0, 3.0, 3.0, 2.0, 2.0, 1.0, 1.0], "seconds per pick": 2.660641884803772}
+{"dataset": "Email-Eu", "outbreak": 37, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [9.0, 7.0, 6.0, 5.0, 4.0, 3.0, 2.0, 2.0, 2.0, 1.0, 1.0], "seconds per pick": 2.629678201675415}
+{"dataset": "Email-Eu", "outbreak": 39, "strategy": "Information gain (ours)", "ranks": [15.0, 9.0, 8.0, 7.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.226804494857788}
+{"dataset": "Email-Eu", "outbreak": 39, "strategy": "Joint disagreement (AKLD, Sterchi 2023)", "ranks": [15.0, 9.0, 8.0, 7.0, 4.0, 2.0, 1.0, 1.0, 1.0, 1.0, 1.0], "seconds per pick": 2.153805708885193}
