@@ -75,3 +75,18 @@ MF grid 0.282, MF learned 0.296, MF oracle (true factors) 0.298. Learned - grid 
 with the truth, fit in 284 s. The oracle gains < 0.03, so by the rule #2 is **dropped**: here
 knowing everyone's infectiousness does not help localization, so learning it cannot. High
 school was not needed (the rule needs both networks; its run died when the local disk filled).
+
+### Pilot #1, stage 2 result (start and rate unknown, 40 outbreaks of the BP protocol, 200 particles)
+
+| Network | MF | Exact (particle filter) | Exact - MF | Cost |
+|---|---|---|---|---|
+| High school | 0.463 | 0.530 | +0.067 [+0.005, +0.132] | 311x |
+| Hospital | 0.318 | 0.365 | +0.048 [-0.003, +0.103] | 217x |
+| Office | 0.535 | 0.533 | -0.002 [-0.059, +0.054] | 259x |
+| Primary school | 0.406 | 0.361 | -0.045 [-0.132, +0.040] | 407x |
+
+Accuracy part of the rule met (High school), no significant loss, but the cost is 217-407x MF,
+above the 100x limit. By the rule, #1 is **not claimed as a method**. It is used as the exact
+reference: MF is within noise of the exact likelihood on 3 of 4 networks and loses about 0.07
+MRR on High school, at 1/200-1/400 of the cost. This closes review item M2 on High school, where
+plain Monte Carlo could not provide a reference.
