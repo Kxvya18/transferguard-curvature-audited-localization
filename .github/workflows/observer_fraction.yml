@@ -1,0 +1,47 @@
+# MF vs BP vs message passing with 5% and 20% of people observed (main results: 10%). Runs when this file changes on the paper branch.
+name: observer-fraction
+on:
+  workflow_dispatch:
+  push:
+    branches: [revision/ojcs-reviews]
+    paths: [.github/workflows/observer_fraction.yml]
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {name: frac-hospital-0.05, cmd: "for s in 101 102 103 104; do python -W ignore -m experiments.compare_bp 'Hospital' 0.05 10 $s true & done; wait"}
+          - {name: frac-hospital-0.2, cmd: "for s in 101 102 103 104; do python -W ignore -m experiments.compare_bp 'Hospital' 0.2 10 $s true & done; wait"}
+          - {name: frac-office-0.05, cmd: "for s in 101 102 103 104; do python -W ignore -m experiments.compare_bp 'Office' 0.05 10 $s true & done; wait"}
+          - {name: frac-office-0.2, cmd: "for s in 101 102 103 104; do python -W ignore -m experiments.compare_bp 'Office' 0.2 10 $s true & done; wait"}
+          - {name: frac-high_school-0.05, cmd: "for s in 101 102 103 104; do python -W ignore -m experiments.compare_bp 'High school' 0.05 10 $s true & done; wait"}
+          - {name: frac-high_school-0.2, cmd: "for s in 101 102 103 104; do python -W ignore -m experiments.compare_bp 'High school' 0.2 10 $s true & done; wait"}
+    env:
+      OMP_NUM_THREADS: "1"
+      OPENBLAS_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install numpy scipy networkx
+      - if: startsWith(matrix.name, 'bp-')
+        run: pip install "git+https://github.com/sibyl-team/sib.git@5b762da"
+      - name: Data (SNAP, Netzschleuder)
+        run: |
+          mkdir -p data/raw/temporal data/raw/sociopatterns
+          for f in CollegeMsg.txt.gz email-Eu-core-temporal.txt.gz; do curl -sSfL "https://snap.stanford.edu/data/$f" -o "data/raw/temporal/$f"; done
+          for n in sp_hospital sp_office sp_primary_school; do curl -sSfL "https://networks.skewed.de/net/$n/files/$n.csv.zip" -o "data/raw/sociopatterns/$n.csv.zip"; done
+          curl -sSfL "https://networks.skewed.de/net/sp_high_school_new/files/2012.csv.zip" -o data/raw/sociopatterns/sp_high_school_2012.csv.zip
+      - run: ${{ matrix.cmd }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: observer-fraction-${{ matrix.name }}
+          path: |
+            outputs/bp_comparison/*_0.05*.jsonl
+            outputs/bp_comparison/*_0.2*.jsonl
