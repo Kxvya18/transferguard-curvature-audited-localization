@@ -7,7 +7,8 @@ import numpy as np
 from experiments.benchmark_localization import PROJECT_ROOT
 
 PILOTS = {"pilot_learned_rates": ("MF learned", "MF grid", ["MF oracle"]),
-          "pilot_exact_is": ("Exact (particle filter), told", "MF, told", [])}
+          "pilot_exact_is": ("Exact (particle filter), told", "MF, told", []),
+          "pilot_exact_is_e2e": ("Exact (particle filter)", "Mean-field", [])}
 
 
 def paired(a, b, reps=10000):
@@ -32,5 +33,6 @@ for pilot, (new, old, extra) in PILOTS.items():
             line += f" | {k} - {old}: {m:+.3f} [{lo:+.3f}, {hi:+.3f}]"
         if "source finite" in rows[0]:
             line += f" | source finite {np.mean([r['source finite'] for r in rows]):.3f}"
+        if "Exact seconds" in rows[0]:
             line += f" | exact/MF time {np.median(get('Exact seconds') / get('MF seconds')):.0f}x"
         print(line)

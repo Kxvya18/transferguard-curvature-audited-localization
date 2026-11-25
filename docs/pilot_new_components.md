@@ -67,3 +67,11 @@ BP-comparison protocol per network (Hospital, High school, Office, Primary schoo
 #1 is claimed as a method only if it beats MF by >= 0.03 MRR with the interval excluding 0 on
 at least one network, loses significantly on none, and its median cost is <= 100x MF.
 Otherwise it is the exact reference only.
+
+### Pilot #2 result (Hospital, 60 test outbreaks)
+
+MF grid 0.282, MF learned 0.296, MF oracle (true factors) 0.298. Learned - grid +0.014
+[-0.038, +0.065]; oracle - grid +0.016 [-0.043, +0.075]. Learned factors correlate 0.75 (log)
+with the truth, fit in 284 s. The oracle gains < 0.03, so by the rule #2 is **dropped**: here
+knowing everyone's infectiousness does not help localization, so learning it cannot. High
+school was not needed (the rule needs both networks; its run died when the local disk filled).

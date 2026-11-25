@@ -121,3 +121,26 @@ will judge the paper an incremental, well-executed benchmark.
 | M3 Twitter trivial baselines (681 cascades) | "Infected followers" (count of a candidate's followers who retweeted) 0.531 / 0.526 vs mean field 0.518 / 0.506; difference -0.013 [-0.039, +0.012] and -0.020 [-0.044, +0.004] | "If the trivial follower baselines match mean field, the Twitter section is cut" | **Twitter removed as evidence for the claim.** The fitted model has no spread between ordinary users, so it reduces to follower counting. Kept, if at all, as one sentence in limitations |
 | M4 Selection temperature 1 / 2 / 4 | Our criterion 0.507-0.551 (Hospital), 0.629-0.660 (Email-Eu); joint criterion 0.537-0.674 | none | Robust within +/-0.04; report T = 2 with this range |
 | M5 Observer fraction 5% / 20% (40 each) | MF >= BP in 5/6 settings (Office 5%: -0.008, tie); significant on High school only | none | Supports C2 directionally; reported as robustness |
+
+### 8.1 BP table rerun at damping 0.8 (200 outbreaks per network, same outbreaks, all methods recomputed; GitHub run 45626125350)
+
+Damping 0.8 is better for BP on every network (e.g. Email-Eu 0.320 -> 0.392, High school 0.315 -> 0.401),
+so by the rule above it is the main BP baseline. Mean field minus BP (MRR, bootstrap 95%):
+
+| Network | MF | BP (0.8) | MP | MF - BP (0.8) |
+|---|---|---|---|---|
+| Hospital | 0.298 | 0.266 | 0.297 | +0.032 [-0.004, +0.068] |
+| Primary school | 0.366 | 0.196 | 0.371 | **+0.170 [+0.117, +0.224]** |
+| Office | 0.459 | 0.448 | 0.477 | +0.011 [-0.024, +0.045] |
+| High school | 0.434 | 0.401 | 0.442 | +0.033 [-0.010, +0.077] |
+| Email-Eu | 0.443 | 0.392 | 0.440 | **+0.051 [+0.004, +0.098]** |
+| CollegeMsg | 0.395 | 0.405 | 0.448 | -0.010 [-0.057, +0.039] |
+
+**Verdict change, caused by this new evidence:** claim C2 "MF beats BP on all six real networks" no
+longer holds against BP at its best damping. What holds: MF is never significantly worse than
+BP, is clearly better on 2/6 (Primary school large, Email-Eu), is directionally better on 3 more,
+needs no damping tuning, and is 30-1500x cheaper. BP's accuracy moves by up to 0.09 MRR with
+damping; MF has no such setting. Message passing (our likelihood with a DMP engine) is the best
+of the three on CollegeMsg and Office. The headline must become "matches or beats tuned BP at a
+fraction of the cost, with no tuning", and the mechanism section must say that damping that makes
+BP converge more often closes most of the gap, which is consistent with the non-convergence mechanism.

@@ -29,11 +29,12 @@ def paired(a, b):
     return {"difference": float(d.mean()), "interval": [float(np.percentile(boot, 2.5)), float(np.percentile(boot, 97.5))], "p": p}
 
 
-def bp_table():
-    """Mean field vs belief propagation vs message passing, true rate, identical outbreaks."""
+def bp_table(folder="bp_comparison"):
+    """Mean field vs belief propagation vs message passing, true rate, identical outbreaks.
+    `bp_comparison_damping0.8`: the same outbreaks, every method recomputed, BP damping 0.8."""
     table = {}
     for net in NETWORKS:
-        rows = [r for r in load(f"bp_comparison/{net}_0.1*.jsonl") if r["test_rate"] == "true"]
+        rows = [r for r in load(f"{folder}/{net}_0.1*.jsonl") if r["test_rate"] == "true"]
         if not rows:
             continue
         rr = {m: 1 / np.array([r[m] for r in rows]) for m in ("Mean-field", "Belief propagation", "Message passing")}
@@ -117,13 +118,13 @@ def real_table():
 
 
 def main():
-    tables = {"belief propagation": bp_table(), "test selection": placement_table(), "Sterchi simulation": sterchi_table(),
+    tables = {"belief propagation": bp_table(), "belief propagation, damping 0.8": bp_table("bp_comparison_damping0.8"), "test selection": placement_table(), "Sterchi simulation": sterchi_table(),
               "real outbreaks": real_table()}
     for extra in ("conformal_sets.json", "separability.json"):
         if (OUT / extra).exists():
             tables[extra[:-5]] = json.loads((OUT / extra).read_text())
     (OUT / "tables.json").write_text(json.dumps(tables, indent=2))
-    for net, t in tables["belief propagation"].items():
+    for net, t in list(tables["belief propagation"].items()) + [(n + " (BP damping 0.8)", t) for n, t in tables["belief propagation, damping 0.8"].items()]:
         d = t["MF - BP"]
         print(f"BP {net:15s} n={t['outbreaks']:3d} MF {t['MRR Mean-field']:.3f} BP {t['MRR Belief propagation']:.3f} MP {t['MRR Message passing']:.3f}"
               f"  MF-BP {d['difference']:+.3f} [{d['interval'][0]:+.3f},{d['interval'][1]:+.3f}] p={d['p']:.1e}")
