@@ -37,7 +37,7 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install numpy scipy networkx
-      - if: startsWith(matrix.name, 'bp-')
+      - if: startsWith(matrix.name, 'bp-') || startsWith(matrix.name, 'frac-')
         run: pip install "git+https://github.com/sibyl-team/sib.git@5b762da"
       - name: Data (SNAP, Netzschleuder)
         run: |

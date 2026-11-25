@@ -29,7 +29,7 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install numpy scipy networkx
-      - if: startsWith(matrix.name, 'bp-')
+      - if: startsWith(matrix.name, 'bp-') || startsWith(matrix.name, 'frac-')
         run: pip install "git+https://github.com/sibyl-team/sib.git@5b762da"
       - name: Data (SNAP, Netzschleuder)
         run: |
@@ -37,7 +37,10 @@ jobs:
           for f in CollegeMsg.txt.gz email-Eu-core-temporal.txt.gz; do curl -sSfL "https://snap.stanford.edu/data/$f" -o "data/raw/temporal/$f"; done
           for n in sp_hospital sp_office sp_primary_school; do curl -sSfL "https://networks.skewed.de/net/$n/files/$n.csv.zip" -o "data/raw/sociopatterns/$n.csv.zip"; done
           curl -sSfL "https://networks.skewed.de/net/sp_high_school_new/files/2012.csv.zip" -o data/raw/sociopatterns/sp_high_school_2012.csv.zip
-      - run: ${{ matrix.cmd }}
+      - run: |
+          set -e
+          ${{ matrix.cmd }}
+          ls outputs/bp_comparison/*_0.05*.jsonl outputs/bp_comparison/*_0.2*.jsonl
       - uses: actions/upload-artifact@v4
         if: always()
         with:
