@@ -12,6 +12,7 @@ Appends one JSON line per test outbreak to outputs/mean_field_vs_learned/.
 from __future__ import annotations
 
 import json
+import os
 import sys
 
 import numpy as np
@@ -42,11 +43,19 @@ def main(name: str, fraction: float, seed: int, n_test: int, n_train: int = 500)
     out = PROJECT_ROOT / "outputs" / "mean_field_vs_learned"
     out.mkdir(parents=True, exist_ok=True)
     path = out / f"{name.replace(' ', '_')}_{fraction}_{seed}.jsonl"
+    row_ids = []
+    rates = os.environ.get("RATES", "true,low,high").split(",")
     for rate_name, rate in (("true", p), ("low", 0.4 * p), ("high", min(0.9, 1.6 * p))):
+        if rate_name not in rates:
+            continue
         for ctx in contexts(n_test, rate):
             source = ctx.outbreak.source
             row = {"dataset": name, "fraction": fraction, "seed": seed, "test_rate": rate_name,
-                   "Mean-field": rank_of_source(mean_field_scores(ctx), source)}
+                   "Mean-field": rank_of_source(mean_field_scores(ctx), source),
+                   "Distance center": rank_of_source(est.distance_center(ctx), source),
+                   "SME (Antulov-Fantulin 2015)": rank_of_source(
+                       est.sme_posterior(ctx, np.random.default_rng([seed, len(row_ids)]), est.pinto_style(ctx)).score, source)}
+            row_ids.append(1)
             for m, model in models.items():
                 row[m] = rank_of_source(predict(m, model, ctx), source)
             with path.open("a") as handle:

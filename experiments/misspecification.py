@@ -24,6 +24,7 @@ Needs `sib` for belief propagation:
 from __future__ import annotations
 
 import json
+import os
 import sys
 import time
 
@@ -93,12 +94,20 @@ def main(name: str, count: int, seed: int = 601) -> None:
     out = PROJECT_ROOT / "outputs" / "misspecification"
     out.mkdir(parents=True, exist_ok=True)
     path = out / f"{name.replace(' ', '_')}.jsonl"
+    # Larger runs: SCENARIOS="Recovery (SIR),Uneven rates", another seed, SHARD="i/n"; own files.
+    shard, shards = map(int, os.environ.get("SHARD", "0/1").split("/"))
+    chosen = os.environ.get("SCENARIOS", ",".join(SCENARIOS)).split(",")
+    if seed != 601 or "SHARD" in os.environ:
+        path = out / f"{name.replace(' ', '_')}_seed{seed}_shard{shard}.jsonl"
     existing = [json.loads(line)["scenario"] for line in path.open()] if path.exists() else []
     for scenario in SCENARIOS:
-        done = 0
-        while done < count:
+        done = k = 0
+        while k < count:
             ob = simulate(graph, rng, p, horizon, scenario)
             if ob is None:
+                continue
+            k += 1
+            if scenario not in chosen or (k - 1) % shards != shard:
                 continue
             if done < existing.count(scenario):
                 done += 1
@@ -116,4 +125,4 @@ def main(name: str, count: int, seed: int = 601) -> None:
 
 
 if __name__ == "__main__":
-    main(sys.argv[1], int(sys.argv[2]))
+    main(sys.argv[1], int(sys.argv[2]), *(int(a) for a in sys.argv[3:4]))

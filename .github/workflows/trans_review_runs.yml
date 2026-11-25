@@ -1,0 +1,90 @@
+# Transactions-review runs X1-X6 (docs/ieee_trans_review.md). Runs when this file changes.
+name: trans-review-runs
+on:
+  workflow_dispatch:
+  push:
+    branches: [revision/ojcs-reviews]
+    paths: [.github/workflows/trans_review_runs.yml]
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    strategy:
+      fail-fast: false
+      max-parallel: 20
+      matrix:
+        include:
+          - {name: x1-hospital-0, cmd: "for i in 0 1 2 3; do SHARD=$i/16 python -W ignore -m experiments.mechanism diagnose 'Hospital' 200 & done; wait"}
+          - {name: x1-hospital-1, cmd: "for i in 4 5 6 7; do SHARD=$i/16 python -W ignore -m experiments.mechanism diagnose 'Hospital' 200 & done; wait"}
+          - {name: x1-hospital-2, cmd: "for i in 8 9 10 11; do SHARD=$i/16 python -W ignore -m experiments.mechanism diagnose 'Hospital' 200 & done; wait"}
+          - {name: x1-hospital-3, cmd: "for i in 12 13 14 15; do SHARD=$i/16 python -W ignore -m experiments.mechanism diagnose 'Hospital' 200 & done; wait"}
+          - {name: x1-high_school-0, cmd: "for i in 0 1 2 3; do SHARD=$i/16 python -W ignore -m experiments.mechanism diagnose 'High school' 200 & done; wait"}
+          - {name: x1-high_school-1, cmd: "for i in 4 5 6 7; do SHARD=$i/16 python -W ignore -m experiments.mechanism diagnose 'High school' 200 & done; wait"}
+          - {name: x1-high_school-2, cmd: "for i in 8 9 10 11; do SHARD=$i/16 python -W ignore -m experiments.mechanism diagnose 'High school' 200 & done; wait"}
+          - {name: x1-high_school-3, cmd: "for i in 12 13 14 15; do SHARD=$i/16 python -W ignore -m experiments.mechanism diagnose 'High school' 200 & done; wait"}
+          - {name: x1-primary-0, cmd: "for i in 0 1 2 3; do SHARD=$i/16 python -W ignore -m experiments.mechanism diagnose 'Primary school' 200 & done; wait"}
+          - {name: x1-primary-1, cmd: "for i in 4 5 6 7; do SHARD=$i/16 python -W ignore -m experiments.mechanism diagnose 'Primary school' 200 & done; wait"}
+          - {name: x1-primary-2, cmd: "for i in 8 9 10 11; do SHARD=$i/16 python -W ignore -m experiments.mechanism diagnose 'Primary school' 200 & done; wait"}
+          - {name: x1-primary-3, cmd: "for i in 12 13 14 15; do SHARD=$i/16 python -W ignore -m experiments.mechanism diagnose 'Primary school' 200 & done; wait"}
+          - {name: x1-office-0, cmd: "for i in 0 1 2 3; do SHARD=$i/16 python -W ignore -m experiments.mechanism diagnose 'Office' 200 & done; wait"}
+          - {name: x1-office-1, cmd: "for i in 4 5 6 7; do SHARD=$i/16 python -W ignore -m experiments.mechanism diagnose 'Office' 200 & done; wait"}
+          - {name: x1-office-2, cmd: "for i in 8 9 10 11; do SHARD=$i/16 python -W ignore -m experiments.mechanism diagnose 'Office' 200 & done; wait"}
+          - {name: x1-office-3, cmd: "for i in 12 13 14 15; do SHARD=$i/16 python -W ignore -m experiments.mechanism diagnose 'Office' 200 & done; wait"}
+          - {name: x3-hospital-0, cmd: "for i in 0 1 2 3; do python -W ignore -m experiments.confidence_sets 'Hospital' 200 200 $i 8 & done; wait"}
+          - {name: x3-hospital-1, cmd: "for i in 4 5 6 7; do python -W ignore -m experiments.confidence_sets 'Hospital' 200 200 $i 8 & done; wait"}
+          - {name: x3-office-0, cmd: "for i in 0 1 2 3; do python -W ignore -m experiments.confidence_sets 'Office' 200 200 $i 8 & done; wait"}
+          - {name: x3-office-1, cmd: "for i in 4 5 6 7; do python -W ignore -m experiments.confidence_sets 'Office' 200 200 $i 8 & done; wait"}
+          - {name: x4-mathoverflow-1000, cmd: "python -W ignore -m experiments.scalability sx-mathoverflow 1000 20"}
+          - {name: x4-mathoverflow-2000, cmd: "python -W ignore -m experiments.scalability sx-mathoverflow 2000 20"}
+          - {name: x4-mathoverflow-5000, cmd: "python -W ignore -m experiments.scalability sx-mathoverflow 5000 20"}
+          - {name: x4-mathoverflow-10000, cmd: "python -W ignore -m experiments.scalability sx-mathoverflow 10000 10"}
+          - {name: x4-mathoverflow-all, cmd: "python -W ignore -m experiments.scalability sx-mathoverflow all 10"}
+          - {name: x4-askubuntu-20000, cmd: "python -W ignore -m experiments.scalability sx-askubuntu 20000 10"}
+          - {name: x4-askubuntu-50000, cmd: "python -W ignore -m experiments.scalability sx-askubuntu 50000 5"}
+          - {name: x4-askubuntu-all, cmd: "python -W ignore -m experiments.scalability sx-askubuntu all 5"}
+          - {name: x5-hospital, cmd: "for s in 203 204 205; do RATES=true python -W ignore -m experiments.compare_learned 'Hospital' 0.1 $s 60 & done; wait"}
+          - {name: x5-office, cmd: "for s in 203 204 205; do RATES=true python -W ignore -m experiments.compare_learned 'Office' 0.1 $s 60 & done; wait"}
+          - {name: x5-high_school, cmd: "for s in 203 204 205; do RATES=true python -W ignore -m experiments.compare_learned 'High school' 0.1 $s 60 & done; wait"}
+          - {name: x5-email, cmd: "for s in 203 204 205; do RATES=true python -W ignore -m experiments.compare_learned 'Email-Eu' 0.1 $s 60 & done; wait"}
+          - {name: x6-hospital-0, cmd: "for i in 0 1 2 3; do SHARD=$i/8 SCENARIOS='Recovery (SIR),Uneven rates' python -W ignore -m experiments.misspecification 'Hospital' 100 602 & done; wait"}
+          - {name: x6-hospital-1, cmd: "for i in 4 5 6 7; do SHARD=$i/8 SCENARIOS='Recovery (SIR),Uneven rates' python -W ignore -m experiments.misspecification 'Hospital' 100 602 & done; wait"}
+          - {name: x6-office-0, cmd: "for i in 0 1 2 3; do SHARD=$i/8 SCENARIOS='Recovery (SIR),Uneven rates' python -W ignore -m experiments.misspecification 'Office' 100 602 & done; wait"}
+          - {name: x6-office-1, cmd: "for i in 4 5 6 7; do SHARD=$i/8 SCENARIOS='Recovery (SIR),Uneven rates' python -W ignore -m experiments.misspecification 'Office' 100 602 & done; wait"}
+          - {name: x6-high_school-0, cmd: "for i in 0 1 2 3; do SHARD=$i/8 SCENARIOS='Recovery (SIR),Uneven rates' python -W ignore -m experiments.misspecification 'High school' 100 602 & done; wait"}
+          - {name: x6-high_school-1, cmd: "for i in 4 5 6 7; do SHARD=$i/8 SCENARIOS='Recovery (SIR),Uneven rates' python -W ignore -m experiments.misspecification 'High school' 100 602 & done; wait"}
+          - {name: x6-email-0, cmd: "for i in 0 1 2 3; do SHARD=$i/8 SCENARIOS='Recovery (SIR),Uneven rates' python -W ignore -m experiments.misspecification 'Email-Eu' 100 602 & done; wait"}
+          - {name: x6-email-1, cmd: "for i in 4 5 6 7; do SHARD=$i/8 SCENARIOS='Recovery (SIR),Uneven rates' python -W ignore -m experiments.misspecification 'Email-Eu' 100 602 & done; wait"}
+    env:
+      OMP_NUM_THREADS: "1"
+      OPENBLAS_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install numpy scipy networkx
+      - if: startsWith(matrix.name, 'x1-') || startsWith(matrix.name, 'x6-')
+        run: pip install "git+https://github.com/sibyl-team/sib.git@5b762da"
+      - if: startsWith(matrix.name, 'x5-')
+        run: pip install torch --index-url https://download.pytorch.org/whl/cpu
+      - name: Data (SNAP, Netzschleuder)
+        run: |
+          mkdir -p data/raw/temporal data/raw/sociopatterns
+          for f in CollegeMsg.txt.gz email-Eu-core-temporal.txt.gz sx-mathoverflow.txt.gz sx-askubuntu.txt.gz; do curl -sSfL "https://snap.stanford.edu/data/$f" -o "data/raw/temporal/$f"; done
+          for n in sp_hospital sp_office sp_primary_school; do curl -sSfL "https://networks.skewed.de/net/$n/files/$n.csv.zip" -o "data/raw/sociopatterns/$n.csv.zip"; done
+          curl -sSfL "https://networks.skewed.de/net/sp_high_school_new/files/2012.csv.zip" -o data/raw/sociopatterns/sp_high_school_2012.csv.zip
+      - run: |
+          ${{ matrix.cmd }}
+          n=$(find outputs/mechanism outputs/confidence_sets outputs/scalability outputs/mean_field_vs_learned outputs/misspecification -newer README.md -name '*.jsonl' 2>/dev/null | wc -l)
+          echo "result files written: $n"; test "$n" -gt 0
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: ${{ matrix.name }}
+          path: |
+            outputs/mechanism/diagnostics_v3_*.jsonl
+            outputs/confidence_sets/*.jsonl
+            outputs/scalability/*.jsonl
+            outputs/mean_field_vs_learned/*_20[345].jsonl
+            outputs/misspecification/*_seed602_*.jsonl

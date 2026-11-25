@@ -25,6 +25,7 @@ Needs `sib`:
 from __future__ import annotations
 
 import json
+import os
 import sys
 import time
 from dataclasses import replace
@@ -191,14 +192,21 @@ def diagnose(name: str, count: int, seed: int = 901) -> None:
     out = PROJECT_ROOT / "outputs" / "mechanism"
     out.mkdir(parents=True, exist_ok=True)
     path = out / "diagnostics_v2.jsonl"  # v2 adds the hybrid; same seeds, so the same outbreaks as v1
+    # SHARD="i/n" (v3, 200 outbreaks per network): outbreak k goes to shard k % n, own file
+    shard, shards = map(int, os.environ.get("SHARD", "0/1").split("/"))
+    if "SHARD" in os.environ:
+        path = out / f"diagnostics_v3_{name.replace(' ', '_').replace(',', '')}_shard{shard}.jsonl"
     done = sum(1 for line in path.open() if json.loads(line)["network"] == name) if path.exists() else 0
-    k = 0
+    k = mine = 0
     while k < count:
         ob = simulate_outbreak(graph, rng, p, horizon, fraction, max_tries=2000)
         if ob is None:
             continue
         k += 1
-        if k <= done:
+        if (k - 1) % shards != shard:
+            continue
+        mine += 1
+        if mine <= done:
             continue
         ctx = est.build_context(graph, ob, lookback)
         told = replace(ctx, t_lo=ob.t_start)
