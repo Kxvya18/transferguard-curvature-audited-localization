@@ -1,0 +1,40 @@
+# Check of the large-network accuracy drop (docs/ieee_trans_review.md 10.1). Runs when this file changes.
+name: scalability-check
+on:
+  workflow_dispatch:
+  push:
+    branches: [revision/ojcs-reviews]
+    paths: [.github/workflows/scalability_check.yml]
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    strategy:
+      fail-fast: false
+      matrix:
+        network: [sx-superuser, sx-askubuntu]
+        fraction: ["0.01", "0.1"]
+        shard: [0, 1, 2, 3, 4]
+    env:
+      OMP_NUM_THREADS: "1"
+      OPENBLAS_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install numpy scipy networkx
+      - name: Data (SNAP)
+        run: |
+          mkdir -p data/raw/temporal
+          curl -sSfL "https://snap.stanford.edu/data/${{ matrix.network }}.txt.gz" -o "data/raw/temporal/${{ matrix.network }}.txt.gz"
+      - run: |
+          seed=$(( ${{ matrix.fraction == '0.01' && 1300 || 1400 }} + ${{ matrix.shard }} ))
+          python -W ignore -m experiments.scalability ${{ matrix.network }} all 10 ${{ matrix.fraction }} $seed
+          ls outputs/scalability/*.jsonl
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: check-${{ matrix.network }}-${{ matrix.fraction }}-${{ matrix.shard }}
+          path: outputs/scalability/*_f*.jsonl

@@ -7,12 +7,16 @@ look-back, 1% of users observed (at least 10). Reported per outbreak: mean-field
 peak memory (tracemalloc), candidates left after pruning, rank of the source, and the rank
 given by distance center for reference.
 
-Run:  python -m experiments.scalability <sx-mathoverflow|sx-askubuntu> <N or all> <count>
+Run:  python -m experiments.scalability <network> <N or all> <count> [observer fraction] [seed]
+
+With a fraction or seed given, rows also hold "Mean-field, told" (true start and rate), and the
+output file name carries both.
 """
 import json
 import sys
 import time
 import tracemalloc
+from dataclasses import replace
 
 import numpy as np
 
@@ -42,16 +46,17 @@ def top_users(graph, n):
     return TemporalGraph(f"{graph.name} top {n}", len(keep), windows, _join_times(len(keep), windows))
 
 
-def main(name, size, count):
+def main(name, size, count, fraction=FRACTION, seed=None):
     graph = load_snap_temporal(PROJECT_ROOT / "data" / "raw" / "temporal" / f"{name}.txt.gz", name, DAY)
     if size != "all":
         graph = top_users(graph, int(size))
-    rng = np.random.default_rng(1201)
-    out = PROJECT_ROOT / "outputs" / "scalability" / f"{name}_{size}.jsonl"
+    rng = np.random.default_rng(1201 if seed is None else seed)
+    tag = "" if seed is None else f"_f{fraction}_s{seed}"
+    out = PROJECT_ROOT / "outputs" / "scalability" / f"{name}_{size}{tag}.jsonl"
     out.parent.mkdir(parents=True, exist_ok=True)
     k = 0
     while k < count:
-        ob = simulate_outbreak(graph, rng, P, HORIZON, FRACTION, min_infected_observers=3, max_tries=2000)
+        ob = simulate_outbreak(graph, rng, P, HORIZON, fraction, min_infected_observers=3, max_tries=2000)
         if ob is None:
             continue
         k += 1
@@ -72,9 +77,14 @@ def main(name, size, count):
                "Mean-field seconds": seconds, "Mean-field peak MB": peak / 2**20, "error": error,
                "Mean-field": rank_of_source(score, ob.source) if score is not None else None,
                "Distance center": rank_of_source(est.distance_center(ctx), ob.source)}
+        if seed is not None:
+            told = replace(ctx, t_lo=ob.t_start)
+            row["observer fraction"] = fraction
+            row["Mean-field, told"] = rank_of_source(mean_field_scores(told, prob_grid=(P,), n_start_times=1), ob.source)
         with out.open("a") as handle:
             handle.write(json.dumps(row) + "\n")
 
 
 if __name__ == "__main__":
-    main(sys.argv[1], sys.argv[2], int(sys.argv[3]))
+    extra = sys.argv[4:]
+    main(sys.argv[1], sys.argv[2], int(sys.argv[3]), float(extra[0]) if extra else FRACTION, int(extra[1]) if len(extra) > 1 else None)

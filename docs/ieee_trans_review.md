@@ -204,3 +204,18 @@ Decision:
   only with this caveat. Before writing, one check is worth doing: 50 outbreaks on
   sx-superuser and sx-askubuntu, to tell whether the loss is a sparse-observation regime
   (3 infected observers) or something specific to these networks.
+
+### 10.1 Check of the large-network accuracy drop (rules fixed before running)
+
+Design: sx-superuser (all) and sx-askubuntu (all), observers 1% and 10%, 50 outbreaks per cell
+(5 shards x 10, seeds 1300-1304 for 1%, 1400-1404 for 10%). Each row also holds mean field told
+the true start and rate ("MF, told"). Paired bootstrap 95% intervals on reciprocal rank.
+
+- R1 (observation regime): if at 10% observers MF - distance center has an interval that is not
+  below 0 on both networks, the 1% loss is a sparse-observation regime; the paper states the
+  regime (few infected observers) as a limit. If MF is still significantly worse at 10%, the
+  loss is network-specific and must be diagnosed before the scalability section is written.
+- R2 (where the loss comes from): if MF, told - MF has an interval above 0 and MF, told is not
+  below distance center, the loss comes from summing out (start, rate) on these daily-binned
+  networks; otherwise it is the likelihood itself (mean-field independence on these graphs).
+- Both rules are also reported stratified by number of infected observers (3, 4-5, 6+).
