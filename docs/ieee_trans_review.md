@@ -144,3 +144,32 @@ damping; MF has no such setting. Message passing (our likelihood with a DMP engi
 of the three on CollegeMsg and Office. The headline must become "matches or beats tuned BP at a
 fraction of the cost, with no tuning", and the mechanism section must say that damping that makes
 BP converge more often closes most of the gap, which is consistent with the non-convergence mechanism.
+
+## 9. Outcomes of X1-X6 (GitHub run 45619114205; `outputs/trans_runs_summary.txt`, `experiments/summarize_trans_runs.py`)
+
+X1/X2 and X6 ran BP at damping 0.5 (launched before 8.1). The told-the-truth comparison is not
+affected by damping much (BP converges when told: 76-99%), but end-to-end BP numbers in X1/X6
+are for damping 0.5 and are quoted as such.
+
+| Item | Result | Decision |
+|---|---|---|
+| X1 mechanism, 200 outbreaks x 4 networks | Told the true start and rate, BP and MF **tie** on all four (BP - MF: -0.009, +0.002, -0.004, +0.002; all intervals across 0). BP fails to converge at some grid point in 78-98% of outbreaks, but only 1-24% when told. MF's end-to-end advantage sits in the outbreaks where BP failed somewhere on the grid (High school +0.148, Office +0.068); where BP converged everywhere the gap is gone (n small) | **Mechanism established, with a correction:** the earlier small-sample finding "BP is better than MF when told" (3-30 outbreaks) does not hold at 200; the marginals are equally good. The whole end-to-end difference comes from BP's evidence at the wrong (start, rate). Verdict change caused by the larger sample |
+| X2 hybrid (MF weights, BP marginals) | Ties MF on all four (+0.006, +0.018, -0.001, -0.004) and beats plain BP | Confirms the mechanism: give BP reliable weights and its loss disappears. MF stays the method (same accuracy, 30-1500x cheaper); hybrid reported as the strongest BP variant |
+| X3 Dawkins et al. sets (true rate given to Dawkins, 90%) | Hospital: Dawkins 20.7 people, coverage 0.92, 133 s/outbreak vs ours 25, 0.92. Office (187 of 200, run hit the time limit): Dawkins 33, coverage 0.99 (over-covers), 993 s vs ours 18, 0.92 | Comparable, and Dawkins needs no calibration outbreaks. **By the rule, the conformal-set contribution is dropped**; Dawkins sets are cited, and MF is reported as a usable test statistic for them |
+| X4 scalability | sx-mathoverflow, all 24,759 users: 29 s, 9.4 GB; 10,000 users 4.5 s, 1.5 GB; sx-askubuntu 20,000 users 17 s, 6.1 GB; 50,000 and 157,222 users fail (out of memory on a 16 GB runner). MF beats distance center at every size | Time scales well, memory does not: all candidates are propagated at once (candidates x n per step). Fix: propagate candidates in batches (memory ~ batch x n). Until then, the stated limit is ~25k nodes on 16 GB |
+| X5 baselines, 180 outbreaks x 4 networks | MF beats SME (Antulov-Fantulin 2015) everywhere by +0.14 to +0.28. Against learned models: MF better on High school (+0.15/+0.16) and Office (+0.08/+0.10); tie with Temporal GCN on Hospital (-0.050 [-0.107, +0.008]) and with Arrival GNN on Email-Eu (-0.014 [-0.068, +0.040]) | Replaces the 2-seed claim "MF beats the learned models on 6 networks" with: better on 2/4, tie on 2/4, with no training (the GNNs train on 600 outbreaks of the same network and rate) |
+| X6 SIR / uneven rates, 100 each x 4 networks | MF >= BP (damping 0.5) in 8/8, significant in 5; MF >> time-respecting TOA in 8/8 (+0.12 to +0.36); MF = message passing | Robustness to model error supported; BP column to be quoted as damping 0.5 |
+
+### Claim after X1-X6 and 8.1 (stable from here unless new evidence)
+
+Under unknown start time and rate, a mean-field likelihood localizes the source as well as or
+better than belief propagation at its best damping, at 30-1500x lower cost and with nothing to
+tune, because what decides end-to-end accuracy is the reliability of the evidence used to sum
+out (start, rate), not the accuracy of the marginals: told the truth both are equally accurate,
+BP's evidence breaks where BP does not converge (78-98% of outbreaks), and giving BP mean-field
+weights removes its entire loss. Mean field is within noise of the exact likelihood on 3 of 4
+networks (particle-filter reference).
+
+Remaining before writing: (1) batched candidates for X4 (memory), (2) the theorem in theory.md
+replacing section 5, (3) Biazzo et al. 2022 cited and, if feasible, compared, (4) X1/X6 BP at
+damping 0.8 for consistency (optional; the told comparison does not depend on it).
