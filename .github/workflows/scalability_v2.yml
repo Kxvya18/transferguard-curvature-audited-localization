@@ -1,0 +1,44 @@
+# X4 rerun after the memory fix (backward pruning + candidate batches). Runs when this file changes.
+name: scalability-v2
+on:
+  workflow_dispatch:
+  push:
+    branches: [revision/ojcs-reviews]
+    paths: [.github/workflows/scalability_v2.yml]
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {name: mathoverflow-1000, cmd: "python -W ignore -m experiments.scalability sx-mathoverflow 1000 20"}
+          - {name: mathoverflow-5000, cmd: "python -W ignore -m experiments.scalability sx-mathoverflow 5000 20"}
+          - {name: mathoverflow-all, cmd: "python -W ignore -m experiments.scalability sx-mathoverflow all 20"}
+          - {name: askubuntu-50000, cmd: "python -W ignore -m experiments.scalability sx-askubuntu 50000 10"}
+          - {name: askubuntu-all, cmd: "python -W ignore -m experiments.scalability sx-askubuntu all 10"}
+          - {name: superuser-all, cmd: "python -W ignore -m experiments.scalability sx-superuser all 10"}
+          - {name: wikitalk-all, cmd: "python -W ignore -m experiments.scalability wiki-talk-temporal all 5"}
+    env:
+      OMP_NUM_THREADS: "1"
+      OPENBLAS_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install numpy scipy networkx
+      - name: Data (SNAP)
+        run: |
+          mkdir -p data/raw/temporal
+          for f in sx-mathoverflow.txt.gz sx-askubuntu.txt.gz sx-superuser.txt.gz wiki-talk-temporal.txt.gz; do curl -sSfL "https://snap.stanford.edu/data/$f" -o "data/raw/temporal/$f"; done
+      - run: |
+          ${{ matrix.cmd }}
+          ls outputs/scalability/*.jsonl
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.name }}
+          path: outputs/scalability/

@@ -56,6 +56,28 @@ def earliest_arrival(graph: TemporalGraph, t_begin: int, t_end: int) -> np.ndarr
     return spread(graph, start, t_begin, t_end, p=1.0, rng=None)
 
 
+def latest_departure(graph: TemporalGraph, t_begin: int, targets: np.ndarray, deadlines: np.ndarray) -> np.ndarray:
+    """For each target j, the latest window at which each node may be infected and still reach
+    target j by time deadlines[j] (-inf if it cannot). Shape (len(targets), n_nodes).
+
+    The backward twin of `earliest_arrival`, but its size is targets x n instead of n x n:
+    a source s starting at b reaches j by deadlines[j] exactly when b <= result[j, s].
+    """
+    latest = np.full((len(targets), graph.n_nodes), -np.inf)
+    latest[np.arange(len(targets)), targets] = deadlines
+    for t in range(int(np.max(deadlines)) - 1, t_begin - 1, -1):
+        contacts = graph.windows[t]
+        if not len(contacts):
+            continue
+        before = latest.copy()  # infection moves at most one hop per window
+        for u, v in ((contacts[:, 0], contacts[:, 1]), (contacts[:, 1], contacts[:, 0])):
+            # u infected by t passes it to v at t + 1, which is in time if t + 1 <= before[:, v]
+            ok = before[:, v] >= t + 1
+            rows, cols = np.nonzero(ok)
+            np.maximum.at(latest, (rows, u[cols]), t)
+    return latest
+
+
 @dataclass
 class Outbreak:
     source: int

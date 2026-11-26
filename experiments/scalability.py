@@ -32,7 +32,7 @@ def top_users(graph, n):
     for w in graph.windows:
         if len(w):
             np.add.at(count, w.ravel(), 1)
-    keep = np.sort(np.argsort(-count)[:n])
+    keep = np.sort(np.argsort(-count, kind="stable")[:n])  # stable: same users on every platform
     index = np.full(graph.n_nodes, -1)
     index[keep] = np.arange(len(keep))
     windows = []

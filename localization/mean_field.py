@@ -19,7 +19,7 @@ import scipy.sparse as sp
 from scipy.special import logsumexp
 
 from .estimators import INFEASIBLE, Context
-from .spread import earliest_arrival
+from .spread import earliest_arrival, latest_departure
 
 
 def _contact_matrices(ctx: Context, directed: bool = False, weighted: bool = False) -> list[sp.csr_matrix | None]:
@@ -90,6 +90,7 @@ def mean_field_loglik(
     false_report: np.ndarray | None = None,
     report_width: int = 1,
     detectability: np.ndarray | None = None,
+    batch: int | None = None,
 ) -> np.ndarray:
     """Log-likelihood of the observations for every node, shape (start times x probs, n_nodes),
     start-time major (row = start index * len(prob_grid) + prob index).
@@ -122,7 +123,11 @@ def mean_field_loglik(
     1 - (1 - detection) ** detectability[a]; ages past the end use the last value.
 
     With `status_only`, a test says only "infected" or "healthy" at t_observe, not when:
-    infected observers must then be given time t_observe - 1, and contribute q(t_observe - 1)."""
+    infected observers must then be given time t_observe - 1, and contribute q(t_observe - 1).
+
+    `batch`: candidates are propagated `batch` at a time, so memory is about batch x n per
+    array instead of candidates x n (results are identical). None: 256, fewer on very large
+    networks so that one array stays near 80 MB."""
     ob, graph = ctx.outbreak, ctx.graph
     n, t_obs = graph.n_nodes, ob.t_observe
     y = ob.observed_times.astype(int)
@@ -134,12 +139,26 @@ def mean_field_loglik(
     # the floor, so only those rows are propagated. Infection cannot beat the earliest
     # arrival, whatever the transmission probability, so this drops no possible source.
     if prune:
-        arrival = earliest_arrival(graph, ctx.t_lo, t_obs)
-        possible = np.flatnonzero((graph.join <= first) & np.all(arrival[:, ob.observers[infected]] <= y[infected], axis=1))
+        # backward from each infected observer: size observers x n, not n x n
+        latest = latest_departure(graph, ctx.t_lo, ob.observers[infected], y[infected])
+        begin_any = np.maximum(ctx.t_lo, graph.join)
+        possible = np.flatnonzero((graph.join <= first) & np.all(begin_any[None, :] <= latest, axis=0))
     else:
         possible = np.flatnonzero(graph.join <= first)
     if candidates is not None:
         possible = np.intersect1d(possible, candidates)
+    if batch is None:
+        batch = max(8, min(256, 20_000_000 // n))
+    if len(possible) > batch:
+        kwargs = dict(prob_grid=prob_grid, n_start_times=n_start_times, floor=floor, status_only=status_only,
+                      prune=False, recovery_grid=recovery_grid, susceptible_grid=susceptible_grid,
+                      seed_prob=seed_prob, directed=directed, leak=leak, weighted=weighted, detection=detection,
+                      false_report=false_report, report_width=report_width, detectability=detectability, batch=batch)
+        parts = [mean_field_loglik(ctx, candidates=possible[i:i + batch], **kwargs) for i in range(0, len(possible), batch)]
+        out = parts[0]
+        for part in parts[1:]:
+            out = np.where(np.isneginf(out), part, out)
+        return out
     rows = np.arange(len(possible))
     out = []
     for tau in starts:
