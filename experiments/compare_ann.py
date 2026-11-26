@@ -115,7 +115,8 @@ def run(name, count, steps, samples, seed=101):
     rng = np.random.default_rng(seed)
     shard, shards = map(int, os.environ.get("SHARD", "0/1").split("/"))
     OUT.mkdir(parents=True, exist_ok=True)
-    path = OUT / f"{name.replace(' ', '_')}_{steps}x{samples}_seed{seed}_shard{shard}" + (f"of{shards}" if shards != 4 else "") + ".jsonl"
+    tag = f"of{shards}" if shards != 4 else ""
+    path = OUT / f"{name.replace(' ', '_')}_{steps}x{samples}_seed{seed}_shard{shard}{tag}.jsonl"
     done_rows = sum(1 for _ in path.open()) if path.exists() else 0
     done = mine = 0
     while done < count:

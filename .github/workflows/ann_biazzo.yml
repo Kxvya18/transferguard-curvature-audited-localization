@@ -1,4 +1,4 @@
-# Biazzo et al. 2022 comparison, stage C (section 11.2): Hospital and Office, 40 outbreaks each, 3000 x 1000 (docs/ieee_trans_review.md section 11). Runs when this file changes.
+# Biazzo et al. 2022 comparison, stage C (section 11.2; rerun: path bug fixed): Hospital and Office, 40 outbreaks each, 3000 x 1000 (docs/ieee_trans_review.md section 11). Runs when this file changes.
 name: ann-biazzo
 on:
   workflow_dispatch:
@@ -42,10 +42,10 @@ jobs:
           for n in sp_hospital sp_office; do curl -sSfL "https://networks.skewed.de/net/$n/files/$n.csv.zip" -o "data/raw/sociopatterns/$n.csv.zip"; done
       - run: |
           ${{ matrix.cmd }}
-          n=$(find outputs/ann_comparison -name '*.jsonl' 2>/dev/null | wc -l)
+          n=$(find outputs/ann_comparison -name '*.jsonl' -newer README.md 2>/dev/null | wc -l)
           echo "result files written: $n"; test "$n" -gt 0
       - if: always()
         uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.name }}
-          path: outputs/ann_comparison/
+          path: outputs/ann_comparison/*of20.jsonl
