@@ -248,3 +248,32 @@ Decision (rules of 10.1):
   record and described as too small). Statement: up to 1.9 x 10^5 nodes, MF ranks the source
   ahead of or level with distance center, with significant gains on sx-askubuntu; knowing the
   start and rate would add 0.11-0.16.
+
+## 11. Biazzo et al. 2022 (autoregressive neural network), rules fixed before running
+
+Paper: Biazzo, Braunstein, Dall'Asta, Mazza, "A Bayesian generative neural network framework for
+epidemic inference problems", Sci. Rep. 12:19673 (2022). Code: github.com/ocadni/annfore
+(commit ee39c69) and github.com/ocadni/annfore-results. Their patient-zero setting: start time
+and rate known, full final snapshot, N ~ 100, T = 15, 10,000 annealing steps x 10,000 samples,
+on a GPU (their batch scripts allow 25 h per 5 instances). Reported on their hospital network:
+patient zero found in 74% of instances vs 54% for SIB.
+
+Our runs (localization/ann_biazzo.py, experiments/compare_ann.py): their library and default
+settings, told the true start and rate (it needs them), our sparse timed reports (10% observers),
+on GitHub Actions CPUs.
+
+- Stage A, conversion check: 20 tiny temporal graphs (5-7 people, 4-5 windows, 5-7 contacts),
+  exact source posterior by enumerating every transmission coin. **Pass if mean TV(exact, ANN)
+  <= 0.05 at 1000 x 1000** (it is meant to be near-exact on tiny graphs). If it fails, the
+  conversion or the budget is wrong, and no comparison is run until that is fixed. Mean field
+  (told) TV is reported alongside for reference.
+- Stage B, budget: Hospital, 8 outbreaks (seed 101) at 100, 300 and 1000 annealing steps x 1000
+  samples, for time and accuracy. Main budget = the largest at which 40 outbreaks per network fit
+  in the Actions time limit; the MRR at a third of that budget is reported as a saturation check.
+- Stage C, comparison: Hospital and Office, 40 outbreaks each, seed 101 (the same outbreaks as the
+  belief-propagation tables). Paired bootstrap 95% intervals on reciprocal rank:
+  ANN told vs MF told (same information) and ANN told vs MF (not told).
+- Decision: if ANN told beats MF told (interval above 0), the paper says so: the network is more
+  accurate given the start and rate, at its measured cost, and needs both (or its own EM for the
+  rate, start still given). If they tie, MF matches it with no training at a fraction of the
+  cost. Biazzo et al. is cited in either case.

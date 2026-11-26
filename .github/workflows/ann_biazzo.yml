@@ -1,0 +1,38 @@
+# Biazzo et al. 2022 comparison, stages A and B (docs/ieee_trans_review.md section 11). Runs when this file changes.
+name: ann-biazzo
+on:
+  workflow_dispatch:
+  push:
+    branches: [revision/ojcs-reviews]
+    paths: [.github/workflows/ann_biazzo.yml]
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - {name: ann-validate-0, cmd: "python -W ignore -m experiments.compare_ann validate 10 1000 1000"}
+          - {name: ann-budget-100, cmd: "for i in 0 1 2 3; do SHARD=$i/4 python -W ignore -m experiments.compare_ann run Hospital 8 100 1000 & done; wait"}
+          - {name: ann-budget-300, cmd: "for i in 0 1 2 3; do SHARD=$i/4 python -W ignore -m experiments.compare_ann run Hospital 8 300 1000 & done; wait"}
+          - {name: ann-budget-1000, cmd: "for i in 0 1 2 3; do SHARD=$i/4 python -W ignore -m experiments.compare_ann run Hospital 8 1000 1000 & done; wait"}
+    env:
+      OMP_NUM_THREADS: "1"
+      OPENBLAS_NUM_THREADS: "1"
+      MKL_NUM_THREADS: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: |
+          pip install "numpy>=2" scipy networkx pandas
+          pip install torch --index-url https://download.pytorch.org/whl/cpu
+          pip install "git+https://github.com/ocadni/annfore.git@ee39c69160b4445ea477e378a7876cf0e786767b"
+      - run: ${{ matrix.cmd }}
+      - if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.name }}
+          path: outputs/ann_comparison/
