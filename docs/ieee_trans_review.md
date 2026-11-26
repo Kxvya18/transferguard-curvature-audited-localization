@@ -296,3 +296,21 @@ on GitHub Actions CPUs.
   same 8 outbreaks. In most outbreaks where ANN misses, it ranks the source 40-70 of 75 (no mass
   on it), i.e. the trained network concentrates on other explanations; whether more training
   fixes this is what the next budgets show.
+
+### 11.2 Budget pilot result (GitHub run 45788043645) and stage C budget
+
+Hospital, same 8 outbreaks (MF told 0.461, MF 0.323):
+
+| Steps x samples | 100x1000 | 300x1000 | 1000x1000 | 3000x1000 | 1000x3000 | 1000x10000 |
+|---|---|---|---|---|---|---|
+| MRR ANN told | 0.266 | 0.266 | 0.385 | 0.410 | 0.364 | 0.342 |
+| Median min per outbreak | 3 | 7 | 20 | 45 | 50 | 210 |
+
+- Saturated from 1000 steps: more samples (their 10,000 included) do not help; 3x more steps
+  adds 0.025. **Stage C budget = 3000 x 1000** (best and affordable); the third of it
+  (1000 x 1000) is within 0.025, which is the saturation check of section 11.
+- The misses are not under-training: in outbreaks 0, 1, 4 the source ranks 40-66 of 75 at every
+  budget, and half-integer ranks show ties at zero mass. Training minimizes the reverse KL, which
+  is mode-seeking: the network settles on a few explanations and puts no samples on the rest,
+  the true source included. (On the tiny graphs of stage A the posterior is concentrated enough
+  for this not to matter.) This is a property of the method, reported as such.

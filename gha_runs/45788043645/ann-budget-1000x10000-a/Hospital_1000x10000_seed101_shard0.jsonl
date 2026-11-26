@@ -1,0 +1,1 @@
+{"dataset": "Hospital", "outbreak": 0, "beta steps": 1000, "samples": 10000, "Mean-field": 27.0, "Mean-field seconds": 0.08055305480957031, "Mean-field, told": 17.0, "Mean-field, told seconds": 0.0034372806549072266, "ANN (Biazzo 2022), told": 56.5, "ANN seconds": 12996.939588546753}
