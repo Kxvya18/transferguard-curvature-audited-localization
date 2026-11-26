@@ -4,7 +4,7 @@ The network method is told the true start and rate (it needs them); mean field i
 told and not told. Rules fixed before running: docs/ieee_trans_review.md section 11.
 
 Run (GitHub Actions; needs torch and annfore):
-  python -m experiments.compare_ann validate <count> <beta steps> <samples>
+  python -m experiments.compare_ann validate <count> <beta steps> <samples> [seed]
       tiny temporal graphs: exact source posterior (enumerating every transmission coin) vs the
       network and vs mean field told; checks our conversion to annfore and how close it gets.
   python -m experiments.compare_ann run <network> <count> <beta steps> <samples> [seed]
@@ -91,10 +91,10 @@ def tiny_outbreak(rng):
             return graph, Outbreak(source, 0, T, observers, observed.astype(float)), p
 
 
-def validate(count, steps, samples):
+def validate(count, steps, samples, seed=2024):
     OUT.mkdir(parents=True, exist_ok=True)
-    rng = np.random.default_rng(2024)
-    path = OUT / f"validate_{steps}x{samples}.jsonl"
+    rng = np.random.default_rng(seed)
+    path = OUT / (f"validate_{steps}x{samples}.jsonl" if seed == 2024 else f"validate_{steps}x{samples}_seed{seed}.jsonl")
     for k in range(count):
         graph, ob, p = tiny_outbreak(rng)
         exact = exact_posterior(graph, ob, p)
@@ -149,6 +149,6 @@ def run(name, count, steps, samples, seed=101):
 
 if __name__ == "__main__":
     if sys.argv[1] == "validate":
-        validate(int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4]))
+        validate(int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4]), *(int(a) for a in sys.argv[5:6]))
     else:
         run(sys.argv[2], int(sys.argv[3]), int(sys.argv[4]), int(sys.argv[5]), *(int(a) for a in sys.argv[6:7]))

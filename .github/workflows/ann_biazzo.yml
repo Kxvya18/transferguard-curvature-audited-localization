@@ -1,4 +1,4 @@
-# Biazzo et al. 2022 comparison, stages A and B (docs/ieee_trans_review.md section 11). Runs when this file changes.
+# Biazzo et al. 2022 comparison, stages A and B (rerun 2: data step added; second validation batch) (docs/ieee_trans_review.md section 11). Runs when this file changes.
 name: ann-biazzo
 on:
   workflow_dispatch:
@@ -13,7 +13,7 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - {name: ann-validate-0, cmd: "python -W ignore -m experiments.compare_ann validate 10 1000 1000"}
+          - {name: ann-validate-1, cmd: "python -W ignore -m experiments.compare_ann validate 10 1000 1000 2025"}
           - {name: ann-budget-100, cmd: "for i in 0 1 2 3; do SHARD=$i/4 python -W ignore -m experiments.compare_ann run Hospital 8 100 1000 & done; wait"}
           - {name: ann-budget-300, cmd: "for i in 0 1 2 3; do SHARD=$i/4 python -W ignore -m experiments.compare_ann run Hospital 8 300 1000 & done; wait"}
           - {name: ann-budget-1000, cmd: "for i in 0 1 2 3; do SHARD=$i/4 python -W ignore -m experiments.compare_ann run Hospital 8 1000 1000 & done; wait"}
@@ -30,7 +30,14 @@ jobs:
           pip install "numpy>=2" scipy networkx pandas
           pip install torch --index-url https://download.pytorch.org/whl/cpu
           pip install "git+https://github.com/ocadni/annfore.git@ee39c69160b4445ea477e378a7876cf0e786767b"
-      - run: ${{ matrix.cmd }}
+      - name: Data (Netzschleuder)
+        run: |
+          mkdir -p data/raw/sociopatterns
+          for n in sp_hospital sp_office; do curl -sSfL "https://networks.skewed.de/net/$n/files/$n.csv.zip" -o "data/raw/sociopatterns/$n.csv.zip"; done
+      - run: |
+          ${{ matrix.cmd }}
+          n=$(find outputs/ann_comparison -name '*.jsonl' 2>/dev/null | wc -l)
+          echo "result files written: $n"; test "$n" -gt 0
       - if: always()
         uses: actions/upload-artifact@v4
         with:
