@@ -173,3 +173,34 @@ networks (particle-filter reference).
 Remaining before writing: (1) batched candidates for X4 (memory), (2) the theorem in theory.md
 replacing section 5, (3) Biazzo et al. 2022 cited and, if feasible, compared, (4) X1/X6 BP at
 damping 0.8 for consistency (optional; the told comparison does not depend on it).
+
+## 10. X4 rerun after the memory fix (GitHub run 45744233371)
+
+Fix: pruning by a backward latest-departure pass (observers x n instead of n x n) and candidates
+propagated in batches (memory ~ batch x n). Results are bit-identical to the old code
+(checked on Hospital, High school, Email-Eu, Office).
+
+| Network | Users | Contacts | Outbreaks | Median time | Peak memory | MF - distance center (RR, 95% CI) |
+|---|---|---|---|---|---|---|
+| sx-mathoverflow top 1,000 | 1,000 | 128,820 | 20 | 0.4 s | 5 MB | +0.236 [+0.066, +0.422] |
+| sx-mathoverflow top 5,000 | 5,000 | 228,753 | 20 | 4.1 s | 37 MB | +0.135 [+0.002, +0.295] |
+| sx-mathoverflow, all | 24,759 | 294,293 | 20 | 30 s | 183 MB (was 9.4 GB) | +0.111 [-0.064, +0.294] |
+| sx-askubuntu top 50,000 | 50,000 | 386,134 | 10 | 55 s | 369 MB (was out of memory) | -0.110 [-0.394, +0.151] |
+| sx-askubuntu, all | 157,222 | 549,914 | 10 | 286 s | 695 MB (was out of memory) | -0.078 [-0.238, +0.071] |
+| sx-superuser, all | 192,409 | 857,643 | 10 | 571 s | 856 MB | **-0.322 [-0.592, -0.070]** |
+| wiki-talk-temporal, all | ~1.1M | - | 0 | - | - | runner shut down after 41 min (most likely out of memory loading or propagating; not diagnosed) |
+
+Decision:
+- **Cost: closed.** Memory now grows linearly in n; mean field runs on 1.9 x 10^5 nodes in
+  under 1 GB and about 10 minutes per outbreak on one core. The stated limit becomes
+  ~2 x 10^5 nodes; 10^6 (wiki-talk) is not shown and is not claimed.
+- **Accuracy at this scale: a new negative result, recorded as is.** With 1% observers on
+  10^5-node Q&A networks, outbreaks have only 3-4 infected observers. Mean field beats distance
+  center on sx-mathoverflow (significant at 1k and 5k), ties on sx-askubuntu, and is
+  significantly worse on sx-superuser (n = 10, so the size of the gap is uncertain but its
+  sign is not). The earlier sentence "MF beats distance center at every size" (section 9,
+  20k users) does not hold beyond ~25k nodes and is withdrawn.
+- For the paper: the scalability section reports cost (time, memory) at every size and accuracy
+  only with this caveat. Before writing, one check is worth doing: 50 outbreaks on
+  sx-superuser and sx-askubuntu, to tell whether the loss is a sparse-observation regime
+  (3 infected observers) or something specific to these networks.
