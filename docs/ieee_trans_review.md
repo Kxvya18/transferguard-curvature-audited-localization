@@ -277,3 +277,22 @@ on GitHub Actions CPUs.
   accurate given the start and rate, at its measured cost, and needs both (or its own EM for the
   rate, start still given). If they tie, MF matches it with no training at a fraction of the
   cost. Biazzo et al. is cited in either case.
+
+### 11.1 Stages A and B (GitHub runs 45777152246, 45778422738)
+
+- **Stage A passes.** 20 tiny graphs: mean TV(exact, ANN) = 0.006 (max 0.056), same top person as
+  the exact posterior in 20/20; mean field told 0.015 (max 0.197). The conversion to annfore
+  (time convention, observations, no recovery) is correct.
+- **Stage B, Hospital, 8 outbreaks (1000 samples per step):**
+
+| Annealing steps | MRR ANN told | MRR MF told | MRR MF | Median s per outbreak (ANN) |
+|---|---|---|---|---|
+| 100 | 0.266 | 0.461 | 0.323 | 152 |
+| 300 | 0.266 | 0.461 | 0.323 | 406 |
+| 1000 | 0.385 | 0.461 | 0.323 | 1210 |
+
+  Not saturated (0.266 -> 0.385 from 300 to 1000 steps). By the rule, no comparison until the
+  budget saturates: next, 3000 x 1000, 1000 x 3000 and 1000 x 10000 (their sample count) on the
+  same 8 outbreaks. In most outbreaks where ANN misses, it ranks the source 40-70 of 75 (no mass
+  on it), i.e. the trained network concentrates on other explanations; whether more training
+  fixes this is what the next budgets show.
