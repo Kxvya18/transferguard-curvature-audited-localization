@@ -66,13 +66,34 @@ def x3():
 
 def x4():
     print("X4 scalability (mean field, 1% observers)")
-    for r in sorted({(x["network"], x["users"]) for x in load("scalability/*.jsonl")}):
-        rows = [x for x in load("scalability/*.jsonl") if (x["network"], x["users"]) == r]
+    allrows = [x for x in load("scalability/*.jsonl") if "observer fraction" not in x]  # the 10.1 check is x4_check
+    for r in sorted({(x["network"], x["users"]) for x in allrows}):
+        rows = [x for x in allrows if (x["network"], x["users"]) == r]
         ok = [x for x in rows if x["error"] is None]
         print(f"  {r[0]} {r[1]:>7} users, {rows[0]['contacts']:>8} contacts: n={len(rows)} "
               f"median {np.median([x['Mean-field seconds'] for x in ok]):.1f} s, peak {np.median([x['Mean-field peak MB'] for x in ok]):.0f} MB, "
               f"candidates {np.median([x['candidates'] for x in ok]):.0f}, failures {len(rows) - len(ok)}"
               + (f", MRR MF {np.mean([1 / x['Mean-field'] for x in ok]):.3f} vs distance {np.mean([1 / x['Distance center'] for x in ok]):.3f}" if ok else ""))
+
+
+def x4_check():
+    print("X4 check (review 10.1): 50 outbreaks per cell; MF told = true start and rate")
+    rows = [x for x in load("scalability/*_f*_s*.jsonl")]
+    for net in ["sx-superuser", "sx-askubuntu"]:
+        for frac in [0.01, 0.1]:
+            cell = [x for x in rows if x["network"] == net and x["observer fraction"] == frac]
+            if not cell:
+                continue
+            io = np.array([x["infected observers"] for x in cell])
+            print(f"  {net} {frac:.0%} n={len(cell)} infected observers median {np.median(io):.0f} (range {io.min()}-{io.max()}), "
+                  f"median {np.median([x['Mean-field seconds'] for x in cell]):.0f} s | MRR MF {rr(cell, 'Mean-field').mean():.3f}, "
+                  f"MF told {rr(cell, 'Mean-field, told').mean():.3f}, distance {rr(cell, 'Distance center').mean():.3f}")
+            print(f"    MF - distance {diff(cell, 'Mean-field', 'Distance center')} | MF told - MF {diff(cell, 'Mean-field, told', 'Mean-field')}"
+                  f" | MF told - distance {diff(cell, 'Mean-field, told', 'Distance center')}")
+            for lo, hi, label in [(3, 3, "3"), (4, 5, "4-5"), (6, 10**9, "6+")]:
+                sub = [x for x in cell if lo <= x["infected observers"] <= hi]
+                if len(sub) >= 5:
+                    print(f"      {label} infected observers (n={len(sub)}): MF - distance {diff(sub, 'Mean-field', 'Distance center')}")
 
 
 def x5():
@@ -99,5 +120,5 @@ def x6():
 
 
 if __name__ == "__main__":
-    for f in (x1_x2, x3, x4, x5, x6):
+    for f in (x1_x2, x3, x4, x4_check, x5, x6):
         f()

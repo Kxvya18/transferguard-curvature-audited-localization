@@ -219,3 +219,32 @@ the true start and rate ("MF, told"). Paired bootstrap 95% intervals on reciproc
   below distance center, the loss comes from summing out (start, rate) on these daily-binned
   networks; otherwise it is the likelihood itself (mean-field independence on these graphs).
 - Both rules are also reported stratified by number of infected observers (3, 4-5, 6+).
+
+### 10.2 Result of the check (GitHub run 45757095913, 50 outbreaks per cell)
+
+| Network, observers | Infected observers (median, range) | MRR MF / MF told / distance | MF - distance | MF told - MF |
+|---|---|---|---|---|
+| sx-superuser, 1% | 3 (3-5) | 0.203 / 0.311 / 0.137 | +0.067 [-0.025, +0.160] | +0.108 [+0.032, +0.193] |
+| sx-superuser, 10% | 4 (3-13) | 0.367 / 0.524 / 0.238 | +0.128 [-0.007, +0.261] | +0.157 [+0.063, +0.253] |
+| sx-askubuntu, 1% | 3 (3-5) | 0.287 / 0.443 / 0.157 | **+0.130 [+0.004, +0.254]** | +0.155 [+0.063, +0.254] |
+| sx-askubuntu, 10% | 4 (3-11) | 0.392 / 0.539 / 0.187 | **+0.205 [+0.111, +0.302]** | +0.147 [+0.065, +0.231] |
+
+Decision (rules of 10.1):
+- **The loss in 10 does not replicate.** On 50 fresh outbreaks at the same setting (1%, all
+  users), MF is ahead of distance center on both networks (significant on sx-askubuntu,
+  +0.067 with an interval across 0 on sx-superuser). The 10-outbreak result (-0.322 on
+  sx-superuser) was a small-sample result: reciprocal rank is heavy-tailed, and 10 outbreaks
+  were too few. **Correction to 10:** the sentence "the size of the gap is uncertain but its
+  sign is not" was wrong and is withdrawn; so is "a new negative result". Verdict change caused
+  by the larger sample, as in X1.
+- R1: at 10% observers MF - distance is not below 0 on either network (significant on
+  sx-askubuntu). There is no network-specific loss to diagnose.
+- R2: MF told beats MF by +0.11 to +0.16 in all four cells (all intervals above 0), and MF told
+  beats distance center everywhere. So on these daily-binned networks, summing out the start and
+  rate costs 0.11-0.16 MRR. This is the first term of Theorem 1 (theory.md §5): the cost of not
+  knowing (start, rate) is in the weights. It is reported as a limit, not hidden.
+- For the paper: X4 reports cost at every size (§10 table) and accuracy from these 50-outbreak
+  cells (pooled with nothing; the 10-outbreak runs are kept in outputs/scalability for the
+  record and described as too small). Statement: up to 1.9 x 10^5 nodes, MF ranks the source
+  ahead of or level with distance center, with significant gains on sx-askubuntu; knowing the
+  start and rate would add 0.11-0.16.
