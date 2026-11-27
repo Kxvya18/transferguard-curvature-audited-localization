@@ -1,0 +1,2 @@
+{"dataset": "Office", "outbreak": 17, "beta steps": 3000, "samples": 1000, "Mean-field": 8.0, "Mean-field seconds": 0.18097186088562012, "Mean-field, told": 3.0, "Mean-field, told seconds": 0.008316278457641602, "ANN (Biazzo 2022), told": 4.0, "ANN seconds": 9963.0892431736}
+{"dataset": "Office", "outbreak": 37, "beta steps": 3000, "samples": 1000, "Mean-field": 1.0, "Mean-field seconds": 0.15451741218566895, "Mean-field, told": 1.0, "Mean-field, told seconds": 0.006558656692504883, "ANN (Biazzo 2022), told": 1.0, "ANN seconds": 10104.579739809036}

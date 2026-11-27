@@ -1,4 +1,4 @@
-# Biazzo et al. 2022 comparison, stage C (section 11.2; rerun: path bug fixed): Hospital and Office, 40 outbreaks each, 3000 x 1000 (docs/ieee_trans_review.md section 11). Runs when this file changes.
+# Biazzo et al. 2022 comparison, stage C fill: Office outbreaks 20-23 (job office-0 hit the 6 h limit): Hospital and Office, 40 outbreaks each, 3000 x 1000 (docs/ieee_trans_review.md section 11). Runs when this file changes.
 name: ann-biazzo
 on:
   workflow_dispatch:
@@ -13,16 +13,7 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - {name: ann-c-hospital-0, cmd: "for i in 0 1 2 3; do SHARD=$i/20 python -W ignore -m experiments.compare_ann run Hospital 40 3000 1000 & done; wait"}
-          - {name: ann-c-hospital-1, cmd: "for i in 4 5 6 7; do SHARD=$i/20 python -W ignore -m experiments.compare_ann run Hospital 40 3000 1000 & done; wait"}
-          - {name: ann-c-hospital-2, cmd: "for i in 8 9 10 11; do SHARD=$i/20 python -W ignore -m experiments.compare_ann run Hospital 40 3000 1000 & done; wait"}
-          - {name: ann-c-hospital-3, cmd: "for i in 12 13 14 15; do SHARD=$i/20 python -W ignore -m experiments.compare_ann run Hospital 40 3000 1000 & done; wait"}
-          - {name: ann-c-hospital-4, cmd: "for i in 16 17 18 19; do SHARD=$i/20 python -W ignore -m experiments.compare_ann run Hospital 40 3000 1000 & done; wait"}
-          - {name: ann-c-office-0, cmd: "for i in 0 1 2 3; do SHARD=$i/20 python -W ignore -m experiments.compare_ann run Office 40 3000 1000 & done; wait"}
-          - {name: ann-c-office-1, cmd: "for i in 4 5 6 7; do SHARD=$i/20 python -W ignore -m experiments.compare_ann run Office 40 3000 1000 & done; wait"}
-          - {name: ann-c-office-2, cmd: "for i in 8 9 10 11; do SHARD=$i/20 python -W ignore -m experiments.compare_ann run Office 40 3000 1000 & done; wait"}
-          - {name: ann-c-office-3, cmd: "for i in 12 13 14 15; do SHARD=$i/20 python -W ignore -m experiments.compare_ann run Office 40 3000 1000 & done; wait"}
-          - {name: ann-c-office-4, cmd: "for i in 16 17 18 19; do SHARD=$i/20 python -W ignore -m experiments.compare_ann run Office 40 3000 1000 & done; wait"}
+          - {name: ann-c-office-fill, cmd: "for i in 20 21 22 23; do SHARD=$i/40 python -W ignore -m experiments.compare_ann run Office 40 3000 1000 & done; wait"}
     env:
       OMP_NUM_THREADS: "1"
       OPENBLAS_NUM_THREADS: "1"
@@ -48,4 +39,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.name }}
-          path: outputs/ann_comparison/*of20.jsonl
+          path: outputs/ann_comparison/*of*.jsonl
