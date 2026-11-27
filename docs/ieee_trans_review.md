@@ -314,3 +314,27 @@ Hospital, same 8 outbreaks (MF told 0.461, MF 0.323):
   is mode-seeking: the network settles on a few explanations and puts no samples on the rest,
   the true source included. (On the tiny graphs of stage A the posterior is concentrated enough
   for this not to matter.) This is a property of the method, reported as such.
+
+### 11.3 Stage C result (GitHub runs 45869047451, 45924550199; 40 outbreaks per network, seed 101)
+
+ANN at 3000 steps x 1000 samples, told the true start and rate. Reciprocal rank, paired
+bootstrap 95% intervals.
+
+| Network | MRR ANN told | MRR MF told | MRR MF | ANN told - MF told | ANN told - MF | Median time ANN / MF |
+|---|---|---|---|---|---|---|
+| Hospital | 0.355 | 0.427 | 0.318 | **-0.072 [-0.135, -0.021]** | +0.037 [-0.069, +0.143] | 44 min / 0.07 s |
+| Office | 0.442 | 0.622 | 0.535 | **-0.179 [-0.274, -0.090]** | -0.093 [-0.216, +0.030] | 2.3 h / 0.12 s |
+
+Top-1: Hospital ANN 0.28, MF told 0.30, MF 0.20; Office 0.33, 0.50, 0.40.
+
+Decision (rule of section 11): ANN told does not beat MF told; MF told is ahead on both networks
+(intervals below 0). Even MF without the start and rate is level with ANN given them. Paper
+statement: "On our sparse timed reports, the autoregressive-network method of Biazzo et al.,
+run with its authors' code and given the true start time and rate, ranks the source worse than
+mean field given the same information (Hospital -0.07, Office -0.18 MRR, both significant) and
+is level with mean field that is not given them, at 2x10^4 to 7x10^4 times the cost. Its
+training (reverse KL) puts zero mass on the source in a fifth to a third of outbreaks; on its
+own setting (full final snapshot) it is reported to beat belief propagation."
+Notes: one Office job hit the 6 h limit; its outbreaks 20-23 were rerun alone (same outbreaks,
+same seeds). ANN runs are not bit-reproducible on CPU (2 of the 8 pilot outbreaks changed rank
+on rerun, both among zero-mass ties).
